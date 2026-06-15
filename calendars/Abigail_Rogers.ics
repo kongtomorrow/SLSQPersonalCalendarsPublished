@@ -1,0 +1,579 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SLSQ//Personal Calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SLSQ - Abigail Rogers
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:b820b2a583b8e0fa0f0479d41aca61489c1b9b33@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:On Campus Housing Check In
+DTSTART;TZID=America/Los_Angeles:20260619T170000
+DTEND;TZID=America/Los_Angeles:20260619T200000
+LOCATION:Front Desk at Munger
+DESCRIPTION:(Details coming)\nMunger Check In
+END:VEVENT
+BEGIN:VEVENT
+UID:04488185ea84e03a19fd3c35b2648ef722ebcdba@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Seminar Registration
+DTSTART;TZID=America/Los_Angeles:20260620T090000
+DTEND;TZID=America/Los_Angeles:20260620T113000
+LOCATION:Campbell Recital Hall Lobby
+DESCRIPTION:Schedule Here\n(You will have access to\nyour studio to rehears
+ e
+END:VEVENT
+BEGIN:VEVENT
+UID:f84742120b5b2b3ec42e779aa21bca550a660ffa@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Welcome Meeting
+DTSTART;TZID=America/Los_Angeles:20260620T130000
+DTEND;TZID=America/Los_Angeles:20260620T140000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:d2860abc26c1f6b82e4c4180850d78c9abfd928a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260620T140000
+DTEND;TZID=America/Los_Angeles:20260620T170000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:d9dd0b185229a61dff7864d31dde4f549a459d09@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:chamber orch reading
+DTSTART;TZID=America/Los_Angeles:20260620T170000
+DTEND;TZID=America/Los_Angeles:20260620T180000
+LOCATION:Dinkelspiel Stage
+DESCRIPTION:chamber orch reading
+END:VEVENT
+BEGIN:VEVENT
+UID:8169c9ebf8aa1d8d8a9540e444dfdba7f9302221@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner -be our guests!
+DTSTART;TZID=America/Los_Angeles:20260620T180000
+DTEND;TZID=America/Los_Angeles:20260620T190000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:1a1502644a0998dc8deacc4902d87fcd3769cd67@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260620T190000
+DTEND;TZID=America/Los_Angeles:20260620T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:b3e4845973efce87178bdfced33d622e708ad32a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Continental Breakfast
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T094500
+LOCATION:Campbell Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:b937e74a2bb9b74fbd16f7e9dfa89db05d2fe116@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T103000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:647efc0f292951d106fcf57db598892e3f195d1a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Presentation
+DTSTART;TZID=America/Los_Angeles:20260621T110000
+DTEND;TZID=America/Los_Angeles:20260621T120000
+LOCATION:Jack Trip CCRMA Stage
+DESCRIPTION:Chris Chafe
+END:VEVENT
+BEGIN:VEVENT
+UID:f4cea8b2b1cc68771d8e5b4942e0cf62bdaa6b55@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Light Lunch Provided
+DTSTART;TZID=America/Los_Angeles:20260621T120000
+DTEND;TZID=America/Los_Angeles:20260621T130000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:33c541bf5c0245fbf7a211ccbd1631a146bb9ade@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T130000
+DTEND;TZID=America/Los_Angeles:20260621T143000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:4f942c03da2a589704d7e9c83a533b9621ebbf46@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Spotlight on Physical Wellness
+DTSTART;TZID=America/Los_Angeles:20260621T143000
+DTEND;TZID=America/Los_Angeles:20260621T160000
+LOCATION:Campbell Recital Hall and Braun Courtyard
+DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
+END:VEVENT
+BEGIN:VEVENT
+UID:3aac6776fead52cb52c08034ccfbf8dc4c694aa4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T160000
+DTEND;TZID=America/Los_Angeles:20260621T180000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:9de1bbe9593adb8c852baf67a8c273af22c4aaae@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T190000
+DTEND;TZID=America/Los_Angeles:20260621T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:269de50f3907d2d05403cd700c6708dcbca68565@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260622T083000
+DTEND;TZID=America/Los_Angeles:20260622T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:b5ba9cb7ff31b916c253659e8813a939cff02e4c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T091500
+DTEND;TZID=America/Los_Angeles:20260622T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:fe7c288123a77537dbfc668656b25e611fa926ea@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T103000
+DTEND;TZID=America/Los_Angeles:20260622T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:111242bd803d3820ba907beefbf357acfee43dc8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #1
+DTSTART;TZID=America/Los_Angeles:20260622T120000
+DTEND;TZID=America/Los_Angeles:20260622T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Dvorak 6tet: Owen Dalby\, Daniel Phillips\, Steven Tenenbom\, W
+ illiam Coleman\, Paul Wiancko\, Hannah Collins\nRoad Movies: Alexi Kenney\
+ , John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:c559368aef8f1428d409eee6c5d2f1f7c3b07e02@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Will Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T140000
+DTEND;TZID=America/Los_Angeles:20260622T150000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:bdd5c36113be3cf72c4132672c5d063774b9867b@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T151500
+DTEND;TZID=America/Los_Angeles:20260622T161500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:db780273f97f80875674122aa9a421372cc49192@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 1A 1B
+DTSTART;TZID=America/Los_Angeles:20260622T163000
+DTEND;TZID=America/Los_Angeles:20260622T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying: Murra
+ y Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Melissa
+  Lam)\, Pinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\, Ka
+ tarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, M
+ aya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B
+ \nLocation: Dinkelspiel Stage\nPlaying: Ethea Trio (Shintaro Taneda\, Ayou
+ n Alexandra Kim\, Jon Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, 
+ Ben Parks\, Cyrus Behroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, E
+ mma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, W
+ illiam Coleman
+END:VEVENT
+BEGIN:VEVENT
+UID:e859eaece9017b91ea080a884f3709fd372cadbc@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260622T190000
+DTEND;TZID=America/Los_Angeles:20260622T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:3444ec2a8cfb3c1271e2b0518ff398d524550b90@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260623T083000
+DTEND;TZID=America/Los_Angeles:20260623T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:6c4adfa674e0a4bf4fa69de6a26aa8b19f9c82a5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T091500
+DTEND;TZID=America/Los_Angeles:20260623T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:f66df86a9cc7515a631f74403be8f77df9b0a395@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Ayane Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T103000
+DTEND;TZID=America/Los_Angeles:20260623T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:ccbc45c4f02003d988bb6b685cd9b3d0ad5e487e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Adam Pelzer appointment
+DTSTART;TZID=America/Los_Angeles:20260623T131500
+DTEND;TZID=America/Los_Angeles:20260623T133000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:With Adam Pelzer
+END:VEVENT
+BEGIN:VEVENT
+UID:231842d17c49fe55e62904c04b52f5613079898b@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T131500
+DTEND;TZID=America/Los_Angeles:20260623T141500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:26af670ed8bfeeba819d3c0a8606a43e5655b226@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Will Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T143000
+DTEND;TZID=America/Los_Angeles:20260623T153000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:50b1b16daadf8c5e822847ac5dd99caa1ee51a2d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Special Presentation
+DTSTART;TZID=America/Los_Angeles:20260623T160000
+DTEND;TZID=America/Los_Angeles:20260623T173000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
+  & Conservation\nVisiting Scholar\, Oxford University
+END:VEVENT
+BEGIN:VEVENT
+UID:31036124771923d924f01df593b0b68d46008ed8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260623T190000
+DTEND;TZID=America/Los_Angeles:20260623T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:9569f5835ae2cd5c59b6e1bb86017c13ae494262@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260624T083000
+DTEND;TZID=America/Los_Angeles:20260624T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:bda3a9a05436c18f0bdd374948c83860729fc654@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T091500
+DTEND;TZID=America/Los_Angeles:20260624T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:829559a3d51be8fd45a306d4decc79d06f587eeb@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T103000
+DTEND;TZID=America/Los_Angeles:20260624T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:8ce60a91076d4fe83419909686c5aee78b95b76c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #2
+DTSTART;TZID=America/Los_Angeles:20260624T120000
+DTEND;TZID=America/Los_Angeles:20260624T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
+ bom\, Lesley Robertson\, Nina Lee\, Anthony Manzo\, Pedja Muzijevic\nMozar
+ t 5tet: Alexi Kenney\, Owen Dalby\, Ayane Kozasa\, Lesley Robertson\, Nina
+  Lee\nRebecca Clarke duo: Ayane Kozasa\, Todd Palmer
+END:VEVENT
+BEGIN:VEVENT
+UID:67f75b442152fb2b46a66174664b0cebdb08ad87@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Will Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T140000
+DTEND;TZID=America/Los_Angeles:20260624T150000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:92f09eec7e5682b39e3af68d1ba706e3e8164b03@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T151500
+DTEND;TZID=America/Los_Angeles:20260624T161500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:0e77abd80f42c64cdb8718e26192e24294bad1b2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 2A\, 2B
+DTSTART;TZID=America/Los_Angeles:20260624T163000
+DTEND;TZID=America/Los_Angeles:20260624T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolor
+ es Quintet (AM) (Aaron Wilk\, Misha Rafiee\, Gregorio Lopes\, James Welch\
+ , Persis Drell)\, Wishel Trio (Aaron Wilk\, Lloyd Minor\, Neir Eshel)\nCoa
+ ching: Alexi Kenney\, Stephen Prutsman\, Nina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:e467baf69fe72b0df66a4eb1575145a599dcc541@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260624T190000
+DTEND;TZID=America/Los_Angeles:20260624T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:68a48e1d84ca4904fc26ba0e209ebe999a0d56db@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260625T083000
+DTEND;TZID=America/Los_Angeles:20260625T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:81822c858377dc397c40b9fd79f902b6e516f1af@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T091500
+DTEND;TZID=America/Los_Angeles:20260625T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:bd94427082432e43cde5ae61106ed7afade24510@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Ayane Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T103000
+DTEND;TZID=America/Los_Angeles:20260625T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:7db6fdc51948addaa15695b88563c6461a573a30@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch in Courtyard!
+DTSTART;TZID=America/Los_Angeles:20260625T113000
+DTEND;TZID=America/Los_Angeles:20260625T120000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:7fe7690588489dfabb025a526cb15c495c43f681@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:MIghty like a Moose
+DTSTART;TZID=America/Los_Angeles:20260625T121500
+DTEND;TZID=America/Los_Angeles:20260625T130000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Film Fun with Prutsman/Dolphins
+END:VEVENT
+BEGIN:VEVENT
+UID:502d39b7f0ac084c71226bb1ef07d75ad02de1aa@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T131500
+DTEND;TZID=America/Los_Angeles:20260625T141500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:cc91fa35ff17fd200c088083c657af0d57f34caf@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Will Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T143000
+DTEND;TZID=America/Los_Angeles:20260625T153000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:7ec61bac6a8f4b3120dc8aef126aa31ec96a61fa@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 3A\, 3B\, 3C
+DTSTART;TZID=America/Los_Angeles:20260625T160000
+DTEND;TZID=America/Los_Angeles:20260625T173000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:location subject to change\n(potentially 103 if needed)
+END:VEVENT
+BEGIN:VEVENT
+UID:ee44c6c85101f32afef4afc503b5c4673ad6b94c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T200000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:708e8d363af92cc3a874a2a421ceacd5dabe6931@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260626T083000
+DTEND;TZID=America/Los_Angeles:20260626T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:d860835d2f9c78e557967884b0fd34efa006980e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T091500
+DTEND;TZID=America/Los_Angeles:20260626T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:b388a0e16c7e3fe28e3bb288e2d3d2a98c8aad0a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T103000
+DTEND;TZID=America/Los_Angeles:20260626T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:53837898bfe358648841932485eed1b383f0a66a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #3
+DTSTART;TZID=America/Los_Angeles:20260626T120000
+DTEND;TZID=America/Los_Angeles:20260626T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Mendelssohn 6tet: Daniel Phillips\, William Coleman\, Dimitri M
+ urrath\, Hannah Collins\, Anthony Manzo\, Pedja Muzijevic\nRule of Three: 
+ Owen Dalby\, Daniel Phillips\, Steven Tenenbom\nTchaikovsky: Todd Palmer\,
+  Owen Dalby\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:37a89c3562c12fce0a6b05cfb57894e18bfe923f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Will Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T140000
+DTEND;TZID=America/Los_Angeles:20260626T150000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:10650bc45dd9142f43b2162f6b13fee536d1c798@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T151500
+DTEND;TZID=America/Los_Angeles:20260626T161500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:133128c15888c411d4ed81a25246d735bae421b5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Epic Sight Reading Party!
+DTSTART;TZID=America/Los_Angeles:20260626T173000
+DTEND;TZID=America/Los_Angeles:20260626T200000
+LOCATION:776 Dolores St\, Stanford\, CA
+DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
+END:VEVENT
+BEGIN:VEVENT
+UID:896bea6fcf57b3f716c774b6c090fbc599223b56@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260627T083000
+DTEND;TZID=America/Los_Angeles:20260627T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:a4c994e8d237a59a3a982cf60cdf50f783c56b2f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260627T091500
+DTEND;TZID=America/Los_Angeles:20260627T101500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:15d3564525fa170394c8e721af686f0e1a6ce070@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Ayane Coaching: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260627T103000
+DTEND;TZID=America/Los_Angeles:20260627T113000
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:aff4b4a5a78073476411f46b41ff433b477b3b08@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: Chane String Quartet
+DTSTART;TZID=America/Los_Angeles:20260627T131500
+DTEND;TZID=America/Los_Angeles:20260627T141500
+LOCATION:DRH
+END:VEVENT
+BEGIN:VEVENT
+UID:1cd76de77fd8108e58e6d1bce869950c1c03109f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:AZURE Family Concert
+DTSTART;TZID=America/Los_Angeles:20260627T140000
+DTEND;TZID=America/Los_Angeles:20260627T150000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:CRH
+END:VEVENT
+BEGIN:VEVENT
+UID:6b0ed35713690f92a48ce5a4f5e2a14fd1f9691a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:International Showcase
+DTSTART;TZID=America/Los_Angeles:20260627T170000
+DTEND;TZID=America/Los_Angeles:20260627T190000
+LOCATION:Bing Concert Hall
+DESCRIPTION:details TBD
+END:VEVENT
+BEGIN:VEVENT
+UID:8e33dc26e9a3db52396bfeb7806614ec08f18575@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Post Showcase Pizza Party
+DTSTART;TZID=America/Los_Angeles:20260627T190000
+DTEND;TZID=America/Los_Angeles:20260627T200000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:5a550b80d1aa5d0af242ddbb8bd0cdfa6feec426@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Munger Check Out
+DTSTART;TZID=America/Los_Angeles:20260628T080000
+DTEND;TZID=America/Los_Angeles:20260628T100000
+END:VEVENT
+BEGIN:VEVENT
+UID:c6197f1d4c066d8b1230178ab68e07c44d8d2be3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Shutter falls! on Group Photo
+DTSTART;TZID=America/Los_Angeles:20260628T103000
+DTEND;TZID=America/Los_Angeles:20260628T110000
+LOCATION:in front of Braun
+END:VEVENT
+BEGIN:VEVENT
+UID:c10b07fc3a1a6f49b5da5bdb992f0fa6b97d5f26@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Big Finale!
+DTSTART;TZID=America/Los_Angeles:20260628T110000
+DTEND;TZID=America/Los_Angeles:20260628T154500
+LOCATION:Campbell Recital Hall
+DESCRIPTION:all participants perform\nw/ refreshments!
+END:VEVENT
+BEGIN:VEVENT
+UID:759f5113b474c461664432f8f8c2da789a21b98f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:WRAP PARTY
+DTSTART;TZID=America/Los_Angeles:20260628T154500
+DTEND;TZID=America/Los_Angeles:20260628T193000
+LOCATION:Home of Jim and Carie Zehnder\, 8 E Creek Pl\, Menlo Park\, CA 940
+ 25
+DESCRIPTION:Bring your instruments\nor just come by to enjoy a\ncold one wi
+ th seminar\nfriends new and old.\nIf you have an evening\nfight to catch\,
+  bring your\nluggage and catch an\nuber to the airport.
+END:VEVENT
+END:VCALENDAR

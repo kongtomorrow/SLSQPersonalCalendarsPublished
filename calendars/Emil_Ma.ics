@@ -1,0 +1,570 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SLSQ//Personal Calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SLSQ - Emil Ma
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:8a2935fdfb0b8803d2b486232881002843791624@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:On Campus Housing Check In
+DTSTART;TZID=America/Los_Angeles:20260619T170000
+DTEND;TZID=America/Los_Angeles:20260619T200000
+LOCATION:Front Desk at Munger
+DESCRIPTION:(Details coming)\nMunger Check In
+END:VEVENT
+BEGIN:VEVENT
+UID:29e1e0940d14032d1ded970b87484772a2d7c9d8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Seminar Registration
+DTSTART;TZID=America/Los_Angeles:20260620T090000
+DTEND;TZID=America/Los_Angeles:20260620T113000
+LOCATION:Campbell Recital Hall Lobby
+DESCRIPTION:Schedule Here\n(You will have access to\nyour studio to rehears
+ e
+END:VEVENT
+BEGIN:VEVENT
+UID:38e297c238a790a4145fbd0fe17b2cfe0251660b@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Welcome Meeting
+DTSTART;TZID=America/Los_Angeles:20260620T130000
+DTEND;TZID=America/Los_Angeles:20260620T140000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:62a3c6a7a1927b3621ded13183d7909d1e9430ed@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260620T140000
+DTEND;TZID=America/Los_Angeles:20260620T170000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:2445828fe8064ce7e2a0423775731c18d229926c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:chamber orch reading
+DTSTART;TZID=America/Los_Angeles:20260620T170000
+DTEND;TZID=America/Los_Angeles:20260620T180000
+LOCATION:Dinkelspiel Stage
+DESCRIPTION:chamber orch reading
+END:VEVENT
+BEGIN:VEVENT
+UID:55f88b0c1185e620efcb65bebeaa7c3d5c6b2ec9@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner -be our guests!
+DTSTART;TZID=America/Los_Angeles:20260620T180000
+DTEND;TZID=America/Los_Angeles:20260620T190000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:1f7a818631f861a387a7e9b5b391d81940ce6aff@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260620T190000
+DTEND;TZID=America/Los_Angeles:20260620T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:691521d4277a2a19f4191f0f8ac85e1bf95b9754@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Continental Breakfast
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T094500
+LOCATION:Campbell Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:f89754d89160ad24e7ec24cde28ead96254f437d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T103000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:f134daf8887dec8c866c082619f3e786856925d9@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Presentation
+DTSTART;TZID=America/Los_Angeles:20260621T110000
+DTEND;TZID=America/Los_Angeles:20260621T120000
+LOCATION:Jack Trip CCRMA Stage
+DESCRIPTION:Chris Chafe
+END:VEVENT
+BEGIN:VEVENT
+UID:7b8ae6a88a474e9e81b5a952bdab9b49d9ffc3c6@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Light Lunch Provided
+DTSTART;TZID=America/Los_Angeles:20260621T120000
+DTEND;TZID=America/Los_Angeles:20260621T130000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:cb524286d8dcd94b03f06d3c04b555877317f240@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T130000
+DTEND;TZID=America/Los_Angeles:20260621T143000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:c7ec6cc8037fb6f3897e83ea09f8230e961a1be4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Spotlight on Physical Wellness
+DTSTART;TZID=America/Los_Angeles:20260621T143000
+DTEND;TZID=America/Los_Angeles:20260621T160000
+LOCATION:Campbell Recital Hall and Braun Courtyard
+DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
+END:VEVENT
+BEGIN:VEVENT
+UID:4f4db26c079d8bc9f3c02ebd18657f37f6cf5b43@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T160000
+DTEND;TZID=America/Los_Angeles:20260621T180000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:288b3e3c687c07b060b6b9cf851a4ea8b939ee29@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T190000
+DTEND;TZID=America/Los_Angeles:20260621T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:ee2a88405aec610d666b282534bd610601cf9078@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260622T083000
+DTEND;TZID=America/Los_Angeles:20260622T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:738ea3d7e7b41b473114409622fcf28590d9d5c3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pedja Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260622T091500
+DTEND;TZID=America/Los_Angeles:20260622T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:6f12a335236f0c59f10fcf5f6cdd9082f006e411@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260622T103000
+DTEND;TZID=America/Los_Angeles:20260622T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:d648d949e89f9be8086ac039ca95b96dd8c68ccc@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #1
+DTSTART;TZID=America/Los_Angeles:20260622T120000
+DTEND;TZID=America/Los_Angeles:20260622T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Dvorak 6tet: Owen Dalby\, Daniel Phillips\, Steven Tenenbom\, W
+ illiam Coleman\, Paul Wiancko\, Hannah Collins\nRoad Movies: Alexi Kenney\
+ , John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:a7246f7ecf004937e42a5ae92439653c97b7b8db@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Owen Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260622T140000
+DTEND;TZID=America/Los_Angeles:20260622T150000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:06a104b38f92c286f17574a4665d1a6cdd7272cb@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260622T151500
+DTEND;TZID=America/Los_Angeles:20260622T161500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:e096d1fc83e6c0f2ee26699af6b4ae78de380937@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 1A 1B
+DTSTART;TZID=America/Los_Angeles:20260622T163000
+DTEND;TZID=America/Los_Angeles:20260622T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying: Murra
+ y Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Melissa
+  Lam)\, Pinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\, Ka
+ tarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, M
+ aya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B
+ \nLocation: Dinkelspiel Stage\nPlaying: Ethea Trio (Shintaro Taneda\, Ayou
+ n Alexandra Kim\, Jon Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, 
+ Ben Parks\, Cyrus Behroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, E
+ mma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, W
+ illiam Coleman
+END:VEVENT
+BEGIN:VEVENT
+UID:1b1fc1b7b1a34ec0b6cb45d5507ebf44f84b25ee@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260622T190000
+DTEND;TZID=America/Los_Angeles:20260622T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:1cdf72df9ba2aacf9cb44065dfa9bc7e7a3e7ab2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260623T083000
+DTEND;TZID=America/Los_Angeles:20260623T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:0481010e41f7008c9822c3f402ac1ba5767a6bd5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260623T091500
+DTEND;TZID=America/Los_Angeles:20260623T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:4f19f26b9c3bd3b6f4c5ef8dc8f98111da48ead4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260623T103000
+DTEND;TZID=America/Los_Angeles:20260623T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:1c4b65feaef6c2d284fe8ccae91ccea0a5f8af89@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260623T131500
+DTEND;TZID=America/Los_Angeles:20260623T141500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:d59df18b67be96fad5fd14f66e4d50c9d1354a42@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Owen Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260623T143000
+DTEND;TZID=America/Los_Angeles:20260623T153000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:b4bbcb1e91f8725035f22dc612d74a34ce9bc990@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Special Presentation
+DTSTART;TZID=America/Los_Angeles:20260623T160000
+DTEND;TZID=America/Los_Angeles:20260623T173000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
+  & Conservation\nVisiting Scholar\, Oxford University
+END:VEVENT
+BEGIN:VEVENT
+UID:58fe55abff2ab97db2703adc70dd590174778804@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260623T190000
+DTEND;TZID=America/Los_Angeles:20260623T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:c3a961721d44321f629f546ba081a58986ad1dcd@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260624T083000
+DTEND;TZID=America/Los_Angeles:20260624T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:f62c61629d00e6042e82e5ddccee4dd4fbca8097@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pedja Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260624T091500
+DTEND;TZID=America/Los_Angeles:20260624T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:c2528e2b83548c4c7419cbdaf9f0e3a84f426746@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260624T103000
+DTEND;TZID=America/Los_Angeles:20260624T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:ec4440d46e28d412060b62c7d7a705d2cbe2f68f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #2
+DTSTART;TZID=America/Los_Angeles:20260624T120000
+DTEND;TZID=America/Los_Angeles:20260624T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
+ bom\, Lesley Robertson\, Nina Lee\, Anthony Manzo\, Pedja Muzijevic\nMozar
+ t 5tet: Alexi Kenney\, Owen Dalby\, Ayane Kozasa\, Lesley Robertson\, Nina
+  Lee\nRebecca Clarke duo: Ayane Kozasa\, Todd Palmer
+END:VEVENT
+BEGIN:VEVENT
+UID:d9d752ab5776b4a02e96572069b5a653cef6e93c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Owen Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260624T140000
+DTEND;TZID=America/Los_Angeles:20260624T150000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:f77a820788ab0a0e82a28647985fda068f169543@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260624T151500
+DTEND;TZID=America/Los_Angeles:20260624T161500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:551f7383505774c4995e5e5dcd9a6ce15d7809c8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 2A\, 2B
+DTSTART;TZID=America/Los_Angeles:20260624T163000
+DTEND;TZID=America/Los_Angeles:20260624T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolor
+ es Quintet (AM) (Aaron Wilk\, Misha Rafiee\, Gregorio Lopes\, James Welch\
+ , Persis Drell)\, Wishel Trio (Aaron Wilk\, Lloyd Minor\, Neir Eshel)\nCoa
+ ching: Alexi Kenney\, Stephen Prutsman\, Nina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:1527a39d0a5b72733d0934019c724e89d52462d0@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260624T190000
+DTEND;TZID=America/Los_Angeles:20260624T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:107c1b29480c0e8666d75958d29e245df0586d38@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260625T083000
+DTEND;TZID=America/Los_Angeles:20260625T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:415d27cce8855751adc441245982c39f3a1500fe@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260625T091500
+DTEND;TZID=America/Los_Angeles:20260625T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:8bdc287d73c7269501cb365bc66f84404d9f3766@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260625T103000
+DTEND;TZID=America/Los_Angeles:20260625T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:71c2cacce770f4462b983c67d0c6d3b067683aac@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch in Courtyard!
+DTSTART;TZID=America/Los_Angeles:20260625T113000
+DTEND;TZID=America/Los_Angeles:20260625T120000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:18c021f280b81b046c4167131a499f7aaa5b2efa@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:MIghty like a Moose
+DTSTART;TZID=America/Los_Angeles:20260625T121500
+DTEND;TZID=America/Los_Angeles:20260625T130000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Film Fun with Prutsman/Dolphins
+END:VEVENT
+BEGIN:VEVENT
+UID:82e9a07e2a3da4dae7c2fe91a297bb518236e228@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260625T131500
+DTEND;TZID=America/Los_Angeles:20260625T141500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:013fd7d3a9015a295228e0ba2f7a1b8ad8f4e33c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Owen Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260625T143000
+DTEND;TZID=America/Los_Angeles:20260625T153000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:e90fec1ed9b64b08dd0b4145778dd575ccc470de@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 3A\, 3B\, 3C
+DTSTART;TZID=America/Los_Angeles:20260625T160000
+DTEND;TZID=America/Los_Angeles:20260625T173000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:location subject to change\n(potentially 103 if needed)
+END:VEVENT
+BEGIN:VEVENT
+UID:a9d95d1088e5699def0b1cfe993fd64bad22c68f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T200000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:7a2ebb47b987005972fa6c48f2b34d4713a06ab7@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260626T083000
+DTEND;TZID=America/Los_Angeles:20260626T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:6144c01ecfabc83c8eef5a93408cc0b54f3dc627@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pedja Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260626T091500
+DTEND;TZID=America/Los_Angeles:20260626T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:a039067498cb9090b2800814d0e18ad543b33621@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260626T103000
+DTEND;TZID=America/Los_Angeles:20260626T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:25f759e79e17fce83ff1d88dba6800c5efadc88d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #3
+DTSTART;TZID=America/Los_Angeles:20260626T120000
+DTEND;TZID=America/Los_Angeles:20260626T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Mendelssohn 6tet: Daniel Phillips\, William Coleman\, Dimitri M
+ urrath\, Hannah Collins\, Anthony Manzo\, Pedja Muzijevic\nRule of Three: 
+ Owen Dalby\, Daniel Phillips\, Steven Tenenbom\nTchaikovsky: Todd Palmer\,
+  Owen Dalby\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:4ba2972d726b74e74bfd37bbf524d6ee3b4e9921@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Owen Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260626T140000
+DTEND;TZID=America/Los_Angeles:20260626T150000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:ac6ff50a5c60afb37f4fbd6b3ac2ea42bd176512@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260626T151500
+DTEND;TZID=America/Los_Angeles:20260626T161500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:f55eb2b3e490afb540bbedf4019a49e3c7098c6c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Epic Sight Reading Party!
+DTSTART;TZID=America/Los_Angeles:20260626T173000
+DTEND;TZID=America/Los_Angeles:20260626T200000
+LOCATION:776 Dolores St\, Stanford\, CA
+DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
+END:VEVENT
+BEGIN:VEVENT
+UID:4bff323ea7e009655bea2d7385ecfe7cb9e1e571@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260627T083000
+DTEND;TZID=America/Los_Angeles:20260627T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:e06fcca4c93b76e4239d651d6dc497e2ab6944e3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260627T091500
+DTEND;TZID=America/Los_Angeles:20260627T101500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:c9276ed92565d5fd2b75cca11634b6c8f453f1d8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Hannah Coaching: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260627T103000
+DTEND;TZID=America/Los_Angeles:20260627T113000
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:ebc02dfc4d3510543bd7fcc794b4712bd7eed60d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Rehearsal: The Quarktet
+DTSTART;TZID=America/Los_Angeles:20260627T131500
+DTEND;TZID=America/Los_Angeles:20260627T141500
+LOCATION:201
+END:VEVENT
+BEGIN:VEVENT
+UID:cfa313f15731c360c493a97060b06eaffa7c2f22@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:AZURE Family Concert
+DTSTART;TZID=America/Los_Angeles:20260627T140000
+DTEND;TZID=America/Los_Angeles:20260627T150000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:CRH
+END:VEVENT
+BEGIN:VEVENT
+UID:dfb2be18a0b4460c1df2153e3cace9c1b7a889f0@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:International Showcase
+DTSTART;TZID=America/Los_Angeles:20260627T170000
+DTEND;TZID=America/Los_Angeles:20260627T190000
+LOCATION:Bing Concert Hall
+DESCRIPTION:details TBD
+END:VEVENT
+BEGIN:VEVENT
+UID:694986e204acaac99372fe9a16a5ad0f00f69dd3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Post Showcase Pizza Party
+DTSTART;TZID=America/Los_Angeles:20260627T190000
+DTEND;TZID=America/Los_Angeles:20260627T200000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:187bd8e825087e10d7d98bf4396264dc430b7bc2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Munger Check Out
+DTSTART;TZID=America/Los_Angeles:20260628T080000
+DTEND;TZID=America/Los_Angeles:20260628T100000
+END:VEVENT
+BEGIN:VEVENT
+UID:b8a3870cb3d2b73ff11caf4e819a1bdab79c7e7e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Shutter falls! on Group Photo
+DTSTART;TZID=America/Los_Angeles:20260628T103000
+DTEND;TZID=America/Los_Angeles:20260628T110000
+LOCATION:in front of Braun
+END:VEVENT
+BEGIN:VEVENT
+UID:53d6d6db9e0d6a6847b3549c666902cf53db8bf5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Big Finale!
+DTSTART;TZID=America/Los_Angeles:20260628T110000
+DTEND;TZID=America/Los_Angeles:20260628T154500
+LOCATION:Campbell Recital Hall
+DESCRIPTION:all participants perform\nw/ refreshments!
+END:VEVENT
+BEGIN:VEVENT
+UID:887007ce81d8d777d8834d601f4def8d73ae8c33@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:WRAP PARTY
+DTSTART;TZID=America/Los_Angeles:20260628T154500
+DTEND;TZID=America/Los_Angeles:20260628T193000
+LOCATION:Home of Jim and Carie Zehnder\, 8 E Creek Pl\, Menlo Park\, CA 940
+ 25
+DESCRIPTION:Bring your instruments\nor just come by to enjoy a\ncold one wi
+ th seminar\nfriends new and old.\nIf you have an evening\nfight to catch\,
+  bring your\nluggage and catch an\nuber to the airport.
+END:VEVENT
+END:VCALENDAR

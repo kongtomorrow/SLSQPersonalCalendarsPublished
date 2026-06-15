@@ -1,0 +1,554 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SLSQ//Personal Calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SLSQ - Alexi Kenney
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:aa5d86de23f8c622ca4fdaaa731ee59c689b3c43@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:On Campus Housing Check In
+DTSTART;TZID=America/Los_Angeles:20260619T170000
+DTEND;TZID=America/Los_Angeles:20260619T200000
+LOCATION:Front Desk at Munger
+DESCRIPTION:(Details coming)\nMunger Check In
+END:VEVENT
+BEGIN:VEVENT
+UID:f24d441195e424d0f2cfe28b95bc3c4e54b89847@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Seminar Registration
+DTSTART;TZID=America/Los_Angeles:20260620T090000
+DTEND;TZID=America/Los_Angeles:20260620T113000
+LOCATION:Campbell Recital Hall Lobby
+DESCRIPTION:Schedule Here\n(You will have access to\nyour studio to rehears
+ e
+END:VEVENT
+BEGIN:VEVENT
+UID:56fdb13b5fa989f94051438b1ca2a3e72b4aeda7@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Welcome Meeting
+DTSTART;TZID=America/Los_Angeles:20260620T130000
+DTEND;TZID=America/Los_Angeles:20260620T140000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:ddf452acde214b58482d0225cbc86f6a60b4d4f3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Road Movies Faculty Rehearsal #1
+DTSTART;TZID=America/Los_Angeles:20260620T143000
+DTEND;TZID=America/Los_Angeles:20260620T163000
+LOCATION:N/A
+DESCRIPTION:Alexi Kenney\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:4414f92cc8932045134251356e6848acccfc4ae6@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:chamber orch reading
+DTSTART;TZID=America/Los_Angeles:20260620T170000
+DTEND;TZID=America/Los_Angeles:20260620T180000
+LOCATION:Dinkelspiel Stage
+DESCRIPTION:chamber orch reading
+END:VEVENT
+BEGIN:VEVENT
+UID:0ac127945be79c4c8ac03575a5fe172e78d19ee2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner -be our guests!
+DTSTART;TZID=America/Los_Angeles:20260620T180000
+DTEND;TZID=America/Los_Angeles:20260620T190000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:f1256a15b31b0e7eb0782a8ec0e3052b6858b77c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Continental Breakfast
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T094500
+LOCATION:Campbell Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:7663dbecde9aca0fbc0b6f5883ff93ad98e911a7@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Presentation
+DTSTART;TZID=America/Los_Angeles:20260621T110000
+DTEND;TZID=America/Los_Angeles:20260621T120000
+LOCATION:Jack Trip CCRMA Stage
+DESCRIPTION:Chris Chafe
+END:VEVENT
+BEGIN:VEVENT
+UID:73990c40065def7c878b9f53ec6f7f8723c61c9b@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Light Lunch Provided
+DTSTART;TZID=America/Los_Angeles:20260621T120000
+DTEND;TZID=America/Los_Angeles:20260621T130000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:d7ac57c856615166e54553dd2ba8b0450a131643@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Road Movies Faculty Rehearsal #2
+DTSTART;TZID=America/Los_Angeles:20260621T130000
+DTEND;TZID=America/Los_Angeles:20260621T143000
+LOCATION:N/A
+DESCRIPTION:Alexi Kenney\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:d5163602ae4132f468a83329a3476bb2c41335c0@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Spotlight on Physical Wellness
+DTSTART;TZID=America/Los_Angeles:20260621T143000
+DTEND;TZID=America/Los_Angeles:20260621T160000
+LOCATION:Campbell Recital Hall and Braun Courtyard
+DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
+END:VEVENT
+BEGIN:VEVENT
+UID:47477e9aeb25446a49a79a618f16006ac8fe67ae@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Mozart 5tet Faculty Rehearsal #1
+DTSTART;TZID=America/Los_Angeles:20260621T163000
+DTEND;TZID=America/Los_Angeles:20260621T180000
+LOCATION:At Dolores Poolhouse -TBC
+DESCRIPTION:Owen Dalby\, Alexi Kenney\, Ayane Kozasa\, Lesley Robertson\, N
+ ina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:036a7c6449e58b5e88a22869ac7170e15ac56a5a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner /evening rehearsals at Persis'
+DTSTART;TZID=America/Los_Angeles:20260621T180000
+DTEND;TZID=America/Los_Angeles:20260621T190000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:f0098b5e39c137faf3dfa08f28794390c60fe144@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260622T083000
+DTEND;TZID=America/Los_Angeles:20260622T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:9c4c33bb92c31f31ea35541112b2bbba0d28faf8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Dolores Quintet (AM)
+DTSTART;TZID=America/Los_Angeles:20260622T091500
+DTEND;TZID=America/Los_Angeles:20260622T101500
+LOCATION:203
+END:VEVENT
+BEGIN:VEVENT
+UID:81b0c9ee3687101b1424f84a7379e39049ee20b6@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Playing Faculty Concert #1
+DTSTART;TZID=America/Los_Angeles:20260622T120000
+DTEND;TZID=America/Los_Angeles:20260622T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Dvorak 6tet: Owen Dalby\, Daniel Phillips\, Steven Tenenbom\, W
+ illiam Coleman\, Paul Wiancko\, Hannah Collins\nRoad Movies: Alexi Kenney\
+ , John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:49c9cc8f042d779fca86c8f1643ffcf43c3e8f79@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260622T130000
+DTEND;TZID=America/Los_Angeles:20260622T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:e508c9d8e81a7602d773f9dcd7831c5db2fa72b9@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Murray Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T140000
+DTEND;TZID=America/Los_Angeles:20260622T150000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:ae9f501d2fc770b3daad6bb4c04c1c30376532a4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Katarina String Quartet
+DTSTART;TZID=America/Los_Angeles:20260622T151500
+DTEND;TZID=America/Los_Angeles:20260622T161500
+LOCATION:208
+END:VEVENT
+BEGIN:VEVENT
+UID:7972054c1b6a01e6c34102a5081468d1cba4dedd@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 1A 1B
+DTSTART;TZID=America/Los_Angeles:20260622T163000
+DTEND;TZID=America/Los_Angeles:20260622T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying: Murra
+ y Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Melissa
+  Lam)\, Pinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\, Ka
+ tarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, M
+ aya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B
+ \nLocation: Dinkelspiel Stage\nPlaying: Ethea Trio (Shintaro Taneda\, Ayou
+ n Alexandra Kim\, Jon Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, 
+ Ben Parks\, Cyrus Behroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, E
+ mma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, W
+ illiam Coleman
+END:VEVENT
+BEGIN:VEVENT
+UID:b45dc6832b7f67d50dbf730a35acc45c550704e5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Mozart 5tet Faculty Rehearsal #2
+DTSTART;TZID=America/Los_Angeles:20260622T163000
+DTEND;TZID=America/Los_Angeles:20260622T180000
+LOCATION:N/A
+DESCRIPTION:Owen Dalby\, Alexi Kenney\, Ayane Kozasa\, Lesley Robertson\, N
+ ina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:bd834ae1545946b1ad17ed26cd3bd3095eda6a2f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260623T083000
+DTEND;TZID=America/Los_Angeles:20260623T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:dfd488c5fe11ffe0f63989374af19ca980d0216d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Meck Kwarteck
+DTSTART;TZID=America/Los_Angeles:20260623T091500
+DTEND;TZID=America/Los_Angeles:20260623T101500
+LOCATION:131
+END:VEVENT
+BEGIN:VEVENT
+UID:54c2d785c42f8f311e9daf846dd513a35d878bfd@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: WaMaTachou Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T103000
+DTEND;TZID=America/Los_Angeles:20260623T113000
+LOCATION:221
+END:VEVENT
+BEGIN:VEVENT
+UID:6737c1c7717d18739e6ab8ed8ba56eed872b372f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: The Abelian Group
+DTSTART;TZID=America/Los_Angeles:20260623T131500
+DTEND;TZID=America/Los_Angeles:20260623T141500
+LOCATION:207
+END:VEVENT
+BEGIN:VEVENT
+UID:5f65c9d62a4582a0664c00488edbae44f58e9857@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: The Amiche Quartet
+DTSTART;TZID=America/Los_Angeles:20260623T143000
+DTEND;TZID=America/Los_Angeles:20260623T153000
+LOCATION:215
+END:VEVENT
+BEGIN:VEVENT
+UID:1f1014b8e54fa05db5b5baa1d822ff34c014ff1a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Special Presentation
+DTSTART;TZID=America/Los_Angeles:20260623T160000
+DTEND;TZID=America/Los_Angeles:20260623T173000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
+  & Conservation\nVisiting Scholar\, Oxford University
+END:VEVENT
+BEGIN:VEVENT
+UID:1ddee05ac692158acbcd06c6ae66c341c5225681@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty & Guests
+DTSTART;TZID=America/Los_Angeles:20260623T180000
+DTEND;TZID=America/Los_Angeles:20260623T190000
+LOCATION:Home of Joan & David
+DESCRIPTION:meeting/dinner\n(discuss/determine Sat/Bing program)
+END:VEVENT
+BEGIN:VEVENT
+UID:f412f808a12a900253efa6a0574b7c17a495162f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Mozart 5tet Faculty Rehearsal #3
+DTSTART;TZID=America/Los_Angeles:20260623T190000
+DTEND;TZID=America/Los_Angeles:20260623T200000
+LOCATION:N/A
+DESCRIPTION:Owen Dalby\, Alexi Kenney\, Ayane Kozasa\, Lesley Robertson\, N
+ ina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:a2008485ecb237f20161d0fbb0548a08e36b10dc@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260624T083000
+DTEND;TZID=America/Los_Angeles:20260624T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:665224b30c487af38d03de8d6791cece599b7e6f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Dolores Quintet (AM)
+DTSTART;TZID=America/Los_Angeles:20260624T091500
+DTEND;TZID=America/Los_Angeles:20260624T101500
+LOCATION:203
+END:VEVENT
+BEGIN:VEVENT
+UID:db0639ef58cf47f07bf8cd8c340efca35643d1c5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Playing Faculty Concert #2
+DTSTART;TZID=America/Los_Angeles:20260624T120000
+DTEND;TZID=America/Los_Angeles:20260624T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
+ bom\, Lesley Robertson\, Nina Lee\, Anthony Manzo\, Pedja Muzijevic\nMozar
+ t 5tet: Alexi Kenney\, Owen Dalby\, Ayane Kozasa\, Lesley Robertson\, Nina
+  Lee\nRebecca Clarke duo: Ayane Kozasa\, Todd Palmer
+END:VEVENT
+BEGIN:VEVENT
+UID:aca1cd9046336fbe7d14dd551d816616b13fd1fb@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260624T130000
+DTEND;TZID=America/Los_Angeles:20260624T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:dbec8e5fee8408ab16227c360db7b7a09f19df3d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Murray Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T140000
+DTEND;TZID=America/Los_Angeles:20260624T150000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:71480ec09de76da8d2c2cf84ee2262495cd1515e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Katarina String Quartet
+DTSTART;TZID=America/Los_Angeles:20260624T151500
+DTEND;TZID=America/Los_Angeles:20260624T161500
+LOCATION:208
+END:VEVENT
+BEGIN:VEVENT
+UID:4de64ae54947ad757d37e5e8bd071349ee4cebf7@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Coaching Masterclass 2A
+DTSTART;TZID=America/Los_Angeles:20260624T163000
+DTEND;TZID=America/Los_Angeles:20260624T180000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Playing: Dolores Quintet (AM) (Aaron Wilk\, Misha Rafiee\, Greg
+ orio Lopes\, James Welch\, Persis Drell)\, Wishel Trio (Aaron Wilk\, Lloyd
+  Minor\, Neir Eshel)\nCoaching: Alexi Kenney\, Stephen Prutsman\, Nina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:1d095daec446146ab2dbabb3f86d84c86e3f5c0f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260625T083000
+DTEND;TZID=America/Los_Angeles:20260625T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:fe035e2907af23ef0c89812b4aa8ba37d581e682@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Meck Kwarteck
+DTSTART;TZID=America/Los_Angeles:20260625T091500
+DTEND;TZID=America/Los_Angeles:20260625T101500
+LOCATION:131
+END:VEVENT
+BEGIN:VEVENT
+UID:bc8f13ad17e19ee3609e6c23aceded9f105365c5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: WaMaTachou Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T103000
+DTEND;TZID=America/Los_Angeles:20260625T113000
+LOCATION:221
+END:VEVENT
+BEGIN:VEVENT
+UID:6fa4a92757d1bd1552b8a4214f0660eb33a82429@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch in Courtyard!
+DTSTART;TZID=America/Los_Angeles:20260625T113000
+DTEND;TZID=America/Los_Angeles:20260625T120000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:f43b453fff9618ba2da66ba4d4f46e1085480c97@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:MIghty like a Moose
+DTSTART;TZID=America/Los_Angeles:20260625T121500
+DTEND;TZID=America/Los_Angeles:20260625T130000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Film Fun with Prutsman/Dolphins
+END:VEVENT
+BEGIN:VEVENT
+UID:083078f63b7a2abe645490b574e77a3a75319989@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: The Abelian Group
+DTSTART;TZID=America/Los_Angeles:20260625T131500
+DTEND;TZID=America/Los_Angeles:20260625T141500
+LOCATION:207
+END:VEVENT
+BEGIN:VEVENT
+UID:c38001bacb8cf651a4848f1814000bca38c830ef@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: The Amiche Quartet
+DTSTART;TZID=America/Los_Angeles:20260625T143000
+DTEND;TZID=America/Los_Angeles:20260625T153000
+LOCATION:215
+END:VEVENT
+BEGIN:VEVENT
+UID:ce5461fe0894a38362c78bb3feacb91d9b4a0ad0@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 3A\, 3B\, 3C
+DTSTART;TZID=America/Los_Angeles:20260625T160000
+DTEND;TZID=America/Los_Angeles:20260625T173000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:location subject to change\n(potentially 103 if needed)
+END:VEVENT
+BEGIN:VEVENT
+UID:a79da1aedd39fe14355046729331c3f036b48b24@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260626T083000
+DTEND;TZID=America/Los_Angeles:20260626T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:7ec9af85d05e5c00774e7d86640a6ca2ea96e3ae@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Dolores Quintet (AM)
+DTSTART;TZID=America/Los_Angeles:20260626T091500
+DTEND;TZID=America/Los_Angeles:20260626T101500
+LOCATION:203
+END:VEVENT
+BEGIN:VEVENT
+UID:d4fd472b260d0449b48223c1f070be7818edb4e6@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #3
+DTSTART;TZID=America/Los_Angeles:20260626T120000
+DTEND;TZID=America/Los_Angeles:20260626T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Mendelssohn 6tet: Daniel Phillips\, William Coleman\, Dimitri M
+ urrath\, Hannah Collins\, Anthony Manzo\, Pedja Muzijevic\nRule of Three: 
+ Owen Dalby\, Daniel Phillips\, Steven Tenenbom\nTchaikovsky: Todd Palmer\,
+  Owen Dalby\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:05f14fe159edcbd34851f5ad0598a48873d2de9b@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260626T130000
+DTEND;TZID=America/Los_Angeles:20260626T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:a6ffab19a38a10aa2cd9d2f67b21237be591cc60@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Murray Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T140000
+DTEND;TZID=America/Los_Angeles:20260626T150000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:c016195e3f62ec71d066e3c6d3f60cf7f5c28f18@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Katarina String Quartet
+DTSTART;TZID=America/Los_Angeles:20260626T151500
+DTEND;TZID=America/Los_Angeles:20260626T161500
+LOCATION:208
+END:VEVENT
+BEGIN:VEVENT
+UID:324bbc063aa1d3b779acd12f434785c7e435db2a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Epic Sight Reading Party!
+DTSTART;TZID=America/Los_Angeles:20260626T173000
+DTEND;TZID=America/Los_Angeles:20260626T200000
+LOCATION:776 Dolores St\, Stanford\, CA
+DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
+END:VEVENT
+BEGIN:VEVENT
+UID:d0b507b9b0930912ce888370c81b509521807762@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260627T083000
+DTEND;TZID=America/Los_Angeles:20260627T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:cd1cf391f65a4443a9d5158027e51befe7b641b2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: Meck Kwarteck
+DTSTART;TZID=America/Los_Angeles:20260627T091500
+DTEND;TZID=America/Los_Angeles:20260627T101500
+LOCATION:131
+END:VEVENT
+BEGIN:VEVENT
+UID:b48ba359f4cbbd7f521bf996ee11bd8109daf363@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: WaMaTachou Quartet
+DTSTART;TZID=America/Los_Angeles:20260627T103000
+DTEND;TZID=America/Los_Angeles:20260627T113000
+LOCATION:221
+END:VEVENT
+BEGIN:VEVENT
+UID:34dac57e065c7d7830f2948bc784f1755cb5ac81@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Alexi Coaching: The Abelian Group
+DTSTART;TZID=America/Los_Angeles:20260627T131500
+DTEND;TZID=America/Los_Angeles:20260627T141500
+LOCATION:207
+END:VEVENT
+BEGIN:VEVENT
+UID:a3376d62e32580dc4566706e31dd7236b4a8f6c7@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:AZURE Family Concert
+DTSTART;TZID=America/Los_Angeles:20260627T140000
+DTEND;TZID=America/Los_Angeles:20260627T150000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:CRH
+END:VEVENT
+BEGIN:VEVENT
+UID:428283b804608815aed108503b49d997e0021521@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:International Showcase
+DTSTART;TZID=America/Los_Angeles:20260627T170000
+DTEND;TZID=America/Los_Angeles:20260627T190000
+LOCATION:Bing Concert Hall
+DESCRIPTION:details TBD
+END:VEVENT
+BEGIN:VEVENT
+UID:b8727e45c9e5a5a8dbf8d8ef44079b65d775ff46@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Post Showcase Pizza Party
+DTSTART;TZID=America/Los_Angeles:20260627T190000
+DTEND;TZID=America/Los_Angeles:20260627T200000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:b955a69ca28fbbba762d9aa9f0dfcfc28c8f1894@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Munger Check Out
+DTSTART;TZID=America/Los_Angeles:20260628T080000
+DTEND;TZID=America/Los_Angeles:20260628T100000
+END:VEVENT
+BEGIN:VEVENT
+UID:bf8352333d824f3c4a7c125a52d46b77878f653e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Shutter falls! on Group Photo
+DTSTART;TZID=America/Los_Angeles:20260628T103000
+DTEND;TZID=America/Los_Angeles:20260628T110000
+LOCATION:in front of Braun
+END:VEVENT
+BEGIN:VEVENT
+UID:a511ea328b82ea3e0c5185fbc9023020fbebb495@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Big Finale!
+DTSTART;TZID=America/Los_Angeles:20260628T110000
+DTEND;TZID=America/Los_Angeles:20260628T154500
+LOCATION:Campbell Recital Hall
+DESCRIPTION:all participants perform\nw/ refreshments!
+END:VEVENT
+BEGIN:VEVENT
+UID:9cec661e688b100c57f4b125fb5908d52b4536c5@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:WRAP PARTY
+DTSTART;TZID=America/Los_Angeles:20260628T154500
+DTEND;TZID=America/Los_Angeles:20260628T193000
+LOCATION:Home of Jim and Carie Zehnder\, 8 E Creek Pl\, Menlo Park\, CA 940
+ 25
+DESCRIPTION:Bring your instruments\nor just come by to enjoy a\ncold one wi
+ th seminar\nfriends new and old.\nIf you have an evening\nfight to catch\,
+  bring your\nluggage and catch an\nuber to the airport.
+END:VEVENT
+END:VCALENDAR

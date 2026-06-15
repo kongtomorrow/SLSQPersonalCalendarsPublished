@@ -1,0 +1,435 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SLSQ//Personal Calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SLSQ - Pamela Frank
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:98e119b9384bd118ceb24024ba25a451644d573a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:On Campus Housing Check In
+DTSTART;TZID=America/Los_Angeles:20260619T170000
+DTEND;TZID=America/Los_Angeles:20260619T200000
+LOCATION:Front Desk at Munger
+DESCRIPTION:(Details coming)\nMunger Check In
+END:VEVENT
+BEGIN:VEVENT
+UID:490884a6d40fded33ce7f23f0da98c32e7c1e4bf@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Seminar Registration
+DTSTART;TZID=America/Los_Angeles:20260620T090000
+DTEND;TZID=America/Los_Angeles:20260620T113000
+LOCATION:Campbell Recital Hall Lobby
+DESCRIPTION:Schedule Here\n(You will have access to\nyour studio to rehears
+ e
+END:VEVENT
+BEGIN:VEVENT
+UID:fc4f3da9b0fdd5c2ee0d6a9d89082651cba7f0f3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Welcome Meeting
+DTSTART;TZID=America/Los_Angeles:20260620T130000
+DTEND;TZID=America/Los_Angeles:20260620T140000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:4dd898d21992a438ad370a8bc28368ec1f521fac@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:chamber orch reading
+DTSTART;TZID=America/Los_Angeles:20260620T170000
+DTEND;TZID=America/Los_Angeles:20260620T180000
+LOCATION:Dinkelspiel Stage
+DESCRIPTION:chamber orch reading
+END:VEVENT
+BEGIN:VEVENT
+UID:e99496e8d7a196c9cfeef2b3bbf27a1d04284017@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner -be our guests!
+DTSTART;TZID=America/Los_Angeles:20260620T180000
+DTEND;TZID=America/Los_Angeles:20260620T190000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:691fa27ca9e6563f3e0c105b10c6a2f2a9fc7b09@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Continental Breakfast
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T094500
+LOCATION:Campbell Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:16f4fb1bfbb5841f64104351b52f50558e94d8ac@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Presentation
+DTSTART;TZID=America/Los_Angeles:20260621T110000
+DTEND;TZID=America/Los_Angeles:20260621T120000
+LOCATION:Jack Trip CCRMA Stage
+DESCRIPTION:Chris Chafe
+END:VEVENT
+BEGIN:VEVENT
+UID:36093962fa100d2863c8388084915aeccaf5b383@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Light Lunch Provided
+DTSTART;TZID=America/Los_Angeles:20260621T120000
+DTEND;TZID=America/Los_Angeles:20260621T130000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:e1d68cf0911db6f2b75203a92e72f8a2f2ce2e9c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Spotlight on Physical Wellness
+DTSTART;TZID=America/Los_Angeles:20260621T143000
+DTEND;TZID=America/Los_Angeles:20260621T160000
+LOCATION:Campbell Recital Hall and Braun Courtyard
+DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
+END:VEVENT
+BEGIN:VEVENT
+UID:7c2df6f4bc23f263bb3716bace64ec9326b85917@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Dinner /evening rehearsals at Persis'
+DTSTART;TZID=America/Los_Angeles:20260621T180000
+DTEND;TZID=America/Los_Angeles:20260621T190000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:cccca40615ca69f1e5f4e92c727e8483ab3d8caa@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260622T083000
+DTEND;TZID=America/Los_Angeles:20260622T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:7ebb6f74a824f6d599ff913f6f8d3788a1da3915@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #1
+DTSTART;TZID=America/Los_Angeles:20260622T120000
+DTEND;TZID=America/Los_Angeles:20260622T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Dvorak 6tet: Owen Dalby\, Daniel Phillips\, Steven Tenenbom\, W
+ illiam Coleman\, Paul Wiancko\, Hannah Collins\nRoad Movies: Alexi Kenney\
+ , John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:86129ef0005bc225be3c4ba32daf0dc24563a50d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260622T130000
+DTEND;TZID=America/Los_Angeles:20260622T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:1bf607a88f1fa9697f1e38ef2ce9edd9f9a95414@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: The Dolphins
+DTSTART;TZID=America/Los_Angeles:20260622T140000
+DTEND;TZID=America/Los_Angeles:20260622T150000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:06cae9e4eacb257e78c4a96c4305e227962ea457@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quartet 94
+DTSTART;TZID=America/Los_Angeles:20260622T151500
+DTEND;TZID=America/Los_Angeles:20260622T161500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:a4b8b03ca46f6db4e01046320116d65a7896211d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 1A 1B
+DTSTART;TZID=America/Los_Angeles:20260622T163000
+DTEND;TZID=America/Los_Angeles:20260622T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying: Murra
+ y Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Melissa
+  Lam)\, Pinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\, Ka
+ tarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, M
+ aya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B
+ \nLocation: Dinkelspiel Stage\nPlaying: Ethea Trio (Shintaro Taneda\, Ayou
+ n Alexandra Kim\, Jon Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, 
+ Ben Parks\, Cyrus Behroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, E
+ mma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, W
+ illiam Coleman
+END:VEVENT
+BEGIN:VEVENT
+UID:4c1c893d5eb0340d795098d67eb5dbec6e998068@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260623T083000
+DTEND;TZID=America/Los_Angeles:20260623T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:a786a8f042ef1343d8cd329658e3008cf53a0049@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quail 4tet
+DTSTART;TZID=America/Los_Angeles:20260623T131500
+DTEND;TZID=America/Los_Angeles:20260623T141500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:7faeb8da0e32abd9d301302faead21158e9dbb4a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: 8tet with Dolores 4
+DTSTART;TZID=America/Los_Angeles:20260623T143000
+DTEND;TZID=America/Los_Angeles:20260623T153000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:deab5df3033b7fe033d1e95c44f4949dc06a9db0@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Special Presentation
+DTSTART;TZID=America/Los_Angeles:20260623T160000
+DTEND;TZID=America/Los_Angeles:20260623T173000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
+  & Conservation\nVisiting Scholar\, Oxford University
+END:VEVENT
+BEGIN:VEVENT
+UID:e3c79e1bdba2385957fdb797968bc1672e41fe06@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty & Guests
+DTSTART;TZID=America/Los_Angeles:20260623T180000
+DTEND;TZID=America/Los_Angeles:20260623T190000
+LOCATION:Home of Joan & David
+DESCRIPTION:meeting/dinner\n(discuss/determine Sat/Bing program)
+END:VEVENT
+BEGIN:VEVENT
+UID:0c30a8a46ef1f7425d93442f54ba967c425100e8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260624T083000
+DTEND;TZID=America/Los_Angeles:20260624T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:940b836d18b956f6617e7f84a27250e875bd73c1@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #2
+DTSTART;TZID=America/Los_Angeles:20260624T120000
+DTEND;TZID=America/Los_Angeles:20260624T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
+ bom\, Lesley Robertson\, Nina Lee\, Anthony Manzo\, Pedja Muzijevic\nMozar
+ t 5tet: Alexi Kenney\, Owen Dalby\, Ayane Kozasa\, Lesley Robertson\, Nina
+  Lee\nRebecca Clarke duo: Ayane Kozasa\, Todd Palmer
+END:VEVENT
+BEGIN:VEVENT
+UID:657df6ef526a271442ce78aec4674159967e8dea@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260624T130000
+DTEND;TZID=America/Los_Angeles:20260624T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:8de87edc79b413e3f5b34956b25b694597e7506f@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: The Dolphins
+DTSTART;TZID=America/Los_Angeles:20260624T140000
+DTEND;TZID=America/Los_Angeles:20260624T150000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:019e1c398d2732905cfdd06f831ec15509380f05@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quartet 94
+DTSTART;TZID=America/Los_Angeles:20260624T151500
+DTEND;TZID=America/Los_Angeles:20260624T161500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:42fb1a0ef5b568ef16061c8b697466e34c7231b4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 2A\, 2B
+DTSTART;TZID=America/Los_Angeles:20260624T163000
+DTEND;TZID=America/Los_Angeles:20260624T180000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolor
+ es Quintet (AM) (Aaron Wilk\, Misha Rafiee\, Gregorio Lopes\, James Welch\
+ , Persis Drell)\, Wishel Trio (Aaron Wilk\, Lloyd Minor\, Neir Eshel)\nCoa
+ ching: Alexi Kenney\, Stephen Prutsman\, Nina Lee
+END:VEVENT
+BEGIN:VEVENT
+UID:86bc9337e4198012748913cd44ca811adf153103@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260625T083000
+DTEND;TZID=America/Los_Angeles:20260625T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:466c79ac2ffa232403157fb180f5b53dfb3ddd36@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch in Courtyard!
+DTSTART;TZID=America/Los_Angeles:20260625T113000
+DTEND;TZID=America/Los_Angeles:20260625T120000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:0674de274779678907f774d4de2eef180bc88a9d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:MIghty like a Moose
+DTSTART;TZID=America/Los_Angeles:20260625T121500
+DTEND;TZID=America/Los_Angeles:20260625T130000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:Film Fun with Prutsman/Dolphins
+END:VEVENT
+BEGIN:VEVENT
+UID:0983a72e4228c5896705672c26efa3141b7cac6d@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quail 4tet
+DTSTART;TZID=America/Los_Angeles:20260625T131500
+DTEND;TZID=America/Los_Angeles:20260625T141500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:e4b43780dfe740d4e9f8e5ecd8bc7f563869eb0c@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: 8tet with Dolores 4
+DTSTART;TZID=America/Los_Angeles:20260625T143000
+DTEND;TZID=America/Los_Angeles:20260625T153000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:788c9465fd40ad3d246ec4230f63a1b400d23906@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Masterclass 3A\, 3B\, 3C
+DTSTART;TZID=America/Los_Angeles:20260625T160000
+DTEND;TZID=America/Los_Angeles:20260625T173000
+LOCATION:CRH or Dink Stage or Braun Rehearsal Hall
+DESCRIPTION:location subject to change\n(potentially 103 if needed)
+END:VEVENT
+BEGIN:VEVENT
+UID:c3f9d9192e6f235dcaf4f8c8befae9edac7d3379@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260626T083000
+DTEND;TZID=America/Los_Angeles:20260626T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:0abdae222fa20210f1101e87f723a8ae5fc65e37@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Faculty Concert #3
+DTSTART;TZID=America/Los_Angeles:20260626T120000
+DTEND;TZID=America/Los_Angeles:20260626T130000
+LOCATION:Bing Concert Hall
+DESCRIPTION:Mendelssohn 6tet: Daniel Phillips\, William Coleman\, Dimitri M
+ urrath\, Hannah Collins\, Anthony Manzo\, Pedja Muzijevic\nRule of Three: 
+ Owen Dalby\, Daniel Phillips\, Steven Tenenbom\nTchaikovsky: Todd Palmer\,
+  Owen Dalby\, John Novacek
+END:VEVENT
+BEGIN:VEVENT
+UID:7f922122b70d5a79bca401ace133ce12de38baa2@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Lunch for ALL Faculty
+DTSTART;TZID=America/Los_Angeles:20260626T130000
+DTEND;TZID=America/Los_Angeles:20260626T140000
+LOCATION:Bing Concert Hall
+END:VEVENT
+BEGIN:VEVENT
+UID:8d6e77a900e63a6d35d998a548a53def8d3508e8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: The Dolphins
+DTSTART;TZID=America/Los_Angeles:20260626T140000
+DTEND;TZID=America/Los_Angeles:20260626T150000
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:d5b9c80b3ad860e5e59aca31d4faa70167c4751e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quartet 94
+DTSTART;TZID=America/Los_Angeles:20260626T151500
+DTEND;TZID=America/Los_Angeles:20260626T161500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:5902780f76696f6bc221b728cf7d1dcf595b58ff@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Epic Sight Reading Party!
+DTSTART;TZID=America/Los_Angeles:20260626T173000
+DTEND;TZID=America/Los_Angeles:20260626T200000
+LOCATION:776 Dolores St\, Stanford\, CA
+DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
+END:VEVENT
+BEGIN:VEVENT
+UID:c12f1df68aa7ae3c9047cf6da9a2f057e4aa0942@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Seminar Crooners
+DTSTART;TZID=America/Los_Angeles:20260627T083000
+DTEND;TZID=America/Los_Angeles:20260627T090000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:5b66133290d135e8f57b354c6987e1c628220b7a@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Pam Coaching @ Dolores: Quail 4tet
+DTSTART;TZID=America/Los_Angeles:20260627T131500
+DTEND;TZID=America/Los_Angeles:20260627T141500
+LOCATION:776 Dolores St\, Stanford\, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:059b6618defb955804e24b7a28cf0cd1ac2ce3b4@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:AZURE Family Concert
+DTSTART;TZID=America/Los_Angeles:20260627T140000
+DTEND;TZID=America/Los_Angeles:20260627T150000
+LOCATION:Campbell Recital Hall
+DESCRIPTION:CRH
+END:VEVENT
+BEGIN:VEVENT
+UID:b46309a5be48cfbee464fa1f4f8d56bac82ac5a3@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:International Showcase
+DTSTART;TZID=America/Los_Angeles:20260627T170000
+DTEND;TZID=America/Los_Angeles:20260627T190000
+LOCATION:Bing Concert Hall
+DESCRIPTION:details TBD
+END:VEVENT
+BEGIN:VEVENT
+UID:a30f106c35f1d369fca89b6b2d5269c56040f895@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Post Showcase Pizza Party
+DTSTART;TZID=America/Los_Angeles:20260627T190000
+DTEND;TZID=America/Los_Angeles:20260627T200000
+LOCATION:Braun Courtyard
+END:VEVENT
+BEGIN:VEVENT
+UID:f5a6268f474a47210a2b1d75cc1384043f237c19@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Munger Check Out
+DTSTART;TZID=America/Los_Angeles:20260628T080000
+DTEND;TZID=America/Los_Angeles:20260628T100000
+END:VEVENT
+BEGIN:VEVENT
+UID:15a0b2ea91ee8026b1477d9d89015bffdde16e7e@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:Shutter falls! on Group Photo
+DTSTART;TZID=America/Los_Angeles:20260628T103000
+DTEND;TZID=America/Los_Angeles:20260628T110000
+LOCATION:in front of Braun
+END:VEVENT
+BEGIN:VEVENT
+UID:41b6ed52d89180bee043545d546559286167d3b8@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:The Big Finale!
+DTSTART;TZID=America/Los_Angeles:20260628T110000
+DTEND;TZID=America/Los_Angeles:20260628T154500
+LOCATION:Campbell Recital Hall
+DESCRIPTION:all participants perform\nw/ refreshments!
+END:VEVENT
+BEGIN:VEVENT
+UID:ce0e4b191300799c238eac1b6d7e5df6be8e3773@slsq-personal-calendars
+DTSTAMP:20260615T041102Z
+SUMMARY:WRAP PARTY
+DTSTART;TZID=America/Los_Angeles:20260628T154500
+DTEND;TZID=America/Los_Angeles:20260628T193000
+LOCATION:Home of Jim and Carie Zehnder\, 8 E Creek Pl\, Menlo Park\, CA 940
+ 25
+DESCRIPTION:Bring your instruments\nor just come by to enjoy a\ncold one wi
+ th seminar\nfriends new and old.\nIf you have an evening\nfight to catch\,
+  bring your\nluggage and catch an\nuber to the airport.
+END:VEVENT
+END:VCALENDAR
