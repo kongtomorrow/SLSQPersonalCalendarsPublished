@@ -1,13 +1,13 @@
 # Calendar Generation Succeeded
 
 - Previous baseline: found
-- Before events: 918
+- Before events: 910
 - After events: 910
-- Delta: -8
-- Added events: 76
-- Removed events: 84
-- Changed same slots: 15
-- People affected by listed changes: 104
+- Delta: +0
+- Added events: 0
+- Removed events: 0
+- Changed same slots: 0
+- People affected by listed changes: 0
 
 ## Events By Source
 
@@ -16,7 +16,7 @@
 ```json
 {
   "Adam Pelzer Appointments": 20,
-  "Coaching by Ensemble": 530,
+  "Coaching by Ensemble": 522,
   "Faculty Schedule": 18,
   "Faculty Schedule Daily Tabs": 19,
   "Master Schedule": 311,
@@ -38,158 +38,6 @@
   "Optional Sight Reading Events": 14
 }
 ```
-
-### Added Examples
-- `+` 2026-06-22 09:15:00-10:15:00 | Session One | Braun Rehearsal Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +1 | Master Schedule
-- `+` 2026-06-22 14:00:00-15:00:00 | Dimitri Coaching: The Dolphins | 227 | The Dolphins, Luke Henderson, Isaac Park, James Preucil, Ian Maloney, +1 | Coaching by Ensemble
-- `+` 2026-06-22 15:15:00-16:15:00 | Pedja Coaching: Quartet 94 | 106 | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `+` 2026-06-23 10:30:00-11:30:00 | Session Two | Braun Rehearsal Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +1 | Master Schedule
-- `+` 2026-06-23 13:15:00-14:15:00 | Lesley Coaching: Quail 4tet | 102 | Quail 4tet, Katie Behroozi, Benjamin Chen, Ben Parks, Cyrus Behroozi, +1 | Coaching by Ensemble
-- `+` 2026-06-23 14:30:00-15:30:00 | Tony Coaching: 8tet with Dolores 4 | Braun Rehearsal Hall | 8tet with Dolores 4, Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, +5 | Coaching by Ensemble
-- `+` 2026-06-24 09:15:00-10:15:00 | Alexi Coaching: Dolores Quintet | 203 | Dolores Quintet, Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +2 | Coaching by Ensemble
-- `+` 2026-06-24 09:15:00-10:15:00 | Novacek Coaching: No Name Piano Quartet | Braun Rehearsal Hall | No Name Piano Quartet, Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang, +1 | Coaching by Ensemble
-- `+` 2026-06-24 09:15:00-10:15:00 | Rehearsal: Virtuosa Trio | 228 | Virtuosa Trio, Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang | Coaching by Ensemble
-- `+` 2026-06-24 09:15:00-10:15:00 | Session One | Braun Rehearsal Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +1 | Master Schedule
-- `+` 2026-06-24 10:30:00-11:30:00 | Danny Coaching: Quartet 94 | 106 | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Hannah Coaching: Chane String Quartet | DRH | Chane String Quartet, Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers, +1 | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Novacek Coaching: Pinky Quartet | 105 | Pinky Quartet, Leyan Lo, Alex Li, Eric Cheng, Sheila Chan, +1 | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Paul Coaching: The Amiche Quartet | 215 | The Amiche Quartet, Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer, +1 | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Rehearsal: Dolores Quintet | 203 | Dolores Quintet, Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +1 | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Rehearsal: Meck Kwarteck | 131 | Meck Kwarteck, Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Rehearsal: No Name Piano Quartet | Braun Rehearsal Hall | No Name Piano Quartet, Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Rehearsal: WaMaTachou Quartet | 221 | WaMaTachou Quartet, Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam | Coaching by Ensemble
-- `+` 2026-06-24 10:30:00-11:30:00 | Session Two | Braun Rehearsal Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +1 | Master Schedule
-- `+` 2026-06-24 10:30:00-11:30:00 | Stephen Coaching: Virtuosa Trio | 228 | Virtuosa Trio, Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang, Stephen Prutsman | Coaching by Ensemble
-- `+` 2026-06-24 14:00:00-15:00:00 | Dimitri Coaching: The Dolphins | 227 | The Dolphins, Luke Henderson, Isaac Park, James Preucil, Ian Maloney, +1 | Coaching by Ensemble
-- `+` 2026-06-24 14:00:00-15:00:00 | Rehearsal: SQuEAQ | Braun Rehearsal Hall | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +1 | Coaching by Ensemble
-- `+` 2026-06-24 14:00:00-15:00:00 | Rehearsal: Wishel Piano Trio | 203 | Wishel Piano Trio, Aaron Wilk, Lloyd Minor, Neir Eshel | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Dimitri Coaching: WaMaTachou Quartet | 221 | WaMaTachou Quartet, Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam, +1 | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Nina Coaching: Meck Kwarteck | 131 | Meck Kwarteck, Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry, +1 | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Pedja Coaching: Quartet 94 | 106 | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Rehearsal: Chane String Quartet | DRH | Chane String Quartet, Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Rehearsal: Pinky Quartet | 105 | Pinky Quartet, Leyan Lo, Alex Li, Eric Cheng, Sheila Chan | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Todd Coaching: Wishel Piano Trio | 203 | Wishel Piano Trio, Aaron Wilk, Lloyd Minor, Neir Eshel, Todd Palmer | Coaching by Ensemble
-- `+` 2026-06-24 15:15:00-16:15:00 | Tony Coaching: SQuEAQ | Braun Rehearsal Hall | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- `+` 2026-06-25 09:15:00-10:15:00 | Rehearsal: Dolores Quintet | 203 | Dolores Quintet, Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +1 | Coaching by Ensemble
-- `+` 2026-06-25 09:15:00-10:15:00 | Rehearsal: No Name Piano Quartet | Braun Rehearsal Hall | No Name Piano Quartet, Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang | Coaching by Ensemble
-- `+` 2026-06-25 09:15:00-10:15:00 | Rehearsal: Virtuosa Trio | 228 | Virtuosa Trio, Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang | Coaching by Ensemble
-- `+` 2026-06-25 09:15:00-10:15:00 | Tony Coaching: SQuEAQ | Braun Rehearsal Hall | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- `+` 2026-06-25 10:30:00-11:30:00 | Danny Coaching: No Name Piano Quartet | Braun Rehearsal Hall | No Name Piano Quartet, Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang, +1 | Coaching by Ensemble
-- `+` 2026-06-25 10:30:00-11:30:00 | Novacek Coaching: Dolores Quintet | 203 | Dolores Quintet, Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +2 | Coaching by Ensemble
-- `+` 2026-06-25 10:30:00-11:30:00 | Owen Coaching: Virtuosa Trio | 228 | Virtuosa Trio, Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang, Owen Dalby | Coaching by Ensemble
-- `+` 2026-06-25 10:30:00-11:30:00 | Session Two | Braun Rehearsal Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +1 | Master Schedule
-- `+` 2026-06-25 13:15:00-14:15:00 | Lesley Coaching: Quail 4tet | 102 | Quail 4tet, Katie Behroozi, Benjamin Chen, Ben Parks, Cyrus Behroozi, +1 | Coaching by Ensemble
-- `+` 2026-06-25 13:15:00-14:15:00 | Pedja Coaching: SQuEAQ | Braun Rehearsal Hall | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- ...and 36 more.
-
-### Removed Examples
-- `-` 2026-06-22 09:15:00-10:15:00 | Rehearsal: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +1 | Coaching by Ensemble
-- `-` 2026-06-22 09:15:00-10:15:00 | Session One | Braun Rehearsal Hall | Mark Siegel | Master Schedule
-- `-` 2026-06-22 14:00:00-15:00:00 | Pam Coaching @ Dolores: The Dolphins | 776 Dolores St, Stanford, CA | The Dolphins, Luke Henderson, Isaac Park, James Preucil, Ian Maloney, +1 | Coaching by Ensemble
-- `-` 2026-06-22 15:15:00-16:15:00 | Pam Coaching @ Dolores: Quartet 94 | 776 Dolores St, Stanford, CA | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `-` 2026-06-23 10:30:00-11:30:00 | Rehearsal: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +1 | Coaching by Ensemble
-- `-` 2026-06-23 10:30:00-11:30:00 | Session Two | Braun Rehearsal Hall | Mark Siegel | Master Schedule
-- `-` 2026-06-23 13:15:00-14:15:00 | Pam Coaching @ Dolores: Quail 4tet | 776 Dolores St, Stanford, CA | Quail 4tet, Katie Behroozi, Benjamin Chen, Ben Parks, Cyrus Behroozi, +1 | Coaching by Ensemble
-- `-` 2026-06-23 14:30:00-15:30:00 | Pam Coaching @ Dolores: 8tet with Dolores 4 | 776 Dolores St, Stanford, CA | 8tet with Dolores 4, Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, +5 | Coaching by Ensemble
-- `-` 2026-06-24 09:15:00-10:15:00 | Alexi Coaching: Dolores Quintet (AM) | 203 | Dolores Quintet (AM), Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +2 | Coaching by Ensemble
-- `-` 2026-06-24 09:15:00-10:15:00 | Novacek Coaching: No Name Piano Quartet (AM) | Braun Rehearsal Hall | No Name Piano Quartet (AM), Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang, +1 | Coaching by Ensemble
-- `-` 2026-06-24 09:15:00-10:15:00 | Rehearsal: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +1 | Coaching by Ensemble
-- `-` 2026-06-24 09:15:00-10:15:00 | Rehearsal: Virtuosa Trio (AM) | 228 | Virtuosa Trio (AM), Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang | Coaching by Ensemble
-- `-` 2026-06-24 09:15:00-10:15:00 | Session One | Braun Rehearsal Hall | Mark Siegel | Master Schedule
-- `-` 2026-06-24 10:30:00-11:30:00 | Ayane Coaching: Quartet 94 | 106 | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Dimitri Coaching: WaMaTachou Quartet | 221 | WaMaTachou Quartet, Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam, +1 | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Nina Coaching: Meck Kwarteck | 131 | Meck Kwarteck, Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry, +1 | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Pedja Coaching: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Rehearsal: Chane String Quartet | DRH | Chane String Quartet, Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Rehearsal: Dolores Quintet (AM) | 203 | Dolores Quintet (AM), Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +1 | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Rehearsal: No Name Piano Quartet (AM) | Braun Rehearsal Hall | No Name Piano Quartet (AM), Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Rehearsal: Pinky Quartet | 105 | Pinky Quartet, Leyan Lo, Alex Li, Eric Cheng, Sheila Chan | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Session Two | Braun Rehearsal Hall | Mark Siegel | Master Schedule
-- `-` 2026-06-24 10:30:00-11:30:00 | Stephen Coaching: Virtuosa Trio (AM) | 228 | Virtuosa Trio (AM), Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang, Stephen Prutsman | Coaching by Ensemble
-- `-` 2026-06-24 10:30:00-11:30:00 | Todd Coaching: The Amiche Quartet | 215 | The Amiche Quartet, Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer, +1 | Coaching by Ensemble
-- `-` 2026-06-24 14:00:00-15:00:00 | Pam Coaching @ Dolores: The Dolphins | 776 Dolores St, Stanford, CA | The Dolphins, Luke Henderson, Isaac Park, James Preucil, Ian Maloney, +1 | Coaching by Ensemble
-- `-` 2026-06-24 14:00:00-15:00:00 | Rehearsal: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +1 | Coaching by Ensemble
-- `-` 2026-06-24 14:00:00-15:00:00 | Rehearsal: Wishel Piano Trio (PM) | 203 | Wishel Piano Trio (PM), Aaron Wilk, Lloyd Minor, Neir Eshel | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Hannah Coaching: Chane String Quartet | DRH | Chane String Quartet, Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers, +1 | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Novacek Coaching: Pinky Quartet | 105 | Pinky Quartet, Leyan Lo, Alex Li, Eric Cheng, Sheila Chan, +1 | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Pam Coaching @ Dolores: Quartet 94 | 776 Dolores St, Stanford, CA | Quartet 94, Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu, +1 | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Rehearsal: Meck Kwarteck | 131 | Meck Kwarteck, Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Rehearsal: WaMaTachou Quartet | 221 | WaMaTachou Quartet, Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Todd Coaching: Wishel Piano Trio (PM) | 203 | Wishel Piano Trio (PM), Aaron Wilk, Lloyd Minor, Neir Eshel, Todd Palmer | Coaching by Ensemble
-- `-` 2026-06-24 15:15:00-16:15:00 | Tony Coaching: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- `-` 2026-06-25 09:15:00-10:15:00 | Rehearsal: Dolores Quintet (AM) | 203 | Dolores Quintet (AM), Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +1 | Coaching by Ensemble
-- `-` 2026-06-25 09:15:00-10:15:00 | Rehearsal: No Name Piano Quartet (AM) | Braun Rehearsal Hall | No Name Piano Quartet (AM), Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang | Coaching by Ensemble
-- `-` 2026-06-25 09:15:00-10:15:00 | Rehearsal: Virtuosa Trio (AM) | 228 | Virtuosa Trio (AM), Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang | Coaching by Ensemble
-- `-` 2026-06-25 09:15:00-10:15:00 | Tony Coaching: SQuEAQ  (PM) | Braun Rehearsal Hall | SQuEAQ  (PM), Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
-- `-` 2026-06-25 10:30:00-11:30:00 | Danny Coaching: No Name Piano Quartet (AM) | Braun Rehearsal Hall | No Name Piano Quartet (AM), Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang, +1 | Coaching by Ensemble
-- `-` 2026-06-25 10:30:00-11:30:00 | Novacek Coaching: Dolores Quintet (AM) | 203 | Dolores Quintet (AM), Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, +2 | Coaching by Ensemble
-- ...and 44 more.
-
-### Changed Slot Examples
-- Before:
-  - `2026-06-19 10:40:00-11:10:00 | Faculty Travel: 10:40am Dimitri SFO | SFO | Dimitri Murrath | Faculty Schedule`
-- After:
-  - `2026-06-19 10:40:00-11:10:00 | 10:40am Dimitri SFO | SFO | Dimitri Murrath | Faculty Schedule`
-- Before:
-  - `2026-06-19 13:43:00-14:13:00 | Faculty Travel: 1:43  Danny  AA149 JFK-SFO | SFO | Daniel Phillips | Faculty Schedule`
-- After:
-  - `2026-06-19 13:43:00-14:13:00 | 1:43  Danny  AA149 JFK-SFO | SFO | Daniel Phillips | Faculty Schedule`
-- Before:
-  - `2026-06-19 14:50:00-15:20:00 | Faculty Travel: 2:50pm Todd SFO | SFO | Todd Palmer | Faculty Schedule`
-- After:
-  - `2026-06-19 14:50:00-15:20:00 | 2:50pm Todd SFO | SFO | Todd Palmer | Faculty Schedule`
-- Before:
-  - `2026-06-19 15:09:00-15:39:00 | Faculty Travel: 3:09 Novacek SFO | SFO | John Novacek | Faculty Schedule`
-- After:
-  - `2026-06-19 15:09:00-15:39:00 | 3:09 Novacek SFO | SFO | John Novacek | Faculty Schedule`
-- Before:
-  - `2026-06-19 15:28:00-15:58:00 | Faculty Travel: 3;28 Pedja UA1902 |  | Pedja Muzijevic | Faculty Schedule`
-- After:
-  - `2026-06-19 15:28:00-15:58:00 | 3;28 Pedja UA1902 |  | Pedja Muzijevic | Faculty Schedule`
-- Before:
-  - `2026-06-19 15:30:00-16:00:00 | Faculty Travel: 3:30 Tenenbom SFO UA 5391 | SFO | Steven Tenenbom | Faculty Schedule`
-- After:
-  - `2026-06-19 15:30:00-16:00:00 | 3:30 Tenenbom SFO UA 5391 | SFO | Steven Tenenbom | Faculty Schedule`
-- Before:
-  - `2026-06-20 09:18:00-09:48:00 | Faculty Travel: 9:18 SFO UA 540 Hannah | SFO | Hannah Collins | Faculty Schedule`
-- After:
-  - `2026-06-20 09:18:00-09:48:00 | 9:18 SFO UA 540 Hannah | SFO | Hannah Collins | Faculty Schedule`
-- Before:
-  - `2026-06-20 12:00:00-12:30:00 | Faculty Travel: 12pm SJC southwest 3904 Tony | SJC | Anthony Manzo | Faculty Schedule`
-- After:
-  - `2026-06-20 12:00:00-12:30:00 | 12pm SJC southwest 3904 Tony | SJC | Anthony Manzo | Faculty Schedule`
-- Before:
-  - `2026-06-25 10:30:00-11:30:00 | Stephen Coaching: Quatuor Pas de Jeans | 202 | Quatuor Pas de Jeans, Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu, +1 | Coaching by Ensemble`
-- After:
-  - `2026-06-25 10:30:00-11:30:00 | Prutsman Coaching: Quatuor Pas de Jeans | 202 | Quatuor Pas de Jeans, Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu, +1 | Coaching by Ensemble`
-- Before:
-  - `2026-06-27 10:30:00-11:30:00 | Stephen Coaching: Quatuor Pas de Jeans | 202 | Quatuor Pas de Jeans, Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu, +1 | Coaching by Ensemble`
-- After:
-  - `2026-06-27 10:30:00-11:30:00 | Prutsman Coaching: Quatuor Pas de Jeans | 202 | Quatuor Pas de Jeans, Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu, +1 | Coaching by Ensemble`
-- Before:
-  - `2026-06-27 22:50:00-23:20:00 | Faculty Travel: 10:50pm Tony SFO | SFO | Anthony Manzo | Faculty Schedule`
-- After:
-  - `2026-06-27 22:50:00-23:20:00 | 10:50pm Tony SFO | SFO | Anthony Manzo | Faculty Schedule`
-- Before:
-  - `2026-06-28 08:10:00-08:40:00 | Faculty Travel: 8:10am Novacek SFO, UA #1849 | SFO | John Novacek | Faculty Schedule`
-- After:
-  - `2026-06-28 08:10:00-08:40:00 | 8:10am Novacek SFO, UA #1849 | SFO | John Novacek | Faculty Schedule`
-- Before:
-  - `2026-06-28 14:56:00-15:26:00 | Faculty Travel: 2:56 Nina/Anouk SF AA 1854 | San Francisco | Nina Lee | Faculty Schedule`
-- After:
-  - `2026-06-28 14:56:00-15:26:00 | 2:56 Nina/Anouk SF AA 1854 | San Francisco | Nina Lee | Faculty Schedule`
-- Before:
-  - `2026-06-28 18:39:00-19:09:00 | Faculty Travel: 6:39 Tenenbom SFO UA 737 | SFO | Steven Tenenbom | Faculty Schedule`
-- After:
-  - `2026-06-28 18:39:00-19:09:00 | 6:39 Tenenbom SFO UA 737 | SFO | Steven Tenenbom | Faculty Schedule`
-- Before:
-  - `2026-06-28 19:30:00-20:00:00 | Faculty Travel: Pedja to SF in evening | San Francisco | Pedja Muzijevic | Faculty Schedule`
-- After:
-  - `2026-06-28 19:30:00-20:00:00 | Pedja to SF in evening | San Francisco | Pedja Muzijevic | Faculty Schedule`
-
-## Affected People
-
-8tet with Dolores 4, Aaron Wilk, Abigail Rogers, Alex Hwang, Alex Li, Alexi Kenney, Anna Soper, Anthony Manzo, Ayane **Lesley**, Ayane **check**, Ayane Kozasa, Ben Parks, Benjamin Chen, Beverly Fu, Bruce Yu, Cary Chin, Celia Morin, Chane String Quartet, Chia Ying Lee, Chiao Hui Chang, Christine Choi, Christopher Lin-Brande, Cindy Mong, Cindy Wang, Cristina Ruotolo, Cyrus Behroozi, Daiyao Zhang, Daniel Phillips, Derek Wu, Dimitri Murrath, Dolores Quintet, Dolores Quintet (AM), Elisabeth Heremans, Eric Cheng, Eric Cooper, Gregorio Lopes, Griffin Glenn, Haeun Nam, Hannah Collins, Hilary Meltzer, Ian Maloney, Isaac Park, James Preucil, James Welch, Jasper Jian, Jeanel Liango, Jennie Yang, Jessica Seeliger, Jim Chou, Jim Zehnder, Jocelyn Lamm Startz, John Novacek, Jérôme Chiasson, Katarina String Quartet, Katie Behroozi, Ken Ferry, Ko Hayashi, Lesley Robertson, Leyan Lo, Lloyd Minor, Luke Henderson, Marie Christine Lopez, Mark Siegel, Maya Enstad, Meck Kwarteck, Meg Lamm, Miles Chan, Misha Rafiee, Monica Anuforo, Neir Eshel, Nina Lee, Nina Monfredo, No Name Piano Quartet, No Name Piano Quartet (AM), Olivia Tam, Owen Dalby, Pamela Frank, Paul Wiancko, Pedja Muzijevic, Pedja OR, Persis Drell, Pinky Quartet, Quail 4tet, Quartet 94, Quatuor Pas de Jeans, Ria Honda, Ron Ho, SQuEAQ, SQuEAQ  (PM), Sheila Chan, Stephen Prutsman, Steven Tenenbom, The Amiche Quartet, The Dolphins, Thomas Xiong, Todd Palmer, Tyson Mao, Virtuosa Trio, Virtuosa Trio (AM), WaMaTachou Quartet, Warren Wu, Wishel Piano Trio, Wishel Piano Trio (PM), Yi Ying Wei
 
 ## Calendar Links
 
