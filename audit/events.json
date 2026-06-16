@@ -43,42 +43,42 @@
   },
   {
     "source": "Faculty Schedule",
-    "row_number": 29,
+    "row_number": 30,
     "title": "3:09 Novacek SFO",
     "date": "2026-06-19",
     "start": "15:09:00",
     "end": "15:39:00",
     "location": "SFO",
     "description": "",
-    "event_id": "Faculty Schedule:travel:29:2:1:2026-06-19:3:09 Novacek SFO",
+    "event_id": "Faculty Schedule:travel:30:2:0:2026-06-19:3:09 Novacek SFO",
     "participants": [
       "John Novacek"
     ]
   },
   {
     "source": "Faculty Schedule",
-    "row_number": 29,
+    "row_number": 30,
     "title": "3;28 Pedja UA1902",
     "date": "2026-06-19",
     "start": "15:28:00",
     "end": "15:58:00",
     "location": "",
     "description": "",
-    "event_id": "Faculty Schedule:travel:29:2:2:2026-06-19:3;28 Pedja UA1902",
+    "event_id": "Faculty Schedule:travel:30:2:1:2026-06-19:3;28 Pedja UA1902",
     "participants": [
       "Pedja Muzijevic"
     ]
   },
   {
     "source": "Faculty Schedule",
-    "row_number": 29,
+    "row_number": 30,
     "title": "3:30 Tenenbom SFO UA 5391",
     "date": "2026-06-19",
     "start": "15:30:00",
     "end": "16:00:00",
     "location": "SFO",
     "description": "",
-    "event_id": "Faculty Schedule:travel:29:2:3:2026-06-19:3:30 Tenenbom SFO UA 5391",
+    "event_id": "Faculty Schedule:travel:30:2:2:2026-06-19:3:30 Tenenbom SFO UA 5391",
     "participants": [
       "Steven Tenenbom"
     ]
@@ -214,6 +214,20 @@
       "Steven Tenenbom",
       "Todd Palmer",
       "William Coleman"
+    ]
+  },
+  {
+    "source": "Faculty Schedule",
+    "row_number": 50,
+    "title": "8pm Nina/Anouk SFO AA 15",
+    "date": "2026-06-19",
+    "start": "20:00:00",
+    "end": "20:30:00",
+    "location": "SFO",
+    "description": "",
+    "event_id": "Faculty Schedule:travel:50:2:0:2026-06-19:8pm Nina/Anouk SFO AA 15",
+    "participants": [
+      "Nina Lee"
     ]
   },
   {
@@ -401,9 +415,9 @@
     "date": "2026-06-20",
     "start": "13:00:00",
     "end": "14:00:00",
-    "location": "Braun Courtyard",
+    "location": "Campbell Recital Hall",
     "description": "",
-    "event_id": "Master Schedule:22:4:2026-06-20:1-2pm|Welcome Meeting|Braun Courtyard",
+    "event_id": "Master Schedule:22:4:2026-06-20:1-2pm|Welcome Meeting|Campbell Recital Hall",
     "participants": [
       "Luke Henderson",
       "Isaac Park",
@@ -828,9 +842,9 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -840,12 +854,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -912,6 +921,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 26,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "14:00:00",
+    "end": "17:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -1562,9 +1589,9 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -1574,12 +1601,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -1646,6 +1668,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -2203,9 +2243,9 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -2215,12 +2255,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -2287,6 +2322,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 10,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "09:00:00",
+    "end": "10:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -2875,9 +2928,9 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -2887,12 +2940,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -2959,6 +3007,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 22,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "13:00:00",
+    "end": "14:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -3116,7 +3182,7 @@
     "title": "Mendelssohn 6tet Faculty Rehearsal #1",
     "date": "2026-06-21",
     "start": "16:00:00",
-    "end": "18:00:00",
+    "end": "17:30:00",
     "location": "N/A",
     "description": "Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, Anthony Manzo, Pedja Muzijevic",
     "event_id": "Faculty Schedule Daily Tabs:faculty-rehearsal:Sunday 621:34:mendelssohn6tet",
@@ -3431,9 +3497,9 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -3443,12 +3509,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -3515,6 +3576,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 34,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "16:00:00",
+    "end": "18:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -3898,9 +3977,9 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -3910,12 +3989,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -3982,6 +4056,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -4254,7 +4346,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 27,
-    "title": "Alexi Coaching: Dolores Quintet (AM)",
+    "title": "Alexi Playing & Coaching: Dolores Quintet (AM)",
     "date": "2026-06-22",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -4392,7 +4484,7 @@
     "date": "2026-06-22",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:23:4:2026-06-22:No Name Piano Quartet (AM):Novacek:block=sessionone",
     "participants": [
@@ -4587,40 +4679,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-22",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:8:7:2026-06-22:9:15-10:15|Session One:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-22",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:8:7:2026-06-22:9:15-10:15|Session One:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 16,
     "title": "Stephen Coaching: Quatuor Pas de Jeans",
@@ -4661,7 +4719,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 8,
-    "title": "Todd Coaching: Selene Quartet",
+    "title": "Todd Playing & Coaching: Selene Quartet",
     "date": "2026-06-22",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -4755,6 +4813,26 @@
     ]
   },
   {
+    "source": "Faculty Schedule Daily Tabs",
+    "row_number": 13,
+    "title": "Dress Rehearsal",
+    "date": "2026-06-22",
+    "start": "10:30:00",
+    "end": "11:30:00",
+    "location": "",
+    "description": "",
+    "event_id": "Faculty Schedule Daily Tabs:visual:visual:Monday 622:13:3:2026-06-22:II|Dress Rehearsal",
+    "participants": [
+      "Owen Dalby",
+      "Alexi Kenney",
+      "Daniel Phillips",
+      "Steven Tenenbom",
+      "Hannah Collins",
+      "Paul Wiancko",
+      "John Novacek"
+    ]
+  },
+  {
     "source": "Coaching by Ensemble",
     "row_number": 22,
     "title": "Nina Coaching: Meck Kwarteck",
@@ -4780,7 +4858,7 @@
     "date": "2026-06-22",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:5:2026-06-22:SQuEAQ  (PM):Pedja:block=sessiontwo",
     "participants": [
@@ -4890,7 +4968,7 @@
     "date": "2026-06-22",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:23:5:2026-06-22:No Name Piano Quartet (AM):rehearsal:block=sessiontwo",
     "participants": [
@@ -5117,35 +5195,6 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-22",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:7:2026-06-22:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-22",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:7:2026-06-22:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Mark Siegel"
     ]
   },
   {
@@ -5656,7 +5705,7 @@
     "date": "2026-06-22",
     "start": "14:00:00",
     "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:6:2026-06-22:SQuEAQ  (PM):rehearsal:block=sessionthree",
     "participants": [
@@ -5741,56 +5790,9 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-22",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:26:7:2026-06-22:2-3pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-22",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:26:7:2026-06-22:2-3pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-22",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:26:7:2026-06-22:2-3pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 13,
-    "title": "Tony Coaching: Pinky Quartet",
+    "title": "Tony Playing & Coaching: Pinky Quartet",
     "date": "2026-06-22",
     "start": "14:00:00",
     "end": "15:00:00",
@@ -6160,53 +6162,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-22",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:31:7:2026-06-22:3:15-4:15|Session Four:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-22",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:31:7:2026-06-22:3:15-4:15|Session Four:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-22",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:31:7:2026-06-22:3:15-4:15|Session Four:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -6250,7 +6205,7 @@
     "date": "2026-06-22",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:7:2026-06-22:SQuEAQ  (PM):Tony:block=sessionfour",
     "participants": [
@@ -6428,7 +6383,7 @@
     "title": "Mozart 5tet Faculty Rehearsal #2",
     "date": "2026-06-22",
     "start": "16:30:00",
-    "end": "18:00:00",
+    "end": "18:30:00",
     "location": "N/A",
     "description": "Owen Dalby, Alexi Kenney, Ayane Kozasa, Lesley Robertson, Nina Lee",
     "event_id": "Faculty Schedule Daily Tabs:faculty-rehearsal:Monday 622:36:mozart5tet",
@@ -6494,6 +6449,44 @@
       "JK Hunt",
       "Emma Spellman",
       "Stefan Leape"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-22",
+    "start": "18:00:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-22-danielphillips",
+    "participants": [
+      "Daniel Phillips",
+      "Hannah Collins",
+      "Howard Nelson",
+      "Jennah Delp Somers",
+      "John Novacek",
+      "Pamela Frank",
+      "Paul Wiancko",
+      "Stephen Prutsman",
+      "Todd Palmer"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-22",
+    "start": "18:30:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-22-alexikenney",
+    "participants": [
+      "Alexi Kenney",
+      "Ayane Kozasa",
+      "Owen Dalby"
     ]
   },
   {
@@ -6818,9 +6811,9 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -6830,12 +6823,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -6906,14 +6894,32 @@
   },
   {
     "source": "Master Schedule",
-    "row_number": 49,
-    "title": "The Musicians of the String Quartet:",
+    "row_number": 46,
+    "title": "Rehearsal Period",
     "date": "2026-06-22",
-    "start": "21:00:00",
-    "end": "22:30:00",
-    "location": "Braun Lounge",
-    "description": "A Documentary\nby Georges Zeisel and Catherine ZIns\n(An INA / ARTE production)\n**Drop in As you Wish**",
-    "event_id": "Master Schedule:49:7:2026-06-22:9pm film - Braun Lounge|The Musicians of the String Quartet:|A Documentary|by Georges Zeisel and Catherine ZIns|(An INA / ARTE production)|**Drop in As you Wish**",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-22",
+    "start": "20:00:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-22-lukehenderson",
     "participants": [
       "Luke Henderson",
       "Isaac Park",
@@ -7016,37 +7022,25 @@
       "Cary Chin",
       "Jim Zehnder",
       "Mark Siegel",
-      "Alexi Kenney",
       "Anthony Manzo",
-      "Ayane Kozasa",
-      "Daniel Phillips",
       "Dimitri Murrath",
-      "Hannah Collins",
-      "Howard Nelson",
-      "Jennah Delp Somers",
-      "John Novacek",
       "Lesley Robertson",
       "Nina Lee",
-      "Owen Dalby",
-      "Pamela Frank",
-      "Paul Wiancko",
       "Pedja Muzijevic",
-      "Stephen Prutsman",
       "Steven Tenenbom",
-      "Todd Palmer",
       "William Coleman"
     ]
   },
   {
-    "source": "Optional Sight Reading Events",
-    "row_number": 0,
-    "title": "Optional Sight Reading!",
+    "source": "Master Schedule",
+    "row_number": 49,
+    "title": "The Musicians of the String Quartet:",
     "date": "2026-06-22",
-    "start": "22:30:00",
-    "end": "00:00:00",
-    "location": "Braun Music Building Everywhere",
-    "description": "",
-    "event_id": "end-of-day-phase-2026-06-22-lukehenderson",
+    "start": "21:00:00",
+    "end": "22:30:00",
+    "location": "Braun Lounge",
+    "description": "A Documentary\nby Georges Zeisel and Catherine ZIns\n(An INA / ARTE production)\n**Drop in As you Wish**",
+    "event_id": "Master Schedule:49:7:2026-06-22:9pm film - Braun Lounge|The Musicians of the String Quartet:|A Documentary|by Georges Zeisel and Catherine ZIns|(An INA / ARTE production)|**Drop in As you Wish**",
     "participants": [
       "Luke Henderson",
       "Isaac Park",
@@ -7575,7 +7569,7 @@
     "date": "2026-06-23",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:23:9:2026-06-23:No Name Piano Quartet (AM):rehearsal:block=sessionone",
     "participants": [
@@ -7712,35 +7706,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-23",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:8:8:2026-06-23:9:15-10:15|Session One:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-23",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:8:8:2026-06-23:9:15-10:15|Session One:location=braunrehearsalhall",
-    "participants": [
-      "Mark Siegel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -7766,7 +7731,7 @@
     "date": "2026-06-23",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:9:2026-06-23:SQuEAQ  (PM):Tony:block=sessionone",
     "participants": [
@@ -7824,7 +7789,7 @@
     "date": "2026-06-23",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:23:10:2026-06-23:No Name Piano Quartet (AM):Danny:block=sessiontwo",
     "participants": [
@@ -8165,40 +8130,6 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-23",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:8:2026-06-23:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-23",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:8:2026-06-23:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
     ]
   },
   {
@@ -8596,7 +8527,7 @@
     "date": "2026-06-23",
     "start": "13:15:00",
     "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:11:2026-06-23:SQuEAQ  (PM):rehearsal:block=sessionthree",
     "participants": [
@@ -8695,53 +8626,6 @@
       "Aaron Wilk",
       "Lloyd Minor",
       "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-23",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:23:8:2026-06-23:1:15-2:15pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-23",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:23:8:2026-06-23:1:15-2:15pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-23",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:23:8:2026-06-23:1:15-2:15pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
     ]
   },
   {
@@ -8878,7 +8762,7 @@
     "date": "2026-06-23",
     "start": "14:30:00",
     "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble: By Ensemble Mon & Tues:24:12:2026-06-23:SQuEAQ  (PM):Danny:block=sessionfour",
     "participants": [
@@ -9239,53 +9123,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-23",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:28:8:2026-06-23:2:30-3:30|Session Four:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-23",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:28:8:2026-06-23:2:30-3:30|Session Four:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-23",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:28:8:2026-06-23:2:30-3:30|Session Four:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 30,
     "title": "Tony Coaching: 8tet with Dolores 4",
@@ -9523,6 +9360,33 @@
       "Ayane Kozasa",
       "Lesley Robertson",
       "Nina Lee"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-23",
+    "start": "19:00:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-23-anthonymanzo",
+    "participants": [
+      "Anthony Manzo",
+      "Daniel Phillips",
+      "Dimitri Murrath",
+      "Hannah Collins",
+      "Howard Nelson",
+      "Jennah Delp Somers",
+      "John Novacek",
+      "Pamela Frank",
+      "Paul Wiancko",
+      "Pedja Muzijevic",
+      "Stephen Prutsman",
+      "Steven Tenenbom",
+      "Todd Palmer",
+      "William Coleman"
     ]
   },
   {
@@ -9826,9 +9690,9 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -9838,12 +9702,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -9914,14 +9773,32 @@
   },
   {
     "source": "Master Schedule",
-    "row_number": 49,
-    "title": "The Musicians of the String Quartet:",
+    "row_number": 46,
+    "title": "Rehearsal Period",
     "date": "2026-06-23",
-    "start": "21:00:00",
-    "end": "22:30:00",
-    "location": "Braun Lounge",
-    "description": "A Documentary\nby Georges Zeisel and Catherine ZIns\n(An INA / ARTE production)\n**Drop in As you Wish**",
-    "event_id": "Master Schedule:49:8:2026-06-23:9pm film - Braun Lounge|The Musicians of the String Quartet:|A Documentary|by Georges Zeisel and Catherine ZIns|(An INA / ARTE production)|**Drop in As you Wish**",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-23",
+    "start": "20:00:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-23-lukehenderson",
     "participants": [
       "Luke Henderson",
       "Isaac Park",
@@ -10025,36 +9902,22 @@
       "Jim Zehnder",
       "Mark Siegel",
       "Alexi Kenney",
-      "Anthony Manzo",
       "Ayane Kozasa",
-      "Daniel Phillips",
-      "Dimitri Murrath",
-      "Hannah Collins",
-      "Howard Nelson",
-      "Jennah Delp Somers",
-      "John Novacek",
       "Lesley Robertson",
       "Nina Lee",
-      "Owen Dalby",
-      "Pamela Frank",
-      "Paul Wiancko",
-      "Pedja Muzijevic",
-      "Stephen Prutsman",
-      "Steven Tenenbom",
-      "Todd Palmer",
-      "William Coleman"
+      "Owen Dalby"
     ]
   },
   {
-    "source": "Optional Sight Reading Events",
-    "row_number": 0,
-    "title": "Optional Sight Reading!",
+    "source": "Master Schedule",
+    "row_number": 49,
+    "title": "The Musicians of the String Quartet:",
     "date": "2026-06-23",
-    "start": "22:30:00",
-    "end": "00:00:00",
-    "location": "Braun Music Building Everywhere",
-    "description": "",
-    "event_id": "end-of-day-phase-2026-06-23-lukehenderson",
+    "start": "21:00:00",
+    "end": "22:30:00",
+    "location": "Braun Lounge",
+    "description": "A Documentary\nby Georges Zeisel and Catherine ZIns\n(An INA / ARTE production)\n**Drop in As you Wish**",
+    "event_id": "Master Schedule:49:8:2026-06-23:9pm film - Braun Lounge|The Musicians of the String Quartet:|A Documentary|by Georges Zeisel and Catherine ZIns|(An INA / ARTE production)|**Drop in As you Wish**",
     "participants": [
       "Luke Henderson",
       "Isaac Park",
@@ -10314,7 +10177,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 27,
-    "title": "Alexi Coaching: Dolores Quintet",
+    "title": "Alexi Playing & Coaching: Dolores Quintet",
     "date": "2026-06-24",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -10452,7 +10315,7 @@
     "date": "2026-06-24",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:23:4:2026-06-24:No Name Piano Quartet:Novacek:block=sessionone",
     "participants": [
@@ -10647,40 +10510,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-24",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:8:9:2026-06-24:9:15-10:15|Session One:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-24",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:8:9:2026-06-24:9:15-10:15|Session One:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 16,
     "title": "Stephen Coaching: Quatuor Pas de Jeans",
@@ -10721,7 +10550,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 8,
-    "title": "Todd Coaching: Selene Quartet",
+    "title": "Todd Playing & Coaching: Selene Quartet",
     "date": "2026-06-24",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -10793,6 +10622,30 @@
       "Jessica Seeliger",
       "Warren Wu",
       "Daniel Phillips"
+    ]
+  },
+  {
+    "source": "Faculty Schedule Daily Tabs",
+    "row_number": 13,
+    "title": "Dress Rehearsal",
+    "date": "2026-06-24",
+    "start": "10:30:00",
+    "end": "11:30:00",
+    "location": "",
+    "description": "",
+    "event_id": "Faculty Schedule Daily Tabs:visual:visual:Wednesday 624:13:3:2026-06-24:II|Dress Rehearsal",
+    "participants": [
+      "Owen Dalby",
+      "Alexi Kenney",
+      "William Coleman",
+      "Ayane Kozasa",
+      "Dimitri Murrath",
+      "Lesley Robertson",
+      "Steven Tenenbom",
+      "Nina Lee",
+      "Anthony Manzo",
+      "Todd Palmer",
+      "Pedja Muzijevic"
     ]
   },
   {
@@ -10949,7 +10802,7 @@
     "date": "2026-06-24",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:23:5:2026-06-24:No Name Piano Quartet:rehearsal:block=sessiontwo",
     "participants": [
@@ -11176,40 +11029,6 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-24",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:9:2026-06-24:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-24",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:9:2026-06-24:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
     ]
   },
   {
@@ -11716,7 +11535,7 @@
     "date": "2026-06-24",
     "start": "14:00:00",
     "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:24:6:2026-06-24:SQuEAQ:rehearsal:block=sessionthree",
     "participants": [
@@ -11801,56 +11620,9 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:26:9:2026-06-24:2-3pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:26:9:2026-06-24:2-3pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:26:9:2026-06-24:2-3pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 13,
-    "title": "Tony Coaching: Pinky Quartet",
+    "title": "Tony Playing & Coaching: Pinky Quartet",
     "date": "2026-06-24",
     "start": "14:00:00",
     "end": "15:00:00",
@@ -12290,53 +12062,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-24",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:31:9:2026-06-24:3:15-4:15|Session Four:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-24",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:31:9:2026-06-24:3:15-4:15|Session Four:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-24",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:31:9:2026-06-24:3:15-4:15|Session Four:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -12380,7 +12105,7 @@
     "date": "2026-06-24",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:24:7:2026-06-24:SQuEAQ:Tony:block=sessionfour",
     "participants": [
@@ -12952,9 +12677,9 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -12964,12 +12689,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -13036,6 +12756,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-24",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -13577,7 +13315,7 @@
     "date": "2026-06-25",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:23:9:2026-06-25:No Name Piano Quartet:rehearsal:block=sessionone",
     "participants": [
@@ -13714,35 +13452,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-25",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:8:10:2026-06-25:9:15-10:15|Session One:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-25",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:8:10:2026-06-25:9:15-10:15|Session One:location=braunrehearsalhall",
-    "participants": [
-      "Mark Siegel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -13768,7 +13477,7 @@
     "date": "2026-06-25",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:24:9:2026-06-25:SQuEAQ:Tony:block=sessionone",
     "participants": [
@@ -13826,7 +13535,7 @@
     "date": "2026-06-25",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:23:10:2026-06-25:No Name Piano Quartet:Danny:block=sessiontwo",
     "participants": [
@@ -14186,40 +13895,6 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-25",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:10:2026-06-25:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-25",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:10:2026-06-25:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
     ]
   },
   {
@@ -14686,7 +14361,7 @@
     "date": "2026-06-25",
     "start": "13:15:00",
     "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:24:11:2026-06-25:SQuEAQ:Pedja:block=sessionthree",
     "participants": [
@@ -14883,53 +14558,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 22,
-    "title": "Session Three",
-    "date": "2026-06-25",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:22:10:2026-06-25:1:15-2:15pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 22,
-    "title": "Session Three",
-    "date": "2026-06-25",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:22:10:2026-06-25:1:15-2:15pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 22,
-    "title": "Session Three",
-    "date": "2026-06-25",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:22:10:2026-06-25:1:15-2:15pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 16,
     "title": "Tenenbom Coaching: Quatuor Pas de Jeans",
@@ -15012,7 +14640,7 @@
     "date": "2026-06-25",
     "start": "14:30:00",
     "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Wed & Thurs:24:12:2026-06-25:SQuEAQ:Danny:block=sessionfour",
     "participants": [
@@ -15335,53 +14963,6 @@
       "Seth Novatt",
       "I-han Chou",
       "Anne Scott"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-25",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:28:10:2026-06-25:2:30-3:30|Session Four:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-25",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:28:10:2026-06-25:2:30-3:30|Session Four:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 28,
-    "title": "Session Four",
-    "date": "2026-06-25",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:28:10:2026-06-25:2:30-3:30|Session Four:location=203",
-    "participants": [
-      "Misha Rafiee"
     ]
   },
   {
@@ -15906,9 +15487,9 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
-    "event_id": "Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "event_id": "Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:location=103",
     "participants": [
       "Elisabeth Heremans",
       "Alex Hwang",
@@ -15918,12 +15499,7 @@
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
-      "Jasper Jian",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "Jasper Jian"
     ]
   },
   {
@@ -15990,6 +15566,24 @@
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell"
+    ]
+  },
+  {
+    "source": "Master Schedule",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-25",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:location=braunrehearsalhall",
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder",
+      "Mark Siegel"
     ]
   },
   {
@@ -16261,7 +15855,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 27,
-    "title": "Alexi Coaching: Dolores Quintet",
+    "title": "Alexi Playing & Coaching: Dolores Quintet",
     "date": "2026-06-26",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -16281,12 +15875,12 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 6,
-    "title": "Ayane **check** Coaching: Katarina String Quartet",
+    "title": "Ayane Coaching: Katarina String Quartet",
     "date": "2026-06-26",
     "start": "09:15:00",
     "end": "10:15:00",
     "location": "208",
-    "description": "",
+    "description": "Note: check",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:6:4:2026-06-26:Katarina String Quartet:Ayane **check**:block=sessionone",
     "participants": [
       "Katarina String Quartet",
@@ -16294,7 +15888,7 @@
       "Jérôme Chiasson",
       "Celia Morin",
       "Maya Enstad",
-      "Ayane **check**"
+      "Ayane Kozasa"
     ]
   },
   {
@@ -16399,7 +15993,7 @@
     "date": "2026-06-26",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:23:4:2026-06-26:No Name Piano Quartet:Novacek:block=sessionone",
     "participants": [
@@ -16594,40 +16188,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-26",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:8:11:2026-06-26:9:15-10:15|Session One:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-26",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:8:11:2026-06-26:9:15-10:15|Session One:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 16,
     "title": "Stephen Coaching: Quatuor Pas de Jeans",
@@ -16668,7 +16228,7 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 8,
-    "title": "Todd Coaching: Selene Quartet",
+    "title": "Todd Playing & Coaching: Selene Quartet",
     "date": "2026-06-26",
     "start": "09:15:00",
     "end": "10:15:00",
@@ -16726,12 +16286,12 @@
   {
     "source": "Coaching by Ensemble",
     "row_number": 12,
-    "title": "Ayane **Lesley** Coaching: Quartet 94",
+    "title": "Ayane Coaching: Quartet 94",
     "date": "2026-06-26",
     "start": "10:30:00",
     "end": "11:30:00",
     "location": "106",
-    "description": "",
+    "description": "Note: Lesley",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:12:5:2026-06-26:Quartet 94:Ayane **Lesley**:block=sessiontwo",
     "participants": [
       "Quartet 94",
@@ -16739,7 +16299,30 @@
       "Bruce Yu",
       "Jessica Seeliger",
       "Warren Wu",
-      "Ayane **Lesley**"
+      "Ayane Kozasa"
+    ]
+  },
+  {
+    "source": "Faculty Schedule Daily Tabs",
+    "row_number": 13,
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "10:30:00",
+    "end": "11:30:00",
+    "location": "",
+    "description": "",
+    "event_id": "Faculty Schedule Daily Tabs:visual:visual:Friday 626:13:3:2026-06-26:Session Two|Dress Rehearsal",
+    "participants": [
+      "Owen Dalby",
+      "Daniel Phillips",
+      "William Coleman",
+      "Dimitri Murrath",
+      "Steven Tenenbom",
+      "Hannah Collins",
+      "Anthony Manzo",
+      "Todd Palmer",
+      "Pedja Muzijevic",
+      "John Novacek"
     ]
   },
   {
@@ -16895,7 +16478,7 @@
     "date": "2026-06-26",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:23:5:2026-06-26:No Name Piano Quartet:rehearsal:block=sessiontwo",
     "participants": [
@@ -17140,40 +16723,6 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-26",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:11:2026-06-26:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-26",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:11:2026-06-26:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
     ]
   },
   {
@@ -17648,7 +17197,7 @@
     "date": "2026-06-26",
     "start": "14:00:00",
     "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:24:6:2026-06-26:SQuEAQ:rehearsal:block=sessionthree",
     "participants": [
@@ -17733,56 +17282,9 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-26",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:26:11:2026-06-26:2-3pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-26",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:26:11:2026-06-26:2-3pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 26,
-    "title": "Session Three",
-    "date": "2026-06-26",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:26:11:2026-06-26:2-3pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 13,
-    "title": "Tony Coaching: Pinky Quartet",
+    "title": "Tony Playing & Coaching: Pinky Quartet",
     "date": "2026-06-26",
     "start": "14:00:00",
     "end": "15:00:00",
@@ -18152,53 +17654,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-26",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:31:11:2026-06-26:3:15-4:15|Session Four:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-26",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:31:11:2026-06-26:3:15-4:15|Session Four:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 31,
-    "title": "Session Four",
-    "date": "2026-06-26",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:31:11:2026-06-26:3:15-4:15|Session Four:location=203",
-    "participants": [
-      "Misha Rafiee"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -18242,7 +17697,7 @@
     "date": "2026-06-26",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:24:7:2026-06-26:SQuEAQ:Tony:block=sessionfour",
     "participants": [
@@ -18949,7 +18404,7 @@
     "date": "2026-06-27",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:23:9:2026-06-27:No Name Piano Quartet:rehearsal:block=sessionone",
     "participants": [
@@ -19086,35 +18541,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-27",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "203",
-    "description": "Saturday schedule will be\nadjusted according to Final\nDress Reh Schedule. Stay tuned!",
-    "event_id": "Master Schedule:8:12:2026-06-27:9:15-10:15 Session One|Saturday schedule will be|adjusted according to Final|Dress Reh Schedule. Stay tuned!:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 8,
-    "title": "Session One",
-    "date": "2026-06-27",
-    "start": "09:15:00",
-    "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "Saturday schedule will be\nadjusted according to Final\nDress Reh Schedule. Stay tuned!",
-    "event_id": "Master Schedule:8:12:2026-06-27:9:15-10:15 Session One|Saturday schedule will be|adjusted according to Final|Dress Reh Schedule. Stay tuned!:location=braunrehearsalhall",
-    "participants": [
-      "Mark Siegel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 11,
     "title": "Tenenbom Coaching: Quail 4tet",
@@ -19140,7 +18566,7 @@
     "date": "2026-06-27",
     "start": "09:15:00",
     "end": "10:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:24:9:2026-06-27:SQuEAQ:Tony:block=sessionone",
     "participants": [
@@ -19198,7 +18624,7 @@
     "date": "2026-06-27",
     "start": "10:30:00",
     "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:23:10:2026-06-27:No Name Piano Quartet:Danny:block=sessiontwo",
     "participants": [
@@ -19561,40 +18987,6 @@
     ]
   },
   {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-27",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:13:12:2026-06-27:10:30-11:30|Session Two:location=braunrehearsalhall",
-    "participants": [
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Mark Siegel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 13,
-    "title": "Session Two",
-    "date": "2026-06-27",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:13:12:2026-06-27:10:30-11:30|Session Two:location=203",
-    "participants": [
-      "Lloyd Minor",
-      "Neir Eshel"
-    ]
-  },
-  {
     "source": "Coaching by Ensemble",
     "row_number": 17,
     "title": "Tenenbom Coaching: Quartet SAMM",
@@ -19792,7 +19184,7 @@
     "date": "2026-06-27",
     "start": "13:15:00",
     "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "103",
     "description": "",
     "event_id": "Coaching by Ensemble:By Ensemble Fri & Sat:24:11:2026-06-27:SQuEAQ:Pedja OR:block=sessionthree",
     "participants": [
@@ -19986,53 +19378,6 @@
       "Aaron Wilk",
       "Lloyd Minor",
       "Neir Eshel"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-27",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "Master Schedule:23:12:2026-06-27:1:15-2:15pm|Session Three:location=braunrehearsalhall",
-    "participants": [
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-27",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "228",
-    "description": "",
-    "event_id": "Master Schedule:23:12:2026-06-27:1:15-2:15pm|Session Three:location=228",
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "source": "Master Schedule",
-    "row_number": 23,
-    "title": "Session Three",
-    "date": "2026-06-27",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "203",
-    "description": "",
-    "event_id": "Master Schedule:23:12:2026-06-27:1:15-2:15pm|Session Three:location=203",
-    "participants": [
-      "Misha Rafiee"
     ]
   },
   {
@@ -20588,7 +19933,6 @@
       "Ayane Kozasa",
       "Daniel Phillips",
       "Dimitri Murrath",
-      "Hannah Collins",
       "Howard Nelson",
       "Jennah Delp Somers",
       "John Novacek",
@@ -20605,17 +19949,31 @@
     ]
   },
   {
-    "source": "Faculty Schedule",
-    "row_number": 49,
-    "title": "10:50pm Tony SFO",
+    "source": "Faculty Schedule Daily Tabs",
+    "row_number": 50,
+    "title": "10:50pm Tony SFO SW3634",
     "date": "2026-06-27",
     "start": "22:50:00",
     "end": "23:20:00",
     "location": "SFO",
     "description": "",
-    "event_id": "Faculty Schedule:travel:49:12:0:2026-06-27:10:50pm Tony SFO",
+    "event_id": "Faculty Schedule Daily Tabs:travel:50:15:0:2026-06-27:10:50pm Tony SFO SW3634",
     "participants": [
       "Anthony Manzo"
+    ]
+  },
+  {
+    "source": "Faculty Schedule",
+    "row_number": 49,
+    "title": "11:05pm Hannah SFO UA 1665",
+    "date": "2026-06-27",
+    "start": "23:05:00",
+    "end": "23:35:00",
+    "location": "SFO",
+    "description": "",
+    "event_id": "Faculty Schedule:travel:49:12:1:2026-06-27:11:05pm Hannah SFO UA 1665",
+    "participants": [
+      "Hannah Collins"
     ]
   },
   {
@@ -20630,6 +19988,34 @@
     "event_id": "end-of-day-phase-2026-06-27-anthonymanzo",
     "participants": [
       "Anthony Manzo"
+    ]
+  },
+  {
+    "source": "Optional Sight Reading Events",
+    "row_number": 0,
+    "title": "Optional Sight Reading!",
+    "date": "2026-06-27",
+    "start": "23:35:00",
+    "end": "00:00:00",
+    "location": "Braun Music Building Everywhere",
+    "description": "",
+    "event_id": "end-of-day-phase-2026-06-27-hannahcollins",
+    "participants": [
+      "Hannah Collins"
+    ]
+  },
+  {
+    "source": "Faculty Schedule",
+    "row_number": 30,
+    "title": "2:56 Nina/Anouk SF AA 1854",
+    "date": "2026-06-28",
+    "start": "02:56:00",
+    "end": "03:26:00",
+    "location": "San Francisco",
+    "description": "",
+    "event_id": "Faculty Schedule:travel:30:13:0:2026-06-28:2:56 Nina/Anouk SF AA 1854",
+    "participants": [
+      "Nina Lee"
     ]
   },
   {
@@ -21057,6 +20443,20 @@
     "event_id": "Faculty Schedule:travel:30:13:0:2026-06-28:2:56 Nina/Anouk SF AA 1854",
     "participants": [
       "Nina Lee"
+    ]
+  },
+  {
+    "source": "Faculty Schedule",
+    "row_number": 48,
+    "title": "Pedja to SF in evening",
+    "date": "2026-06-28",
+    "start": "15:45:00",
+    "end": "16:15:00",
+    "location": "San Francisco",
+    "description": "",
+    "event_id": "Faculty Schedule:travel:48:13:0:2026-06-28:Pedja to SF in evening",
+    "participants": [
+      "Pedja Muzijevic"
     ]
   },
   {
