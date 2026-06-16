@@ -1,11 +1,11 @@
 # Calendar Generation Succeeded
 
 - Previous baseline: found
-- Before events: 1160
-- After events: 1142
-- Delta: -18
-- Added events: 0
-- Removed events: 18
+- Before events: 1142
+- After events: 1160
+- Delta: +18
+- Added events: 18
+- Removed events: 0
 - Changed same slots: 0
 - People affected by listed changes: 120
 
@@ -20,8 +20,7 @@
   "Faculty Concert Definitions": 25,
   "Faculty Schedule": 20,
   "Master Schedule": 32,
-  "Masterclass Assignments": 6,
-  "Optional Sight Reading Events": 18
+  "Masterclass Assignments": 6
 }
 ```
 
@@ -34,29 +33,30 @@
   "Faculty Concert Definitions": 25,
   "Faculty Schedule": 20,
   "Master Schedule": 32,
-  "Masterclass Assignments": 6
+  "Masterclass Assignments": 6,
+  "Optional Sight Reading Events": 18
 }
 ```
 
-### Removed Examples
-- `-` 2026-06-20 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Daniel Phillips, Hannah Collins, Howard Nelson, +7 | Optional Sight Reading Events
-- `-` 2026-06-20 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +103 | Optional Sight Reading Events
-- `-` 2026-06-21 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Anthony Manzo, Ayane Kozasa, Daniel Phillips, Dimitri Murrath, +11 | Optional Sight Reading Events
-- `-` 2026-06-21 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +99 | Optional Sight Reading Events
-- `-` 2026-06-22 18:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Daniel Phillips, Hannah Collins, Howard Nelson, Jennah Delp Somers, John Novacek, +4 | Optional Sight Reading Events
-- `-` 2026-06-22 18:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Owen Dalby | Optional Sight Reading Events
-- `-` 2026-06-22 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +103 | Optional Sight Reading Events
-- `-` 2026-06-23 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo, Daniel Phillips, Dimitri Murrath, Hannah Collins, Howard Nelson, +9 | Optional Sight Reading Events
-- `-` 2026-06-23 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +101 | Optional Sight Reading Events
-- `-` 2026-06-24 18:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Anthony Manzo, Ayane Kozasa, Dimitri Murrath, Hannah Collins, +11 | Optional Sight Reading Events
-- `-` 2026-06-24 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +99 | Optional Sight Reading Events
-- `-` 2026-06-25 17:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Howard Nelson, Jennah Delp Somers, John Novacek, +8 | Optional Sight Reading Events
-- `-` 2026-06-25 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +96 | Optional Sight Reading Events
-- `-` 2026-06-25 20:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo, Daniel Phillips, Dimitri Murrath, Hannah Collins, Pedja Muzijevic, +1 | Optional Sight Reading Events
-- `-` 2026-06-26 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +115 | Optional Sight Reading Events
-- `-` 2026-06-27 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +113 | Optional Sight Reading Events
-- `-` 2026-06-27 23:20:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo | Optional Sight Reading Events
-- `-` 2026-06-27 23:35:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Hannah Collins | Optional Sight Reading Events
+### Added Examples
+- `+` 2026-06-20 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Daniel Phillips, Hannah Collins, Howard Nelson, +7 | Optional Sight Reading Events
+- `+` 2026-06-20 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +103 | Optional Sight Reading Events
+- `+` 2026-06-21 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Anthony Manzo, Ayane Kozasa, Daniel Phillips, Dimitri Murrath, +11 | Optional Sight Reading Events
+- `+` 2026-06-21 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +99 | Optional Sight Reading Events
+- `+` 2026-06-22 18:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Daniel Phillips, Hannah Collins, Howard Nelson, Jennah Delp Somers, John Novacek, +4 | Optional Sight Reading Events
+- `+` 2026-06-22 18:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Owen Dalby | Optional Sight Reading Events
+- `+` 2026-06-22 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +103 | Optional Sight Reading Events
+- `+` 2026-06-23 19:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo, Daniel Phillips, Dimitri Murrath, Hannah Collins, Howard Nelson, +9 | Optional Sight Reading Events
+- `+` 2026-06-23 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +101 | Optional Sight Reading Events
+- `+` 2026-06-24 18:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Anthony Manzo, Ayane Kozasa, Dimitri Murrath, Hannah Collins, +11 | Optional Sight Reading Events
+- `+` 2026-06-24 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +99 | Optional Sight Reading Events
+- `+` 2026-06-25 17:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Alexi Kenney, Ayane Kozasa, Howard Nelson, Jennah Delp Somers, John Novacek, +8 | Optional Sight Reading Events
+- `+` 2026-06-25 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +96 | Optional Sight Reading Events
+- `+` 2026-06-25 20:30:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo, Daniel Phillips, Dimitri Murrath, Hannah Collins, Pedja Muzijevic, +1 | Optional Sight Reading Events
+- `+` 2026-06-26 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +115 | Optional Sight Reading Events
+- `+` 2026-06-27 20:00:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +113 | Optional Sight Reading Events
+- `+` 2026-06-27 23:20:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Anthony Manzo | Optional Sight Reading Events
+- `+` 2026-06-27 23:35:00-00:00:00 | Optional Sight Reading! | Braun Music Building Everywhere | Hannah Collins | Optional Sight Reading Events
 
 ## Affected People
 
