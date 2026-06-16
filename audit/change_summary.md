@@ -2,12 +2,12 @@
 
 - Previous baseline: found
 - Before events: 874
-- After events: 874
-- Delta: +0
-- Added events: 0
-- Removed events: 0
-- Changed same slots: 0
-- People affected by listed changes: 0
+- After events: 873
+- Delta: -1
+- Added events: 22
+- Removed events: 23
+- Changed same slots: 4
+- People affected by listed changes: 130
 
 ## Events By Source
 
@@ -31,13 +31,84 @@
 {
   "Adam Pelzer Appointments": 20,
   "Coaching by Ensemble": 522,
-  "Faculty Schedule": 21,
-  "Faculty Schedule Daily Tabs": 23,
-  "Master Schedule": 264,
+  "Faculty Concert Definitions": 25,
+  "Faculty Schedule": 20,
+  "Master Schedule": 262,
   "Masterclass Assignments": 6,
   "Optional Sight Reading Events": 18
 }
 ```
+
+### Added Examples
+- `+` 2026-06-20 11:00:00-12:30:00 | Rule of Three Faculty Rehearsal #1 | N/A | Owen Dalby, Daniel Phillips, Steven Tenenbom | Faculty Concert Definitions
+- `+` 2026-06-20 14:30:00-16:30:00 | Road Movies Faculty Rehearsal #1 | N/A | Alexi Kenney, John Novacek | Faculty Concert Definitions
+- `+` 2026-06-20 14:30:00-17:00:00 | Dvorak 6tet Faculty Rehearsal #1 | N/A | Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul Wiancko, +1 | Faculty Concert Definitions
+- `+` 2026-06-20 19:00:00-20:00:00 | Brandenburg 6 Faculty Rehearsal #1 | N/A | Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, Nina Lee, +2 | Faculty Concert Definitions
+- `+` 2026-06-21 13:00:00-14:30:00 | Dvorak 6tet Faculty Rehearsal #2 | N/A | Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul Wiancko, +1 | Faculty Concert Definitions
+- `+` 2026-06-21 13:00:00-14:30:00 | Road Movies Faculty Rehearsal #2 | N/A | Alexi Kenney, John Novacek | Faculty Concert Definitions
+- `+` 2026-06-21 16:00:00-17:30:00 | Mendelssohn 6tet Faculty Rehearsal #1 | N/A | Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, Anthony Manzo, +1 | Faculty Concert Definitions
+- `+` 2026-06-21 16:30:00-18:00:00 | Mozart 5tet Faculty Rehearsal #1 | At Dolores Poolhouse -TBC | Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee | Faculty Concert Definitions
+- `+` 2026-06-21 19:00:00-20:00:00 | Tchaikovsky Faculty Rehearsal #1 | AT DOLORES | Todd Palmer, Owen Dalby, John Novacek | Faculty Concert Definitions
+- `+` 2026-06-22 10:30:00-11:30:00 | Faculty Concert #1 Dress Rehearsal | N/A | Alexi Kenney, John Novacek, Owen Dalby, Daniel Phillips, Steven Tenenbom, +3 | Faculty Concert Definitions
+- `+` 2026-06-22 12:00:00-13:00:00 | Playing Faculty Concert #1 | Bing Concert Hall | Alexi Kenney, John Novacek, Owen Dalby, Daniel Phillips, Steven Tenenbom, +3 | Faculty Concert Definitions
+- `+` 2026-06-22 16:30:00-18:30:00 | Mozart 5tet Faculty Rehearsal #2 | N/A | Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee | Faculty Concert Definitions
+- `+` 2026-06-22 19:00:00-20:00:00 | Brandenburg 6 Faculty Rehearsal #2 | N/A | Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, Nina Lee, +2 | Faculty Concert Definitions
+- `+` 2026-06-23 14:30:00-15:30:00 | Rebecca Clarke duo Faculty Rehearsal #1 | N/A | Ayane Kozasa, Todd Palmer | Faculty Concert Definitions
+- `+` 2026-06-23 19:00:00-20:00:00 | Mozart 5tet Faculty Rehearsal #3 | N/A | Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee | Faculty Concert Definitions
+- `+` 2026-06-24 12:00:00-13:00:00 | Playing Faculty Concert #2 | Bing Concert Hall | Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, Nina Lee, +6 | Faculty Concert Definitions
+- `+` 2026-06-24 16:30:00-18:00:00 | Tchaikovsky Faculty Rehearsal #2 | N/A | Todd Palmer, Owen Dalby, John Novacek | Faculty Concert Definitions
+- `+` 2026-06-24 19:00:00-20:00:00 | Rule of Three Faculty Rehearsal #2 | N/A | Owen Dalby, Daniel Phillips, Steven Tenenbom | Faculty Concert Definitions
+- `+` 2026-06-24 21:00:00-22:30:00 | Cello-suss Reading! | Braun Rehearsal Hall | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +115 | Master Schedule
+- `+` 2026-06-25 19:00:00-20:30:00 | Mendelssohn 6tet Faculty Rehearsal #2 | N/A | Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, Anthony Manzo, +1 | Faculty Concert Definitions
+- `+` 2026-06-26 12:00:00-13:00:00 | Playing Faculty Concert #3 | Bing Concert Hall | Todd Palmer, Owen Dalby, John Novacek, Daniel Phillips, Steven Tenenbom, +5 | Faculty Concert Definitions
+- `+` 2026-06-27 13:15:00-14:15:00 | Pedja Coaching: SQuEAQ | 103 | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
+
+### Removed Examples
+- `-` 2026-06-20 11:00:00-12:30:00 | Rule of Three Faculty Rehearsal #1 | N/A | Faculty Ensemble: Rule of Three, Owen Dalby, Daniel Phillips, Steven Tenenbom | Faculty Schedule Daily Tabs
+- `-` 2026-06-20 14:30:00-16:30:00 | Road Movies Faculty Rehearsal #1 | N/A | Faculty Ensemble: Road Movies, Alexi Kenney, John Novacek | Faculty Schedule Daily Tabs
+- `-` 2026-06-20 14:30:00-17:00:00 | Dvorak 6tet Faculty Rehearsal #1 | N/A | Faculty Ensemble: Dvorak 6tet, Owen Dalby, Daniel Phillips, William Coleman, Hannah Collins, +1 | Faculty Schedule Daily Tabs
+- `-` 2026-06-20 19:00:00-20:00:00 | Brandenburg 6 Faculty Rehearsal #1 | N/A | Faculty Ensemble: Brandenburg 6, William Coleman, Dimitri Murrath, Lesley Robertson, Steven Tenenbom, +3 | Faculty Schedule Daily Tabs
+- `-` 2026-06-21 13:00:00-14:30:00 | Dvorak 6tet Faculty Rehearsal #2 | N/A | Faculty Ensemble: Dvorak 6tet, Owen Dalby, Daniel Phillips, William Coleman, Steven Tenenbom, +1 | Faculty Schedule Daily Tabs
+- `-` 2026-06-21 13:00:00-14:30:00 | Road Movies Faculty Rehearsal #2 | N/A | Faculty Ensemble: Road Movies, Alexi Kenney, John Novacek | Faculty Schedule Daily Tabs
+- `-` 2026-06-21 16:00:00-17:30:00 | Mendelssohn 6tet Faculty Rehearsal #1 | N/A | Faculty Ensemble: Mendelssohn 6tet, Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, +2 | Faculty Schedule Daily Tabs
+- `-` 2026-06-21 16:30:00-18:00:00 | Mozart 5tet Faculty Rehearsal #1 | At Dolores Poolhouse -TBC | Faculty Ensemble: Mozart 5tet, Owen Dalby, Alexi Kenney, Ayane Kozasa, Lesley Robertson, +1 | Faculty Schedule Daily Tabs
+- `-` 2026-06-21 19:00:00-20:00:00 | Tchaikovsky Faculty Rehearsal #1 | AT DOLORES | Faculty Ensemble: Tchaikovsky, Owen Dalby, Todd Palmer, John Novacek | Faculty Schedule Daily Tabs
+- `-` 2026-06-22 10:30:00-11:30:00 | Dress Rehearsal |  | Owen Dalby, Alexi Kenney, Daniel Phillips, Steven Tenenbom, Hannah Collins, +2 | Faculty Schedule Daily Tabs
+- `-` 2026-06-22 12:00:00-13:00:00 | Playing Faculty Concert #1 | Bing Concert Hall | Faculty Ensemble: Dvorak 6tet, Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, +5 | Faculty Schedule Daily Tabs
+- `-` 2026-06-22 16:30:00-18:30:00 | Mozart 5tet Faculty Rehearsal #2 | N/A | Faculty Ensemble: Mozart 5tet, Owen Dalby, Alexi Kenney, Ayane Kozasa, Lesley Robertson, +1 | Faculty Schedule Daily Tabs
+- `-` 2026-06-22 19:00:00-20:00:00 | Brandenburg 6 Faculty Rehearsal #2 | N/A | Faculty Ensemble: Brandenburg 6, William Coleman, Dimitri Murrath, Lesley Robertson, Steven Tenenbom, +3 | Faculty Schedule Daily Tabs
+- `-` 2026-06-23 14:30:00-15:30:00 | Rebecca Clarke duo Faculty Rehearsal #1 | N/A | Faculty Ensemble: Rebecca Clarke duo, Ayane Kozasa, Todd Palmer | Faculty Schedule Daily Tabs
+- `-` 2026-06-23 19:00:00-20:00:00 | Mozart 5tet Faculty Rehearsal #3 | N/A | Faculty Ensemble: Mozart 5tet, Owen Dalby, Alexi Kenney, Ayane Kozasa, Lesley Robertson, +1 | Faculty Schedule Daily Tabs
+- `-` 2026-06-24 12:00:00-13:00:00 | Playing Faculty Concert #2 | Bing Concert Hall | Faculty Ensemble: Brandenburg 6, Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, +9 | Faculty Schedule Daily Tabs
+- `-` 2026-06-24 16:30:00-18:00:00 | Tchaikovsky Faculty Rehearsal #2 | N/A | Faculty Ensemble: Tchaikovsky, Owen Dalby, Todd Palmer, John Novacek | Faculty Schedule Daily Tabs
+- `-` 2026-06-24 19:00:00-20:00:00 | Rule of Three Faculty Rehearsal #2 | N/A | Faculty Ensemble: Rule of Three, Owen Dalby, Daniel Phillips, Steven Tenenbom | Faculty Schedule Daily Tabs
+- `-` 2026-06-25 19:00:00-20:30:00 | Mendelssohn 6tet Faculty Rehearsal #2 | N/A | Faculty Ensemble: Mendelssohn 6tet, Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, +2 | Faculty Schedule Daily Tabs
+- `-` 2026-06-26 12:00:00-13:00:00 | Playing Faculty Concert #3 | Bing Concert Hall | Faculty Ensemble: Mendelssohn 6tet, Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, +8 | Faculty Schedule Daily Tabs
+- `-` 2026-06-27 13:15:00-14:15:00 | Pedja OR Coaching: SQuEAQ | 103 | SQuEAQ, Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, +2 | Coaching by Ensemble
+- `-` 2026-06-28 14:56:00-15:26:00 | 2:56 Nina/Anouk SF AA 1854 | San Francisco | Nina Lee | Faculty Schedule
+- `-` 2026-06-28 19:30:00-20:00:00 | Pedja to SF in evening | San Francisco | Pedja Muzijevic | Faculty Schedule
+
+### Changed Slot Examples
+- Before:
+  - `2026-06-21 14:30:00-16:00:00 | Spotlight on Physical Wellness | Campbell Recital Hall and Braun Courtyard | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +115 | Master Schedule`
+- After:
+  - `2026-06-21 14:30:00-16:00:00 | Spotlight on Physical Wellness | Dinkelspiel Stage | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +115 | Master Schedule`
+- Before:
+  - `2026-06-24 10:30:00-11:30:00 | Dress Rehearsal |  | Owen Dalby, Alexi Kenney, William Coleman, Ayane Kozasa, Dimitri Murrath, +6 | Faculty Schedule Daily Tabs`
+- After:
+  - `2026-06-24 10:30:00-11:30:00 | Faculty Concert #2 Dress Rehearsal | N/A | Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, Nina Lee, +6 | Faculty Concert Definitions`
+- Before:
+  - `2026-06-26 10:30:00-11:30:00 | Dress Rehearsal |  | Owen Dalby, Daniel Phillips, William Coleman, Dimitri Murrath, Steven Tenenbom, +5 | Faculty Schedule Daily Tabs`
+- After:
+  - `2026-06-26 10:30:00-11:30:00 | Faculty Concert #3 Dress Rehearsal | N/A | Todd Palmer, Owen Dalby, John Novacek, Daniel Phillips, Steven Tenenbom, +5 | Faculty Concert Definitions`
+- Before:
+  - `2026-06-27 22:50:00-23:20:00 | 10:50pm Tony SFO SW3634 | SFO | Anthony Manzo | Faculty Schedule Daily Tabs`
+- After:
+  - `2026-06-27 22:50:00-23:20:00 | 10:50pm Tony SFO | SFO | Anthony Manzo | Faculty Schedule`
+
+## Affected People
+
+Aaron Wilk, Abigail Rogers, Alex Hwang, Alex Li, Alexi Kenney, Anna Soper, Anne Scott, Anthony Chukhlov, Anthony Manzo, Ari Freed, Ari Le, Ayane Kozasa, Ayoun Alexandra Kim, Ben Parks, Benjamin Chen, Beverly Fu, Bruce Yu, Cary Chin, Celia Morin, Chia Ying Lee, Chiao Hui Chang, Christine Choi, Christopher Lin-Brande, Chung-Pei Ma, Cindy Mong, Cindy Wang, Colin Guan, Cristina Ruotolo, Cyrus Behroozi, Daiyao Zhang, Daniel Phillips, Derek Katz, Derek Wu, Dimitri Murrath, Dustin Breshears, Elisabeth Heremans, Emil Ma, Emma Spellman, Eric Cheng, Eric Cooper, Faculty Ensemble: Brandenburg 6, Faculty Ensemble: Dvorak 6tet, Faculty Ensemble: Mendelssohn 6tet, Faculty Ensemble: Mozart 5tet, Faculty Ensemble: Rebecca Clarke duo, Faculty Ensemble: Road Movies, Faculty Ensemble: Rule of Three, Faculty Ensemble: Tchaikovsky, Gabriel Irazabal, Gregorio Lopes, Griffin Glenn, Haeun Nam, Hannah Collins, Hilary Meltzer, Howard Nelson, I-han Chou, Ian Maloney, Isaac Park, Isabella Fulford, JK Hunt, James Preucil, James Welch, Jasper Jian, Jeanel Liango, Jennah Delp Somers, Jennie Yang, Jeremy Klein, Jessica Seeliger, Jihyun Baik, Jim Chou, Jim Zehnder, Jocelyn Lamm Startz, John Novacek, Jon Lee, Jérôme Chiasson, Katie Behroozi, Ken Ferry, Ko Hayashi, Laura Shifley, Laurence Lewis, Lesley Robertson, Leslie Ashworth, Leyan Lo, Lloyd Minor, Lois Harder, Lourdes Pinney, Luke Henderson, Marandi Hostetter, Marie Christine Lopez, Mark Siegel, Maya Enstad, Meg Lamm, Melissa Chu, Melissa Lam, Miles Chan, Minsu Longiaru, Misha Rafiee, Monica Anuforo, Nate Strothkamp, Neir Eshel, Nina Lee, Nina Monfredo, Norman Truong, Oliver Leitner, Olivia Tam, Owen Dalby, Pamela Frank, Paul Wiancko, Pedja Muzijevic, Pedja OR, Persis Drell, Raunak Kumar, Ria Honda, Ron Ho, SQuEAQ, Samantha Ching, Seth Novatt, Shawn Barnett, Sheila Chan, Shintaro Taneda, Starla Breshears, Stefan Leape, Stephen Prutsman, Steven Tenenbom, Thomas Xiong, Todd Palmer, Tyson Mao, Warren Wu, William Coleman, Yi Ying Wei
 
 ## Calendar Links
 
