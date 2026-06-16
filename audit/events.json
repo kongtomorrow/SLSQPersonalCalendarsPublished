@@ -614,18 +614,14 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -635,7 +631,7 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -739,7 +735,7 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:beverlyfu",
     "participants": [
@@ -764,6 +760,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 26,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "14:00:00",
+    "end": "17:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -807,7 +820,7 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:riahonda",
     "participants": [
@@ -824,7 +837,7 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:haeunnam",
     "participants": [
@@ -848,7 +861,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 26,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "14:00:00",
+    "end": "17:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -879,7 +905,7 @@
     "date": "2026-06-20",
     "start": "14:00:00",
     "end": "17:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:26:4:2026-06-20:2-5pm|Rehearsal Period:emilma",
     "participants": [
@@ -1359,18 +1385,14 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -1380,7 +1402,7 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -1484,7 +1506,7 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -1509,6 +1531,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -1552,7 +1591,7 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -1569,7 +1608,7 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -1593,7 +1632,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-20",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -1624,7 +1676,7 @@
     "date": "2026-06-20",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:4:2026-06-20:7:00 PM|Rehearsal Period:emilma",
     "participants": [
@@ -2013,18 +2065,14 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -2034,7 +2082,7 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -2138,7 +2186,7 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:beverlyfu",
     "participants": [
@@ -2163,6 +2211,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 10,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "09:00:00",
+    "end": "10:30:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -2206,7 +2271,7 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:riahonda",
     "participants": [
@@ -2223,7 +2288,7 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:haeunnam",
     "participants": [
@@ -2247,7 +2312,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 10,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "09:00:00",
+    "end": "10:30:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -2278,7 +2356,7 @@
     "date": "2026-06-21",
     "start": "09:00:00",
     "end": "10:30:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:10:6:2026-06-21:9:00-10:30am|Rehearsal Period:emilma",
     "participants": [
@@ -2698,18 +2776,14 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -2719,7 +2793,7 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -2823,7 +2897,7 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:beverlyfu",
     "participants": [
@@ -2848,6 +2922,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 22,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "13:00:00",
+    "end": "14:30:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -2891,7 +2982,7 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:riahonda",
     "participants": [
@@ -2908,7 +2999,7 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:haeunnam",
     "participants": [
@@ -2932,7 +3023,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 22,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "13:00:00",
+    "end": "14:30:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -2963,7 +3067,7 @@
     "date": "2026-06-21",
     "start": "13:00:00",
     "end": "14:30:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:22:6:2026-06-21:1-2:30pm|Rehearsal Period:emilma",
     "participants": [
@@ -3265,18 +3369,14 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -3286,7 +3386,7 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -3390,7 +3490,7 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:beverlyfu",
     "participants": [
@@ -3415,6 +3515,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 34,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "16:00:00",
+    "end": "18:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -3458,7 +3575,7 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:riahonda",
     "participants": [
@@ -3475,7 +3592,7 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:haeunnam",
     "participants": [
@@ -3499,7 +3616,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 34,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "16:00:00",
+    "end": "18:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -3530,7 +3660,7 @@
     "date": "2026-06-21",
     "start": "16:00:00",
     "end": "18:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:34:6:2026-06-21:4pm-6pm|Rehearsal Period:emilma",
     "participants": [
@@ -3744,18 +3874,14 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -3765,7 +3891,7 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -3869,7 +3995,7 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -3894,6 +4020,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -3937,7 +4080,7 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -3954,7 +4097,7 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -3978,7 +4121,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-21",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -4009,7 +4165,7 @@
     "date": "2026-06-21",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:6:2026-06-21:7:00 PM|Rehearsal Period:emilma",
     "participants": [
@@ -7185,18 +7341,14 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -7206,7 +7358,7 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -7310,7 +7462,7 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -7335,6 +7487,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-22",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -7378,7 +7547,7 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -7395,7 +7564,7 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -7419,7 +7588,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-22",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -7450,7 +7632,7 @@
     "date": "2026-06-22",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:7:2026-06-22:7:00 PM|Rehearsal Period:emilma",
     "participants": [
@@ -10660,18 +10842,14 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -10681,7 +10859,7 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -10785,7 +10963,7 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -10810,6 +10988,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-23",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -10853,7 +11048,7 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -10870,7 +11065,7 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -10894,7 +11089,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-23",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -10925,7 +11133,7 @@
     "date": "2026-06-23",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:8:2026-06-23:7:00 PM|Rehearsal Period:emilma",
     "participants": [
@@ -14241,18 +14449,14 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -14262,7 +14466,7 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -14366,7 +14570,7 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -14391,6 +14595,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-24",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -14434,7 +14655,7 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -14451,7 +14672,7 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -14475,7 +14696,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-24",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -14506,7 +14740,7 @@
     "date": "2026-06-24",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:9:2026-06-24:7:00 PM|Rehearsal Period:emilma",
     "participants": [
@@ -17793,18 +18027,14 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "212",
+    "location": "225",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:dustinbreshears",
     "participants": [
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
-      "Melissa Lam",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape"
+      "Melissa Lam"
     ]
   },
   {
@@ -17814,7 +18044,7 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "213",
+    "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:natestrothkamp",
     "participants": [
@@ -17918,7 +18148,7 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "202",
+    "location": "201",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:beverlyfu",
     "participants": [
@@ -17943,6 +18173,23 @@
       "Ari Le",
       "Marandi Hostetter",
       "Melissa Chu"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-25",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "212",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:isabellafulford",
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
     ]
   },
   {
@@ -17986,7 +18233,7 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "DRH",
+    "location": "213",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:riahonda",
     "participants": [
@@ -18003,7 +18250,7 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "131",
+    "location": "Dink Reh Hall",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:haeunnam",
     "participants": [
@@ -18027,7 +18274,20 @@
       "Elisabeth Heremans",
       "Alex Hwang",
       "Thomas Xiong",
-      "Daiyao Zhang",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "source": "Coaching by Ensemble",
+    "row_number": 46,
+    "title": "Rehearsal Period",
+    "date": "2026-06-25",
+    "start": "19:00:00",
+    "end": "20:00:00",
+    "location": "131",
+    "description": "",
+    "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:mileschan",
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
@@ -18058,7 +18318,7 @@
     "date": "2026-06-25",
     "start": "19:00:00",
     "end": "20:00:00",
-    "location": "201",
+    "location": "202",
     "description": "",
     "event_id": "Coaching by Ensemble:rehearsal-period:Master Schedule:46:10:2026-06-25:7:00 PM|Rehearsal Period:emilma",
     "participants": [
