@@ -3,20 +3,12 @@ VERSION:2.0
 PRODID:-//SLSQ//Rendered Calendars//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:SLSQ26 - Dimitri Murrath
+X-WR-CALNAME:SLSQ26 - SEJI quartet
 X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:26519195a10ad96fc52c1253f656ddeb7ca5eb5b@slsq-rendered-calendars
-DTSTAMP:20260618T222021Z
-SUMMARY:10:40am Dimitri SFO
-DTSTART;TZID=America/Los_Angeles:20260619T104000
-DTEND;TZID=America/Los_Angeles:20260619T111000
-LOCATION:SFO
-END:VEVENT
-BEGIN:VEVENT
-UID:eb2bd3d844c9e60a1a64deaca461f2cb5c4cf33d@slsq-rendered-calendars
+UID:7132ac30ffd3de2fd1db0e492967a85b66c2e0da@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:On Campus Housing Check In
 DTSTART;TZID=America/Los_Angeles:20260619T170000
@@ -25,7 +17,7 @@ LOCATION:Front Desk at Munger
 DESCRIPTION:(Details coming)\nMunger Check In
 END:VEVENT
 BEGIN:VEVENT
-UID:3e5e50e0d8feb09b250de360857ddb6bc2d83298@slsq-rendered-calendars
+UID:51b5e214876cdb36df80040a33186819a2307190@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Seminar Registration
 DTSTART;TZID=America/Los_Angeles:20260620T090000
@@ -34,7 +26,7 @@ LOCATION:Campbell Recital Hall Lobby
 DESCRIPTION:Schedule Here\nParticipants will have access to
 END:VEVENT
 BEGIN:VEVENT
-UID:173b4562cfc3c96a60b06ca46633450457bc0914@slsq-rendered-calendars
+UID:1abe1016424731f1ce1bcd2da4ee2f4c0563a1d4@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Welcome Meeting
 DTSTART;TZID=America/Los_Angeles:20260620T130000
@@ -42,7 +34,15 @@ DTEND;TZID=America/Los_Angeles:20260620T140000
 LOCATION:Campbell Recital Hall
 END:VEVENT
 BEGIN:VEVENT
-UID:58b870f3a798ae487a59c739390048873f33bf4c@slsq-rendered-calendars
+UID:14b0ef7216531d8c2eb4e1dbfeb0a425cc0e865e@slsq-rendered-calendars
+DTSTAMP:20260618T222021Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260620T140000
+DTEND;TZID=America/Los_Angeles:20260620T170000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:5ec0a19749b2702a1384ceba94e35ecbc1e45182@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:chamber orch reading
 DTSTART;TZID=America/Los_Angeles:20260620T170000
@@ -50,7 +50,7 @@ DTEND;TZID=America/Los_Angeles:20260620T180000
 LOCATION:Dinkelspiel Stage
 END:VEVENT
 BEGIN:VEVENT
-UID:a9b88e8813b73ffd0722117463c846ab5d3ae6e3@slsq-rendered-calendars
+UID:0d726eb21997af16f9470d74d0aacd920803caf3@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Dinner -be our guests!
 DTSTART;TZID=America/Los_Angeles:20260620T180000
@@ -58,15 +58,15 @@ DTEND;TZID=America/Los_Angeles:20260620T190000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:cf1783d5909549527281d9e1b2113460b6d6f9cd@slsq-rendered-calendars
+UID:d4bec3f4f389c6c92a16c21814b2d0a5e392203c@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Brandenburg 6 Faculty Rehearsal #1
+SUMMARY:Rehearsal Period
 DTSTART;TZID=America/Los_Angeles:20260620T190000
 DTEND;TZID=America/Los_Angeles:20260620T200000
-LOCATION:Campbell Recital Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:04712e36440c2d98094eb036d511c3b7b4e2d3a4@slsq-rendered-calendars
+UID:7229b1e718cb169a06660a4245ffe4f580141a22@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260620T200000
@@ -74,7 +74,7 @@ DTEND;TZID=America/Los_Angeles:20260621T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:a590e702763e7b6a1f8c06cd2fdfe2126697e63d@slsq-rendered-calendars
+UID:f189852ebe9ae4ace9e71164a3658b6f27a6017b@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Continental Breakfast
 DTSTART;TZID=America/Los_Angeles:20260621T090000
@@ -82,7 +82,15 @@ DTEND;TZID=America/Los_Angeles:20260621T094500
 LOCATION:Campbell Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:85514997785f3fa16059d7c1859b4c6c1e971ea1@slsq-rendered-calendars
+UID:ca41edc093ccb41a8a57b982b98c5eb0fef4cb9c@slsq-rendered-calendars
+DTSTAMP:20260618T222021Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T090000
+DTEND;TZID=America/Los_Angeles:20260621T103000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:062a139255e24e11eeb26e58d970faba65273d01@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Presentation
 DTSTART;TZID=America/Los_Angeles:20260621T110000
@@ -91,7 +99,7 @@ LOCATION:Jack Trip CCRMA Stage
 DESCRIPTION:Chris Chafe
 END:VEVENT
 BEGIN:VEVENT
-UID:32491f9dfa95d02218961f82c29bbb781e79260a@slsq-rendered-calendars
+UID:e85ce4d561ba1d058ec7d726922cddec2af44080@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Light Lunch Provided
 DTSTART;TZID=America/Los_Angeles:20260621T120000
@@ -99,7 +107,15 @@ DTEND;TZID=America/Los_Angeles:20260621T130000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:d939444a54f72805d16970fb275731adfd30c1dd@slsq-rendered-calendars
+UID:97736932eefa41b0e2d16a89dbda35b2817ced51@slsq-rendered-calendars
+DTSTAMP:20260618T222021Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T130000
+DTEND;TZID=America/Los_Angeles:20260621T143000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:5d2eacd0d0809cfce35d567002ced1ff74be45f4@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Spotlight on Physical Wellness
 DTSTART;TZID=America/Los_Angeles:20260621T143000
@@ -108,23 +124,23 @@ LOCATION:Dinkelspiel Stage
 DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
 END:VEVENT
 BEGIN:VEVENT
-UID:79b850cd9a15b988d9c36ded4007241ea0e12583@slsq-rendered-calendars
+UID:da25d602faa659e26588c97598291ff09249ab64@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Mendelssohn 6tet Faculty Rehearsal #1
+SUMMARY:Rehearsal Period
 DTSTART;TZID=America/Los_Angeles:20260621T160000
-DTEND;TZID=America/Los_Angeles:20260621T174500
-LOCATION:Campbell Recital Hall
+DTEND;TZID=America/Los_Angeles:20260621T180000
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:38f75c996e109b0f47b58490fa22f5a775142d53@slsq-rendered-calendars
+UID:e7af4cbc694315e64c489c5651ece2d6e8c82564@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Dinner /evening rehearsals at Persis'
-DTSTART;TZID=America/Los_Angeles:20260621T180000
-DTEND;TZID=America/Los_Angeles:20260621T190000
-LOCATION:776 Dolores St\, Stanford\, CA
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260621T190000
+DTEND;TZID=America/Los_Angeles:20260621T200000
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:77684866ad394eba20ef72595696929a8d199eea@slsq-rendered-calendars
+UID:b85ebff193de76dfa0fa82e7b805872f560fd54f@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260621T200000
@@ -132,7 +148,7 @@ DTEND;TZID=America/Los_Angeles:20260622T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:a3d9f3e67d97b8d9965dc347794a555943870316@slsq-rendered-calendars
+UID:1ce2f4478917baf855d78cdb96002087a2826935@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260622T083000
@@ -140,23 +156,23 @@ DTEND;TZID=America/Los_Angeles:20260622T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:f152cd4490c67c53d892c960e4f78527602e9e67@slsq-rendered-calendars
+UID:bcd5adb235e5b37df53f34de65f4fb256357edea@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Lesley Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260622T091500
 DTEND;TZID=America/Los_Angeles:20260622T101500
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:e682315d1622384134bbc23c0fbbad4d52696e30@slsq-rendered-calendars
+UID:b15b006de1928bf69e889eeef13e758243caea98@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:WaMaTachou Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260622T103000
 DTEND;TZID=America/Los_Angeles:20260622T113000
-LOCATION:221
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:7a3222218eebacefefb28205f028f273ca982352@slsq-rendered-calendars
+UID:3bf62fdb51aa0968f9815a7b7905fd2101e9940a@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Faculty Concert #1
 DTSTART;TZID=America/Los_Angeles:20260622T120000
@@ -167,49 +183,43 @@ DESCRIPTION:Road Movies: Alexi Kenney\, John Novacek\nDvorak 6tet: Owen Dal
  Hannah Collins
 END:VEVENT
 BEGIN:VEVENT
-UID:1984f6dad8f518e139786b684537ed38822d9961@slsq-rendered-calendars
+UID:3be3fc68eed659fbb40fc962cd22da7316c9625a@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Lunch for ALL Faculty
-DTSTART;TZID=America/Los_Angeles:20260622T130000
-DTEND;TZID=America/Los_Angeles:20260622T140000
-LOCATION:Bing Concert Hall
-END:VEVENT
-BEGIN:VEVENT
-UID:138142f9f7d6301545064e74fe61d018e61377fc@slsq-rendered-calendars
-DTSTAMP:20260618T222021Z
-SUMMARY:The Dolphins
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260622T140000
 DTEND;TZID=America/Los_Angeles:20260622T150000
-LOCATION:227
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:1b44b338173a8dbe5b09422f477e2af84df7596e@slsq-rendered-calendars
+UID:0354560e756beaad18695bad898b173547045af8@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Masterclass 1A 1B
+SUMMARY:Rehearsal: SEJI quartet
+DTSTART;TZID=America/Los_Angeles:20260622T151500
+DTEND;TZID=America/Los_Angeles:20260622T161500
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:c0b2077be2e73aae77f76d8b5c58162396e39797@slsq-rendered-calendars
+DTSTAMP:20260618T222021Z
+SUMMARY:Playing Masterclass 1B
 DTSTART;TZID=America/Los_Angeles:20260622T163000
 DTEND;TZID=America/Los_Angeles:20260622T180000
-LOCATION:Campbell Recital Hall or Dinkelspiel Stage
-DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying: Murra
- y Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Melissa
-  Lam)\, Pinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\, Ka
- tarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, M
- aya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B
- \nLocation: Dinkelspiel Stage\nPlaying: Ethea Trio (Shintaro Taneda\, Ayou
- n Alexandra Kim\, Jon Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, 
- Ben Parks\, Cyrus Behroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, E
- mma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, W
- illiam Coleman
+LOCATION:Dinkelspiel Stage
+DESCRIPTION:Playing: Ethea Trio (Shintaro Taneda\, Ayoun Alexandra Kim\, Jo
+ n Lee)\, Quail 4tet (Katie Behroozi\, Benjamin Chen\, Ben Parks\, Cyrus Be
+ hroozi)\, SEJI quartet (Isabella Fulford\, JK Hunt\, Emma Spellman\, Stefa
+ n Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, William Coleman
 END:VEVENT
 BEGIN:VEVENT
-UID:4596b6772c5f7cb1ed047b0ae3a6b33f279823db@slsq-rendered-calendars
+UID:9e91fbe90b00c6ce9a6d9b4492ae4bdd5298814a@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Brandenburg 6 Faculty Rehearsal #2
+SUMMARY:Rehearsal Period
 DTSTART;TZID=America/Los_Angeles:20260622T190000
 DTEND;TZID=America/Los_Angeles:20260622T200000
-LOCATION:Campbell Recital Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:a6bcee58929e1130b42b3f165596b5260363b3b4@slsq-rendered-calendars
+UID:2dca99d8f86b33c0e9bc5f36b45a1af8bfb356d1@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260622T200000
@@ -217,7 +227,7 @@ DTEND;TZID=America/Los_Angeles:20260623T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:a12caf8e9d6f0bdaa1841ff3b582b0e364625613@slsq-rendered-calendars
+UID:7e9078acc4bd67e77a4b656fd9d9503b7ba4236b@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Musicians of the String Quartet:
 DTSTART;TZID=America/Los_Angeles:20260622T210000
@@ -227,7 +237,7 @@ DESCRIPTION:A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ART
  E production)\nDrop in As you Wish
 END:VEVENT
 BEGIN:VEVENT
-UID:d72d61f44561ac41af61c642ddda8a234c55cadf@slsq-rendered-calendars
+UID:92eb3988545cb35ef552ac081a2e290bb95ee526@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260623T083000
@@ -235,39 +245,39 @@ DTEND;TZID=America/Los_Angeles:20260623T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:8055b01934aa6c7d367bc7463eea6191b824d0ce@slsq-rendered-calendars
+UID:2f7466a3ec637bd46fc804f229cbe89090a36780@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Zehnder Blender
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260623T091500
 DTEND;TZID=America/Los_Angeles:20260623T101500
-LOCATION:Braun Rehearsal Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:565e0d82bf470ba2c11a5ab6ed4d6d73bfd1751c@slsq-rendered-calendars
+UID:c6568f847e4806b78a5cf435aab5f127c795dd14@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260623T103000
 DTEND;TZID=America/Los_Angeles:20260623T113000
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:3b97c57841f5347c25128ae8962f0683c30aa315@slsq-rendered-calendars
+UID:fe61896a61fa5e2ae28bc109ea52a57512d9fa77@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Selene Quartet
+SUMMARY:Hannah Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260623T131500
 DTEND;TZID=America/Los_Angeles:20260623T141500
-LOCATION:220
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:e603a5015a566731c46ed158e03fa44e973d7cc8@slsq-rendered-calendars
+UID:3ff31be0421640878f30c1f478850eb6375349ed@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:WaMaTachou Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260623T143000
 DTEND;TZID=America/Los_Angeles:20260623T153000
-LOCATION:221
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:7737b381906b7a10bc4804b8fe4c7c04f4e09c59@slsq-rendered-calendars
+UID:8e79667c8f19b767326cd4579e6ceefb4d774c94@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Special Presentation
 DTSTART;TZID=America/Los_Angeles:20260623T160000
@@ -277,16 +287,15 @@ DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
   & Conservation\nVisiting Scholar\, Oxford University
 END:VEVENT
 BEGIN:VEVENT
-UID:4d8f986796248fc864780d6f3065f2a1d6d34a8f@slsq-rendered-calendars
+UID:123898de437441735379279296f64bd1fa5c4e68@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Faculty & Guests
-DTSTART;TZID=America/Los_Angeles:20260623T180000
-DTEND;TZID=America/Los_Angeles:20260623T190000
-LOCATION:Home of Joan & David
-DESCRIPTION:meeting/dinner\n(discuss/determine Sat/Bing program)
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260623T190000
+DTEND;TZID=America/Los_Angeles:20260623T200000
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:5b993c0993f4161c1500d99aad3fdd49a001453c@slsq-rendered-calendars
+UID:8baaef4d70ae9d7fb0f42f5ec7f6608d38d46f84@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260623T200000
@@ -294,7 +303,7 @@ DTEND;TZID=America/Los_Angeles:20260624T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:69e2f916d1e12d4c466dfbe8379ffd1268ccf432@slsq-rendered-calendars
+UID:8d5b32b1d5cb5ee8e35c6bcc1f93622e220a54b1@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Musicians of the String Quartet:
 DTSTART;TZID=America/Los_Angeles:20260623T210000
@@ -304,7 +313,7 @@ DESCRIPTION:A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ART
  E production)\nDrop in As you Wish
 END:VEVENT
 BEGIN:VEVENT
-UID:2f1e33cb24873f2fb75da4aa86e3f549f3006079@slsq-rendered-calendars
+UID:9b749f8b72671ff501de286420d8c06f50b6d58d@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260624T083000
@@ -312,26 +321,25 @@ DTEND;TZID=America/Los_Angeles:20260624T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:582175fba192f80857b89fa3c4dbd76746322633@slsq-rendered-calendars
+UID:df3fa45a69e6e3df5cf2fede584e5c7f3780d68e@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Lesley Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260624T091500
 DTEND;TZID=America/Los_Angeles:20260624T101500
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:12c74c56417c931eb2defcf11780c8b759e56cc2@slsq-rendered-calendars
+UID:1c9293e5bf6d8e80295cdd3ead7f67e5aa3efc51@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Faculty Concert #2 Dress Rehearsal
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260624T103000
 DTEND;TZID=America/Los_Angeles:20260624T113000
-DESCRIPTION:Mozart 5tet: 10\;30am -10:50am\nRebecca Clarke duo: 1055-11:05\
- nBrandenburg 6: 11:10-11:30
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:19ced676214b925d1d5bfb2cacc1ad41a087f109@slsq-rendered-calendars
+UID:26abc5fbf6480778a49a10a7558587cb40d09aef@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Playing Faculty Concert #2
+SUMMARY:Faculty Concert #2
 DTSTART;TZID=America/Los_Angeles:20260624T120000
 DTEND;TZID=America/Los_Angeles:20260624T130000
 LOCATION:Bing Concert Hall
@@ -341,31 +349,23 @@ DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
  n Dalby\, Ayane Kozasa\, Lesley Robertson\, Nina Lee
 END:VEVENT
 BEGIN:VEVENT
-UID:6c1095f2fff772881be02c81ea16dfeaff6db7a7@slsq-rendered-calendars
+UID:fd49022b6224b7c2b27d9be0da2bb8609998e610@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Lunch for ALL Faculty
-DTSTART;TZID=America/Los_Angeles:20260624T130000
-DTEND;TZID=America/Los_Angeles:20260624T140000
-LOCATION:Bing Concert Hall
-END:VEVENT
-BEGIN:VEVENT
-UID:eaefd8da6b32e811c73bb4cb47bed6efdaac4d5a@slsq-rendered-calendars
-DTSTAMP:20260618T222021Z
-SUMMARY:The Dolphins
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260624T140000
 DTEND;TZID=America/Los_Angeles:20260624T150000
-LOCATION:227
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:ec37b2880bae79629ba505b867ea37d659bc85f0@slsq-rendered-calendars
+UID:361de4557e7c71e544cda3ecd5844eb644a7363c@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:WaMaTachou Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260624T151500
 DTEND;TZID=America/Los_Angeles:20260624T161500
-LOCATION:221
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:cbfe0860a53a8149ba9208355a6b733b100533e1@slsq-rendered-calendars
+UID:91f495dad99ad61eac9b69f5f997a8ebffc4333f@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Masterclass 2A\, 2B 2C
 DTSTART;TZID=America/Los_Angeles:20260624T163000
@@ -377,7 +377,15 @@ DESCRIPTION:Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolor
  ching: Alexi Kenney\, Stephen Prutsman\, Nina Lee
 END:VEVENT
 BEGIN:VEVENT
-UID:4571ac3bef2913451822cffeebe044cf01349e88@slsq-rendered-calendars
+UID:211eec4fa69e1a77e927bae7890e5f26d9744527@slsq-rendered-calendars
+DTSTAMP:20260618T222021Z
+SUMMARY:Rehearsal Period
+DTSTART;TZID=America/Los_Angeles:20260624T190000
+DTEND;TZID=America/Los_Angeles:20260624T200000
+LOCATION:212
+END:VEVENT
+BEGIN:VEVENT
+UID:5a651ede5654be0333c6a1554232202de6f1abc1@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260624T200000
@@ -385,7 +393,7 @@ DTEND;TZID=America/Los_Angeles:20260625T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:c02a147ac4e1f114bd8176ada182e3fe6fd77156@slsq-rendered-calendars
+UID:05acc7ece658740a4772590eff1805e44d4ab2f0@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Cello-suss Reading!
 DTSTART;TZID=America/Los_Angeles:20260624T210000
@@ -394,7 +402,7 @@ LOCATION:Braun Rehearsal Hall
 DESCRIPTION:TBC\nAC/DC‘s “thunderstruck” for 12 cellos.\nand more!
 END:VEVENT
 BEGIN:VEVENT
-UID:3ba7e306e305736ba1a9eaba089d078e5b5bcccb@slsq-rendered-calendars
+UID:5f693f0e73a62818f6a97e9f05464c6e74788b49@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260625T083000
@@ -402,23 +410,23 @@ DTEND;TZID=America/Los_Angeles:20260625T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:b87cb429d198f88fc3d776b1d02dcaf591402978@slsq-rendered-calendars
+UID:41d5d529ee741be3d134b2b9e6f3267bc2f7fed9@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Zehnder Blender
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260625T091500
 DTEND;TZID=America/Los_Angeles:20260625T101500
-LOCATION:Braun Rehearsal Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:726009c8628c0007899eb53716650ed00ee31235@slsq-rendered-calendars
+UID:86ec6b07faed557f164c248a761d242851572026@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260625T103000
 DTEND;TZID=America/Los_Angeles:20260625T113000
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:7b91b243226239937c96034b2a1a5245ce570a16@slsq-rendered-calendars
+UID:d436f595c6e9149d3d463140bef0df37cf588e4f@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Lunch in Courtyard!
 DTSTART;TZID=America/Los_Angeles:20260625T113000
@@ -426,7 +434,7 @@ DTEND;TZID=America/Los_Angeles:20260625T120000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:dcb00bc122e482baf83ab63dd959c5f3c7a81653@slsq-rendered-calendars
+UID:cfaea9a3098f0a68e3125b49ea8c226b41a05fa3@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:MIghty like a Moose
 DTSTART;TZID=America/Los_Angeles:20260625T121500
@@ -435,23 +443,23 @@ LOCATION:Campbell Recital Hall
 DESCRIPTION:Film Fun with Prutsman/Dolphins
 END:VEVENT
 BEGIN:VEVENT
-UID:74dc6363ee825d5db9c94d5f11a4dc68405156b4@slsq-rendered-calendars
+UID:b3ca94f95dfb7d2c7e127e9c769b8678fc9842cd@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Selene Quartet
+SUMMARY:Hannah Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260625T131500
 DTEND;TZID=America/Los_Angeles:20260625T141500
-LOCATION:220
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:328c93ae91916cb5d33bb568b731bf6e7f9a623b@slsq-rendered-calendars
+UID:3ea990a268264e76d419b1ed90a535179cbfb453@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:WaMaTachou Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260625T143000
 DTEND;TZID=America/Los_Angeles:20260625T153000
-LOCATION:221
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:1550e440477c699788774e0fde7e55236a90e2cb@slsq-rendered-calendars
+UID:d0330bbfe104d3a8547686a4a316f6cbabdc2bcf@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Masterclass 3A\, 3B\, 3C
 DTSTART;TZID=America/Los_Angeles:20260625T160000
@@ -460,15 +468,15 @@ LOCATION:Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall
 DESCRIPTION:location subject to change\n(potentially 103 if needed)
 END:VEVENT
 BEGIN:VEVENT
-UID:b7b212f6da313506ff20214d932370ccbda5ec96@slsq-rendered-calendars
+UID:c72410084048613b52a392cc842255c4cab88343@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Mendelssohn 6tet Faculty Rehearsal #2 (As You Wish)
+SUMMARY:Rehearsal Period
 DTSTART;TZID=America/Los_Angeles:20260625T190000
 DTEND;TZID=America/Los_Angeles:20260625T200000
-LOCATION:Campbell Recital Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:96accac6e83b39cba76cab74e49ced6f41e95e90@slsq-rendered-calendars
+UID:4561e3b6de296608ce0b2c58e065c75856b4316b@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260625T200000
@@ -476,7 +484,7 @@ DTEND;TZID=America/Los_Angeles:20260626T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:b106701e5363275fe258e864453f2381b4877867@slsq-rendered-calendars
+UID:28181475948055210a65a037bd660e48414f8278@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260626T083000
@@ -484,26 +492,25 @@ DTEND;TZID=America/Los_Angeles:20260626T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:5228fe83a3091617fc37e4602b98a486f62e0317@slsq-rendered-calendars
+UID:3cf11bafaaff1c048c9803892e6786b10514c738@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Lesley Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260626T091500
 DTEND;TZID=America/Los_Angeles:20260626T101500
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:5b2552dde0eeb808aa191f7e534c7280b45c4896@slsq-rendered-calendars
+UID:60889ebd1d011329ba633da59925655cf595a847@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Faculty Concert #3 Dress Rehearsal
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260626T103000
 DTEND;TZID=America/Los_Angeles:20260626T113000
-DESCRIPTION:Mendelssohn 6tet: 10:30am -10:50\nRule of Three: 10:50-11:10\nT
- chaikovsky: 11:10-11\;30
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:d897b0f845ac0c684fc90ca4766148e255b321c0@slsq-rendered-calendars
+UID:2f17846bc515ef243118798a2a973d2dc969de28@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Playing Faculty Concert #3
+SUMMARY:Faculty Concert #3
 DTSTART;TZID=America/Los_Angeles:20260626T120000
 DTEND;TZID=America/Los_Angeles:20260626T130000
 LOCATION:Bing Concert Hall
@@ -513,31 +520,23 @@ DESCRIPTION:Tchaikovsky: Todd Palmer\, Owen Dalby\, John Novacek\nRule of T
  ny Manzo\, Pedja Muzijevic
 END:VEVENT
 BEGIN:VEVENT
-UID:b89dc49fd1179d71bf9747282317a11e3957db59@slsq-rendered-calendars
+UID:a69dce59096c74795b7bbf779a47539336b6cda9@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Lunch for ALL Faculty
-DTSTART;TZID=America/Los_Angeles:20260626T130000
-DTEND;TZID=America/Los_Angeles:20260626T140000
-LOCATION:Bing Concert Hall
-END:VEVENT
-BEGIN:VEVENT
-UID:984793a57bc15f5f93bff82fc9784a6d30bd4237@slsq-rendered-calendars
-DTSTAMP:20260618T222021Z
-SUMMARY:The Dolphins
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260626T140000
 DTEND;TZID=America/Los_Angeles:20260626T150000
-LOCATION:227
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:aa985b0dfd950b501be78b512a2ec394e46b5596@slsq-rendered-calendars
+UID:7043f41332fd05b0075c826423dfc14b754fe8f4@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:WaMaTachou Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260626T151500
 DTEND;TZID=America/Los_Angeles:20260626T161500
-LOCATION:221
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:66af24dfe3173be1852855c4714282c5cf77c364@slsq-rendered-calendars
+UID:4d8fc18c0df1c676c46cc8f043e309296757fbfe@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Epic Sight Reading Party!
 DTSTART;TZID=America/Los_Angeles:20260626T173000
@@ -546,7 +545,7 @@ LOCATION:776 Dolores St\, Stanford\, CA
 DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
 END:VEVENT
 BEGIN:VEVENT
-UID:d8a9a5d82c8925ac22346530c5dda2bf787d4a25@slsq-rendered-calendars
+UID:ad1f0cfd458c95709e22a33967842e47cac70493@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260626T200000
@@ -554,7 +553,7 @@ DTEND;TZID=America/Los_Angeles:20260627T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:0784a96dbca482f0a8f5babed7dd77e7d346c9e9@slsq-rendered-calendars
+UID:9049c2715ca913bb7797a7102f6a7bfc428d4f27@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260627T083000
@@ -562,31 +561,31 @@ DTEND;TZID=America/Los_Angeles:20260627T090000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:705c462c0e47cb208db398d6442070cd66c38deb@slsq-rendered-calendars
+UID:5b1788ed7e60f1e051e9e6d5faff216350d87f78@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Zehnder Blender
+SUMMARY:Danny Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260627T091500
 DTEND;TZID=America/Los_Angeles:20260627T101500
-LOCATION:Braun Rehearsal Hall
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:b02aa2c9b96acc25977f693a92e4f7045ba08614@slsq-rendered-calendars
+UID:da53ff32f7459564d6a617e0a97c30217e06e604@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Murray Quartet
+SUMMARY:Rehearsal: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260627T103000
 DTEND;TZID=America/Los_Angeles:20260627T113000
-LOCATION:222A
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:14d2026a17271a09f09838f7bd231922198de830@slsq-rendered-calendars
+UID:ab2be3ad30159738c44865c2e37f5a313ccba967@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
-SUMMARY:Selene Quartet
+SUMMARY:Hannah Coaching: SEJI quartet
 DTSTART;TZID=America/Los_Angeles:20260627T131500
 DTEND;TZID=America/Los_Angeles:20260627T141500
-LOCATION:220
+LOCATION:212
 END:VEVENT
 BEGIN:VEVENT
-UID:f0a37083a842172397764dc810cedda86578a4ea@slsq-rendered-calendars
+UID:6dc68fa841b82df22152ade74b3ec18f02016c77@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:AZURE Family Concert
 DTSTART;TZID=America/Los_Angeles:20260627T140000
@@ -595,7 +594,7 @@ LOCATION:Campbell Recital Hall
 DESCRIPTION:CRH
 END:VEVENT
 BEGIN:VEVENT
-UID:f0e028482d5809ebb706c077d9bffe8342ab518f@slsq-rendered-calendars
+UID:075b2c83fc4d21bbffec71c4a95e36286927c809@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:International Showcase
 DTSTART;TZID=America/Los_Angeles:20260627T170000
@@ -604,7 +603,7 @@ LOCATION:Bing Concert Hall
 DESCRIPTION:details TBD
 END:VEVENT
 BEGIN:VEVENT
-UID:24a4ed15128cf1962ac6f067641a711603e773ed@slsq-rendered-calendars
+UID:59f97bbd62e7588928e30b718b6f7af1b82311e8@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Post Showcase Pizza Party
 DTSTART;TZID=America/Los_Angeles:20260627T190000
@@ -612,7 +611,7 @@ DTEND;TZID=America/Los_Angeles:20260627T200000
 LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
-UID:ec1723f8944a91519c10c8065cc951c662eb99c6@slsq-rendered-calendars
+UID:da7442ea1ebe69a614fca0e8e62e5c8504d398c3@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260627T200000
@@ -620,14 +619,14 @@ DTEND;TZID=America/Los_Angeles:20260628T000000
 LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
-UID:5e345e8dd77865620a3dd34fda0b7a69369ab454@slsq-rendered-calendars
+UID:4d49cbd31dc5a55bcdcee60ef6d16bf4fe58a6d2@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Munger Check Out
 DTSTART;TZID=America/Los_Angeles:20260628T080000
 DTEND;TZID=America/Los_Angeles:20260628T100000
 END:VEVENT
 BEGIN:VEVENT
-UID:a564dba4ed509dd41f08b315bcb7f9fc73b1a0f7@slsq-rendered-calendars
+UID:4c5296211cabdb6cd375295052ed09bd3002b574@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:Shutter falls! on Group Photo
 DTSTART;TZID=America/Los_Angeles:20260628T103000
@@ -635,7 +634,7 @@ DTEND;TZID=America/Los_Angeles:20260628T110000
 LOCATION:in front of Braun
 END:VEVENT
 BEGIN:VEVENT
-UID:5c339da93f54c0fec62f65b3ebda74c6ca112736@slsq-rendered-calendars
+UID:6681a2c06035209ae442136b00d0cf78366d7cf8@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:The Big Finale!
 DTSTART;TZID=America/Los_Angeles:20260628T110000
@@ -644,7 +643,7 @@ LOCATION:Campbell Recital Hall
 DESCRIPTION:all participants perform\nw/ refreshments!
 END:VEVENT
 BEGIN:VEVENT
-UID:07a367af82cc2db460d50e1b2dcf42cf4cf84f33@slsq-rendered-calendars
+UID:7d2041071f0296533cda414b323d8d53e6983b93@slsq-rendered-calendars
 DTSTAMP:20260618T222021Z
 SUMMARY:WRAP PARTY
 DTSTART;TZID=America/Los_Angeles:20260628T154500
