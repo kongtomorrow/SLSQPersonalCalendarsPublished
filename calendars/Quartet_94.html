@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quartet 94 | SLSQ Seminar Calendars</title>
-  <style>
+  <style id="calendar-browser-style">
     :root {
       color-scheme: light;
       --ink: #1f2328;
@@ -86,22 +86,34 @@
       text-underline-offset: 0.18em;
       text-decoration-thickness: 0.08em;
     }
+    .header-meta-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.45rem;
+    }
     .title-row {
       display: flex;
       align-items: baseline;
+      justify-content: space-between;
       gap: 0.9rem;
       flex-wrap: wrap;
     }
     h1 { margin: 0; font-size: clamp(1.55rem, 3.4vw, 2.35rem); letter-spacing: 0; line-height: 1.05; }
     .subscribe-links {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.42rem;
-      flex-wrap: wrap;
+      display: grid;
+      justify-items: end;
       line-height: 1.2;
       color: #ecfffb;
       font-size: 0.92rem;
       font-weight: 600;
+    }
+    .subscribe-link-row {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.42rem;
+      flex-wrap: wrap;
     }
     .subscribe-label {
       color: #ecfffb;
@@ -458,13 +470,20 @@
     }
     .subscribe-link, .event-title, .event-location, .prewrap, .detail-row { overflow-wrap: anywhere; }
     .empty { color: var(--muted); }
+    .header-inner,
+    main {
+      transition: opacity 120ms ease-out;
+    }
+    .is-swapping {
+      opacity: 0;
+    }
     @container (max-width: 44rem) {
       .calendar-shell {
         --time-axis-width: 3.5rem;
       }
       .calendar-grid {
         display: grid;
-        grid-template-columns: repeat(var(--day-count), minmax(13rem, 72vw));
+        grid-template-columns: repeat(var(--day-count), minmax(12.25rem, 68vw));
         min-width: max-content;
       }
       .corner {
@@ -481,13 +500,17 @@
 <body>
   <header>
     <div class="header-inner">
-      <a class="header-nav" href="index.html"><span class="header-nav-text">All Calendars</span></a>
+      <div class="header-meta-row">
+        <a class="header-nav" href="index.html" data-calendar-link><span class="header-nav-text">All Calendars</span></a>
+        <span class="subscribe-label">Subscribe</span>
+      </div>
       <div class="title-row">
         <h1 class="calendar-title">Quartet 94</h1>
         <div class="subscribe-links">
-          <span class="subscribe-label">Subscribe:</span>
-          <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=MWI3MTIyOTkxMzgwNWViODI2ZDkyMWU5M2QyMTFkMDBiZDdiMmRlYjlkN2I3NjI2MmEzMGY3MzdiZTRmN2EyOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google</a>
-          <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Quartet_94.ics">Apple</a>
+          <span class="subscribe-link-row">
+            <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=MWI3MTIyOTkxMzgwNWViODI2ZDkyMWU5M2QyMTFkMDBiZDdiMmRlYjlkN2I3NjI2MmEzMGY3MzdiZTRmN2EyOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google</a>
+            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Quartet_94.ics">Apple</a>
+          </span>
         </div>
       </div>
     </div>
@@ -1094,7 +1117,8 @@ uber to the airport. alexi kenney anthony manzo ayane kozasa daniel phillips dim
       </div>
     </section>
   </main>
-    <dialog id="event-dialog-0">
+  <div id="dialog-root">
+  <dialog id="event-dialog-0">
     <div class="dialog-card">
       <div class="dialog-head">
         <h2>On Campus Housing Check In</h2>
@@ -2334,40 +2358,104 @@ uber to the airport.</div>
       </div>
     </div>
   </dialog>
+  </div>
   <script>
-    const filter = document.querySelector("#event-filter");
-    const events = Array.from(document.querySelectorAll(".event-card[data-event-search]"));
-    const eventByIndex = new Map(events.map((event) => [event.dataset.eventIndex, event]));
-    const eventBackings = Array.from(document.querySelectorAll(".event-backing[data-event-index]"));
-    filter?.addEventListener("input", () => {
-      const query = filter.value.trim().toLocaleLowerCase();
-      for (const event of events) {
-        event.hidden = Boolean(query && !event.dataset.eventSearch.includes(query));
-      }
-      for (const backing of eventBackings) {
-        const event = eventByIndex.get(backing.dataset.eventIndex);
-        backing.hidden = Boolean(event?.hidden);
-      }
-    });
-    for (const button of events) {
-      button.addEventListener("click", () => {
-        const dialog = document.getElementById(button.dataset.dialog);
-        if (dialog) openEventDialog(dialog, button);
-      });
-    }
-    for (const dialog of document.querySelectorAll("dialog")) {
-      dialog.querySelector(".close-button")?.addEventListener("click", () => closeEventDialog(dialog));
-      dialog.addEventListener("click", (event) => {
-        if (event.target === dialog) closeEventDialog(dialog);
-      });
-      dialog.addEventListener("cancel", (event) => {
-        event.preventDefault();
-        closeEventDialog(dialog);
-      });
-    }
-    scrollCalendarToRelevantDate();
     const dialogAnimationDuration = 180;
     const dialogAnimationCurve = "cubic-bezier(.45, 0, .2, 1)";
+
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[data-calendar-link]");
+      if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const targetUrl = new URL(link.href, window.location.href);
+      if (targetUrl.origin !== window.location.origin || !targetUrl.pathname.endsWith(".html")) return;
+      event.preventDefault();
+      navigateCalendarPage(targetUrl.href);
+    });
+
+    window.addEventListener("popstate", () => navigateCalendarPage(window.location.href, { updateHistory: false }));
+    initializeCalendarPage();
+
+    function initializeCalendarPage() {
+      const filter = document.querySelector("#event-filter");
+      const events = Array.from(document.querySelectorAll(".event-card[data-event-search]"));
+      const eventByIndex = new Map(events.map((event) => [event.dataset.eventIndex, event]));
+      const eventBackings = Array.from(document.querySelectorAll(".event-backing[data-event-index]"));
+      filter?.addEventListener("input", () => {
+        const query = filter.value.trim().toLocaleLowerCase();
+        for (const event of events) {
+          event.hidden = Boolean(query && !event.dataset.eventSearch.includes(query));
+        }
+        for (const backing of eventBackings) {
+          const event = eventByIndex.get(backing.dataset.eventIndex);
+          backing.hidden = Boolean(event?.hidden);
+        }
+      });
+      for (const button of events) {
+        button.addEventListener("click", () => {
+          const dialog = document.getElementById(button.dataset.dialog);
+          if (dialog) openEventDialog(dialog, button);
+        });
+      }
+      for (const dialog of document.querySelectorAll("dialog")) {
+        dialog.querySelector(".close-button")?.addEventListener("click", () => closeEventDialog(dialog));
+        dialog.addEventListener("click", (event) => {
+          if (event.target === dialog) closeEventDialog(dialog);
+        });
+        dialog.addEventListener("cancel", (event) => {
+          event.preventDefault();
+          closeEventDialog(dialog);
+        });
+      }
+      scrollCalendarToRelevantDate();
+    }
+
+    async function navigateCalendarPage(url, options = {}) {
+      const updateHistory = options.updateHistory !== false;
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Navigation fetch failed");
+        const text = await response.text();
+        const nextDocument = new DOMParser().parseFromString(text, "text/html");
+        const nextStyle = nextDocument.querySelector("#calendar-browser-style");
+        const nextHeaderInner = nextDocument.querySelector(".header-inner");
+        const nextMain = nextDocument.querySelector("main");
+        const nextDialogRoot = nextDocument.querySelector("#dialog-root");
+        if (!nextStyle || !nextHeaderInner || !nextMain) throw new Error("Navigation target is incomplete");
+
+        for (const dialog of document.querySelectorAll("dialog[open]")) dialog.close();
+        const oldHeaderInner = document.querySelector(".header-inner");
+        const oldMain = document.querySelector("main");
+        oldHeaderInner?.classList.add("is-swapping");
+        oldMain?.classList.add("is-swapping");
+        await waitForTransition();
+
+        document.querySelector("#calendar-browser-style")?.replaceWith(nextStyle);
+        document.querySelector(".header-inner")?.replaceWith(nextHeaderInner);
+        document.querySelector("main")?.replaceWith(nextMain);
+        document.querySelector("#dialog-root")?.replaceWith(nextDialogRoot || document.createElement("div"));
+        document.title = nextDocument.title;
+        if (updateHistory) history.pushState({}, "", url);
+
+        const newHeaderInner = document.querySelector(".header-inner");
+        const newMain = document.querySelector("main");
+        newHeaderInner?.classList.add("is-swapping");
+        newMain?.classList.add("is-swapping");
+        window.scrollTo({ top: 0, behavior: "auto" });
+        initializeCalendarPage();
+        requestAnimationFrame(() => {
+          newHeaderInner?.classList.remove("is-swapping");
+          newMain?.classList.remove("is-swapping");
+        });
+      } catch {
+        window.location.href = url;
+      }
+    }
+
+    function waitForTransition() {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return Promise.resolve();
+      return new Promise((resolve) => window.setTimeout(resolve, 125));
+    }
+
     function clamp(value, min, max) {
       return Math.min(Math.max(value, min), max);
     }
