@@ -6,8 +6,8 @@
 - Delta: +0
 - Added events: 0
 - Removed events: 0
-- Changed events: 0
-- People affected by listed changes: 0
+- Changed events: 4
+- People affected by listed changes: 114
 
 ## Fixed Inconsistencies
 
@@ -44,6 +44,32 @@ None.
   "TRAVEL": 15
 }
 ```
+
+### Changed Event Examples
+- Changed fields: participants
+- Before:
+  - `2026-06-24 16:30:00-18:00:00 | Masterclass 2A, 2B 2C | Campbell Recital Hall or Dinkelspiel Stage or Location | Jeanel Liango, Jérôme Chiasson, Celia Morin, Maya Enstad, Shintaro Taneda, +72 | MASTERCLASS`
+- After:
+  - `2026-06-24 16:30:00-18:00:00 | Masterclass 2A, 2B 2C | Campbell Recital Hall or Dinkelspiel Stage or Location | Jeanel Liango, Jérôme Chiasson, Celia Morin, Maya Enstad, Shintaro Taneda, +68 | MASTERCLASS`
+- Changed fields: participants
+- Before:
+  - `2026-06-24 16:30:00-18:00:00 | Playing Masterclass 2C | Braun Rehearsal Hall | Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang, Shawn Barnett, Ari Le, +2 | MASTERCLASS`
+- After:
+  - `2026-06-24 16:30:00-18:00:00 | Playing Masterclass 2C | Braun Rehearsal Hall | Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry, Chia Ying Lee, +6 | MASTERCLASS`
+- Changed fields: participants
+- Before:
+  - `2026-06-25 16:00:00-17:30:00 | Masterclass 3A, 3B, 3C | Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +68 | MASTERCLASS`
+- After:
+  - `2026-06-25 16:00:00-17:30:00 | Masterclass 3A, 3B, 3C | Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall | Luke Henderson, Isaac Park, James Preucil, Ian Maloney, Jeanel Liango, +64 | MASTERCLASS`
+- Changed fields: participants
+- Before:
+  - `2026-06-25 16:00:00-17:30:00 | Playing Masterclass 3A | Campbell Recital Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +4 | MASTERCLASS`
+- After:
+  - `2026-06-25 16:00:00-17:30:00 | Playing Masterclass 3A | Campbell Recital Hall | Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian, +8 | MASTERCLASS`
+
+## Affected People
+
+Aaron Wilk, Abigail Rogers, Alex Hwang, Alex Li, Anna Soper, Anne Scott, Anthony Chukhlov, Ari Freed, Ari Le, Ayane Kozasa, Ayoun Alexandra Kim, Ben Parks, Benjamin Chen, Beverly Fu, Bruce Yu, Cary Chin, Celia Morin, Chia Ying Lee, Chiao Hui Chang, Christine Choi, Christopher Lin-Brande, Chung-Pei Ma, Cindy Mong, Cindy Wang, Colin Guan, Cristina Ruotolo, Cyrus Behroozi, Daiyao Zhang, Daniel Phillips, Derek Katz, Derek Wu, Dimitri Murrath, Dustin Breshears, Elisabeth Heremans, Emil Ma, Emma Spellman, Eric Cheng, Eric Cooper, Gabriel Irazabal, Griffin Glenn, Haeun Nam, Hilary Meltzer, Howard Nelson, I-han Chou, Ian Maloney, Isaac Park, Isabella Fulford, JK Hunt, James Preucil, Jasper Jian, Jeanel Liango, Jennah Delp Somers, Jennie Yang, Jeremy Klein, Jessica Seeliger, Jihyun Baik, Jim Chou, Jim Zehnder, Jocelyn Lamm Startz, John Novacek, Jon Lee, Jérôme Chiasson, Katie Behroozi, Ken Ferry, Ko Hayashi, Laura Shifley, Laurence Lewis, Lesley Robertson, Leslie Ashworth, Leyan Lo, Lloyd Minor, Lois Harder, Lourdes Pinney, Luke Henderson, Marandi Hostetter, Marie Christine Lopez, Mark Siegel, Maya Enstad, Meg Lamm, Melissa Chu, Melissa Lam, Miles Chan, Minsu Longiaru, Misha Rafiee, Monica Anuforo, Nate Strothkamp, Neir Eshel, Nina Lee, Nina Monfredo, Norman Truong, Oliver Leitner, Olivia Tam, Owen Dalby, Pamela Frank, Paul Wiancko, Pedja Muzijevic, Raunak Kumar, Ria Honda, Ron Ho, Samantha Ching, Seth Novatt, Shawn Barnett, Sheila Chan, Shintaro Taneda, Starla Breshears, Stefan Leape, Stephen Prutsman, Steven Tenenbom, Thomas Xiong, Todd Palmer, Tyson Mao, Warren Wu, William Coleman, Yi Ying Wei
 
 ## Calendar Links
 
