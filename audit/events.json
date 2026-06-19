@@ -7591,30 +7591,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 5,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Dimitri Coaching: The Dolphins",
-    "date": "2026-06-22",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "227",
-    "description": "",
-    "event_id": "coaching-the-dolphins-2026-06-22-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Luke Henderson",
-      "Isaac Park",
-      "James Preucil",
-      "Ian Maloney"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 7,
       "column_number": null,
       "note": null
@@ -7766,6 +7742,30 @@
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching @ Dolores: The Dolphins",
+    "date": "2026-06-22",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-22-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney"
     ]
   },
   {
@@ -8174,15 +8174,36 @@
       "sheet_name": null,
       "row_number": 5,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "The Dolphins",
+    "title": "The Dolphins @ Dolores",
     "date": "2026-06-22",
     "start": "14:00:00",
     "end": "15:00:00",
-    "location": "227",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-the-dolphins-2026-06-22-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "The Dolphins @ Dolores (cover Pam)",
+    "date": "2026-06-22",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-22-session-three-cover-pamela-frank-dimitri-murrath",
     "overlap_allowed": false,
     "participants": [
       "Dimitri Murrath"
@@ -8517,13 +8538,13 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Pedja Coaching: Quartet 94",
+    "title": "Pam Coaching @ Dolores: Quartet 94",
     "date": "2026-06-22",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-22-session-four",
     "overlap_allowed": false,
@@ -8607,15 +8628,36 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Quartet 94",
+    "title": "Quartet 94 @ Dolores",
     "date": "2026-06-22",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-22-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 12,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quartet 94 @ Dolores (cover Pam)",
+    "date": "2026-06-22",
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-quartet-94-2026-06-22-session-four-cover-pamela-frank-pedja-muzijevic",
     "overlap_allowed": false,
     "participants": [
       "Pedja Muzijevic"
@@ -12289,30 +12331,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 11,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Lesley Coaching: Quail 4tet",
-    "date": "2026-06-23",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "102",
-    "description": "",
-    "event_id": "coaching-quail-4tet-2026-06-23-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Katie Behroozi",
-      "Benjamin Chen",
-      "Ben Parks",
-      "Cyrus Behroozi"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 22,
       "column_number": null,
       "note": null
@@ -12382,6 +12400,30 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching @ Dolores: Quail 4tet",
+    "date": "2026-06-23",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-23-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Katie Behroozi",
+      "Benjamin Chen",
+      "Ben Parks",
+      "Cyrus Behroozi"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 6,
       "column_number": null,
       "note": null
@@ -12408,15 +12450,36 @@
       "sheet_name": null,
       "row_number": 11,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Quail 4tet",
+    "title": "Quail 4tet @ Dolores",
     "date": "2026-06-23",
     "start": "13:15:00",
     "end": "14:15:00",
-    "location": "102",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quail-4tet-2026-06-23-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quail 4tet @ Dolores (cover Pam)",
+    "date": "2026-06-23",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-23-session-three-cover-pamela-frank-lesley-robertson",
     "overlap_allowed": false,
     "participants": [
       "Lesley Robertson"
@@ -12976,15 +13039,36 @@
       "sheet_name": null,
       "row_number": 30,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "8tet with Dolores 4",
+    "title": "8tet with Dolores 4 @ Dolores",
     "date": "2026-06-23",
     "start": "14:30:00",
     "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-8tet-with-dolores-4-2026-06-23-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "8tet with Dolores 4 @ Dolores (cover Pam)",
+    "date": "2026-06-23",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-23-session-four-cover-pamela-frank-anthony-manzo",
     "overlap_allowed": false,
     "participants": [
       "Anthony Manzo"
@@ -13219,6 +13303,34 @@
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching @ Dolores: 8tet with Dolores 4",
+    "date": "2026-06-23",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-23-session-four",
+    "overlap_allowed": false,
+    "participants": [
+      "Gregorio Lopes",
+      "Ko Hayashi",
+      "Ron Ho",
+      "Mark Siegel",
+      "Cary Chin",
+      "James Welch",
+      "Jim Zehnder",
+      "Persis Drell"
     ]
   },
   {
@@ -13680,34 +13792,6 @@
     "overlap_allowed": false,
     "participants": [
       "Owen Dalby"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
-      "row_number": 30,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Tony Coaching: 8tet with Dolores 4",
-    "date": "2026-06-23",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "coaching-8tet-with-dolores-4-2026-06-23-session-four",
-    "overlap_allowed": false,
-    "participants": [
-      "Gregorio Lopes",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Mark Siegel",
-      "Cary Chin",
-      "James Welch",
-      "Jim Zehnder",
-      "Persis Drell"
     ]
   },
   {
@@ -16901,30 +16985,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 5,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Dimitri Coaching: The Dolphins",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "227",
-    "description": "",
-    "event_id": "coaching-the-dolphins-2026-06-24-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Luke Henderson",
-      "Isaac Park",
-      "James Preucil",
-      "Ian Maloney"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 7,
       "column_number": null,
       "note": null
@@ -17076,6 +17136,30 @@
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: The Dolphins",
+    "date": "2026-06-24",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-24-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney"
     ]
   },
   {
@@ -17484,7 +17568,7 @@
       "sheet_name": null,
       "row_number": 5,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
     "title": "The Dolphins",
     "date": "2026-06-24",
@@ -17493,6 +17577,27 @@
     "location": "227",
     "description": "",
     "event_id": "coaching-the-dolphins-2026-06-24-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "The Dolphins (cover Pam)",
+    "date": "2026-06-24",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-24-session-three-cover-pamela-frank-dimitri-murrath",
     "overlap_allowed": false,
     "participants": [
       "Dimitri Murrath"
@@ -17932,13 +18037,13 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Pedja Coaching: Quartet 94",
+    "title": "Pam Coaching @ Dolores: Quartet 94",
     "date": "2026-06-24",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-24-session-four",
     "overlap_allowed": false,
@@ -18001,15 +18106,36 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Quartet 94",
+    "title": "Quartet 94 @ Dolores",
     "date": "2026-06-24",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-24-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 12,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quartet 94 @ Dolores (cover Pam)",
+    "date": "2026-06-24",
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-quartet-94-2026-06-24-session-four-cover-pamela-frank-pedja-muzijevic",
     "overlap_allowed": false,
     "participants": [
       "Pedja Muzijevic"
@@ -21854,30 +21980,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 11,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Lesley Coaching: Quail 4tet",
-    "date": "2026-06-25",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "102",
-    "description": "",
-    "event_id": "coaching-quail-4tet-2026-06-25-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Katie Behroozi",
-      "Benjamin Chen",
-      "Ben Parks",
-      "Cyrus Behroozi"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 22,
       "column_number": null,
       "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
@@ -21947,6 +22049,30 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: Quail 4tet",
+    "date": "2026-06-25",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "102",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-25-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Katie Behroozi",
+      "Benjamin Chen",
+      "Ben Parks",
+      "Cyrus Behroozi"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 6,
       "column_number": null,
       "note": null
@@ -21973,7 +22099,7 @@
       "sheet_name": null,
       "row_number": 11,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
     "title": "Quail 4tet",
     "date": "2026-06-25",
@@ -21982,6 +22108,27 @@
     "location": "102",
     "description": "",
     "event_id": "coaching-quail-4tet-2026-06-25-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quail 4tet (cover Pam)",
+    "date": "2026-06-25",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "102",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-25-session-three-cover-pamela-frank-lesley-robertson",
     "overlap_allowed": false,
     "participants": [
       "Lesley Robertson"
@@ -22457,7 +22604,7 @@
       "sheet_name": null,
       "row_number": 30,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
     "title": "8tet with Dolores 4",
     "date": "2026-06-25",
@@ -22466,6 +22613,27 @@
     "location": "Braun Rehearsal Hall",
     "description": "",
     "event_id": "coaching-8tet-with-dolores-4-2026-06-25-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "8tet with Dolores 4 (cover Pam)",
+    "date": "2026-06-25",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-25-session-four-cover-pamela-frank-anthony-manzo",
     "overlap_allowed": false,
     "participants": [
       "Anthony Manzo"
@@ -22703,6 +22871,34 @@
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: 8tet with Dolores 4",
+    "date": "2026-06-25",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-25-session-four",
+    "overlap_allowed": false,
+    "participants": [
+      "Gregorio Lopes",
+      "Ko Hayashi",
+      "Ron Ho",
+      "Mark Siegel",
+      "Cary Chin",
+      "James Welch",
+      "Jim Zehnder",
+      "Persis Drell"
     ]
   },
   {
@@ -23118,34 +23314,6 @@
     "overlap_allowed": false,
     "participants": [
       "Owen Dalby"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
-      "row_number": 30,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Tony Coaching: 8tet with Dolores 4",
-    "date": "2026-06-25",
-    "start": "14:30:00",
-    "end": "15:30:00",
-    "location": "Braun Rehearsal Hall",
-    "description": "",
-    "event_id": "coaching-8tet-with-dolores-4-2026-06-25-session-four",
-    "overlap_allowed": false,
-    "participants": [
-      "Gregorio Lopes",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Mark Siegel",
-      "Cary Chin",
-      "James Welch",
-      "Jim Zehnder",
-      "Persis Drell"
     ]
   },
   {
@@ -26097,30 +26265,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 5,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Dimitri Coaching: The Dolphins",
-    "date": "2026-06-26",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "227",
-    "description": "",
-    "event_id": "coaching-the-dolphins-2026-06-26-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Luke Henderson",
-      "Isaac Park",
-      "James Preucil",
-      "Ian Maloney"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 7,
       "column_number": null,
       "note": null
@@ -26272,6 +26416,30 @@
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: The Dolphins",
+    "date": "2026-06-26",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-26-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney"
     ]
   },
   {
@@ -26680,7 +26848,7 @@
       "sheet_name": null,
       "row_number": 5,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
     "title": "The Dolphins",
     "date": "2026-06-26",
@@ -26689,6 +26857,27 @@
     "location": "227",
     "description": "",
     "event_id": "coaching-the-dolphins-2026-06-26-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": null
+    },
+    "title": "The Dolphins (cover Pam)",
+    "date": "2026-06-26",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-26-session-three-cover-pamela-frank-dimitri-murrath",
     "overlap_allowed": false,
     "participants": [
       "Dimitri Murrath"
@@ -27047,13 +27236,13 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Pedja Coaching: Quartet 94",
+    "title": "Pam Coaching @ Dolores: Quartet 94",
     "date": "2026-06-26",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-26-session-four",
     "overlap_allowed": false,
@@ -27113,15 +27302,36 @@
       "sheet_name": null,
       "row_number": 12,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
-    "title": "Quartet 94",
+    "title": "Quartet 94 @ Dolores",
     "date": "2026-06-26",
     "start": "15:15:00",
     "end": "16:15:00",
-    "location": "106",
+    "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "coaching-quartet-94-2026-06-26-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 12,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quartet 94 @ Dolores (cover Pam)",
+    "date": "2026-06-26",
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "location": "776 Dolores St, Stanford, CA",
+    "description": "",
+    "event_id": "coaching-quartet-94-2026-06-26-session-four-cover-pamela-frank-pedja-muzijevic",
     "overlap_allowed": false,
     "participants": [
       "Pedja Muzijevic"
@@ -29813,30 +30023,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 11,
-      "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
-    },
-    "title": "Lesley Coaching: Quail 4tet",
-    "date": "2026-06-27",
-    "start": "13:15:00",
-    "end": "14:15:00",
-    "location": "102",
-    "description": "",
-    "event_id": "coaching-quail-4tet-2026-06-27-session-three",
-    "overlap_allowed": false,
-    "participants": [
-      "Katie Behroozi",
-      "Benjamin Chen",
-      "Ben Parks",
-      "Cyrus Behroozi"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 22,
       "column_number": null,
       "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
@@ -29906,6 +30092,30 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: Quail 4tet",
+    "date": "2026-06-27",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "102",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-27-session-three",
+    "overlap_allowed": false,
+    "participants": [
+      "Katie Behroozi",
+      "Benjamin Chen",
+      "Ben Parks",
+      "Cyrus Behroozi"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 6,
       "column_number": null,
       "note": null
@@ -29957,7 +30167,7 @@
       "sheet_name": null,
       "row_number": 11,
       "column_number": null,
-      "note": "data inconsistency resolution: explicit cover assignment overrides Pam@ Dolores"
+      "note": null
     },
     "title": "Quail 4tet",
     "date": "2026-06-27",
@@ -29966,6 +30176,27 @@
     "location": "102",
     "description": "",
     "event_id": "coaching-quail-4tet-2026-06-27-session-three-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Quail 4tet (cover Pam)",
+    "date": "2026-06-27",
+    "start": "13:15:00",
+    "end": "14:15:00",
+    "location": "102",
+    "description": "",
+    "event_id": "coaching-quail-4tet-2026-06-27-session-three-cover-pamela-frank-lesley-robertson",
     "overlap_allowed": false,
     "participants": [
       "Lesley Robertson"
