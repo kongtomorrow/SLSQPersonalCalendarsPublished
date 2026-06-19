@@ -454,14 +454,14 @@
       "sheet_name": "Saturday 620",
       "row_number": 9,
       "column_number": 11,
-      "note": "data inconsistency fixup: Steven Tenenbom Viola Taste Test post-it; data inconsistency validation: documented missing location"
+      "note": null
     },
     "title": "Viola Taste Test",
     "date": "2026-06-20",
     "start": "09:45:00",
     "end": "10:15:00",
-    "location": "",
-    "description": "w Anna Soper TBC",
+    "location": "204",
+    "description": "w Anna Soper",
     "event_id": "faculty-daily-viola-taste-test-anna-soper-2026-06-20-0945",
     "overlap_allowed": false,
     "participants": [
@@ -3047,7 +3047,7 @@
       "sheet_name": "FULL SCHEDULE",
       "row_number": 14,
       "column_number": 6,
-      "note": null
+      "note": "data inconsistency fixup: Paul Wiancko Sunday Presentation marked playing"
     },
     "title": "Presentation",
     "date": "2026-06-21",
@@ -3071,7 +3071,6 @@
       "Nina Lee",
       "Owen Dalby",
       "Pamela Frank",
-      "Paul Wiancko",
       "Pedja Muzijevic",
       "Stephen Prutsman",
       "Steven Tenenbom",
@@ -3178,6 +3177,27 @@
       "Cary Chin",
       "Jim Zehnder",
       "Mark Siegel"
+    ]
+  },
+  {
+    "kind": "FACULTY",
+    "diagnostic_source": {
+      "source_name": "Faculty Schedule",
+      "sheet_name": "FULL SCHEDULE",
+      "row_number": 14,
+      "column_number": 6,
+      "note": "data inconsistency fixup: Paul Wiancko Sunday Presentation marked playing"
+    },
+    "title": "Presentation (playing)",
+    "date": "2026-06-21",
+    "start": "11:00:00",
+    "end": "12:00:00",
+    "location": "Jack Trip CCRMA Stage",
+    "description": "Chris Chafe",
+    "event_id": "faculty-presentation-playing-2026-06-21-1100",
+    "overlap_allowed": false,
+    "participants": [
+      "Paul Wiancko"
     ]
   },
   {
@@ -16570,7 +16590,7 @@
       "sheet_name": "SCHEDULE",
       "row_number": 18,
       "column_number": 9,
-      "note": "data inconsistency verification: Wednesday faculty daily tab labels Faculty Concert #2 as #1"
+      "note": null
     },
     "title": "Faculty Concert #2",
     "date": "2026-06-24",
@@ -16699,7 +16719,7 @@
       "sheet_name": "SCHEDULE",
       "row_number": 18,
       "column_number": 9,
-      "note": "data inconsistency verification: Wednesday faculty daily tab labels Faculty Concert #2 as #1"
+      "note": null
     },
     "title": "Playing Faculty Concert #2",
     "date": "2026-06-24",
@@ -31034,13 +31054,13 @@
     ]
   },
   {
-    "kind": "MASTER",
+    "kind": "FACULTY",
     "diagnostic_source": {
-      "source_name": "Master Schedule",
-      "sheet_name": "SCHEDULE",
-      "row_number": 2,
+      "source_name": "Faculty Schedule",
+      "sheet_name": "FULL SCHEDULE",
+      "row_number": 3,
       "column_number": 13,
-      "note": "data inconsistency resolution: master schedule final-day duration authoritative"
+      "note": null
     },
     "title": "Munger Check Out",
     "date": "2026-06-28",
@@ -31048,9 +31068,28 @@
     "end": "10:00:00",
     "location": "",
     "description": "",
-    "event_id": "master-munger-check-out-2026-06-28-0800",
+    "event_id": "faculty-munger-check-out-2026-06-28-0800",
     "overlap_allowed": false,
     "participants": [
+      "Alexi Kenney",
+      "Anthony Manzo",
+      "Ayane Kozasa",
+      "Daniel Phillips",
+      "Dimitri Murrath",
+      "Hannah Collins",
+      "Howard Nelson",
+      "Jennah Delp Somers",
+      "John Novacek",
+      "Lesley Robertson",
+      "Nina Lee",
+      "Owen Dalby",
+      "Pamela Frank",
+      "Paul Wiancko",
+      "Pedja Muzijevic",
+      "Stephen Prutsman",
+      "Steven Tenenbom",
+      "Todd Palmer",
+      "William Coleman",
       "Luke Henderson",
       "Isaac Park",
       "James Preucil",
@@ -31151,26 +31190,7 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder",
-      "Mark Siegel",
-      "Alexi Kenney",
-      "Anthony Manzo",
-      "Ayane Kozasa",
-      "Daniel Phillips",
-      "Dimitri Murrath",
-      "Hannah Collins",
-      "Howard Nelson",
-      "Jennah Delp Somers",
-      "John Novacek",
-      "Lesley Robertson",
-      "Nina Lee",
-      "Owen Dalby",
-      "Pamela Frank",
-      "Paul Wiancko",
-      "Pedja Muzijevic",
-      "Stephen Prutsman",
-      "Steven Tenenbom",
-      "Todd Palmer",
-      "William Coleman"
+      "Mark Siegel"
     ]
   },
   {
@@ -31475,44 +31495,42 @@
     ]
   },
   {
-    "kind": "TRAVEL",
+    "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
       "sheet_name": "FULL SCHEDULE",
-      "row_number": 48,
-      "column_number": 13,
-      "note": null
-    },
-    "title": "Pedja to SF in evening",
-    "date": "2026-06-28",
-    "start": "15:45:00",
-    "end": "16:15:00",
-    "location": "San Francisco",
-    "description": "",
-    "event_id": "travel-pedja-muzijevic-2026-06-28-1545",
-    "overlap_allowed": false,
-    "participants": [
-      "Pedja Muzijevic"
-    ]
-  },
-  {
-    "kind": "MASTER",
-    "diagnostic_source": {
-      "source_name": "Master Schedule",
-      "sheet_name": "SCHEDULE",
       "row_number": 33,
       "column_number": 13,
-      "note": "data inconsistency resolution: master schedule final-day duration authoritative"
+      "note": null
     },
     "title": "WRAP PARTY",
     "date": "2026-06-28",
     "start": "15:45:00",
     "end": "19:30:00",
     "location": "Home of Jim and Carie Zehnder, 8 E Creek Pl, Menlo Park, CA 94025",
-    "description": "Bring your instruments\nor just come by to enjoy a\ncold one with seminar\nfriends new and old.\nIf you have an evening\nfight to catch, bring your\nluggage and catch an\nuber to the airport.",
-    "event_id": "master-wrap-party-2026-06-28-1545",
+    "description": "Bring your instruments\nor just come by to enjoy a\ncold one with seminar\nfriends new and old.\nIf you have an evening\nfight to catch, bring your\nuber to the airport.",
+    "event_id": "faculty-wrap-party-2026-06-28-1545",
     "overlap_allowed": false,
     "participants": [
+      "Alexi Kenney",
+      "Anthony Manzo",
+      "Ayane Kozasa",
+      "Daniel Phillips",
+      "Dimitri Murrath",
+      "Hannah Collins",
+      "Howard Nelson",
+      "Jennah Delp Somers",
+      "John Novacek",
+      "Lesley Robertson",
+      "Nina Lee",
+      "Owen Dalby",
+      "Pamela Frank",
+      "Paul Wiancko",
+      "Pedja Muzijevic",
+      "Stephen Prutsman",
+      "Steven Tenenbom",
+      "Todd Palmer",
+      "William Coleman",
       "Luke Henderson",
       "Isaac Park",
       "James Preucil",
@@ -31613,26 +31631,7 @@
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder",
-      "Mark Siegel",
-      "Alexi Kenney",
-      "Anthony Manzo",
-      "Ayane Kozasa",
-      "Daniel Phillips",
-      "Dimitri Murrath",
-      "Hannah Collins",
-      "Howard Nelson",
-      "Jennah Delp Somers",
-      "John Novacek",
-      "Lesley Robertson",
-      "Nina Lee",
-      "Owen Dalby",
-      "Pamela Frank",
-      "Paul Wiancko",
-      "Pedja Muzijevic",
-      "Stephen Prutsman",
-      "Steven Tenenbom",
-      "Todd Palmer",
-      "William Coleman"
+      "Mark Siegel"
     ]
   },
   {
@@ -31654,6 +31653,27 @@
     "overlap_allowed": false,
     "participants": [
       "Steven Tenenbom"
+    ]
+  },
+  {
+    "kind": "TRAVEL",
+    "diagnostic_source": {
+      "source_name": "Faculty Schedule",
+      "sheet_name": "FULL SCHEDULE",
+      "row_number": 48,
+      "column_number": 13,
+      "note": null
+    },
+    "title": "Pedja to SF in evening",
+    "date": "2026-06-28",
+    "start": "19:30:00",
+    "end": "20:00:00",
+    "location": "San Francisco",
+    "description": "",
+    "event_id": "travel-pedja-muzijevic-2026-06-28-1930",
+    "overlap_allowed": false,
+    "participants": [
+      "Pedja Muzijevic"
     ]
   }
 ]
