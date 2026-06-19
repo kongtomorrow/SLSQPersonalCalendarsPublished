@@ -1,17 +1,17 @@
 {
-  "created_at": "2026-06-19T09:06:12.640618Z",
-  "event_audit_sha256": "0d3dcba9c8715276f46fcf9a99ef37af2eaab7e17fef74110084dbfd5d2fbad0",
+  "created_at": "2026-06-19T09:41:20.378511Z",
+  "event_audit_sha256": "7e60488d66f4bec401b5b6993fc879512a3825146cc2be56be7c633d29f80ad3",
   "excessive_threshold": 100,
   "google_plan_counts": {
     "blocked": 0,
     "creates": 0,
     "deletes": 0,
-    "updates": 1229
+    "updates": 2419
   },
   "mode": "plan",
   "run_attempt": "1",
-  "run_id": "27816362916",
-  "source_sha": "e625e32b2043ba93a5b93de8093bab88ae793841",
+  "run_id": "27818032830",
+  "source_sha": "9bec92d31c994d460cf3f3b31da649b42c235ff0",
   "target": "real",
   "workflow": "Update Real Calendar"
 }
