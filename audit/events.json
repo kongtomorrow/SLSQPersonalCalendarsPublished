@@ -15,7 +15,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-dimitri-murrath-2026-06-19-1040",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Dimitri Murrath"
     ]
@@ -36,7 +36,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-daniel-phillips-2026-06-19-1343",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Daniel Phillips"
     ]
@@ -57,7 +57,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-todd-palmer-2026-06-19-1450",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Todd Palmer"
     ]
@@ -78,7 +78,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-john-novacek-2026-06-19-1509",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "John Novacek"
     ]
@@ -99,7 +99,7 @@
     "location": "",
     "description": "",
     "event_id": "travel-pedja-muzijevic-2026-06-19-1528",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Pedja Muzijevic"
     ]
@@ -120,7 +120,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-steven-tenenbom-2026-06-19-1530",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Steven Tenenbom"
     ]
@@ -141,7 +141,7 @@
     "location": "Front Desk at Munger",
     "description": "(Details coming)\nMunger Check In",
     "event_id": "faculty-on-campus-housing-check-in-2026-06-19-1700",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -281,7 +281,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-nina-lee-2026-06-19-2000",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Nina Lee"
     ]
@@ -302,7 +302,7 @@
     "location": "Campbell Recital Hall Lobby",
     "description": "Schedule Here\nParticipants will have access to",
     "event_id": "faculty-seminar-registration-2026-06-20-0900",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -442,7 +442,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-hannah-collins-2026-06-20-0918",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Hannah Collins"
     ]
@@ -508,7 +508,7 @@
     "location": "SJC",
     "description": "",
     "event_id": "travel-anthony-manzo-2026-06-20-1200",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Anthony Manzo"
     ]
@@ -529,7 +529,7 @@
     "location": "Campbell Recital Hall",
     "description": "",
     "event_id": "faculty-welcome-meeting-2026-06-20-1300",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -1301,7 +1301,7 @@
     "location": "Dinkelspiel Stage",
     "description": "",
     "event_id": "faculty-chamber-orch-reading-2026-06-20-1700",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -1441,7 +1441,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-dinner-be-our-guests-2026-06-20-1800",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -2332,7 +2332,7 @@
     "location": "Campbell Courtyard",
     "description": "",
     "event_id": "faculty-continental-breakfast-2026-06-21-0900",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -3056,7 +3056,7 @@
     "location": "Jack Trip CCRMA Stage",
     "description": "Chris Chafe",
     "event_id": "faculty-presentation-2026-06-21-1100",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -3195,7 +3195,7 @@
     "location": "Jack Trip CCRMA Stage",
     "description": "Chris Chafe",
     "event_id": "faculty-presentation-playing-2026-06-21-1100",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Paul Wiancko"
     ]
@@ -3207,7 +3207,7 @@
       "sheet_name": "FULL SCHEDULE",
       "row_number": 18,
       "column_number": 6,
-      "note": "data inconsistency verification: faculty daily tab omits generated event for Steven Tenenbom"
+      "note": null
     },
     "title": "Light Lunch Provided",
     "date": "2026-06-21",
@@ -3216,7 +3216,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-light-lunch-provided-2026-06-21-1200",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -3345,17 +3345,17 @@
     "diagnostic_source": {
       "source_name": "Faculty Schedule Daily Tabs",
       "sheet_name": "Sunday 621",
-      "row_number": 22,
+      "row_number": 21,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 26; data inconsistency verification: faculty daily tab omits generated event for Steven Tenenbom"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 26"
     },
     "title": "Dvorak 6tet Faculty Rehearsal #2",
     "date": "2026-06-21",
-    "start": "13:00:00",
-    "end": "14:30:00",
+    "start": "12:45:00",
+    "end": "14:15:00",
     "location": "Campbell Recital Hall",
     "description": "",
-    "event_id": "faculty-daily-dvorak-6tet-faculty-rehearsal-2-daniel-phillips-2026-06-21-1300",
+    "event_id": "faculty-daily-dvorak-6tet-faculty-rehearsal-2-daniel-phillips-2026-06-21-1245",
     "overlap_allowed": false,
     "participants": [
       "Owen Dalby",
@@ -3988,7 +3988,7 @@
     "location": "Dinkelspiel Stage",
     "description": "Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman",
     "event_id": "faculty-spotlight-on-physical-wellness-2026-06-21-1430",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -4763,7 +4763,7 @@
     "location": "776 Dolores St, Stanford, CA",
     "description": "",
     "event_id": "faculty-dinner-evening-rehearsals-at-persis-2026-06-21-1800",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -5549,7 +5549,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-22-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -7470,7 +7470,7 @@
     "location": "Bing Concert Hall",
     "description": "",
     "event_id": "faculty-lunch-for-all-faculty-2026-06-22-1300",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -10138,7 +10138,7 @@
     "location": "Braun Lounge",
     "description": "A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ARTE production)\nDrop in As you Wish",
     "event_id": "faculty-the-musicians-of-the-string-quartet-2026-06-22-2100",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -10278,7 +10278,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-23-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -13897,7 +13897,7 @@
     "location": "Campbell Recital Hall",
     "description": "Robert Brewer Young\nJ& A Beare, Director\nScientific Research & Conservation\nVisiting Scholar, Oxford University",
     "event_id": "faculty-special-presentation-2026-06-23-1600",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -14037,7 +14037,7 @@
     "location": "Home of Joan & David",
     "description": "meeting/dinner\n(discuss/determine Sat/Bing program)",
     "event_id": "faculty-faculty-guests-2026-06-23-1800",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -14825,7 +14825,7 @@
     "location": "Braun Lounge",
     "description": "A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ARTE production)\nDrop in As you Wish",
     "event_id": "faculty-the-musicians-of-the-string-quartet-2026-06-23-2100",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -14965,7 +14965,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-24-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -15168,7 +15168,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Dmitri Coaching: Murray Quartet",
     "date": "2026-06-24",
@@ -15304,7 +15304,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-24",
@@ -15394,7 +15394,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Owen Coaching: Quartet SAMM",
     "date": "2026-06-24",
@@ -15442,7 +15442,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Pedja Coaching: The Quarktet",
     "date": "2026-06-24",
@@ -15487,7 +15487,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-24",
@@ -15508,7 +15508,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -15529,7 +15529,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-24",
@@ -15553,7 +15553,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-24",
@@ -15738,7 +15738,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Stephen Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -15762,7 +15762,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-24",
@@ -15849,7 +15849,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-24",
@@ -15939,7 +15939,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "William Coaching: String Quintet",
     "date": "2026-06-24",
@@ -15985,7 +15985,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-24",
@@ -16061,7 +16061,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: Chane String Quartet",
     "date": "2026-06-24",
@@ -16247,7 +16247,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-24",
@@ -16271,7 +16271,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-24",
@@ -16343,7 +16343,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-24",
@@ -16367,7 +16367,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -16439,7 +16439,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-24",
@@ -16512,7 +16512,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-24",
@@ -16843,7 +16843,7 @@
     "location": "Bing Concert Hall",
     "description": "",
     "event_id": "faculty-lunch-for-all-faculty-2026-06-24-1300",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -16894,7 +16894,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Alexi Coaching: Murray Quartet",
     "date": "2026-06-24",
@@ -16918,7 +16918,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Meck Kwarteck",
     "date": "2026-06-24",
@@ -16942,7 +16942,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-24",
@@ -17008,7 +17008,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -17032,7 +17032,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-24",
@@ -17053,7 +17053,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-24",
@@ -17121,7 +17121,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Owen Coaching: The Quarktet",
     "date": "2026-06-24",
@@ -17169,7 +17169,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Paul Coaching: String Quintet",
     "date": "2026-06-24",
@@ -17239,7 +17239,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -17360,7 +17360,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-24",
@@ -17384,7 +17384,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: SQuEAQ",
     "date": "2026-06-24",
@@ -17526,7 +17526,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-24",
@@ -17610,7 +17610,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-24",
@@ -17676,7 +17676,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Will Coaching: Chane String Quartet",
     "date": "2026-06-24",
@@ -17875,7 +17875,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Danny Coaching: Quartet SAMM",
     "date": "2026-06-24",
@@ -17968,7 +17968,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-24",
@@ -17989,7 +17989,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Nina Coaching: Meck Kwarteck",
     "date": "2026-06-24",
@@ -18148,7 +18148,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-24",
@@ -18169,7 +18169,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-24",
@@ -18216,7 +18216,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-24",
@@ -18264,7 +18264,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-24",
@@ -18312,7 +18312,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-24",
@@ -18361,7 +18361,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-24",
@@ -18385,7 +18385,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-24",
@@ -18537,7 +18537,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tony Coaching: SQuEAQ",
     "date": "2026-06-24",
@@ -18681,13 +18681,58 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Playing: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel), Chane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers), The Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
     "event_id": "masterclass-2a-coaching",
     "overlap_allowed": false,
     "participants": [
       "Alexi Kenney",
       "Stephen Prutsman",
       "Nina Lee"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching Masterclass 2B",
+    "date": "2026-06-24",
+    "start": "16:30:00",
+    "end": "18:00:00",
+    "location": "Dinkelspiel Stage",
+    "description": "Playing: Selene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan), The Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney), String Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins",
+    "event_id": "masterclass-2b-coaching",
+    "overlap_allowed": false,
+    "participants": [
+      "Ayane Kozasa",
+      "Hannah Collins"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching Masterclass 2C",
+    "date": "2026-06-24",
+    "start": "16:30:00",
+    "end": "18:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "Playing: Meck 4teck, Virtuosa Trio? (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang), Quartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu), Up to 4\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
+    "event_id": "masterclass-2c-coaching",
+    "overlap_allowed": false,
+    "participants": [
+      "Dimitri Murrath",
+      "Anthony Manzo",
+      "Pedja Muzijevic"
     ]
   },
   {
@@ -18704,14 +18749,10 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Location",
-    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel), Chane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers), The Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee\n\nMasterclass 2B\nLocation: Dinkelspiel Stage\nPlaying: Selene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan), The Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney), String Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins\n\nMasterclass 2C\nLocation: Braun Rehearsal Hall\nPlaying: Meck 4teck, Virtuosa Trio? (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang), Quartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu), Up to 4\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
     "event_id": "masterclass-2a-2b-2c-broad",
     "overlap_allowed": true,
     "participants": [
-      "Luke Henderson",
-      "Isaac Park",
-      "James Preucil",
-      "Ian Maloney",
       "Jeanel Liango",
       "Jérôme Chiasson",
       "Celia Morin",
@@ -18719,19 +18760,10 @@
       "Shintaro Taneda",
       "Ayoun Alexandra Kim",
       "Jon Lee",
-      "Jihyun Baik",
-      "Oliver Leitner",
-      "Lourdes Pinney",
-      "Colin Guan",
       "Dustin Breshears",
       "Anthony Chukhlov",
       "Leslie Ashworth",
       "Melissa Lam",
-      "Nate Strothkamp",
-      "Raunak Kumar",
-      "Jeremy Klein",
-      "Starla Breshears",
-      "Gabriel Irazabal",
       "Katie Behroozi",
       "Benjamin Chen",
       "Ben Parks",
@@ -18757,26 +18789,14 @@
       "Jennie Yang",
       "Monica Anuforo",
       "Derek Wu",
-      "Shawn Barnett",
-      "Ari Le",
-      "Marandi Hostetter",
-      "Melissa Chu",
       "Isabella Fulford",
       "JK Hunt",
       "Emma Spellman",
       "Stefan Leape",
-      "Cristina Ruotolo",
-      "Meg Lamm",
-      "Jocelyn Lamm Startz",
-      "Hilary Meltzer",
       "Jim Chou",
       "Tyson Mao",
       "Cindy Wang",
       "Olivia Tam",
-      "Ria Honda",
-      "Christopher Lin-Brande",
-      "Nina Monfredo",
-      "Abigail Rogers",
       "Haeun Nam",
       "Marie Christine Lopez",
       "Cindy Mong",
@@ -18790,9 +18810,6 @@
       "Eric Cooper",
       "Griffin Glenn",
       "Jasper Jian",
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang",
       "Emil Ma",
       "Chung-Pei Ma",
       "Derek Katz",
@@ -18802,11 +18819,7 @@
       "Cary Chin",
       "Jim Zehnder",
       "Mark Siegel",
-      "Anthony Manzo",
-      "Ayane Kozasa",
       "Daniel Phillips",
-      "Dimitri Murrath",
-      "Hannah Collins",
       "Howard Nelson",
       "Jennah Delp Somers",
       "John Novacek",
@@ -18814,7 +18827,6 @@
       "Owen Dalby",
       "Pamela Frank",
       "Paul Wiancko",
-      "Pedja Muzijevic",
       "Steven Tenenbom",
       "Todd Palmer",
       "William Coleman"
@@ -18834,7 +18846,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Playing: Dolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell), Wishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel), Chane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers), The Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
     "event_id": "masterclass-2a-playing",
     "overlap_allowed": false,
     "participants": [
@@ -18844,7 +18856,75 @@
       "James Welch",
       "Persis Drell",
       "Lloyd Minor",
-      "Neir Eshel"
+      "Neir Eshel",
+      "Ria Honda",
+      "Christopher Lin-Brande",
+      "Nina Monfredo",
+      "Abigail Rogers",
+      "Cristina Ruotolo",
+      "Meg Lamm",
+      "Jocelyn Lamm Startz",
+      "Hilary Meltzer"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Playing Masterclass 2B",
+    "date": "2026-06-24",
+    "start": "16:30:00",
+    "end": "18:00:00",
+    "location": "Dinkelspiel Stage",
+    "description": "Playing: Selene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan), The Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney), String Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins",
+    "event_id": "masterclass-2b-playing",
+    "overlap_allowed": false,
+    "participants": [
+      "Jihyun Baik",
+      "Oliver Leitner",
+      "Lourdes Pinney",
+      "Colin Guan",
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney",
+      "Nate Strothkamp",
+      "Raunak Kumar",
+      "Jeremy Klein",
+      "Starla Breshears",
+      "Gabriel Irazabal"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Playing Masterclass 2C",
+    "date": "2026-06-24",
+    "start": "16:30:00",
+    "end": "18:00:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "Playing: Meck 4teck, Virtuosa Trio? (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang), Quartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu), Up to 4\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
+    "event_id": "masterclass-2c-playing",
+    "overlap_allowed": false,
+    "participants": [
+      "Chia Ying Lee",
+      "Yi Ying Wei",
+      "Chiao Hui Chang",
+      "Shawn Barnett",
+      "Ari Le",
+      "Marandi Hostetter",
+      "Melissa Chu"
     ]
   },
   {
@@ -19626,14 +19706,14 @@
       "column_number": 9,
       "note": null
     },
-    "title": "Cello-suss Reading!",
+    "title": "Cello-ssus Reading!",
     "date": "2026-06-24",
     "start": "21:00:00",
     "end": "22:30:00",
     "location": "Braun Rehearsal Hall",
     "description": "TBC\nAC/DC‘s “thunderstruck” for 12 cellos.\nand more!",
-    "event_id": "faculty-cello-suss-reading-2026-06-24-2100",
-    "overlap_allowed": false,
+    "event_id": "faculty-cello-ssus-reading-2026-06-24-2100",
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -19773,7 +19853,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-25-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -19904,7 +19984,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Alexi Coaching: Meck Kwarteck",
     "date": "2026-06-25",
@@ -20091,7 +20171,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-25",
@@ -20183,7 +20263,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Paul Coaching: String Quintet",
     "date": "2026-06-25",
@@ -20274,7 +20354,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-25",
@@ -20323,7 +20403,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-25",
@@ -20395,7 +20475,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-25",
@@ -20419,7 +20499,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -20467,7 +20547,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-25",
@@ -20559,7 +20639,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-25",
@@ -20601,7 +20681,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-25",
@@ -20709,7 +20789,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tony Coaching: SQuEAQ",
     "date": "2026-06-25",
@@ -20779,7 +20859,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Chane String Quartet",
     "date": "2026-06-25",
@@ -20803,7 +20883,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-25",
@@ -20848,7 +20928,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Dimitri Coaching: Murray Quartet",
     "date": "2026-06-25",
@@ -20893,7 +20973,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: The Quarktet",
     "date": "2026-06-25",
@@ -20917,7 +20997,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-25",
@@ -21076,7 +21156,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Prutsman Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -21100,7 +21180,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-25",
@@ -21121,7 +21201,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -21189,7 +21269,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-25",
@@ -21309,7 +21389,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-25",
@@ -21431,7 +21511,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tenenbom Coaching: Quartet SAMM",
     "date": "2026-06-25",
@@ -21476,7 +21556,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-25",
@@ -21548,7 +21628,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-lunch-in-courtyard-2026-06-25-1130",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -21688,7 +21768,7 @@
     "location": "Campbell Recital Hall",
     "description": "Film Fun with Prutsman/Dolphins",
     "event_id": "faculty-mighty-like-a-moose-2026-06-25-1215",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -21843,7 +21923,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Meck Kwarteck",
     "date": "2026-06-25",
@@ -21867,7 +21947,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Danny Coaching: String Quintet",
     "date": "2026-06-25",
@@ -21982,7 +22062,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-25",
@@ -22162,7 +22242,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -22211,7 +22291,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-25",
@@ -22235,7 +22315,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-25",
@@ -22283,7 +22363,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-25",
@@ -22307,7 +22387,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: SQuEAQ",
     "date": "2026-06-25",
@@ -22380,7 +22460,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-25",
@@ -22493,7 +22573,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-25",
@@ -22514,7 +22594,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tenenbom Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -22694,7 +22774,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-25",
@@ -22715,7 +22795,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Danny Coaching: SQuEAQ",
     "date": "2026-06-25",
@@ -22764,7 +22844,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: Quartet SAMM",
     "date": "2026-06-25",
@@ -22788,7 +22868,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-25",
@@ -22856,7 +22936,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Owen Coaching: The Quarktet",
     "date": "2026-06-25",
@@ -22908,7 +22988,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Paul Coaching: Murray Quartet",
     "date": "2026-06-25",
@@ -22953,7 +23033,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-25",
@@ -23021,7 +23101,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-25",
@@ -23093,7 +23173,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-25",
@@ -23165,7 +23245,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-25",
@@ -23239,7 +23319,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-25",
@@ -23302,7 +23382,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-25",
@@ -23344,7 +23424,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Will Coaching: Chane String Quartet",
     "date": "2026-06-25",
@@ -23385,6 +23465,75 @@
   {
     "kind": "MASTERCLASS",
     "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching Masterclass 3A",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Campbell Recital Hall",
+    "description": "Playing: SQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian), No Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang), Pas de Jeans?, Pinky play w Tony?\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
+    "event_id": "masterclass-3a-coaching",
+    "overlap_allowed": false,
+    "participants": [
+      "Owen Dalby",
+      "Anthony Manzo",
+      "Paul Wiancko"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching Masterclass 3B",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Dinkelspiel Stage",
+    "description": "Playing: Quartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu), Selene (w Todd?), The Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed), Tomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "event_id": "masterclass-3b-coaching",
+    "overlap_allowed": false,
+    "participants": [
+      "Todd Palmer",
+      "Alexi Kenney",
+      "William Coleman"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching Masterclass 3C",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "Playing: Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder), 8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell), The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru), WaMaTachou Quartet? (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
+    "event_id": "masterclass-3c-coaching",
+    "overlap_allowed": false,
+    "participants": [
+      "John Novacek",
+      "Daniel Phillips",
+      "Hannah Collins"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
       "source_name": "Master Schedule",
       "sheet_name": "SCHEDULE",
       "row_number": 34,
@@ -23396,7 +23545,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall",
-    "description": "location subject to change\n(potentially 103 if needed)",
+    "description": "Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying: SQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian), No Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang), Pas de Jeans?, Pinky play w Tony?\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying: Quartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu), Selene (w Todd?), The Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed), Tomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman\n\nMasterclass 3C\nLocation: Braun Rehearsal Hall\nPlaying: Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder), 8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell), The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru), WaMaTachou Quartet? (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
     "event_id": "masterclass-3a-3b-3c-broad",
     "overlap_allowed": true,
     "participants": [
@@ -23428,23 +23577,10 @@
       "Benjamin Chen",
       "Ben Parks",
       "Cyrus Behroozi",
-      "Christine Choi",
-      "Bruce Yu",
-      "Jessica Seeliger",
-      "Warren Wu",
       "Leyan Lo",
       "Alex Li",
       "Eric Cheng",
       "Sheila Chan",
-      "Samantha Ching",
-      "Lois Harder",
-      "Seth Novatt",
-      "I-han Chou",
-      "Anne Scott",
-      "Norman Truong",
-      "Laura Shifley",
-      "Laurence Lewis",
-      "Minsu Longiaru",
       "Beverly Fu",
       "Jennie Yang",
       "Monica Anuforo",
@@ -23461,10 +23597,6 @@
       "Meg Lamm",
       "Jocelyn Lamm Startz",
       "Hilary Meltzer",
-      "Jim Chou",
-      "Tyson Mao",
-      "Cindy Wang",
-      "Olivia Tam",
       "Ria Honda",
       "Christopher Lin-Brande",
       "Nina Monfredo",
@@ -23473,53 +23605,121 @@
       "Marie Christine Lopez",
       "Cindy Mong",
       "Ken Ferry",
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang",
+      "Chia Ying Lee",
+      "Yi Ying Wei",
+      "Chiao Hui Chang",
+      "Aaron Wilk",
+      "Misha Rafiee",
+      "Lloyd Minor",
+      "Neir Eshel",
+      "Ayane Kozasa",
+      "Dimitri Murrath",
+      "Howard Nelson",
+      "Jennah Delp Somers",
+      "Lesley Robertson",
+      "Nina Lee",
+      "Pamela Frank",
+      "Pedja Muzijevic",
+      "Stephen Prutsman",
+      "Steven Tenenbom"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Playing Masterclass 3A",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Campbell Recital Hall",
+    "description": "Playing: SQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian), No Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang), Pas de Jeans?, Pinky play w Tony?\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
+    "event_id": "masterclass-3a-playing",
+    "overlap_allowed": false,
+    "participants": [
       "Miles Chan",
       "Anna Soper",
       "Eric Cooper",
       "Griffin Glenn",
       "Jasper Jian",
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang",
+      "Elisabeth Heremans",
+      "Alex Hwang",
+      "Thomas Xiong",
+      "Daiyao Zhang"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Playing Masterclass 3B",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Dinkelspiel Stage",
+    "description": "Playing: Quartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu), Selene (w Todd?), The Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed), Tomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "event_id": "masterclass-3b-playing",
+    "overlap_allowed": false,
+    "participants": [
+      "Christine Choi",
+      "Bruce Yu",
+      "Jessica Seeliger",
+      "Warren Wu",
       "Emil Ma",
       "Chung-Pei Ma",
       "Derek Katz",
       "Ari Freed",
-      "Aaron Wilk",
-      "Misha Rafiee",
-      "Gregorio Lopes",
-      "James Welch",
-      "Persis Drell",
-      "Lloyd Minor",
-      "Neir Eshel",
+      "Samantha Ching",
+      "Lois Harder",
+      "Seth Novatt",
+      "I-han Chou",
+      "Anne Scott"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Playing Masterclass 3C",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "Playing: Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder), 8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell), The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru), WaMaTachou Quartet? (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
+    "event_id": "masterclass-3c-playing",
+    "overlap_allowed": false,
+    "participants": [
       "Ko Hayashi",
       "Ron Ho",
       "Cary Chin",
       "Jim Zehnder",
+      "Gregorio Lopes",
       "Mark Siegel",
-      "Alexi Kenney",
-      "Anthony Manzo",
-      "Ayane Kozasa",
-      "Daniel Phillips",
-      "Dimitri Murrath",
-      "Hannah Collins",
-      "Howard Nelson",
-      "Jennah Delp Somers",
-      "John Novacek",
-      "Lesley Robertson",
-      "Nina Lee",
-      "Owen Dalby",
-      "Pamela Frank",
-      "Paul Wiancko",
-      "Pedja Muzijevic",
-      "Stephen Prutsman",
-      "Steven Tenenbom",
-      "Todd Palmer",
-      "William Coleman"
+      "James Welch",
+      "Persis Drell",
+      "Norman Truong",
+      "Laura Shifley",
+      "Laurence Lewis",
+      "Minsu Longiaru",
+      "Jim Chou",
+      "Tyson Mao",
+      "Cindy Wang",
+      "Olivia Tam"
     ]
   },
   {
@@ -24288,7 +24488,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-26-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -24491,7 +24691,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Dmitri Coaching: Murray Quartet",
     "date": "2026-06-26",
@@ -24627,7 +24827,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-26",
@@ -24717,7 +24917,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Owen Coaching: Quartet SAMM",
     "date": "2026-06-26",
@@ -24765,7 +24965,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Pedja Coaching: The Quarktet",
     "date": "2026-06-26",
@@ -24810,7 +25010,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-26",
@@ -24831,7 +25031,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -24852,7 +25052,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-26",
@@ -24876,7 +25076,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-26",
@@ -25061,7 +25261,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Stephen Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -25085,7 +25285,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-26",
@@ -25172,7 +25372,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-26",
@@ -25262,7 +25462,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "William Coaching: String Quintet",
     "date": "2026-06-26",
@@ -25362,7 +25562,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-26",
@@ -25383,7 +25583,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Nina Coaching: Meck Kwarteck",
     "date": "2026-06-26",
@@ -25475,7 +25675,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-26",
@@ -25571,7 +25771,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-26",
@@ -25667,7 +25867,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-26",
@@ -25691,7 +25891,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -25763,7 +25963,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-26",
@@ -25836,7 +26036,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-26",
@@ -26144,7 +26344,7 @@
     "location": "Bing Concert Hall",
     "description": "",
     "event_id": "faculty-lunch-for-all-faculty-2026-06-26-1300",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -26174,7 +26374,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Alexi Coaching: Murray Quartet",
     "date": "2026-06-26",
@@ -26198,7 +26398,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Meck Kwarteck",
     "date": "2026-06-26",
@@ -26222,7 +26422,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-26",
@@ -26288,7 +26488,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -26312,7 +26512,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-26",
@@ -26333,7 +26533,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-26",
@@ -26401,7 +26601,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Owen Coaching: The Quarktet",
     "date": "2026-06-26",
@@ -26449,7 +26649,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Paul Coaching: String Quintet",
     "date": "2026-06-26",
@@ -26519,7 +26719,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -26640,7 +26840,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-26",
@@ -26664,7 +26864,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: SQuEAQ",
     "date": "2026-06-26",
@@ -26806,7 +27006,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-26",
@@ -26890,7 +27090,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-26",
@@ -26956,7 +27156,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Will Coaching: Chane String Quartet",
     "date": "2026-06-26",
@@ -27050,7 +27250,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-26",
@@ -27071,7 +27271,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Danny Coaching: Quartet SAMM",
     "date": "2026-06-26",
@@ -27119,7 +27319,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: Chane String Quartet",
     "date": "2026-06-26",
@@ -27344,7 +27544,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-26",
@@ -27388,7 +27588,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-26",
@@ -27412,7 +27612,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-26",
@@ -27436,7 +27636,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-26",
@@ -27484,7 +27684,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-26",
@@ -27557,7 +27757,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-26",
@@ -27581,7 +27781,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-26",
@@ -27712,7 +27912,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tony Coaching: SQuEAQ",
     "date": "2026-06-26",
@@ -27816,7 +28016,7 @@
     "location": "776 Dolores St, Stanford, CA",
     "description": "5:30 Opening\n6:30pm Dinner\nDetails via email",
     "event_id": "faculty-epic-sight-reading-party-2026-06-26-1730",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -28096,7 +28296,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-the-seminar-crooners-2026-06-27-0830",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -28227,7 +28427,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Alexi Coaching: Meck Kwarteck",
     "date": "2026-06-27",
@@ -28414,7 +28614,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-27",
@@ -28506,7 +28706,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Paul Coaching: String Quintet",
     "date": "2026-06-27",
@@ -28597,7 +28797,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-27",
@@ -28646,7 +28846,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-27",
@@ -28718,7 +28918,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-27",
@@ -28742,7 +28942,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quatuor Pas de Jeans",
     "date": "2026-06-27",
@@ -28790,7 +28990,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-27",
@@ -28882,7 +29082,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-27",
@@ -28924,7 +29124,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-27",
@@ -29032,7 +29232,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tony Coaching: SQuEAQ",
     "date": "2026-06-27",
@@ -29102,7 +29302,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Chane String Quartet",
     "date": "2026-06-27",
@@ -29126,7 +29326,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Chane String Quartet",
     "date": "2026-06-27",
@@ -29171,7 +29371,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Dimitri Coaching: Murray Quartet",
     "date": "2026-06-27",
@@ -29216,7 +29416,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Hannah Coaching: The Quarktet",
     "date": "2026-06-27",
@@ -29240,7 +29440,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Murray Quartet",
     "date": "2026-06-27",
@@ -29399,7 +29599,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Prutsman Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-27",
@@ -29423,7 +29623,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quartet SAMM",
     "date": "2026-06-27",
@@ -29444,7 +29644,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-27",
@@ -29512,7 +29712,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Meck Kwarteck",
     "date": "2026-06-27",
@@ -29632,7 +29832,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: String Quintet",
     "date": "2026-06-27",
@@ -29754,7 +29954,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tenenbom Coaching: Quartet SAMM",
     "date": "2026-06-27",
@@ -29799,7 +29999,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "The Quarktet",
     "date": "2026-06-27",
@@ -29886,7 +30086,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Ayane Coaching: Meck Kwarteck",
     "date": "2026-06-27",
@@ -29910,7 +30110,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Danny Coaching: String Quintet",
     "date": "2026-06-27",
@@ -30025,7 +30225,7 @@
       "sheet_name": null,
       "row_number": 22,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Meck Kwarteck",
     "date": "2026-06-27",
@@ -30142,7 +30342,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Pedja Coaching: SQuEAQ",
     "date": "2026-06-27",
@@ -30230,7 +30430,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Quatuor Pas de Jeans",
     "date": "2026-06-27",
@@ -30279,7 +30479,7 @@
       "sheet_name": null,
       "row_number": 21,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Chane String Quartet",
     "date": "2026-06-27",
@@ -30303,7 +30503,7 @@
       "sheet_name": null,
       "row_number": 9,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Murray Quartet",
     "date": "2026-06-27",
@@ -30351,7 +30551,7 @@
       "sheet_name": null,
       "row_number": 17,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: Quartet SAMM",
     "date": "2026-06-27",
@@ -30423,7 +30623,7 @@
       "sheet_name": null,
       "row_number": 26,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Rehearsal: The Quarktet",
     "date": "2026-06-27",
@@ -30515,7 +30715,7 @@
       "sheet_name": null,
       "row_number": 24,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "SQuEAQ",
     "date": "2026-06-27",
@@ -30557,7 +30757,7 @@
       "sheet_name": null,
       "row_number": 10,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "String Quintet",
     "date": "2026-06-27",
@@ -30578,7 +30778,7 @@
       "sheet_name": null,
       "row_number": 16,
       "column_number": null,
-      "note": "data inconsistency resolution: documented roster/coaching studio mismatch; using roster room"
+      "note": null
     },
     "title": "Tenenbom Coaching: Quatuor Pas de Jeans",
     "date": "2026-06-27",
@@ -30677,7 +30877,7 @@
     "location": "Campbell Recital Hall",
     "description": "CRH",
     "event_id": "faculty-azure-family-concert-2026-06-27-1400",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -30802,6 +31002,76 @@
     ]
   },
   {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "8tet with Dolores 4",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "participants": [
+      "Pamela Frank"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "8tet with Dolores 4 (cover Pam)",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-27-session-four-cover-pamela-frank-anthony-manzo",
+    "overlap_allowed": false,
+    "participants": [
+      "Anthony Manzo"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 30,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Pam Coaching: 8tet with Dolores 4",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "Braun Rehearsal Hall",
+    "description": "",
+    "event_id": "coaching-8tet-with-dolores-4-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "participants": [
+      "Gregorio Lopes",
+      "Ko Hayashi",
+      "Ron Ho",
+      "Mark Siegel",
+      "Cary Chin",
+      "James Welch",
+      "Jim Zehnder",
+      "Persis Drell"
+    ]
+  },
+  {
     "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
@@ -30817,7 +31087,7 @@
     "location": "Bing Concert Hall",
     "description": "details TBD",
     "event_id": "faculty-international-showcase-2026-06-27-1700",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -30957,7 +31227,7 @@
     "location": "Braun Courtyard",
     "description": "",
     "event_id": "faculty-post-showcase-pizza-party-2026-06-27-1900",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -31237,7 +31507,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-anthony-manzo-2026-06-27-2250",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Anthony Manzo"
     ]
@@ -31258,7 +31528,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-hannah-collins-2026-06-27-2305",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Hannah Collins"
     ]
@@ -31279,7 +31549,7 @@
     "location": "San Francisco",
     "description": "",
     "event_id": "travel-nina-lee-2026-06-28-0256",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Nina Lee"
     ]
@@ -31300,7 +31570,7 @@
     "location": "",
     "description": "",
     "event_id": "faculty-munger-check-out-2026-06-28-0800",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -31440,7 +31710,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-john-novacek-2026-06-28-0810",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "John Novacek"
     ]
@@ -31461,7 +31731,7 @@
     "location": "in front of Braun",
     "description": "",
     "event_id": "faculty-shutter-falls-on-group-photo-2026-06-28-1030",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -31601,7 +31871,7 @@
     "location": "Campbell Recital Hall",
     "description": "all participants perform\nw/ refreshments!",
     "event_id": "faculty-the-big-finale-2026-06-28-1100",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -31741,7 +32011,7 @@
     "location": "Home of Jim and Carie Zehnder, 8 E Creek Pl, Menlo Park, CA 94025",
     "description": "Bring your instruments\nor just come by to enjoy a\ncold one with seminar\nfriends new and old.\nIf you have an evening\nfight to catch, bring your\nuber to the airport.",
     "event_id": "faculty-wrap-party-2026-06-28-1545",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Alexi Kenney",
       "Anthony Manzo",
@@ -31881,7 +32151,7 @@
     "location": "SFO",
     "description": "",
     "event_id": "travel-steven-tenenbom-2026-06-28-1839",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Steven Tenenbom"
     ]
@@ -31902,7 +32172,7 @@
     "location": "San Francisco",
     "description": "",
     "event_id": "travel-pedja-muzijevic-2026-06-28-1930",
-    "overlap_allowed": false,
+    "overlap_allowed": true,
     "participants": [
       "Pedja Muzijevic"
     ]
