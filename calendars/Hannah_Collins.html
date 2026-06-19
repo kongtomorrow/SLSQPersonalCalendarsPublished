@@ -29,16 +29,6 @@
       --event-depth-bottom: 0.12rem;
     }
     * { box-sizing: border-box; }
-    @view-transition {
-      navigation: auto;
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      ::view-transition-old(root),
-      ::view-transition-new(root) {
-        animation-duration: 140ms;
-        animation-timing-function: ease-out;
-      }
-    }
     body {
       margin: 0;
       color: var(--ink);
@@ -46,21 +36,15 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
     }
-    @media (prefers-reduced-motion: no-preference) {
-      body {
-        animation: page-enter 140ms ease-out;
-      }
-      @keyframes page-enter {
-        from { opacity: 0; transform: translateY(0.2rem); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    }
     @property --backdrop-alpha {
       syntax: "<number>";
       inherits: true;
       initial-value: 0;
     }
     header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
       background: linear-gradient(135deg, var(--header), var(--header-dark));
       color: white;
       padding: 0.85rem 1.25rem 0.95rem;
@@ -422,10 +406,16 @@
       color: var(--event-meta);
       cursor: pointer;
       font: inherit;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
       font-weight: 600;
-      min-width: 1.65rem;
-      min-height: 1.65rem;
+      line-height: 1;
+      min-width: 2.15rem;
+      min-height: 2.15rem;
+      padding: 0;
+    }
+    .close-button:focus-visible {
+      outline: 2px solid rgba(111, 219, 79, 0.7);
+      outline-offset: 2px;
     }
     .dialog-body { padding: 0.72rem 0.9rem 0.95rem 0.86rem; overflow: auto; }
     .dialog-location {
@@ -1100,7 +1090,6 @@ uber to the airport. alexi kenney anthony manzo ayane kozasa daniel phillips dim
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">(Details coming)
 Munger Check In</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1118,7 +1107,6 @@ Munger Check In</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Schedule Here
 Participants will have access to</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1134,7 +1122,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 20, 2026  9:18 AM-9:48 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1150,7 +1137,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 20, 2026  1 PM-2 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1167,7 +1153,6 @@ Participants will have access to</div>
         <div class="detail-row">Jun 20, 2026  2:30 PM-5 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">tbc!</div>
-        <div class="detail-row"><ul class="person-list"><li>Owen Dalby</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Paul Wiancko</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1183,7 +1168,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 20, 2026  5 PM-6 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1199,7 +1183,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 20, 2026  6 PM-7 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1215,7 +1198,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 20, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1231,7 +1213,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  9 AM-9:45 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1248,7 +1229,6 @@ Participants will have access to</div>
         <div class="detail-row">Jun 21, 2026  11 AM-12 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Chris Chafe</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1264,7 +1244,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  12 PM-1 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1280,7 +1259,6 @@ Participants will have access to</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  12:45 PM-2:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Owen Dalby</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Paul Wiancko</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1298,7 +1276,6 @@ Participants will have access to</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Pamela Frank &amp; Howard Nelson
 with Host Stephen Prutsman</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1314,7 +1291,6 @@ with Host Stephen Prutsman</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  4 PM-5:45 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Daniel Phillips</li><li>William Coleman</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Anthony Manzo</li><li>Pedja Muzijevic</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1330,7 +1306,6 @@ with Host Stephen Prutsman</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  6 PM-7 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1346,7 +1321,6 @@ with Host Stephen Prutsman</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 21, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1363,7 +1337,6 @@ with Host Stephen Prutsman</div>
         <div class="detail-row">Jun 22, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1380,7 +1353,6 @@ with Host Stephen Prutsman</div>
         <div class="detail-row">Jun 22, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1398,7 +1370,6 @@ with Host Stephen Prutsman</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Dvorak 6tet: 10:30-11:05am
 Road Movies: 11:10am-11:30am</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>John Novacek</li><li>Owen Dalby</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Paul Wiancko</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1416,7 +1387,6 @@ Road Movies: 11:10am-11:30am</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Road Movies: Alexi Kenney, John Novacek
 Dvorak 6tet: Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul Wiancko, Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>John Novacek</li><li>Owen Dalby</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Paul Wiancko</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1432,7 +1402,6 @@ Dvorak 6tet: Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul
       <div class="detail-stack">
         <div class="detail-row">Jun 22, 2026  1 PM-2 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1449,7 +1418,6 @@ Dvorak 6tet: Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul
         <div class="detail-row">Jun 22, 2026  2 PM-3 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1466,7 +1434,6 @@ Dvorak 6tet: Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul
         <div class="detail-row">Jun 22, 2026  3:15 PM-4:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1497,7 +1464,6 @@ Ethea Trio (Shintaro Taneda, Ayoun Alexandra Kim, Jon Lee)
 Quail 4tet (Katie Behroozi, Benjamin Chen, Ben Parks, Cyrus Behroozi)
 SEJI quartet (Isabella Fulford, JK Hunt, Emma Spellman, Stefan Leape)
 Coaching: Pedja Muzijevic, Paul Wiancko, William Coleman</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Stephen Prutsman</li><li>Todd Palmer</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1513,7 +1479,6 @@ Coaching: Pedja Muzijevic, Paul Wiancko, William Coleman</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 22, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1533,7 +1498,6 @@ Coaching: Pedja Muzijevic, Paul Wiancko, William Coleman</div>
 Georges Zeisel and Catherine ZIns
 (An INA / ARTE production)
 Drop in As you Wish</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1550,7 +1514,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 23, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1567,7 +1530,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 23, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1584,7 +1546,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 23, 2026  10:30 AM-11:30 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1601,7 +1562,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 23, 2026  1:15 PM-2:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1618,7 +1578,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 23, 2026  2:30 PM-3:30 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1638,7 +1597,6 @@ Drop in As you Wish</div>
 J&amp; A Beare, Director
 Scientific Research &amp; Conservation
 Visiting Scholar, Oxford University</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1656,7 +1614,6 @@ Visiting Scholar, Oxford University</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">meeting/dinner
 (discuss/determine Sat/Bing program)</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1672,7 +1629,6 @@ Visiting Scholar, Oxford University</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 23, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1692,7 +1648,6 @@ Visiting Scholar, Oxford University</div>
 Georges Zeisel and Catherine ZIns
 (An INA / ARTE production)
 Drop in As you Wish</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1709,7 +1664,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 24, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1726,7 +1680,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 24, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1743,7 +1696,6 @@ Drop in As you Wish</div>
         <div class="detail-row">Jun 24, 2026  10:30 AM-11:30 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1762,7 +1714,6 @@ Drop in As you Wish</div>
         <div class="detail-row prewrap">Brandenburg 6: Dimitri Murrath, William Coleman, Steven Tenenbom, Lesley Robertson, Nina Lee, Anthony Manzo, Pedja Muzijevic
 Rebecca Clarke duo: Ayane Kozasa, Todd Palmer
 Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Daniel Phillips</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Stephen Prutsman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1778,7 +1729,6 @@ Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee<
       <div class="detail-stack">
         <div class="detail-row">Jun 24, 2026  1 PM-2 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1795,7 +1745,6 @@ Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee<
         <div class="detail-row">Jun 24, 2026  2 PM-3 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1818,7 +1767,6 @@ WaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)
 String Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)
 Coaching: Ayane Kozasa, Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Ayane Kozasa</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1834,7 +1782,6 @@ Coaching: Ayane Kozasa, Hannah Collins</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 24, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1853,7 +1800,6 @@ Coaching: Ayane Kozasa, Hannah Collins</div>
         <div class="detail-row prewrap">TBC
 AC/DC‘s “thunderstruck” for 12 cellos.
 and more!</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1870,7 +1816,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1887,7 +1832,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1904,7 +1848,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  10:30 AM-11:30 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1920,7 +1863,6 @@ and more!</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 25, 2026  11:30 AM-12 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1937,7 +1879,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  12:15 PM-1 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">Film Fun with Prutsman/Dolphins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1954,7 +1895,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  1:15 PM-2:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1971,7 +1911,6 @@ and more!</div>
         <div class="detail-row">Jun 25, 2026  2:30 PM-3:30 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -1993,7 +1932,6 @@ Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)
 The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)
 Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>John Novacek</li><li>Daniel Phillips</li><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2009,7 +1947,6 @@ Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 25, 2026  7 PM-8 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Daniel Phillips</li><li>William Coleman</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Anthony Manzo</li><li>Pedja Muzijevic</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2025,7 +1962,6 @@ Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 25, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2042,7 +1978,6 @@ Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
         <div class="detail-row">Jun 26, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2059,7 +1994,6 @@ Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
         <div class="detail-row">Jun 26, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2078,7 +2012,6 @@ Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
         <div class="detail-row prewrap">Mendelssohn 6tet: 10:30am -10:50
 Rule of Three: 10:50-11:10
 Tchaikovsky: 11:10-11;30</div>
-        <div class="detail-row"><ul class="person-list"><li>Todd Palmer</li><li>Owen Dalby</li><li>John Novacek</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Anthony Manzo</li><li>Pedja Muzijevic</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2097,7 +2030,6 @@ Tchaikovsky: 11:10-11;30</div>
         <div class="detail-row prewrap">Tchaikovsky: Todd Palmer, Owen Dalby, John Novacek
 Rule of Three: Owen Dalby, Daniel Phillips, Steven Tenenbom
 Mendelssohn 6tet: Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Collins, Anthony Manzo, Pedja Muzijevic</div>
-        <div class="detail-row"><ul class="person-list"><li>Todd Palmer</li><li>Owen Dalby</li><li>John Novacek</li><li>Daniel Phillips</li><li>Steven Tenenbom</li><li>William Coleman</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Anthony Manzo</li><li>Pedja Muzijevic</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2113,7 +2045,6 @@ Mendelssohn 6tet: Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Coll
       <div class="detail-stack">
         <div class="detail-row">Jun 26, 2026  1 PM-2 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2130,7 +2061,6 @@ Mendelssohn 6tet: Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Coll
         <div class="detail-row">Jun 26, 2026  2 PM-3 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2147,7 +2077,6 @@ Mendelssohn 6tet: Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Coll
         <div class="detail-row">Jun 26, 2026  3:15 PM-4:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2166,7 +2095,6 @@ Mendelssohn 6tet: Daniel Phillips, William Coleman, Dimitri Murrath, Hannah Coll
         <div class="detail-row prewrap">5:30 Opening
 6:30pm Dinner
 Details via email</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2182,7 +2110,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 26, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2199,7 +2126,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  8:30 AM-9 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX">https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8FX</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2216,7 +2142,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  9:15 AM-10:15 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2233,7 +2158,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  10:30 AM-11:30 AM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2250,7 +2174,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  1:15 PM-2:15 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2267,7 +2190,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  2 PM-3 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">CRH</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2284,7 +2206,6 @@ Details via email</div>
         <div class="detail-row">Jun 27, 2026  5 PM-7 PM</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">details TBD</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2300,7 +2221,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 27, 2026  7 PM-8 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2316,7 +2236,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 27, 2026  8 PM-12 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2332,7 +2251,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 27, 2026  11:05 PM-11:35 PM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Hannah Collins</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2348,7 +2266,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 28, 2026  8 AM-10 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2364,7 +2281,6 @@ Details via email</div>
       <div class="detail-stack">
         <div class="detail-row">Jun 28, 2026  10:30 AM-11 AM</div>
         <div class="detail-row">Hannah Collins</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2382,7 +2298,6 @@ Details via email</div>
         <div class="detail-row">Hannah Collins</div>
         <div class="detail-row prewrap">all participants perform
 w/ refreshments!</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
@@ -2405,7 +2320,6 @@ friends new and old.
 If you have an evening
 fight to catch, bring your
 uber to the airport.</div>
-        <div class="detail-row"><ul class="person-list"><li>Alexi Kenney</li><li>Anthony Manzo</li><li>Ayane Kozasa</li><li>Daniel Phillips</li><li>Dimitri Murrath</li><li>Hannah Collins</li><li>Howard Nelson</li><li>Jennah Delp Somers</li><li>John Novacek</li><li>Lesley Robertson</li><li>Nina Lee</li><li>Owen Dalby</li><li>Pamela Frank</li><li>Paul Wiancko</li><li>Pedja Muzijevic</li><li>Stephen Prutsman</li><li>Steven Tenenbom</li><li>Todd Palmer</li><li>William Coleman</li><li>Luke Henderson</li><li>Isaac Park</li><li>James Preucil</li><li>Ian Maloney</li><li>Jeanel Liango</li><li>Jérôme Chiasson</li><li>Celia Morin</li><li>Maya Enstad</li><li>Shintaro Taneda</li><li>Ayoun Alexandra Kim</li><li>Jon Lee</li><li>Jihyun Baik</li><li>Oliver Leitner</li><li>Lourdes Pinney</li><li>Colin Guan</li><li>Dustin Breshears</li><li>Anthony Chukhlov</li><li>Leslie Ashworth</li><li>Melissa Lam</li><li>Nate Strothkamp</li><li>Raunak Kumar</li><li>Jeremy Klein</li><li>Starla Breshears</li><li>Gabriel Irazabal</li><li>Katie Behroozi</li><li>Benjamin Chen</li><li>Ben Parks</li><li>Cyrus Behroozi</li><li>Christine Choi</li><li>Bruce Yu</li><li>Jessica Seeliger</li><li>Warren Wu</li><li>Leyan Lo</li><li>Alex Li</li><li>Eric Cheng</li><li>Sheila Chan</li><li>Samantha Ching</li><li>Lois Harder</li><li>Seth Novatt</li><li>I-han Chou</li><li>Anne Scott</li><li>Norman Truong</li><li>Laura Shifley</li><li>Laurence Lewis</li><li>Minsu Longiaru</li><li>Beverly Fu</li><li>Jennie Yang</li><li>Monica Anuforo</li><li>Derek Wu</li><li>Shawn Barnett</li><li>Ari Le</li><li>Marandi Hostetter</li><li>Melissa Chu</li><li>Isabella Fulford</li><li>JK Hunt</li><li>Emma Spellman</li><li>Stefan Leape</li><li>Cristina Ruotolo</li><li>Meg Lamm</li><li>Jocelyn Lamm Startz</li><li>Hilary Meltzer</li><li>Jim Chou</li><li>Tyson Mao</li><li>Cindy Wang</li><li>Olivia Tam</li><li>Ria Honda</li><li>Christopher Lin-Brande</li><li>Nina Monfredo</li><li>Abigail Rogers</li><li>Haeun Nam</li><li>Marie Christine Lopez</li><li>Cindy Mong</li><li>Ken Ferry</li><li>Elisabeth Heremans</li><li>Alex Hwang</li><li>Thomas Xiong</li><li>Daiyao Zhang</li><li>Miles Chan</li><li>Anna Soper</li><li>Eric Cooper</li><li>Griffin Glenn</li><li>Jasper Jian</li><li>Chia Ying Lee</li><li>Yi Ying Wei</li><li>Chiao Hui Chang</li><li>Emil Ma</li><li>Chung-Pei Ma</li><li>Derek Katz</li><li>Ari Freed</li><li>Aaron Wilk</li><li>Misha Rafiee</li><li>Gregorio Lopes</li><li>James Welch</li><li>Persis Drell</li><li>Lloyd Minor</li><li>Neir Eshel</li><li>Ko Hayashi</li><li>Ron Ho</li><li>Cary Chin</li><li>Jim Zehnder</li><li>Mark Siegel</li></ul></div>
       </div>
     </div>
   </dialog>
