@@ -26,9 +26,8 @@
       --time-axis-width: 4.25rem;
       --event-depth-x: 0.55rem;
       --event-depth-y: 0.36rem;
-      --event-depth-bottom: 0.12rem;
       --event-edge-top: 0.12rem;
-      --event-edge-bottom: 0.08rem;
+      --event-edge-right: 0.12rem;
       --event-tight-min-height: 2.25rem;
       --vertical-scroll-gutter: 0;
     }
@@ -160,8 +159,7 @@
       background: var(--surface);
     }
     .calendar-shell {
-      display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
+      display: flex;
       flex: 1 1 auto;
       min-height: 0;
       overflow: hidden;
@@ -172,55 +170,39 @@
       container-type: inline-size;
       box-shadow: 0 1px 2px rgba(31, 35, 40, 0.08);
     }
-    .calendar-header-row,
-    .calendar-body-row {
-      display: grid;
-      grid-template-columns: var(--time-axis-width) minmax(0, 1fr);
-    }
-    .calendar-header-row {
-      border-bottom: 1px solid var(--line);
-      background: var(--surface);
-      position: relative;
-      z-index: 4;
-      padding-right: var(--vertical-scroll-gutter);
-    }
-    .calendar-body-row {
+    .calendar-scroll {
+      flex: 1 1 auto;
       min-height: 0;
-      grid-template-rows: max-content;
-      overflow: hidden;
-      position: relative;
-      padding-right: var(--vertical-scroll-gutter);
-    }
-    .day-header-scroll {
       min-width: 0;
-      margin-left: -1px;
-      overflow: hidden;
-    }
-    .day-scroll {
-      grid-column: 2;
-      grid-row: 1;
-      position: relative;
-      z-index: 1;
-      align-self: stretch;
-      min-height: 0;
-      margin-left: -1px;
       overflow: auto;
-      min-width: 0;
-      clip-path: inset(0);
       scrollbar-gutter: stable;
+    }
+    .calendar-canvas {
+      display: grid;
+      grid-template-columns: var(--time-axis-width) minmax(var(--calendar-min-width), 1fr);
+      grid-template-rows: auto max-content;
+      min-width: calc(var(--time-axis-width) + var(--calendar-min-width));
+      min-height: max-content;
     }
     .calendar-grid,
     .calendar-header-grid {
       display: grid;
       grid-template-columns: repeat(var(--day-count), minmax(14.5rem, 1fr));
-      min-width: min(100%, var(--calendar-min-width));
+      min-width: var(--calendar-min-width);
     }
     .calendar-grid {
+      grid-column: 2;
+      grid-row: 2;
       height: max-content;
     }
-    .calendar-header-grid,
-    .time-axis {
-      will-change: transform;
+    .calendar-header-grid {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
     }
     .day-header {
       background: var(--surface);
@@ -228,8 +210,15 @@
       font-weight: 400;
     }
     .corner {
+      grid-column: 1;
+      grid-row: 1;
+      position: sticky;
+      left: 0;
+      top: 0;
+      z-index: 6;
       background: var(--surface);
       border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
     .day-header {
       border-left: 1px solid var(--line);
@@ -243,21 +232,16 @@
       line-height: 1.2;
     }
     .date-label { color: inherit; }
-    .time-axis-viewport {
-      grid-column: 1;
-      grid-row: 1;
-      position: relative;
-      z-index: 2;
-      min-height: 0;
-      overflow: hidden;
-      border-right: 1px solid var(--line);
-      background: var(--surface);
-    }
     .time-axis {
-      position: relative;
+      grid-column: 1;
+      grid-row: 2;
+      position: sticky;
+      left: 0;
+      z-index: 3;
       min-height: 0;
       display: grid;
       grid-template-rows: repeat(64, var(--slot-height));
+      border-right: 1px solid var(--line);
       background: var(--surface);
     }
     .hour-label {
@@ -305,12 +289,12 @@
       position: relative;
       z-index: calc(10 + (var(--event-depth) * 10));
       justify-self: stretch;
-      width: calc(100% - (var(--event-depth) * var(--event-depth-x)));
+      width: calc(100% - (var(--event-depth) * var(--event-depth-x)) - var(--event-edge-right));
       max-width: 100%;
       min-width: 0;
       margin-left: calc(var(--event-depth) * var(--event-depth-x));
       margin-top: calc(var(--event-edge-top) + (var(--event-depth) * var(--event-depth-y)));
-      margin-bottom: calc(var(--event-edge-bottom) + (var(--event-depth) * var(--event-depth-bottom)));
+      margin-bottom: 0;
       min-height: 0;
       overflow: hidden;
       border: 0;
@@ -358,7 +342,7 @@
       position: relative;
       z-index: var(--layer-z);
       justify-self: stretch;
-      width: calc(100% - (var(--layer-depth) * var(--event-depth-x)));
+      width: calc(100% - (var(--layer-depth) * var(--event-depth-x)) - var(--event-edge-right));
       max-width: 100%;
       min-width: 0;
       margin-left: calc(var(--layer-depth) * var(--event-depth-x));
@@ -377,7 +361,7 @@
       border-top-right-radius: 2px;
     }
     .event-backing.is-segment-end {
-      margin-bottom: calc(var(--event-edge-bottom) + (var(--layer-depth) * var(--event-depth-bottom)));
+      margin-bottom: 0;
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
     }
@@ -610,9 +594,9 @@
       <input id="event-filter" type="search" autocomplete="off" aria-label="Filter events" placeholder="Filter title, location, or notes">
     </div>
     <section class="calendar-shell" style="--day-count: 10; --calendar-min-width: 145.00rem;">
-      <div class="calendar-header-row">
+      <div class="calendar-scroll">
+        <div class="calendar-canvas">
         <div class="corner"></div>
-        <div class="day-header-scroll">
           <div class="calendar-header-grid">
         <div class="day-header"><span class="weekday">Fri June <span class="date-label">19</span></span></div>
         <div class="day-header"><span class="weekday">Sat June <span class="date-label">20</span></span></div>
@@ -625,10 +609,6 @@
         <div class="day-header"><span class="weekday">Sat June <span class="date-label">27</span></span></div>
         <div class="day-header"><span class="weekday">Sun June <span class="date-label">28</span></span></div>
           </div>
-        </div>
-      </div>
-      <div class="calendar-body-row">
-        <div class="time-axis-viewport">
         <div class="time-axis">
           <div class="hour-label" style="grid-row: 1">8 AM</div>
           <div class="hour-label" style="grid-row: 5">9 AM</div>
@@ -648,8 +628,6 @@
           <div class="hour-label" style="grid-row: 61">11 PM</div>
           <div class="hour-label" style="grid-row: 65">12 AM</div>
         </div>
-        </div>
-        <div class="day-scroll">
           <div class="calendar-grid">
         <div class="day-column" data-date="2026-06-19">
           <div class="day-mobile-title">Friday, June 19</div>
@@ -2818,7 +2796,6 @@ uber to the airport.</div>
           closeEventDialog(dialog);
         });
       }
-      syncCalendarScrollTransforms();
       scrollCalendarToRelevantDate();
     }
 
@@ -2836,36 +2813,18 @@ uber to the airport.</div>
         || columns[columns.length - 1];
     }
     function scrollCalendarToRelevantDate() {
-      const scroller = document.querySelector(".day-scroll");
+      const scroller = document.querySelector(".calendar-scroll");
       if (!scroller) return;
       const columns = Array.from(scroller.querySelectorAll(".day-column[data-date]"));
       const target = relevantDayColumn(columns, localTodayIso());
       if (!target) return;
       requestAnimationFrame(() => {
+        const timeAxisWidth = document.querySelector(".time-axis")?.offsetWidth || 0;
         scroller.scrollTo({
-          left: Math.max(target.offsetLeft, 0),
+          left: Math.max(target.offsetLeft - timeAxisWidth, 0),
           behavior: "auto",
         });
       });
-    }
-    function syncCalendarScrollTransforms() {
-      const scroller = document.querySelector(".day-scroll");
-      const headerGrid = document.querySelector(".calendar-header-grid");
-      const timeAxis = document.querySelector(".time-axis");
-      if (!scroller || !headerGrid || !timeAxis) return;
-      let pending = false;
-      const applyTransforms = () => {
-        headerGrid.style.transform = `translate3d(${-scroller.scrollLeft}px, 0, 0)`;
-        timeAxis.style.transform = `translate3d(0, ${-scroller.scrollTop}px, 0)`;
-        pending = false;
-      };
-      const requestSync = () => {
-        if (pending) return;
-        pending = true;
-        requestAnimationFrame(applyTransforms);
-      };
-      scroller.addEventListener("scroll", requestSync, { passive: true });
-      applyTransforms();
     }
     function openEventDialog(dialog, button) {
       for (const openDialog of document.querySelectorAll("dialog[open]")) {
