@@ -340,35 +340,24 @@
       pointer-events: none;
     }
     .event-card[hidden] { display: none; }
-    .event-backing {
-      grid-column: 1;
-      grid-row: var(--layer-start) / span var(--layer-span);
-      position: relative;
-      justify-self: stretch;
-      width: calc(100% - (var(--layer-depth) * var(--event-depth-x)) - var(--event-edge-right));
-      max-width: 100%;
-      min-width: 0;
-      margin-left: calc(var(--layer-depth) * var(--event-depth-x));
-      margin-top: 0;
-      margin-bottom: 0;
+    .event-fill-segment {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: var(--segment-top);
+      height: var(--segment-height);
       border-radius: 0;
       pointer-events: none;
-      background: var(--layer-fill, var(--surface));
+      background: var(--segment-fill, var(--event-fill));
     }
-    .event-backing.is-tight {
-      min-height: var(--event-tight-min-height);
-    }
-    .event-backing.is-segment-start {
-      margin-top: calc(var(--event-edge-top) + (var(--layer-depth) * var(--event-depth-y)));
+    .event-fill-segment.is-segment-start {
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
     }
-    .event-backing.is-segment-end {
-      margin-bottom: 0;
+    .event-fill-segment.is-segment-end {
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
     }
-    .event-backing[hidden] { display: none; }
     .event-title {
       display: block;
       position: relative;
@@ -631,9 +620,9 @@
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="0" style="--layer-start: 37; --layer-span: 12; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="0" data-dialog="event-dialog-0" data-event-search="on campus housing check in front desk at munger (details coming)
 munger check in 5 pm-8 pm" style="--event-start: 37; --event-span: 12; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">On Campus Housing Check In</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Front Desk at Munger</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-8 PM</span>
@@ -673,45 +662,45 @@ munger check in 5 pm-8 pm" style="--event-start: 37; --event-span: 12; --event-d
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="1" style="--layer-start: 5; --layer-span: 10; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="2" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="3" style="--layer-start: 25; --layer-span: 12; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="4" style="--layer-start: 37; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="5" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="6" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="7" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="1" data-dialog="event-dialog-1" data-event-search="seminar registration campbell recital hall lobby schedule here
 participants will have access to 9 am-11:30 am" style="--event-start: 5; --event-span: 10; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Seminar Registration</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall Lobby</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="2" data-dialog="event-dialog-2" data-event-search="welcome meeting campbell recital hall 1 pm-2 pm" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Welcome Meeting</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="3" data-dialog="event-dialog-3" data-event-search="🎻 rehearsal period 220 2 pm-5 pm" style="--event-start: 25; --event-span: 12; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-5 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="4" data-dialog="event-dialog-4" data-event-search="🎻 chamber orch reading dinkelspiel stage 5 pm-6 pm" style="--event-start: 37; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 chamber orch reading</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-6 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="5" data-dialog="event-dialog-5" data-event-search="🍇 dinner -be our guests! braun courtyard 6 pm-7 pm" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 Dinner -be our guests!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>6 PM-7 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="6" data-dialog="event-dialog-6" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="7" data-dialog="event-dialog-7" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -751,58 +740,58 @@ participants will have access to 9 am-11:30 am" style="--event-start: 5; --event
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="8" style="--layer-start: 5; --layer-span: 3; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="10" style="--layer-start: 13; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="11" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="12" style="--layer-start: 21; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="13" style="--layer-start: 27; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="14" style="--layer-start: 33; --layer-span: 8; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="15" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="16" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start" data-event-index="9" style="--layer-start: 5; --layer-span: 3; --layer-depth: 1; --layer-fill: var(--event-overlap-backing);"></div>
-          <div class="event-backing is-roomy is-segment-end" data-event-index="9" style="--layer-start: 8; --layer-span: 3; --layer-depth: 1; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="8" data-dialog="event-dialog-8" data-event-search="🍇 continental breakfast campbell courtyard 9 am-9:45 am" style="--event-start: 5; --event-span: 3; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 Continental Breakfast</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 AM-9:45 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="10" data-dialog="event-dialog-10" data-event-search="presentation jack trip ccrma stage chris chafe 11 am-12 pm" style="--event-start: 13; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Presentation</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Jack Trip CCRMA Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11 AM-12 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="11" data-dialog="event-dialog-11" data-event-search="🍇 light lunch provided braun courtyard 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 Light Lunch Provided</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="12" data-dialog="event-dialog-12" data-event-search="🎻 rehearsal period 220 1 pm-2:30 pm" style="--event-start: 21; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2:30 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="13" data-dialog="event-dialog-13" data-event-search="spotlight on physical wellness dinkelspiel stage pamela frank &amp; howard nelson
 with host stephen prutsman 2:30 pm-4 pm" style="--event-start: 27; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Spotlight on Physical Wellness</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-4 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="14" data-dialog="event-dialog-14" data-event-search="🎻 rehearsal period 220 4 pm-6 pm" style="--event-start: 33; --event-span: 8; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4 PM-6 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="15" data-dialog="event-dialog-15" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="16" data-dialog="event-dialog-16" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="9" data-dialog="event-dialog-9" data-event-search="🎻 rehearsal period 220 9 am-10:30 am" style="--event-start: 5; --event-span: 6; --event-depth: 1;">
+                        <span class="event-fill-segment is-segment-start" aria-hidden="true" style="--segment-top: 0%; --segment-height: 50%; --segment-fill: var(--event-overlap-backing);"></span>
+            <span class="event-fill-segment is-segment-end" aria-hidden="true" style="--segment-top: 50%; --segment-height: 50%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 AM-10:30 AM</span>
@@ -842,43 +831,39 @@ with host stephen prutsman 2:30 pm-4 pm" style="--event-start: 27; --event-span:
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="17" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="18" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="19" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="20" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="21" style="--layer-start: 25; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="22" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="23" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="24" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="25" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="26" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="17" data-dialog="event-dialog-17" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="18" data-dialog="event-dialog-18" data-event-search="🎻 todd playing &amp; coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Todd Playing &amp; Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="19" data-dialog="event-dialog-19" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="20" data-dialog="event-dialog-20" data-event-search="faculty concert #1 bing concert hall road movies: alexi kenney, john novacek
 dvorak 6tet: owen dalby, daniel phillips, steven tenenbom, william coleman, paul wiancko, hannah collins 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Faculty Concert #1</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="21" data-dialog="event-dialog-21" data-event-search="🎻 rehearsal: selene quartet 220 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="22" data-dialog="event-dialog-22" data-event-search="🎻 owen coaching: selene quartet 220 3:15 pm-4:15 pm" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
@@ -898,16 +883,19 @@ ethea trio (shintaro taneda, ayoun alexandra kim, jon lee)
 quail 4tet (katie behroozi, benjamin chen, ben parks, cyrus behroozi)
 seji quartet (isabella fulford, jk hunt, emma spellman, stefan leape)
 coaching: pedja muzijevic, paul wiancko, william coleman 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Masterclass 1A 1B</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall or Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="25" data-dialog="event-dialog-25" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -916,6 +904,7 @@ coaching: pedja muzijevic, paul wiancko, william coleman 4:30 pm-6 pm" style="--
 georges zeisel and catherine zins
 (an ina / arte production)
 drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-overlap-backing);"></span>
             <span class="event-title">The Musicians of the String Quartet:</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Lounge</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -955,36 +944,32 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="27" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="28" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="29" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="30" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="31" style="--layer-start: 27; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="32" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="33" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="34" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="35" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="27" data-dialog="event-dialog-27" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="28" data-dialog="event-dialog-28" data-event-search="🎻 owen coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="29" data-dialog="event-dialog-29" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="30" data-dialog="event-dialog-30" data-event-search="🎻 dimitri coaching: selene quartet 220 1:15 pm-2:15 pm" style="--event-start: 22; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Dimitri Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1:15 PM-2:15 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="31" data-dialog="event-dialog-31" data-event-search="🎻 rehearsal: selene quartet 220 2:30 pm-3:30 pm" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-3:30 PM</span>
@@ -993,16 +978,19 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
 j&amp; a beare, director
 scientific research &amp; conservation
 visiting scholar, oxford university 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Special Presentation</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4 PM-5:30 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="33" data-dialog="event-dialog-33" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="34" data-dialog="event-dialog-34" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1011,6 +999,7 @@ visiting scholar, oxford university 4 pm-5:30 pm" style="--event-start: 33; --ev
 georges zeisel and catherine zins
 (an ina / arte production)
 drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-overlap-backing);"></span>
             <span class="event-title">The Musicians of the String Quartet:</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Lounge</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -1050,27 +1039,20 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="36" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="37" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="38" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="39" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="40" style="--layer-start: 25; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="41" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="42" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="43" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="44" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="45" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="36" data-dialog="event-dialog-36" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="37" data-dialog="event-dialog-37" data-event-search="🎻 todd playing &amp; coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Todd Playing &amp; Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="38" data-dialog="event-dialog-38" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
@@ -1078,16 +1060,19 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
           <button class="event-card is-medium" type="button" data-event-index="39" data-dialog="event-dialog-39" data-event-search="faculty concert #2 bing concert hall brandenburg 6: dimitri murrath, william coleman, steven tenenbom, lesley robertson, nina lee, anthony manzo, pedja muzijevic
 rebecca clarke duo: ayane kozasa, todd palmer
 mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Faculty Concert #2</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="40" data-dialog="event-dialog-40" data-event-search="🎻 rehearsal: selene quartet 220 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="41" data-dialog="event-dialog-41" data-event-search="🎻 owen coaching: selene quartet 220 3:15 pm-4:15 pm" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
@@ -1097,16 +1082,19 @@ selene quartet (jihyun baik, oliver leitner, lourdes pinney, colin guan)
 the dolphins (luke henderson, isaac park, james preucil, ian maloney)
 string quintet (nate strothkamp, raunak kumar, jeremy klein, starla breshears, gabriel irazabal)
 coaching: ayane kozasa, hannah collins 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Playing Masterclass 2B</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="43" data-dialog="event-dialog-43" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="44" data-dialog="event-dialog-44" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1114,6 +1102,7 @@ coaching: ayane kozasa, hannah collins 4:30 pm-6 pm" style="--event-start: 35; -
           <button class="event-card is-roomy" type="button" data-event-index="45" data-dialog="event-dialog-45" data-event-search="🎻 cello-ssus reading! braun rehearsal hall tbc
 ac/dc‘s “thunderstruck” for 12 cellos.
 and more! 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-overlap-backing);"></span>
             <span class="event-title">🎻 Cello-ssus Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Rehearsal Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -1153,47 +1142,44 @@ and more! 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-dept
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="46" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="47" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="48" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="49" style="--layer-start: 15; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="50" style="--layer-start: 18; --layer-span: 3; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="51" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="52" style="--layer-start: 27; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="53" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="54" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="55" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="46" data-dialog="event-dialog-46" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="47" data-dialog="event-dialog-47" data-event-search="🎻 owen coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="48" data-dialog="event-dialog-48" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-tight" type="button" data-event-index="49" data-dialog="event-dialog-49" data-event-search="🍇 lunch in courtyard! braun courtyard 11:30 am-12 pm" style="--event-start: 15; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 Lunch in Courtyard!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11:30 AM-12 PM</span>
           </button>
           <button class="event-card is-tight" type="button" data-event-index="50" data-dialog="event-dialog-50" data-event-search="mighty like a moose campbell recital hall film fun with prutsman/dolphins 12:15 pm-1 pm" style="--event-start: 18; --event-span: 3; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">MIghty like a Moose</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12:15 PM-1 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="51" data-dialog="event-dialog-51" data-event-search="🎻 dimitri coaching: selene quartet 220 1:15 pm-2:15 pm" style="--event-start: 22; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Dimitri Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1:15 PM-2:15 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="52" data-dialog="event-dialog-52" data-event-search="🎻 rehearsal: selene quartet 220 2:30 pm-3:30 pm" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-3:30 PM</span>
@@ -1205,16 +1191,19 @@ the quarktet (emil ma, chung-pei ma, derek katz, ari freed)
 tomodachi quintet (samantha ching, lois harder, seth novatt, i-han chou, anne scott)
 todd palmer
 coaching: todd palmer, alexi kenney, william coleman 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Playing Masterclass 3B</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4 PM-5:30 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="54" data-dialog="event-dialog-54" data-event-search="🎻 rehearsal period 220 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal Period</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="55" data-dialog="event-dialog-55" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1254,25 +1243,20 @@ coaching: todd palmer, alexi kenney, william coleman 4 pm-5:30 pm" style="--even
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="56" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="57" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="58" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="59" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="60" style="--layer-start: 25; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="61" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="62" style="--layer-start: 39; --layer-span: 10; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="63" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="56" data-dialog="event-dialog-56" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="57" data-dialog="event-dialog-57" data-event-search="🎻 todd playing &amp; coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Todd Playing &amp; Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="58" data-dialog="event-dialog-58" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
@@ -1280,16 +1264,19 @@ coaching: todd palmer, alexi kenney, william coleman 4 pm-5:30 pm" style="--even
           <button class="event-card is-medium" type="button" data-event-index="59" data-dialog="event-dialog-59" data-event-search="faculty concert #3 bing concert hall tchaikovsky: todd palmer, owen dalby, john novacek
 rule of three: owen dalby, daniel phillips, steven tenenbom
 mendelssohn 6tet: daniel phillips, william coleman, dimitri murrath, hannah collins, anthony manzo, pedja muzijevic 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Faculty Concert #3</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="60" data-dialog="event-dialog-60" data-event-search="🎻 rehearsal: selene quartet 220 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="61" data-dialog="event-dialog-61" data-event-search="🎻 owen coaching: selene quartet 220 3:15 pm-4:15 pm" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
@@ -1297,11 +1284,13 @@ mendelssohn 6tet: daniel phillips, william coleman, dimitri murrath, hannah coll
           <button class="event-card is-roomy" type="button" data-event-index="62" data-dialog="event-dialog-62" data-event-search="🎻🍇 epic sight reading party! 776 dolores st, stanford, ca 5:30 opening
 6:30pm dinner
 details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻🍇 Epic Sight Reading Party!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>776 Dolores St, Stanford, CA</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5:30 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="63" data-dialog="event-dialog-63" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1341,51 +1330,51 @@ details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --ev
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="64" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="65" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="66" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="67" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="69" style="--layer-start: 37; --layer-span: 8; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="70" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="71" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-medium is-segment-start" data-event-index="68" style="--layer-start: 25; --layer-span: 1; --layer-depth: 1; --layer-fill: var(--event-overlap-backing);"></div>
-          <div class="event-backing is-medium is-segment-end" data-event-index="68" style="--layer-start: 26; --layer-span: 3; --layer-depth: 1; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="64" data-dialog="event-dialog-64" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="65" data-dialog="event-dialog-65" data-event-search="🎻 owen coaching: selene quartet 220 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Owen Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="66" data-dialog="event-dialog-66" data-event-search="🎻 rehearsal: selene quartet 220 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Rehearsal: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="67" data-dialog="event-dialog-67" data-event-search="🎻 dimitri coaching: selene quartet 220 1:15 pm-2:15 pm" style="--event-start: 22; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Dimitri Coaching: Selene Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>220</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1:15 PM-2:15 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="69" data-dialog="event-dialog-69" data-event-search="international showcase bing concert hall details tbd 5 pm-7 pm" style="--event-start: 37; --event-span: 8; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">International Showcase</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-7 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="70" data-dialog="event-dialog-70" data-event-search="🍇 post showcase pizza party braun courtyard 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 Post Showcase Pizza Party</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="71" data-dialog="event-dialog-71" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="68" data-dialog="event-dialog-68" data-event-search="azure family concert campbell recital hall crh 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 1;">
+                        <span class="event-fill-segment is-segment-start" aria-hidden="true" style="--segment-top: 0%; --segment-height: 25%; --segment-fill: var(--event-overlap-backing);"></span>
+            <span class="event-fill-segment is-segment-end" aria-hidden="true" style="--segment-top: 25%; --segment-height: 75%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">AZURE Family Concert</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
@@ -1425,22 +1414,21 @@ details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --ev
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="72" style="--layer-start: 1; --layer-span: 8; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="73" style="--layer-start: 11; --layer-span: 2; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="74" style="--layer-start: 13; --layer-span: 19; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="75" style="--layer-start: 32; --layer-span: 15; --layer-depth: 0; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="72" data-dialog="event-dialog-72" data-event-search="munger check out 8 am-10 am" style="--event-start: 1; --event-span: 8; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Munger Check Out</span>
             
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 AM-10 AM</span>
           </button>
           <button class="event-card is-tight" type="button" data-event-index="73" data-dialog="event-dialog-73" data-event-search="shutter falls! on group photo in front of braun 10:30 am-11 am" style="--event-start: 11; --event-span: 2; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Shutter falls! on Group Photo</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>in front of Braun</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11 AM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="74" data-dialog="event-dialog-74" data-event-search="✨the big finale!✨ campbell recital hall all participants perform
 w/ refreshments! 11 am-3:45 pm" style="--event-start: 13; --event-span: 19; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">✨The Big Finale!✨</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11 AM-3:45 PM</span>
@@ -1452,6 +1440,7 @@ friends new and old.
 if you have an evening
 fight to catch, bring your
 uber to the airport. 3:45 pm-7:30 pm" style="--event-start: 32; --event-span: 15; --event-depth: 0;">
+                        <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🍇 WRAP PARTY</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Home of Jim and Carie Zehnder, 8 E Creek Pl, Menlo Park, CA 94025</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:45 PM-7:30 PM</span>
@@ -2724,16 +2713,10 @@ uber to the airport.</div>
     function initializeCalendarPage() {
       const filter = document.querySelector("#event-filter");
       const events = Array.from(document.querySelectorAll(".event-card[data-event-search]"));
-      const eventByIndex = new Map(events.map((event) => [event.dataset.eventIndex, event]));
-      const eventBackings = Array.from(document.querySelectorAll(".event-backing[data-event-index]"));
       filter?.addEventListener("input", () => {
         const query = filter.value.trim().toLocaleLowerCase();
         for (const event of events) {
           event.hidden = Boolean(query && !event.dataset.eventSearch.includes(query));
-        }
-        for (const backing of eventBackings) {
-          const event = eventByIndex.get(backing.dataset.eventIndex);
-          backing.hidden = Boolean(event?.hidden);
         }
       });
       for (const button of events) {

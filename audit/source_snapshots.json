@@ -6,7 +6,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/adam_pelzer_appointments.csv",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/adam_pelzer_appointments.csv",
     "export_format": "text",
-    "read_at": "2026-06-20T02:21:23.221729Z",
+    "read_at": "2026-06-20T02:28:26.082613Z",
     "byte_size": 1825,
     "sha256": "08be0f07f2c4cc80eb9731647e5e22f06f845945aae77a9cf1590d2576554af4"
   },
@@ -17,7 +17,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/participant_emails.csv",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/participant_emails.csv",
     "export_format": "text",
-    "read_at": "2026-06-20T02:21:21.582954Z",
+    "read_at": "2026-06-20T02:28:24.311603Z",
     "byte_size": 197,
     "sha256": "96a1ed92a7ba44098d0d569f0c93c0228c6fbf4085d5903f42be1ce301291c27"
   },
@@ -28,7 +28,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/coaching_live.xlsx",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/coaching_live.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-20T02:21:23.035344Z",
+    "read_at": "2026-06-20T02:28:25.894290Z",
     "byte_size": 122154,
     "sha256": "29527ed053534cd6ec60a67b0b8219881101d99ad60a25165a0783fa79adf310"
   },
@@ -39,7 +39,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_concerts.txt",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_concerts.txt",
     "export_format": "text",
-    "read_at": "2026-06-20T02:21:23.222654Z",
+    "read_at": "2026-06-20T02:28:26.083586Z",
     "byte_size": 2153,
     "sha256": "d58bd192cb523e2faf5140b8480e745f88977fd966ad1dfda52c14d7171a8d12"
   },
@@ -50,7 +50,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty.html",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty.html",
     "export_format": "text",
-    "read_at": "2026-06-20T02:21:21.583391Z",
+    "read_at": "2026-06-20T02:28:24.311972Z",
     "byte_size": 106579,
     "sha256": "3424df6fea5e5f5e56c140c6b1919ea23d886116427bd23551402e4aae01e7a7"
   },
@@ -61,7 +61,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_schedule.xlsx",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_schedule.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-20T02:21:21.890224Z",
+    "read_at": "2026-06-20T02:28:24.631623Z",
     "byte_size": 688767,
     "sha256": "8d4f3f540eb85c36fa5ec05024c9130e85fc2bf3f87977a92c20532e0b066dfc"
   },
@@ -72,7 +72,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_schedule.xlsx",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/faculty_schedule.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-20T02:21:23.225370Z",
+    "read_at": "2026-06-20T02:28:26.086096Z",
     "byte_size": 688767,
     "sha256": "8d4f3f540eb85c36fa5ec05024c9130e85fc2bf3f87977a92c20532e0b066dfc"
   },
@@ -83,7 +83,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/masterclass_assignments.xlsx",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/masterclass_assignments.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-20T02:21:22.983717Z",
+    "read_at": "2026-06-20T02:28:25.846298Z",
     "byte_size": 54263,
     "sha256": "ffac217087727804b36ef451c920f8a337ca14e603a5e2924b19e26f31071aa8"
   },
@@ -94,7 +94,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/general_master.xlsx",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/general_master.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-20T02:21:21.656173Z",
+    "read_at": "2026-06-20T02:28:24.394471Z",
     "byte_size": 73762,
     "sha256": "0b4c0cce0826c9a5c0097cae3a6c0f7c93ad3e70782fd75c6c0e4368865cf2f3"
   },
@@ -105,7 +105,7 @@
     "read_url": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/participants_live.csv",
     "cache_path": "/Users/ken/Projects/SLSQPersonalCalendars/outputs/participants_live.csv",
     "export_format": "text",
-    "read_at": "2026-06-20T02:21:21.580686Z",
+    "read_at": "2026-06-20T02:28:24.309282Z",
     "byte_size": 4926,
     "sha256": "9aab2dc9762fa9bf6f8e49387d81038718d3cead3adb72af73dd019b9b02cb71"
   }
