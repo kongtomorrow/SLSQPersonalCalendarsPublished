@@ -176,6 +176,7 @@
       min-width: 0;
       overflow: auto;
       scroll-snap-type: x mandatory;
+      scroll-padding-left: var(--time-axis-width);
       scrollbar-gutter: stable;
     }
     .calendar-canvas {
@@ -263,7 +264,6 @@
       grid-template-rows: repeat(64, var(--slot-height));
       min-width: 0;
       scroll-snap-align: start;
-      scroll-margin-left: 0;
       scroll-snap-stop: always;
       border-left: 1px solid var(--line);
       overflow: hidden;
