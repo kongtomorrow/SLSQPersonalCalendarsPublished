@@ -22,19 +22,29 @@
       --event-ink: #376d2a;
       --event-meta: #579f3f;
       --dialog-surface: #f8fcf5;
-      --slot-min-height: 0.55rem;
+      --slot-height: 0.92rem;
       --time-axis-width: 4.25rem;
       --event-depth-x: 0.55rem;
       --event-depth-y: 0.36rem;
       --event-depth-bottom: 0.12rem;
     }
     * { box-sizing: border-box; }
+    html {
+      height: 100%;
+      overflow: hidden;
+    }
     body {
       margin: 0;
+      height: 100vh;
+      height: 100dvh;
+      min-height: 0;
       color: var(--ink);
       background: var(--wash);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
     }
     @property --backdrop-alpha {
       syntax: "<number>";
@@ -45,6 +55,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      flex: 0 0 auto;
       background: linear-gradient(135deg, var(--header), var(--header-dark));
       color: white;
       padding: 0.85rem 1.25rem 0.95rem;
@@ -125,7 +136,16 @@
     .subscribe-link:hover {
       color: white;
     }
-    main { width: 100%; max-width: 76rem; margin: 0 auto; padding: 0.85rem 1.25rem 2.5rem; }
+    main {
+      width: 100%;
+      max-width: 76rem;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem 0;
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
     .toolbar { margin-bottom: 0.7rem; }
     input {
       width: 100%;
@@ -137,42 +157,73 @@
     }
     .calendar-shell {
       display: grid;
-      grid-template-columns: var(--time-axis-width) minmax(0, 1fr);
-      grid-template-rows: auto auto;
+      grid-template-rows: auto minmax(0, 1fr);
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
+      border-bottom: 0;
+      border-radius: 8px 8px 0 0;
       container-type: inline-size;
       box-shadow: 0 1px 2px rgba(31, 35, 40, 0.08);
     }
+    .calendar-header-row,
+    .calendar-body-scroll {
+      display: grid;
+      grid-template-columns: var(--time-axis-width) minmax(0, 1fr);
+    }
+    .calendar-header-row {
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+      position: relative;
+      z-index: 4;
+    }
+    .calendar-body-scroll {
+      min-height: 0;
+      grid-template-rows: max-content;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .day-header-scroll {
+      min-width: 0;
+      margin-left: -1px;
+      overflow: hidden;
+    }
     .day-scroll {
       grid-column: 2;
-      grid-row: 1 / 3;
+      grid-row: 1;
       position: relative;
       z-index: 1;
+      align-self: start;
+      height: max-content;
+      min-height: 0;
+      margin-left: -1px;
       overflow-x: auto;
       overflow-y: hidden;
       scroll-snap-type: x mandatory;
       min-width: 0;
       clip-path: inset(0);
     }
-    .calendar-grid {
+    .calendar-grid,
+    .calendar-header-grid {
       display: grid;
       grid-template-columns: repeat(var(--day-count), minmax(14.5rem, 1fr));
       min-width: min(100%, var(--calendar-min-width));
     }
-    .corner,
+    .calendar-grid {
+      height: max-content;
+    }
     .day-header {
-      position: sticky;
-      top: 0;
-      z-index: 3;
       background: var(--surface);
-      border-bottom: 1px solid var(--line);
       padding: 0.38rem 0.55rem 0.42rem;
       font-weight: 400;
     }
-    .corner { grid-column: 1; grid-row: 1; z-index: 4; }
+    .corner {
+      background: var(--surface);
+      border-right: 1px solid var(--line);
+    }
     .day-header {
       border-left: 1px solid var(--line);
       text-align: center;
@@ -187,11 +238,12 @@
     .date-label { color: inherit; }
     .time-axis {
       grid-column: 1;
-      grid-row: 2;
+      grid-row: 1;
       position: relative;
       z-index: 2;
+      min-height: 0;
       display: grid;
-      grid-template-rows: repeat(64, minmax(var(--slot-min-height), auto));
+      grid-template-rows: repeat(64, var(--slot-height));
       border-right: 1px solid var(--line);
       background: var(--surface);
     }
@@ -210,21 +262,25 @@
     .day-column {
       display: grid;
       grid-template-columns: minmax(0, 1fr);
-      grid-template-rows: repeat(64, minmax(var(--slot-min-height), auto));
+      grid-template-rows: repeat(64, var(--slot-height));
       min-width: 0;
-      gap: 0.14rem;
       border-left: 1px solid var(--line);
       overflow: hidden;
       scroll-snap-align: start;
       scroll-snap-stop: always;
-      background:
-        repeating-linear-gradient(
-          to bottom,
-          #ffffff 0,
-          #ffffff calc(1.92rem - 1px),
-          #e2e6e1 calc(1.92rem - 1px),
-          #e2e6e1 1.92rem
-        );
+      background: #ffffff;
+    }
+    .time-grid-line {
+      grid-column: 1;
+      grid-row: var(--time-row);
+      align-self: start;
+      border-top: 1px solid #edf0ec;
+      pointer-events: none;
+      position: relative;
+      z-index: 0;
+    }
+    .time-grid-line.is-hour {
+      border-top-color: #e2e6e1;
     }
     .day-mobile-title { display: none; }
     .event-card {
@@ -242,9 +298,9 @@
       max-width: 100%;
       min-width: 0;
       margin-left: calc(var(--event-depth) * var(--event-depth-x));
-      margin-top: calc(var(--event-depth) * var(--event-depth-y));
+      margin-top: calc(0.08rem + (var(--event-depth) * var(--event-depth-y)));
       margin-bottom: calc(0.08rem + (var(--event-depth) * var(--event-depth-bottom)));
-      min-height: 2rem;
+      min-height: 0;
       overflow: hidden;
       border: 0;
       border-radius: 2px;
@@ -295,7 +351,7 @@
       max-width: 100%;
       min-width: 0;
       margin-left: calc(var(--layer-depth) * var(--event-depth-x));
-      margin-top: -0.14rem;
+      margin-top: 0;
       margin-bottom: 0;
       border-radius: 0;
       pointer-events: none;
@@ -331,7 +387,7 @@
       display: flex;
       position: relative;
       z-index: 2;
-      align-items: baseline;
+      align-items: center;
       gap: 0.28rem;
       min-width: 0;
       color: var(--event-meta);
@@ -347,10 +403,11 @@
       margin-top: 0;
     }
     .event-meta-icon {
-      flex: 0 0 auto;
+      flex: 0 0 0.9em;
       color: var(--event-meta);
       font-size: 0.82em;
       line-height: 1;
+      text-align: center;
     }
     .event-card.is-tight {
       padding-top: 0.35rem;
@@ -442,7 +499,12 @@
     }
     .close-button:focus-visible {
       outline: 2px solid rgba(111, 219, 79, 0.7);
-      outline-offset: 2px;
+      outline-offset: -0.3rem;
+    }
+    @media (pointer: coarse) {
+      .close-button:focus-visible {
+        outline: none;
+      }
     }
     .dialog-body { padding: 0.72rem 0.9rem 0.95rem 0.86rem; overflow: auto; }
     .dialog-location {
@@ -496,17 +558,15 @@
       .calendar-shell {
         --time-axis-width: 3.5rem;
       }
-      .calendar-grid {
+      .calendar-grid,
+      .calendar-header-grid {
         display: grid;
         grid-template-columns: repeat(var(--day-count), minmax(12.25rem, 68vw));
         min-width: max-content;
       }
-      .corner {
-        z-index: 5;
-      }
     }
     @media (max-width: 44rem) {
-      main { padding: 0.75rem 0.75rem 2rem; }
+      main { padding: 0.75rem 0.75rem 0; }
       .event-fields { grid-template-columns: 1fr; }
       .event-fields dt { margin-top: 0.2rem; }
     }
@@ -531,10 +591,27 @@
   </header>
   <main>
     <div class="toolbar">
-      <input id="event-filter" type="search" autocomplete="off" aria-label="Filter events" placeholder="Filter">
+      <input id="event-filter" type="search" autocomplete="off" aria-label="Filter events" placeholder="Filter title, location, or notes">
     </div>
     <section class="calendar-shell" style="--day-count: 10; --calendar-min-width: 145.00rem;">
-      <div class="corner"></div>
+      <div class="calendar-header-row">
+        <div class="corner"></div>
+        <div class="day-header-scroll">
+          <div class="calendar-header-grid">
+        <div class="day-header"><span class="weekday">Fri June <span class="date-label">19</span></span></div>
+        <div class="day-header"><span class="weekday">Sat June <span class="date-label">20</span></span></div>
+        <div class="day-header"><span class="weekday">Sun June <span class="date-label">21</span></span></div>
+        <div class="day-header"><span class="weekday">Mon June <span class="date-label">22</span></span></div>
+        <div class="day-header"><span class="weekday">Tue June <span class="date-label">23</span></span></div>
+        <div class="day-header"><span class="weekday">Wed June <span class="date-label">24</span></span></div>
+        <div class="day-header"><span class="weekday">Thu June <span class="date-label">25</span></span></div>
+        <div class="day-header"><span class="weekday">Fri June <span class="date-label">26</span></span></div>
+        <div class="day-header"><span class="weekday">Sat June <span class="date-label">27</span></span></div>
+        <div class="day-header"><span class="weekday">Sun June <span class="date-label">28</span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar-body-scroll">
         <div class="time-axis">
           <div class="hour-label" style="grid-row: 1">8 AM</div>
           <div class="hour-label" style="grid-row: 5">9 AM</div>
@@ -554,29 +631,51 @@
           <div class="hour-label" style="grid-row: 61">11 PM</div>
           <div class="hour-label" style="grid-row: 65">12 AM</div>
         </div>
-      <div class="day-scroll">
-        <div class="calendar-grid">
-        <div class="day-header"><span class="weekday">Fri June <span class="date-label">19</span></span></div>
-        <div class="day-header"><span class="weekday">Sat June <span class="date-label">20</span></span></div>
-        <div class="day-header"><span class="weekday">Sun June <span class="date-label">21</span></span></div>
-        <div class="day-header"><span class="weekday">Mon June <span class="date-label">22</span></span></div>
-        <div class="day-header"><span class="weekday">Tue June <span class="date-label">23</span></span></div>
-        <div class="day-header"><span class="weekday">Wed June <span class="date-label">24</span></span></div>
-        <div class="day-header"><span class="weekday">Thu June <span class="date-label">25</span></span></div>
-        <div class="day-header"><span class="weekday">Fri June <span class="date-label">26</span></span></div>
-        <div class="day-header"><span class="weekday">Sat June <span class="date-label">27</span></span></div>
-        <div class="day-header"><span class="weekday">Sun June <span class="date-label">28</span></span></div>
+        <div class="day-scroll">
+          <div class="calendar-grid">
         <div class="day-column" data-date="2026-06-19">
           <div class="day-mobile-title">Friday, June 19</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="0" style="--layer-start: 29; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="1" style="--layer-start: 37; --layer-span: 12; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="0" data-dialog="event-dialog-0" data-event-search="✈️ 3:09 novacek sfo sfo john novacek" style="--event-start: 29; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="0" data-dialog="event-dialog-0" data-event-search="✈️ 3:09 novacek sfo sfo 3:09 pm-3:39 pm" style="--event-start: 29; --event-span: 2; --event-depth: 0;">
             <span class="event-title">✈️ 3:09 Novacek SFO</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>SFO</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:09 PM-3:39 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="1" data-dialog="event-dialog-1" data-event-search="on campus housing check in front desk at munger (details coming)
-munger check in alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 37; --event-span: 12; --event-depth: 0;">
+munger check in 5 pm-8 pm" style="--event-start: 37; --event-span: 12; --event-depth: 0;">
             <span class="event-title">On Campus Housing Check In</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Front Desk at Munger</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-8 PM</span>
@@ -584,6 +683,38 @@ munger check in alexi kenney anthony manzo ayane kozasa daniel phillips dimitri 
         </div>
         <div class="day-column" data-date="2026-06-20">
           <div class="day-mobile-title">Saturday, June 20</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="2" style="--layer-start: 5; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="3" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="4" style="--layer-start: 27; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -591,32 +722,32 @@ munger check in alexi kenney anthony manzo ayane kozasa daniel phillips dimitri 
           <div class="event-backing is-segment-start is-segment-end" data-event-index="6" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="7" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="2" data-dialog="event-dialog-2" data-event-search="seminar registration campbell recital hall lobby schedule here
-participants will have access to alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 5; --event-span: 10; --event-depth: 0;">
+participants will have access to 9 am-11:30 am" style="--event-start: 5; --event-span: 10; --event-depth: 0;">
             <span class="event-title">Seminar Registration</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall Lobby</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 AM-11:30 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="3" data-dialog="event-dialog-3" data-event-search="welcome meeting campbell recital hall alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="3" data-dialog="event-dialog-3" data-event-search="welcome meeting campbell recital hall 1 pm-2 pm" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
             <span class="event-title">Welcome Meeting</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="4" data-dialog="event-dialog-4" data-event-search="🎻 road movies faculty rehearsal #1 204 (avoid evening if possible) alexi kenney john novacek" style="--event-start: 27; --event-span: 8; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="4" data-dialog="event-dialog-4" data-event-search="🎻 road movies faculty rehearsal #1 204 (avoid evening if possible) 2:30 pm-4:30 pm" style="--event-start: 27; --event-span: 8; --event-depth: 0;">
             <span class="event-title">🎻 Road Movies Faculty Rehearsal #1</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>204</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-4:30 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="5" data-dialog="event-dialog-5" data-event-search="🎻 chamber orch reading dinkelspiel stage alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 37; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="5" data-dialog="event-dialog-5" data-event-search="🎻 chamber orch reading dinkelspiel stage 5 pm-6 pm" style="--event-start: 37; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 chamber orch reading</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-6 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="6" data-dialog="event-dialog-6" data-event-search="🍇 dinner -be our guests! braun courtyard alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="6" data-dialog="event-dialog-6" data-event-search="🍇 dinner -be our guests! braun courtyard 6 pm-7 pm" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Dinner -be our guests!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>6 PM-7 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="7" data-dialog="event-dialog-7" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="7" data-dialog="event-dialog-7" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -624,6 +755,38 @@ participants will have access to alexi kenney anthony manzo ayane kozasa daniel 
         </div>
         <div class="day-column" data-date="2026-06-21">
           <div class="day-mobile-title">Sunday, June 21</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="8" style="--layer-start: 5; --layer-span: 3; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="9" style="--layer-start: 13; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="10" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -632,43 +795,43 @@ participants will have access to alexi kenney anthony manzo ayane kozasa daniel 
           <div class="event-backing is-segment-start is-segment-end" data-event-index="13" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="14" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="15" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="8" data-dialog="event-dialog-8" data-event-search="🍇 continental breakfast campbell courtyard alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 5; --event-span: 3; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="8" data-dialog="event-dialog-8" data-event-search="🍇 continental breakfast campbell courtyard 9 am-9:45 am" style="--event-start: 5; --event-span: 3; --event-depth: 0;">
             <span class="event-title">🍇 Continental Breakfast</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 AM-9:45 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="9" data-dialog="event-dialog-9" data-event-search="presentation jack trip ccrma stage chris chafe alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 13; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="9" data-dialog="event-dialog-9" data-event-search="presentation jack trip ccrma stage chris chafe 11 am-12 pm" style="--event-start: 13; --event-span: 4; --event-depth: 0;">
             <span class="event-title">Presentation</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Jack Trip CCRMA Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11 AM-12 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="10" data-dialog="event-dialog-10" data-event-search="🍇 light lunch provided braun courtyard alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="10" data-dialog="event-dialog-10" data-event-search="🍇 light lunch provided braun courtyard 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Light Lunch Provided</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="11" data-dialog="event-dialog-11" data-event-search="🎻 road movies faculty rehearsal #2 204 alexi kenney john novacek" style="--event-start: 21; --event-span: 6; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="11" data-dialog="event-dialog-11" data-event-search="🎻 road movies faculty rehearsal #2 204 1 pm-2:30 pm" style="--event-start: 21; --event-span: 6; --event-depth: 0;">
             <span class="event-title">🎻 Road Movies Faculty Rehearsal #2</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>204</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2:30 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="12" data-dialog="event-dialog-12" data-event-search="spotlight on physical wellness dinkelspiel stage pamela frank &amp; howard nelson
-with host stephen prutsman alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 27; --event-span: 6; --event-depth: 0;">
+with host stephen prutsman 2:30 pm-4 pm" style="--event-start: 27; --event-span: 6; --event-depth: 0;">
             <span class="event-title">Spotlight on Physical Wellness</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-4 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="13" data-dialog="event-dialog-13" data-event-search="🍇 dinner /evening rehearsals at persis&#x27; 776 dolores st, stanford, ca alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="13" data-dialog="event-dialog-13" data-event-search="🍇 dinner /evening rehearsals at persis&#x27; 776 dolores st, stanford, ca 6 pm-7 pm" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Dinner /evening rehearsals at Persis&#x27;</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>776 Dolores St, Stanford, CA</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>6 PM-7 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="14" data-dialog="event-dialog-14" data-event-search="🎻 tchaikovsky faculty rehearsal #1 (ish) poolhouse 776 dolores ish todd palmer owen dalby john novacek" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="14" data-dialog="event-dialog-14" data-event-search="🎻 tchaikovsky faculty rehearsal #1 (ish) poolhouse 776 dolores ish 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 Tchaikovsky Faculty Rehearsal #1 (ish)</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Poolhouse 776 Dolores</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="15" data-dialog="event-dialog-15" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="15" data-dialog="event-dialog-15" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -676,6 +839,38 @@ with host stephen prutsman alexi kenney anthony manzo ayane kozasa daniel philli
         </div>
         <div class="day-column" data-date="2026-06-22">
           <div class="day-mobile-title">Monday, June 22</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="16" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="17" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="18" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -686,39 +881,39 @@ with host stephen prutsman alexi kenney anthony manzo ayane kozasa daniel philli
           <div class="event-backing is-segment-start is-segment-end" data-event-index="23" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="24" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="25" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="16" data-dialog="event-dialog-16" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="16" data-dialog="event-dialog-16" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="17" data-dialog="event-dialog-17" data-event-search="🎼 no name piano quartet (am) 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="17" data-dialog="event-dialog-17" data-event-search="🎼 no name piano quartet (am) 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 No Name Piano Quartet (AM)</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>103</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="18" data-dialog="event-dialog-18" data-event-search="🎻 faculty concert #1 dress rehearsal dvorak 6tet: 10:30-11:05am
-road movies: 11:10am-11:30am alexi kenney john novacek owen dalby daniel phillips steven tenenbom william coleman paul wiancko hannah collins" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+road movies: 11:10am-11:30am 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 Faculty Concert #1 Dress Rehearsal</span>
             
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="19" data-dialog="event-dialog-19" data-event-search="🎻 playing faculty concert #1 bing concert hall road movies: alexi kenney, john novacek
-dvorak 6tet: owen dalby, daniel phillips, steven tenenbom, william coleman, paul wiancko, hannah collins alexi kenney john novacek owen dalby daniel phillips steven tenenbom william coleman paul wiancko hannah collins" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+dvorak 6tet: owen dalby, daniel phillips, steven tenenbom, william coleman, paul wiancko, hannah collins 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 Playing Faculty Concert #1</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="20" data-dialog="event-dialog-20" data-event-search="🍇 lunch for all faculty bing concert hall alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="20" data-dialog="event-dialog-20" data-event-search="🍇 lunch for all faculty bing concert hall 1 pm-2 pm" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Lunch for ALL Faculty</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="21" data-dialog="event-dialog-21" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="21" data-dialog="event-dialog-21" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="22" data-dialog="event-dialog-22" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="22" data-dialog="event-dialog-22" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 3:15 pm-4:15 pm" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Pinky Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>105</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
@@ -737,12 +932,12 @@ playing:
 ethea trio (shintaro taneda, ayoun alexandra kim, jon lee)
 quail 4tet (katie behroozi, benjamin chen, ben parks, cyrus behroozi)
 seji quartet (isabella fulford, jk hunt, emma spellman, stefan leape)
-coaching: pedja muzijevic, paul wiancko, william coleman luke henderson isaac park james preucil ian maloney jihyun baik oliver leitner lourdes pinney colin guan nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal christine choi bruce yu jessica seeliger warren wu samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank stephen prutsman todd palmer" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
+coaching: pedja muzijevic, paul wiancko, william coleman 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
             <span class="event-title">Masterclass 1A 1B</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall or Dinkelspiel Stage</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -750,7 +945,7 @@ coaching: pedja muzijevic, paul wiancko, william coleman luke henderson isaac pa
           <button class="event-card is-roomy" type="button" data-event-index="25" data-dialog="event-dialog-25" data-event-search="the musicians of the string quartet: braun lounge a documentary
 georges zeisel and catherine zins
 (an ina / arte production)
-drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
             <span class="event-title">The Musicians of the String Quartet:</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Lounge</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -758,6 +953,38 @@ drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimi
         </div>
         <div class="day-column" data-date="2026-06-23">
           <div class="day-mobile-title">Tuesday, June 23</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="26" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="27" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="28" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -766,22 +993,22 @@ drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimi
           <div class="event-backing is-segment-start is-segment-end" data-event-index="31" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="32" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="33" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="26" data-dialog="event-dialog-26" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="26" data-dialog="event-dialog-26" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="27" data-dialog="event-dialog-27" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="27" data-dialog="event-dialog-27" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="28" data-dialog="event-dialog-28" data-event-search="🎼 dolores quintet (am) 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="28" data-dialog="event-dialog-28" data-event-search="🎼 dolores quintet (am) 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Dolores Quintet (AM)</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>203</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="29" data-dialog="event-dialog-29" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="29" data-dialog="event-dialog-29" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 2:30 pm-3:30 pm" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Pinky Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>105</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-3:30 PM</span>
@@ -789,18 +1016,18 @@ drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimi
           <button class="event-card is-roomy" type="button" data-event-index="30" data-dialog="event-dialog-30" data-event-search="special presentation campbell recital hall robert brewer young
 j&amp; a beare, director
 scientific research &amp; conservation
-visiting scholar, oxford university alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
+visiting scholar, oxford university 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
             <span class="event-title">Special Presentation</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4 PM-5:30 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="31" data-dialog="event-dialog-31" data-event-search="🍇 faculty &amp; guests home of joan &amp; david meeting/dinner
-(discuss/determine sat/bing program) alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
+(discuss/determine sat/bing program) 6 pm-7 pm" style="--event-start: 41; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Faculty &amp; Guests</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Home of Joan &amp; David</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>6 PM-7 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="32" data-dialog="event-dialog-32" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="32" data-dialog="event-dialog-32" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -808,7 +1035,7 @@ visiting scholar, oxford university alexi kenney anthony manzo ayane kozasa dani
           <button class="event-card is-roomy" type="button" data-event-index="33" data-dialog="event-dialog-33" data-event-search="the musicians of the string quartet: braun lounge a documentary
 georges zeisel and catherine zins
 (an ina / arte production)
-drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
             <span class="event-title">The Musicians of the String Quartet:</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Lounge</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -816,6 +1043,38 @@ drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimi
         </div>
         <div class="day-column" data-date="2026-06-24">
           <div class="day-mobile-title">Wednesday, June 24</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="34" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="35" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="36" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -826,34 +1085,34 @@ drop in as you wish alexi kenney anthony manzo ayane kozasa daniel phillips dimi
           <div class="event-backing is-segment-start is-segment-end" data-event-index="41" style="--layer-start: 35; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="42" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="43" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="34" data-dialog="event-dialog-34" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="34" data-dialog="event-dialog-34" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="35" data-dialog="event-dialog-35" data-event-search="🎼 no name piano quartet 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="35" data-dialog="event-dialog-35" data-event-search="🎼 no name piano quartet 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 No Name Piano Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>103</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="36" data-dialog="event-dialog-36" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="36" data-dialog="event-dialog-36" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Pinky Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>105</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="37" data-dialog="event-dialog-37" data-event-search="faculty concert #2 bing concert hall brandenburg 6: dimitri murrath, william coleman, steven tenenbom, lesley robertson, nina lee, anthony manzo, pedja muzijevic
 rebecca clarke duo: ayane kozasa, todd palmer
-mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel daniel phillips hannah collins howard nelson jennah delp somers john novacek pamela frank paul wiancko stephen prutsman" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
             <span class="event-title">Faculty Concert #2</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="38" data-dialog="event-dialog-38" data-event-search="🍇 lunch for all faculty bing concert hall alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="38" data-dialog="event-dialog-38" data-event-search="🍇 lunch for all faculty bing concert hall 1 pm-2 pm" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Lunch for ALL Faculty</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="39" data-dialog="event-dialog-39" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="39" data-dialog="event-dialog-39" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
@@ -883,24 +1142,24 @@ playing:
 meck kwarteck (haeun nam, marie christine lopez, cindy mong, ken ferry)
 virtuosa trio (chia ying lee, yi ying wei, chiao hui chang)
 quartet samm (shawn barnett, ari le, marandi hostetter, melissa chu)
-coaching: dimitri murrath, anthony manzo, pedja muzijevic jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee dustin breshears anthony chukhlov leslie ashworth melissa lam katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu isabella fulford jk hunt emma spellman stefan leape elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian emil ma chung-pei ma derek katz ari freed ko hayashi ron ho cary chin jim zehnder mark siegel daniel phillips howard nelson jennah delp somers john novacek lesley robertson owen dalby pamela frank paul wiancko steven tenenbom todd palmer william coleman" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
+coaching: dimitri murrath, anthony manzo, pedja muzijevic 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
             <span class="event-title">Masterclass 2A, 2B 2C</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall or Dinkelspiel Stage or Location</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="41" data-dialog="event-dialog-41" data-event-search="🎻 tchaikovsky faculty rehearsal #2 (ayw) 204 todd palmer owen dalby john novacek" style="--event-start: 35; --event-span: 6; --event-depth: 1;">
+          <button class="event-card is-roomy" type="button" data-event-index="41" data-dialog="event-dialog-41" data-event-search="🎻 tchaikovsky faculty rehearsal #2 (ayw) 204 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 1;">
             <span class="event-title">🎻 Tchaikovsky Faculty Rehearsal #2 (AYW)</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>204</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="42" data-dialog="event-dialog-42" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="42" data-dialog="event-dialog-42" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="43" data-dialog="event-dialog-43" data-event-search="🎻 cello-ssus reading! braun rehearsal hall tbc
 ac/dc‘s “thunderstruck” for 12 cellos.
-and more! alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
+and more! 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-depth: 1;">
             <span class="event-title">🎻 Cello-ssus Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Rehearsal Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9 PM-10:30 PM</span>
@@ -908,6 +1167,38 @@ and more! alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrat
         </div>
         <div class="day-column" data-date="2026-06-25">
           <div class="day-mobile-title">Thursday, June 25</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="44" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="45" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="46" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -916,32 +1207,32 @@ and more! alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrat
           <div class="event-backing is-segment-start is-segment-end" data-event-index="49" style="--layer-start: 27; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="50" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="51" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="44" data-dialog="event-dialog-44" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="44" data-dialog="event-dialog-44" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="45" data-dialog="event-dialog-45" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="45" data-dialog="event-dialog-45" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="46" data-dialog="event-dialog-46" data-event-search="🎼 dolores quintet 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="46" data-dialog="event-dialog-46" data-event-search="🎼 dolores quintet 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Dolores Quintet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>203</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
-          <button class="event-card is-tight" type="button" data-event-index="47" data-dialog="event-dialog-47" data-event-search="🍇 lunch in courtyard! braun courtyard alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 15; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="47" data-dialog="event-dialog-47" data-event-search="🍇 lunch in courtyard! braun courtyard 11:30 am-12 pm" style="--event-start: 15; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🍇 Lunch in Courtyard!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11:30 AM-12 PM</span>
           </button>
-          <button class="event-card is-tight" type="button" data-event-index="48" data-dialog="event-dialog-48" data-event-search="mighty like a moose campbell recital hall film fun with prutsman/dolphins alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 18; --event-span: 3; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="48" data-dialog="event-dialog-48" data-event-search="mighty like a moose campbell recital hall film fun with prutsman/dolphins 12:15 pm-1 pm" style="--event-start: 18; --event-span: 3; --event-depth: 0;">
             <span class="event-title">MIghty like a Moose</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12:15 PM-1 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="49" data-dialog="event-dialog-49" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="49" data-dialog="event-dialog-49" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 2:30 pm-3:30 pm" style="--event-start: 27; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Pinky Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>105</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2:30 PM-3:30 PM</span>
@@ -950,12 +1241,12 @@ and more! alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrat
 zehnder blender (ko hayashi, ron ho, cary chin, jim zehnder)
 8tet with dolores 4 (gregorio lopes, ko hayashi, ron ho, mark siegel, cary chin, james welch, jim zehnder, persis drell)
 the abelian group (norman truong, laura shifley, laurence lewis, minsu longiaru)
-coaching: john novacek, daniel phillips, hannah collins https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek daniel phillips hannah collins" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
+coaching: john novacek, daniel phillips, hannah collins https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
             <span class="event-title">🎼 Coaching Masterclass 3C</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Rehearsal Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4 PM-5:30 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="51" data-dialog="event-dialog-51" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="51" data-dialog="event-dialog-51" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -963,6 +1254,38 @@ coaching: john novacek, daniel phillips, hannah collins https://drive.google.com
         </div>
         <div class="day-column" data-date="2026-06-26">
           <div class="day-mobile-title">Friday, June 26</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="52" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="53" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="54" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -972,53 +1295,53 @@ coaching: john novacek, daniel phillips, hannah collins https://drive.google.com
           <div class="event-backing is-segment-start is-segment-end" data-event-index="58" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="59" style="--layer-start: 39; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="60" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="52" data-dialog="event-dialog-52" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="52" data-dialog="event-dialog-52" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="53" data-dialog="event-dialog-53" data-event-search="🎼 no name piano quartet 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="53" data-dialog="event-dialog-53" data-event-search="🎼 no name piano quartet 103 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 No Name Piano Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>103</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="54" data-dialog="event-dialog-54" data-event-search="🎻 faculty concert #3 dress rehearsal mendelssohn 6tet: 10:30am -10:50
 rule of three: 10:50-11:10
-tchaikovsky: 11:10-11;30 todd palmer owen dalby john novacek daniel phillips steven tenenbom william coleman dimitri murrath hannah collins anthony manzo pedja muzijevic" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+tchaikovsky: 11:10-11;30 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 Faculty Concert #3 Dress Rehearsal</span>
             
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="55" data-dialog="event-dialog-55" data-event-search="🎻 playing faculty concert #3 bing concert hall tchaikovsky: todd palmer, owen dalby, john novacek
 rule of three: owen dalby, daniel phillips, steven tenenbom
-mendelssohn 6tet: daniel phillips, william coleman, dimitri murrath, hannah collins, anthony manzo, pedja muzijevic todd palmer owen dalby john novacek daniel phillips steven tenenbom william coleman dimitri murrath hannah collins anthony manzo pedja muzijevic" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
+mendelssohn 6tet: daniel phillips, william coleman, dimitri murrath, hannah collins, anthony manzo, pedja muzijevic 12 pm-1 pm" style="--event-start: 17; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎻 Playing Faculty Concert #3</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>12 PM-1 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="56" data-dialog="event-dialog-56" data-event-search="🍇 lunch for all faculty bing concert hall alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="56" data-dialog="event-dialog-56" data-event-search="🍇 lunch for all faculty bing concert hall 1 pm-2 pm" style="--event-start: 21; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Lunch for ALL Faculty</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>1 PM-2 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="57" data-dialog="event-dialog-57" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="57" data-dialog="event-dialog-57" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="58" data-dialog="event-dialog-58" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="58" data-dialog="event-dialog-58" data-event-search="🎼 pinky quartet 105 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 3:15 pm-4:15 pm" style="--event-start: 30; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Pinky Quartet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>105</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="59" data-dialog="event-dialog-59" data-event-search="🎻🍇 epic sight reading party! 776 dolores st, stanford, ca 5:30 opening
 6:30pm dinner
-details via email alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 39; --event-span: 10; --event-depth: 0;">
+details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --event-depth: 0;">
             <span class="event-title">🎻🍇 Epic Sight Reading Party!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>776 Dolores St, Stanford, CA</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5:30 PM-8 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="60" data-dialog="event-dialog-60" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="60" data-dialog="event-dialog-60" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1026,6 +1349,38 @@ details via email alexi kenney anthony manzo ayane kozasa daniel phillips dimitr
         </div>
         <div class="day-column" data-date="2026-06-27">
           <div class="day-mobile-title">Saturday, June 27</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="61" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="62" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="63" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
@@ -1033,37 +1388,37 @@ details via email alexi kenney anthony manzo ayane kozasa daniel phillips dimitr
           <div class="event-backing is-segment-start is-segment-end" data-event-index="65" style="--layer-start: 37; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="66" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="67" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-tight" type="button" data-event-index="61" data-dialog="event-dialog-61" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="61" data-dialog="event-dialog-61" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:30 AM-9 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="62" data-dialog="event-dialog-62" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="62" data-dialog="event-dialog-62" data-event-search="🎼 ethea trio 223 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 9:15 am-10:15 am" style="--event-start: 6; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Ethea Trio</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>223</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>9:15 AM-10:15 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="63" data-dialog="event-dialog-63" data-event-search="🎼 dolores quintet 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw john novacek" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="63" data-dialog="event-dialog-63" data-event-search="🎼 dolores quintet 203 https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 10:30 am-11:30 am" style="--event-start: 11; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🎼 Dolores Quintet</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>203</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11:30 AM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="64" data-dialog="event-dialog-64" data-event-search="azure family concert campbell recital hall crh alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="64" data-dialog="event-dialog-64" data-event-search="azure family concert campbell recital hall crh 2 pm-3 pm" style="--event-start: 25; --event-span: 4; --event-depth: 0;">
             <span class="event-title">AZURE Family Concert</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>2 PM-3 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="65" data-dialog="event-dialog-65" data-event-search="international showcase bing concert hall details tbd alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 37; --event-span: 8; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="65" data-dialog="event-dialog-65" data-event-search="international showcase bing concert hall details tbd 5 pm-7 pm" style="--event-start: 37; --event-span: 8; --event-depth: 0;">
             <span class="event-title">International Showcase</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Bing Concert Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>5 PM-7 PM</span>
           </button>
-          <button class="event-card is-medium" type="button" data-event-index="66" data-dialog="event-dialog-66" data-event-search="🍇 post showcase pizza party braun courtyard alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
+          <button class="event-card is-medium" type="button" data-event-index="66" data-dialog="event-dialog-66" data-event-search="🍇 post showcase pizza party braun courtyard 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
             <span class="event-title">🍇 Post Showcase Pizza Party</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>7 PM-8 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="67" data-dialog="event-dialog-67" data-event-search="🎻 optional sight reading! braun music building everywhere luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="67" data-dialog="event-dialog-67" data-event-search="🎻 optional sight reading! braun music building everywhere 8 pm-12 am" style="--event-start: 49; --event-span: 16; --event-depth: 0;">
             <span class="event-title">🎻 Optional Sight Reading!</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Music Building Everywhere</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 PM-12 AM</span>
@@ -1071,28 +1426,60 @@ details via email alexi kenney anthony manzo ayane kozasa daniel phillips dimitr
         </div>
         <div class="day-column" data-date="2026-06-28">
           <div class="day-mobile-title">Sunday, June 28</div>
+          <div class="time-grid-line" style="--time-row: 3"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 5"></div>
+          <div class="time-grid-line" style="--time-row: 7"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 9"></div>
+          <div class="time-grid-line" style="--time-row: 11"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 13"></div>
+          <div class="time-grid-line" style="--time-row: 15"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 17"></div>
+          <div class="time-grid-line" style="--time-row: 19"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 21"></div>
+          <div class="time-grid-line" style="--time-row: 23"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 25"></div>
+          <div class="time-grid-line" style="--time-row: 27"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 29"></div>
+          <div class="time-grid-line" style="--time-row: 31"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 33"></div>
+          <div class="time-grid-line" style="--time-row: 35"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 37"></div>
+          <div class="time-grid-line" style="--time-row: 39"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 41"></div>
+          <div class="time-grid-line" style="--time-row: 43"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 45"></div>
+          <div class="time-grid-line" style="--time-row: 47"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 49"></div>
+          <div class="time-grid-line" style="--time-row: 51"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 53"></div>
+          <div class="time-grid-line" style="--time-row: 55"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 57"></div>
+          <div class="time-grid-line" style="--time-row: 59"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 61"></div>
+          <div class="time-grid-line" style="--time-row: 63"></div>
+          <div class="time-grid-line is-hour" style="--time-row: 65"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="68" style="--layer-start: 1; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="69" style="--layer-start: 1; --layer-span: 2; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="70" style="--layer-start: 11; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="71" style="--layer-start: 13; --layer-span: 19; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <div class="event-backing is-segment-start is-segment-end" data-event-index="72" style="--layer-start: 32; --layer-span: 15; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <button class="event-card is-roomy" type="button" data-event-index="68" data-dialog="event-dialog-68" data-event-search="munger check out alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 1; --event-span: 8; --event-depth: 0;">
+          <button class="event-card is-roomy" type="button" data-event-index="68" data-dialog="event-dialog-68" data-event-search="munger check out 8 am-10 am" style="--event-start: 1; --event-span: 8; --event-depth: 0;">
             <span class="event-title">Munger Check Out</span>
             
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8 AM-10 AM</span>
           </button>
-          <button class="event-card is-tight" type="button" data-event-index="69" data-dialog="event-dialog-69" data-event-search="✈️ 8:10am novacek sfo, ua #1849 sfo john novacek" style="--event-start: 1; --event-span: 2; --event-depth: 1;">
+          <button class="event-card is-tight" type="button" data-event-index="69" data-dialog="event-dialog-69" data-event-search="✈️ 8:10am novacek sfo, ua #1849 sfo 8:10 am-8:40 am" style="--event-start: 1; --event-span: 2; --event-depth: 1;">
             <span class="event-title">✈️ 8:10am Novacek SFO, UA #1849</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>SFO</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>8:10 AM-8:40 AM</span>
           </button>
-          <button class="event-card is-tight" type="button" data-event-index="70" data-dialog="event-dialog-70" data-event-search="shutter falls! on group photo in front of braun alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 11; --event-span: 2; --event-depth: 0;">
+          <button class="event-card is-tight" type="button" data-event-index="70" data-dialog="event-dialog-70" data-event-search="shutter falls! on group photo in front of braun 10:30 am-11 am" style="--event-start: 11; --event-span: 2; --event-depth: 0;">
             <span class="event-title">Shutter falls! on Group Photo</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>in front of Braun</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>10:30 AM-11 AM</span>
           </button>
           <button class="event-card is-roomy" type="button" data-event-index="71" data-dialog="event-dialog-71" data-event-search="✨the big finale!✨ campbell recital hall all participants perform
-w/ refreshments! alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 13; --event-span: 19; --event-depth: 0;">
+w/ refreshments! 11 am-3:45 pm" style="--event-start: 13; --event-span: 19; --event-depth: 0;">
             <span class="event-title">✨The Big Finale!✨</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>11 AM-3:45 PM</span>
@@ -1103,12 +1490,13 @@ cold one with seminar
 friends new and old.
 if you have an evening
 fight to catch, bring your
-uber to the airport. alexi kenney anthony manzo ayane kozasa daniel phillips dimitri murrath hannah collins howard nelson jennah delp somers john novacek lesley robertson nina lee owen dalby pamela frank paul wiancko pedja muzijevic stephen prutsman steven tenenbom todd palmer william coleman luke henderson isaac park james preucil ian maloney jeanel liango jérôme chiasson celia morin maya enstad shintaro taneda ayoun alexandra kim jon lee jihyun baik oliver leitner lourdes pinney colin guan dustin breshears anthony chukhlov leslie ashworth melissa lam nate strothkamp raunak kumar jeremy klein starla breshears gabriel irazabal katie behroozi benjamin chen ben parks cyrus behroozi christine choi bruce yu jessica seeliger warren wu leyan lo alex li eric cheng sheila chan samantha ching lois harder seth novatt i-han chou anne scott norman truong laura shifley laurence lewis minsu longiaru beverly fu jennie yang monica anuforo derek wu shawn barnett ari le marandi hostetter melissa chu isabella fulford jk hunt emma spellman stefan leape cristina ruotolo meg lamm jocelyn lamm startz hilary meltzer jim chou tyson mao cindy wang olivia tam ria honda christopher lin-brande nina monfredo abigail rogers haeun nam marie christine lopez cindy mong ken ferry elisabeth heremans alex hwang thomas xiong daiyao zhang miles chan anna soper eric cooper griffin glenn jasper jian chia ying lee yi ying wei chiao hui chang emil ma chung-pei ma derek katz ari freed aaron wilk misha rafiee gregorio lopes james welch persis drell lloyd minor neir eshel ko hayashi ron ho cary chin jim zehnder mark siegel" style="--event-start: 32; --event-span: 15; --event-depth: 0;">
+uber to the airport. 3:45 pm-7:30 pm" style="--event-start: 32; --event-span: 15; --event-depth: 0;">
             <span class="event-title">🍇 WRAP PARTY</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Home of Jim and Carie Zehnder, 8 E Creek Pl, Menlo Park, CA 94025</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:45 PM-7:30 PM</span>
           </button>
         </div>
+          </div>
         </div>
       </div>
     </section>
@@ -2372,6 +2760,7 @@ uber to the airport.</div>
           closeEventDialog(dialog);
         });
       }
+      syncCalendarHorizontalScroll();
       scrollCalendarToRelevantDate();
     }
 
@@ -2401,6 +2790,16 @@ uber to the airport.</div>
         });
       });
     }
+    function syncCalendarHorizontalScroll() {
+      const bodyScroller = document.querySelector(".day-scroll");
+      const headerScroller = document.querySelector(".day-header-scroll");
+      if (!bodyScroller || !headerScroller) return;
+      const syncHeader = () => {
+        headerScroller.scrollLeft = bodyScroller.scrollLeft;
+      };
+      bodyScroller.addEventListener("scroll", syncHeader, { passive: true });
+      syncHeader();
+    }
     function openEventDialog(dialog, button) {
       for (const openDialog of document.querySelectorAll("dialog[open]")) {
         if (openDialog !== dialog) openDialog.close();
@@ -2425,24 +2824,20 @@ uber to the airport.</div>
       dialog.style.left = left + "px";
       dialog.style.top = top + "px";
 
-      const eventCenterX = eventRect.left + eventRect.width / 2;
-      const eventCenterY = eventRect.top + eventRect.height / 2;
-      const dialogCenterX = left + measured.width / 2;
-      const dialogCenterY = top + measured.height / 2;
-      const originX = clamp(eventCenterX - left, 0, measured.width);
-      const originY = clamp(eventCenterY - top, 0, measured.height);
-      const fromX = eventCenterX - dialogCenterX;
-      const fromY = eventCenterY - dialogCenterY;
+      const fromX = eventRect.left - left;
+      const fromY = eventRect.top - top;
+      const fromScaleX = clamp(eventRect.width / measured.width, 0.08, 1);
+      const fromScaleY = clamp(eventRect.height / measured.height, 0.06, 1);
 
-      dialog.style.setProperty("--dialog-origin-x", originX + "px");
-      dialog.style.setProperty("--dialog-origin-y", originY + "px");
+      dialog.style.setProperty("--dialog-origin-x", "0");
+      dialog.style.setProperty("--dialog-origin-y", "0");
       dialog.dataset.closeX = String(fromX);
       dialog.dataset.closeY = String(fromY);
       dialog.animate(
         [
-          { opacity: 0, backgroundColor: "var(--event)", transform: "translate(" + fromX + "px, " + fromY + "px) scale(0.18)" },
-          { opacity: 0.55, backgroundColor: "var(--event)", transform: "translate(" + (fromX * 0.24) + "px, " + (fromY * 0.24) + "px) scale(0.72)" },
-          { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1)" },
+          { opacity: 0, backgroundColor: "var(--event)", transform: "translate(" + fromX + "px, " + fromY + "px) scale(" + fromScaleX + ", " + fromScaleY + ")" },
+          { opacity: 0.6, backgroundColor: "var(--event)", transform: "translate(" + (fromX * 0.22) + "px, " + (fromY * 0.22) + "px) scale(" + (0.78 + fromScaleX * 0.12) + ", " + (0.78 + fromScaleY * 0.12) + ")" },
+          { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1, 1)" },
         ],
         { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
       );
