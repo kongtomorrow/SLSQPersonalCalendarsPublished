@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2026 SLSQ Seminar Calendars</title>
-  <style id="calendar-browser-style">
+  <style>
     :root {
       color-scheme: light;
       --ink: #1f2328;
@@ -38,10 +38,20 @@
       max-width: 76rem;
       margin: 0 auto;
     }
-    .header-spacer {
-      display: block;
-      height: 1.58rem;
-      margin: -0.12rem 0 0.45rem -0.35rem;
+    .header-meta-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 1.58rem;
+      margin-bottom: 0.45rem;
+    }
+    .title-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.9rem;
+      flex-wrap: wrap;
     }
     h1 { margin: 0; font-size: clamp(1.55rem, 3.4vw, 2.35rem); letter-spacing: 0; line-height: 1.05; }
     main { width: 100%; max-width: 60rem; margin: 0 auto; padding: 1.25rem 1.25rem 2.5rem; }
@@ -92,13 +102,6 @@
       outline: 2px solid var(--header);
       outline-offset: 2px;
     }
-    .header-inner,
-    main {
-      transition: opacity 120ms ease-out;
-    }
-    .is-swapping {
-      opacity: 0;
-    }
     @media (max-width: 30rem) {
       .calendar-columns { grid-template-columns: 1fr; gap: 1.5rem; }
     }
@@ -107,8 +110,10 @@
 <body>
   <header>
     <div class="header-inner">
-      <span class="header-spacer" aria-hidden="true"></span>
-      <h1>2026 SLSQ Seminar Calendars</h1>
+      <div class="header-meta-row" aria-hidden="true"></div>
+      <div class="title-row">
+        <h1>2026 SLSQ Seminar Calendars</h1>
+      </div>
     </div>
   </header>
   <main>
@@ -116,255 +121,59 @@
       <section class="calendar-section">
         <h2>Faculty</h2>
         <ul class="calendar-list">
-          <li><a href="Alexi_Kenney.html" data-calendar-link>Alexi Kenney</a></li>
-          <li><a href="Anthony_Manzo.html" data-calendar-link>Anthony Manzo</a></li>
-          <li><a href="Ayane_Kozasa.html" data-calendar-link>Ayane Kozasa</a></li>
-          <li><a href="Daniel_Phillips.html" data-calendar-link>Daniel Phillips</a></li>
-          <li><a href="Dimitri_Murrath.html" data-calendar-link>Dimitri Murrath</a></li>
-          <li><a href="Hannah_Collins.html" data-calendar-link>Hannah Collins</a></li>
-          <li><a href="Howard_Nelson.html" data-calendar-link>Howard Nelson</a></li>
-          <li><a href="Jennah_Delp_Somers.html" data-calendar-link>Jennah Delp Somers</a></li>
-          <li><a href="John_Novacek.html" data-calendar-link>John Novacek</a></li>
-          <li><a href="Lesley_Robertson.html" data-calendar-link>Lesley Robertson</a></li>
-          <li><a href="Nina_Lee.html" data-calendar-link>Nina Lee</a></li>
-          <li><a href="Owen_Dalby.html" data-calendar-link>Owen Dalby</a></li>
-          <li><a href="Pamela_Frank.html" data-calendar-link>Pamela Frank</a></li>
-          <li><a href="Paul_Wiancko.html" data-calendar-link>Paul Wiancko</a></li>
-          <li><a href="Pedja_Muzijevic.html" data-calendar-link>Pedja Muzijevic</a></li>
-          <li><a href="Stephen_Prutsman.html" data-calendar-link>Stephen Prutsman</a></li>
-          <li><a href="Steven_Tenenbom.html" data-calendar-link>Steven Tenenbom</a></li>
-          <li><a href="Todd_Palmer.html" data-calendar-link>Todd Palmer</a></li>
-          <li><a href="William_Coleman.html" data-calendar-link>William Coleman</a></li>
+          <li><a href="Alexi_Kenney.html">Alexi Kenney</a></li>
+          <li><a href="Anthony_Manzo.html">Anthony Manzo</a></li>
+          <li><a href="Ayane_Kozasa.html">Ayane Kozasa</a></li>
+          <li><a href="Daniel_Phillips.html">Daniel Phillips</a></li>
+          <li><a href="Dimitri_Murrath.html">Dimitri Murrath</a></li>
+          <li><a href="Hannah_Collins.html">Hannah Collins</a></li>
+          <li><a href="Howard_Nelson.html">Howard Nelson</a></li>
+          <li><a href="Jennah_Delp_Somers.html">Jennah Delp Somers</a></li>
+          <li><a href="John_Novacek.html">John Novacek</a></li>
+          <li><a href="Lesley_Robertson.html">Lesley Robertson</a></li>
+          <li><a href="Nina_Lee.html">Nina Lee</a></li>
+          <li><a href="Owen_Dalby.html">Owen Dalby</a></li>
+          <li><a href="Pamela_Frank.html">Pamela Frank</a></li>
+          <li><a href="Paul_Wiancko.html">Paul Wiancko</a></li>
+          <li><a href="Pedja_Muzijevic.html">Pedja Muzijevic</a></li>
+          <li><a href="Stephen_Prutsman.html">Stephen Prutsman</a></li>
+          <li><a href="Steven_Tenenbom.html">Steven Tenenbom</a></li>
+          <li><a href="Todd_Palmer.html">Todd Palmer</a></li>
+          <li><a href="William_Coleman.html">William Coleman</a></li>
         </ul>
       </section>
       <section class="calendar-section">
         <h2>Ensembles</h2>
         <ul class="calendar-list">
-          <li><a href="8tet_with_Dolores_4.html" data-calendar-link>8tet with Dolores 4</a></li>
-          <li><a href="Chane_String_Quartet.html" data-calendar-link>Chane String Quartet</a></li>
-          <li><a href="Dolores_Quintet.html" data-calendar-link>Dolores Quintet</a></li>
-          <li><a href="Ethea_Trio.html" data-calendar-link>Ethea Trio</a></li>
-          <li><a href="Katarina_String_Quartet.html" data-calendar-link>Katarina String Quartet</a></li>
-          <li><a href="Meck_Kwarteck.html" data-calendar-link>Meck Kwarteck</a></li>
-          <li><a href="Murray_Quartet.html" data-calendar-link>Murray Quartet</a></li>
-          <li><a href="No_Name_Piano_Quartet.html" data-calendar-link>No Name Piano Quartet</a></li>
-          <li><a href="Pinky_Quartet.html" data-calendar-link>Pinky Quartet</a></li>
-          <li><a href="Quail_4tet.html" data-calendar-link>Quail 4tet</a></li>
-          <li><a href="Quartet_94.html" data-calendar-link>Quartet 94</a></li>
-          <li><a href="Quartet_SAMM.html" data-calendar-link>Quartet SAMM</a></li>
-          <li><a href="Quatuor_Pas_de_Jeans.html" data-calendar-link>Quatuor Pas de Jeans</a></li>
-          <li><a href="SEJI_Quartet.html" data-calendar-link>SEJI Quartet</a></li>
-          <li><a href="Selene_Quartet.html" data-calendar-link>Selene Quartet</a></li>
-          <li><a href="SQuEAQ.html" data-calendar-link>SQuEAQ</a></li>
-          <li><a href="String_Quintet.html" data-calendar-link>String Quintet</a></li>
-          <li><a href="The_Abelian_Group.html" data-calendar-link>The Abelian Group</a></li>
-          <li><a href="The_Amiche_Quartet.html" data-calendar-link>The Amiche Quartet</a></li>
-          <li><a href="The_Dolphins.html" data-calendar-link>The Dolphins</a></li>
-          <li><a href="The_Quarktet.html" data-calendar-link>The Quarktet</a></li>
-          <li><a href="Tomodachi_Quintet.html" data-calendar-link>Tomodachi Quintet</a></li>
-          <li><a href="Virtuosa_Trio.html" data-calendar-link>Virtuosa Trio</a></li>
-          <li><a href="WaMaTachou_Quartet.html" data-calendar-link>WaMaTachou Quartet</a></li>
-          <li><a href="Wishel_Trio.html" data-calendar-link>Wishel  Trio</a></li>
-          <li><a href="Zehnder_Blender.html" data-calendar-link>Zehnder Blender</a></li>
+          <li><a href="8tet_with_Dolores_4.html">8tet with Dolores 4</a></li>
+          <li><a href="Chane_String_Quartet.html">Chane String Quartet</a></li>
+          <li><a href="Dolores_Quintet.html">Dolores Quintet</a></li>
+          <li><a href="Ethea_Trio.html">Ethea Trio</a></li>
+          <li><a href="Katarina_String_Quartet.html">Katarina String Quartet</a></li>
+          <li><a href="Meck_Kwarteck.html">Meck Kwarteck</a></li>
+          <li><a href="Murray_Quartet.html">Murray Quartet</a></li>
+          <li><a href="No_Name_Piano_Quartet.html">No Name Piano Quartet</a></li>
+          <li><a href="Pinky_Quartet.html">Pinky Quartet</a></li>
+          <li><a href="Quail_4tet.html">Quail 4tet</a></li>
+          <li><a href="Quartet_94.html">Quartet 94</a></li>
+          <li><a href="Quartet_SAMM.html">Quartet SAMM</a></li>
+          <li><a href="Quatuor_Pas_de_Jeans.html">Quatuor Pas de Jeans</a></li>
+          <li><a href="SEJI_Quartet.html">SEJI Quartet</a></li>
+          <li><a href="Selene_Quartet.html">Selene Quartet</a></li>
+          <li><a href="SQuEAQ.html">SQuEAQ</a></li>
+          <li><a href="String_Quintet.html">String Quintet</a></li>
+          <li><a href="The_Abelian_Group.html">The Abelian Group</a></li>
+          <li><a href="The_Amiche_Quartet.html">The Amiche Quartet</a></li>
+          <li><a href="The_Dolphins.html">The Dolphins</a></li>
+          <li><a href="The_Quarktet.html">The Quarktet</a></li>
+          <li><a href="Tomodachi_Quintet.html">Tomodachi Quintet</a></li>
+          <li><a href="Virtuosa_Trio.html">Virtuosa Trio</a></li>
+          <li><a href="WaMaTachou_Quartet.html">WaMaTachou Quartet</a></li>
+          <li><a href="Wishel_Trio.html">Wishel  Trio</a></li>
+          <li><a href="Zehnder_Blender.html">Zehnder Blender</a></li>
         </ul>
       </section>
     </div>
   </main>
-  <div id="dialog-root"></div>
-  <script>
-    const dialogAnimationDuration = 180;
-    const dialogAnimationCurve = "cubic-bezier(.45, 0, .2, 1)";
-
-    document.addEventListener("click", (event) => {
-      const link = event.target.closest("a[data-calendar-link]");
-      if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const targetUrl = new URL(link.href, window.location.href);
-      if (targetUrl.origin !== window.location.origin || !targetUrl.pathname.endsWith(".html")) return;
-      event.preventDefault();
-      navigateCalendarPage(targetUrl.href);
-    });
-
-    window.addEventListener("popstate", () => navigateCalendarPage(window.location.href, { updateHistory: false }));
-    initializeCalendarPage();
-
-    function initializeCalendarPage() {
-      const filter = document.querySelector("#event-filter");
-      const events = Array.from(document.querySelectorAll(".event-card[data-event-search]"));
-      const eventByIndex = new Map(events.map((event) => [event.dataset.eventIndex, event]));
-      const eventBackings = Array.from(document.querySelectorAll(".event-backing[data-event-index]"));
-      filter?.addEventListener("input", () => {
-        const query = filter.value.trim().toLocaleLowerCase();
-        for (const event of events) {
-          event.hidden = Boolean(query && !event.dataset.eventSearch.includes(query));
-        }
-        for (const backing of eventBackings) {
-          const event = eventByIndex.get(backing.dataset.eventIndex);
-          backing.hidden = Boolean(event?.hidden);
-        }
-      });
-      for (const button of events) {
-        button.addEventListener("click", () => {
-          const dialog = document.getElementById(button.dataset.dialog);
-          if (dialog) openEventDialog(dialog, button);
-        });
-      }
-      for (const dialog of document.querySelectorAll("dialog")) {
-        dialog.querySelector(".close-button")?.addEventListener("click", () => closeEventDialog(dialog));
-        dialog.addEventListener("click", (event) => {
-          if (event.target === dialog) closeEventDialog(dialog);
-        });
-        dialog.addEventListener("cancel", (event) => {
-          event.preventDefault();
-          closeEventDialog(dialog);
-        });
-      }
-      scrollCalendarToRelevantDate();
-    }
-
-    async function navigateCalendarPage(url, options = {}) {
-      const updateHistory = options.updateHistory !== false;
-      try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Navigation fetch failed");
-        const text = await response.text();
-        const nextDocument = new DOMParser().parseFromString(text, "text/html");
-        const nextStyle = nextDocument.querySelector("#calendar-browser-style");
-        const nextHeaderInner = nextDocument.querySelector(".header-inner");
-        const nextMain = nextDocument.querySelector("main");
-        const nextDialogRoot = nextDocument.querySelector("#dialog-root");
-        if (!nextStyle || !nextHeaderInner || !nextMain) throw new Error("Navigation target is incomplete");
-
-        for (const dialog of document.querySelectorAll("dialog[open]")) dialog.close();
-        const oldHeaderInner = document.querySelector(".header-inner");
-        const oldMain = document.querySelector("main");
-        oldHeaderInner?.classList.add("is-swapping");
-        oldMain?.classList.add("is-swapping");
-        await waitForTransition();
-
-        document.querySelector("#calendar-browser-style")?.replaceWith(nextStyle);
-        document.querySelector(".header-inner")?.replaceWith(nextHeaderInner);
-        document.querySelector("main")?.replaceWith(nextMain);
-        document.querySelector("#dialog-root")?.replaceWith(nextDialogRoot || document.createElement("div"));
-        document.title = nextDocument.title;
-        if (updateHistory) history.pushState({}, "", url);
-
-        const newHeaderInner = document.querySelector(".header-inner");
-        const newMain = document.querySelector("main");
-        newHeaderInner?.classList.add("is-swapping");
-        newMain?.classList.add("is-swapping");
-        window.scrollTo({ top: 0, behavior: "auto" });
-        initializeCalendarPage();
-        requestAnimationFrame(() => {
-          newHeaderInner?.classList.remove("is-swapping");
-          newMain?.classList.remove("is-swapping");
-        });
-      } catch {
-        window.location.href = url;
-      }
-    }
-
-    function waitForTransition() {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return Promise.resolve();
-      return new Promise((resolve) => window.setTimeout(resolve, 125));
-    }
-
-    function clamp(value, min, max) {
-      return Math.min(Math.max(value, min), max);
-    }
-    function localTodayIso() {
-      const today = new Date();
-      const offsetDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000);
-      return offsetDate.toISOString().slice(0, 10);
-    }
-    function relevantDayColumn(columns, todayIso) {
-      return columns.find((column) => column.dataset.date === todayIso)
-        || columns.find((column) => column.dataset.date > todayIso)
-        || columns[columns.length - 1];
-    }
-    function scrollCalendarToRelevantDate() {
-      const scroller = document.querySelector(".day-scroll");
-      if (!scroller) return;
-      const columns = Array.from(scroller.querySelectorAll(".day-column[data-date]"));
-      const target = relevantDayColumn(columns, localTodayIso());
-      if (!target) return;
-      requestAnimationFrame(() => {
-        scroller.scrollTo({
-          left: Math.max(target.offsetLeft, 0),
-          behavior: "auto",
-        });
-      });
-    }
-    function openEventDialog(dialog, button) {
-      for (const openDialog of document.querySelectorAll("dialog[open]")) {
-        if (openDialog !== dialog) openDialog.close();
-      }
-      const margin = 12;
-      const eventRect = button.getBoundingClientRect();
-      const targetWidth = Math.min(480, window.innerWidth - margin * 2);
-      dialog.style.width = targetWidth + "px";
-      dialog.style.left = margin + "px";
-      dialog.style.top = margin + "px";
-      dialog.showModal();
-
-      const measured = dialog.getBoundingClientRect();
-      const below = eventRect.bottom + 8;
-      const above = eventRect.top - measured.height - 8;
-      const left = clamp(eventRect.left, margin, window.innerWidth - measured.width - margin);
-      const top = below + measured.height <= window.innerHeight - margin || above < margin
-        ? clamp(below, margin, window.innerHeight - measured.height - margin)
-        : clamp(above, margin, window.innerHeight - measured.height - margin);
-
-      dialog.style.left = left + "px";
-      dialog.style.top = top + "px";
-
-      const eventCenterX = eventRect.left + eventRect.width / 2;
-      const eventCenterY = eventRect.top + eventRect.height / 2;
-      const dialogCenterX = left + measured.width / 2;
-      const dialogCenterY = top + measured.height / 2;
-      const originX = clamp(eventCenterX - left, 0, measured.width);
-      const originY = clamp(eventCenterY - top, 0, measured.height);
-      const fromX = eventCenterX - dialogCenterX;
-      const fromY = eventCenterY - dialogCenterY;
-
-      dialog.style.setProperty("--dialog-origin-x", originX + "px");
-      dialog.style.setProperty("--dialog-origin-y", originY + "px");
-      dialog.dataset.closeX = String(fromX);
-      dialog.dataset.closeY = String(fromY);
-      dialog.animate(
-        [
-          { "--backdrop-alpha": 0 },
-          { "--backdrop-alpha": 0.06 },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
-      dialog.animate(
-        [
-          { opacity: 0, backgroundColor: "var(--event)", transform: "translate(" + fromX + "px, " + fromY + "px) scale(0.18)" },
-          { opacity: 0.55, backgroundColor: "var(--event)", transform: "translate(" + (fromX * 0.24) + "px, " + (fromY * 0.24) + "px) scale(0.72)" },
-          { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1)" },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
-    }
-    function closeEventDialog(dialog) {
-      if (!dialog.open) return;
-      dialog.animate(
-        [
-          { "--backdrop-alpha": 0.06 },
-          { "--backdrop-alpha": 0 },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
-      const animation = dialog.animate(
-        [
-          { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1)" },
-          { opacity: 0.58, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1.018)" },
-          { opacity: 0, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1.045)" },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
-      animation.addEventListener("finish", () => dialog.close(), { once: true });
-    }
-  </script>
 </body>
 </html>

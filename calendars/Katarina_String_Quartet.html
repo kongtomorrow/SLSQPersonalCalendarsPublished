@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katarina String Quartet | SLSQ Seminar Calendars</title>
-  <style id="calendar-browser-style">
+  <style>
     :root {
       color-scheme: light;
       --ink: #1f2328;
@@ -81,10 +81,7 @@
       text-decoration: none;
     }
     .header-nav-text {
-      text-decoration: underline;
-      text-decoration-color: white;
-      text-underline-offset: 0.18em;
-      text-decoration-thickness: 0.08em;
+      text-decoration: none;
     }
     .header-meta-row {
       display: flex;
@@ -258,6 +255,18 @@
       font: inherit;
       text-align: left;
       box-shadow: none;
+      -webkit-tap-highlight-color: transparent;
+      appearance: none;
+    }
+    .event-card:active,
+    .event-card:focus {
+      background: transparent;
+      color: var(--event-ink);
+      outline: none;
+    }
+    .event-card:focus-visible {
+      outline: 2px solid rgba(111, 219, 79, 0.7);
+      outline-offset: 2px;
     }
     .event-card::before {
       content: "";
@@ -389,7 +398,14 @@
       opacity: 1;
       transform: translate(0, 0) scale(1);
     }
-    dialog::backdrop { background: rgba(31, 35, 40, var(--backdrop-alpha)); }
+    dialog::backdrop { background: transparent; }
+    .dialog-dimmer {
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: rgba(31, 35, 40, 0);
+      pointer-events: none;
+    }
     .dialog-card {
       border-radius: 12px;
       background: rgba(255, 255, 255, 0.66);
@@ -413,12 +429,11 @@
     }
     .close-button {
       border: 0;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.38);
+      background: transparent;
       color: var(--event-meta);
       cursor: pointer;
       font: inherit;
-      font-size: 1.1rem;
+      font-size: 1.35rem;
       font-weight: 600;
       line-height: 1;
       min-width: 2.15rem;
@@ -501,17 +516,16 @@
   <header>
     <div class="header-inner">
       <div class="header-meta-row">
-        <a class="header-nav" href="index.html" data-calendar-link><span class="header-nav-text">All Calendars</span></a>
-        <span class="subscribe-label">Subscribe</span>
+        <a class="header-nav" href="index.html"><span class="header-nav-text">All Calendars</span></a>
+        <div class="subscribe-links">
+          <span class="subscribe-link-row">
+            <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=ODJiNjE0NGYyOWFjNmNiMzgzNmEyNDVhMzgzOWRlNWY4MzA1OTQwOWZhZDk1OGU3NDdhNjNjMzYyMWVkOTBmZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Cal</a>
+            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Katarina_String_Quartet.ics">Apple Cal</a>
+          </span>
+        </div>
       </div>
       <div class="title-row">
         <h1 class="calendar-title">Katarina String Quartet</h1>
-        <div class="subscribe-links">
-          <span class="subscribe-link-row">
-            <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=ODJiNjE0NGYyOWFjNmNiMzgzNmEyNDVhMzgzOWRlNWY4MzA1OTQwOWZhZDk1OGU3NDdhNjNjMzYyMWVkOTBmZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google</a>
-            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Katarina_String_Quartet.ics">Apple</a>
-          </span>
-        </div>
       </div>
     </div>
   </header>
@@ -1127,6 +1141,7 @@ uber to the airport. alexi kenney anthony manzo ayane kozasa daniel phillips dim
       </div>
     </section>
   </main>
+  <div class="dialog-dimmer" aria-hidden="true"></div>
   <div id="dialog-root">
   <dialog id="event-dialog-0">
     <div class="dialog-card">
@@ -2383,16 +2398,6 @@ uber to the airport.</div>
     const dialogAnimationDuration = 180;
     const dialogAnimationCurve = "cubic-bezier(.45, 0, .2, 1)";
 
-    document.addEventListener("click", (event) => {
-      const link = event.target.closest("a[data-calendar-link]");
-      if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-      const targetUrl = new URL(link.href, window.location.href);
-      if (targetUrl.origin !== window.location.origin || !targetUrl.pathname.endsWith(".html")) return;
-      event.preventDefault();
-      navigateCalendarPage(targetUrl.href);
-    });
-
-    window.addEventListener("popstate", () => navigateCalendarPage(window.location.href, { updateHistory: false }));
     initializeCalendarPage();
 
     function initializeCalendarPage() {
@@ -2429,53 +2434,6 @@ uber to the airport.</div>
       scrollCalendarToRelevantDate();
     }
 
-    async function navigateCalendarPage(url, options = {}) {
-      const updateHistory = options.updateHistory !== false;
-      try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Navigation fetch failed");
-        const text = await response.text();
-        const nextDocument = new DOMParser().parseFromString(text, "text/html");
-        const nextStyle = nextDocument.querySelector("#calendar-browser-style");
-        const nextHeaderInner = nextDocument.querySelector(".header-inner");
-        const nextMain = nextDocument.querySelector("main");
-        const nextDialogRoot = nextDocument.querySelector("#dialog-root");
-        if (!nextStyle || !nextHeaderInner || !nextMain) throw new Error("Navigation target is incomplete");
-
-        for (const dialog of document.querySelectorAll("dialog[open]")) dialog.close();
-        const oldHeaderInner = document.querySelector(".header-inner");
-        const oldMain = document.querySelector("main");
-        oldHeaderInner?.classList.add("is-swapping");
-        oldMain?.classList.add("is-swapping");
-        await waitForTransition();
-
-        document.querySelector("#calendar-browser-style")?.replaceWith(nextStyle);
-        document.querySelector(".header-inner")?.replaceWith(nextHeaderInner);
-        document.querySelector("main")?.replaceWith(nextMain);
-        document.querySelector("#dialog-root")?.replaceWith(nextDialogRoot || document.createElement("div"));
-        document.title = nextDocument.title;
-        if (updateHistory) history.pushState({}, "", url);
-
-        const newHeaderInner = document.querySelector(".header-inner");
-        const newMain = document.querySelector("main");
-        newHeaderInner?.classList.add("is-swapping");
-        newMain?.classList.add("is-swapping");
-        window.scrollTo({ top: 0, behavior: "auto" });
-        initializeCalendarPage();
-        requestAnimationFrame(() => {
-          newHeaderInner?.classList.remove("is-swapping");
-          newMain?.classList.remove("is-swapping");
-        });
-      } catch {
-        window.location.href = url;
-      }
-    }
-
-    function waitForTransition() {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return Promise.resolve();
-      return new Promise((resolve) => window.setTimeout(resolve, 125));
-    }
-
     function clamp(value, min, max) {
       return Math.min(Math.max(value, min), max);
     }
@@ -2506,6 +2464,7 @@ uber to the airport.</div>
       for (const openDialog of document.querySelectorAll("dialog[open]")) {
         if (openDialog !== dialog) openDialog.close();
       }
+      animateDialogDimmer(true);
       const margin = 12;
       const eventRect = button.getBoundingClientRect();
       const targetWidth = Math.min(480, window.innerWidth - margin * 2);
@@ -2540,13 +2499,6 @@ uber to the airport.</div>
       dialog.dataset.closeY = String(fromY);
       dialog.animate(
         [
-          { "--backdrop-alpha": 0 },
-          { "--backdrop-alpha": 0.06 },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
-      dialog.animate(
-        [
           { opacity: 0, backgroundColor: "var(--event)", transform: "translate(" + fromX + "px, " + fromY + "px) scale(0.18)" },
           { opacity: 0.55, backgroundColor: "var(--event)", transform: "translate(" + (fromX * 0.24) + "px, " + (fromY * 0.24) + "px) scale(0.72)" },
           { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1)" },
@@ -2556,13 +2508,7 @@ uber to the airport.</div>
     }
     function closeEventDialog(dialog) {
       if (!dialog.open) return;
-      dialog.animate(
-        [
-          { "--backdrop-alpha": 0.06 },
-          { "--backdrop-alpha": 0 },
-        ],
-        { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
-      );
+      animateDialogDimmer(false);
       const animation = dialog.animate(
         [
           { opacity: 1, backgroundColor: "var(--dialog-surface)", transform: "translate(0, 0) scale(1)" },
@@ -2572,6 +2518,17 @@ uber to the airport.</div>
         { duration: dialogAnimationDuration, easing: dialogAnimationCurve }
       );
       animation.addEventListener("finish", () => dialog.close(), { once: true });
+    }
+    function animateDialogDimmer(opening) {
+      const dimmer = document.querySelector(".dialog-dimmer");
+      if (!dimmer) return;
+      dimmer.animate(
+        [
+          { backgroundColor: opening ? "rgba(31, 35, 40, 0)" : "rgba(31, 35, 40, 0.06)" },
+          { backgroundColor: opening ? "rgba(31, 35, 40, 0.06)" : "rgba(31, 35, 40, 0)" },
+        ],
+        { duration: dialogAnimationDuration, easing: dialogAnimationCurve, fill: "forwards" }
+      );
     }
   </script>
 </body>
