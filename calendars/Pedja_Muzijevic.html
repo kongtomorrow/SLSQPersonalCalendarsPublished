@@ -584,7 +584,7 @@
     <div class="toolbar">
       <input id="event-filter" type="search" autocomplete="off" aria-label="Filter events" placeholder="Filter title, location, or notes">
     </div>
-    <section class="calendar-shell" style="--day-count: 10; --calendar-min-width: 145.00rem;">
+    <section class="calendar-shell" style="--day-count: 10; --calendar-min-width: 145.00rem;" data-start-hour="8" data-end-hour="24" data-slot-minutes="15" data-slot-count="64">
       <div class="calendar-scroll">
         <div class="calendar-canvas">
           <div class="calendar-grid">
@@ -1057,6 +1057,7 @@ mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee 
 meck kwarteck (haeun nam, marie christine lopez, cindy mong, ken ferry)
 virtuosa trio (chia ying lee, yi ying wei, chiao hui chang)
 quartet samm (shawn barnett, ari le, marandi hostetter, melissa chu)
+up to 4
 coaching: dimitri murrath, anthony manzo, pedja muzijevic https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
                         <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">🎼 Coaching Masterclass 2C</span>
@@ -1162,6 +1163,7 @@ playing:
 zehnder blender (ko hayashi, ron ho, cary chin, jim zehnder)
 8tet with dolores 4 (gregorio lopes, ko hayashi, ron ho, mark siegel, cary chin, james welch, jim zehnder, persis drell)
 the abelian group (norman truong, laura shifley, laurence lewis, minsu longiaru)
+wamatachou quartet? (jim chou, tyson mao, cindy wang, olivia tam)
 coaching: john novacek, daniel phillips, hannah collins 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
                         <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
             <span class="event-title">Masterclass 3A, 3B, 3C</span>
@@ -2112,6 +2114,7 @@ Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee<
 Meck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)
 Virtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)
 Quartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)
+Up to 4
 Coaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
       </div>
@@ -2251,6 +2254,7 @@ Playing:
 Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)
 8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)
 The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)
+WaMaTachou Quartet? (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)
 Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
       </div>
     </div>
@@ -2670,21 +2674,45 @@ uber to the airport.</div>
       const offsetDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000);
       return offsetDate.toISOString().slice(0, 10);
     }
+    function localTimeMinutes() {
+      const now = new Date();
+      return now.getHours() * 60 + now.getMinutes();
+    }
     function relevantDayColumn(columns, todayIso) {
       return columns.find((column) => column.dataset.date === todayIso)
         || columns.find((column) => column.dataset.date > todayIso)
         || columns[columns.length - 1];
     }
+    function scrollTopForCurrentTime(scroller) {
+      const shell = scroller.closest(".calendar-shell");
+      const timeAxis = scroller.querySelector(".time-axis");
+      const calendarGrid = scroller.querySelector(".calendar-grid");
+      const startHour = Number(shell?.dataset.startHour || 8);
+      const endHour = Number(shell?.dataset.endHour || 24);
+      const slotMinutes = Number(shell?.dataset.slotMinutes || 15);
+      const slotCount = Number(shell?.dataset.slotCount || 1);
+      const slotHeight = (timeAxis?.getBoundingClientRect().height || 0) / slotCount;
+      if (!slotHeight) return 0;
+      const startMinute = startHour * 60;
+      const endMinute = endHour * 60;
+      const minute = clamp(localTimeMinutes(), startMinute, endMinute);
+      const bodyTop = calendarGrid?.offsetTop || 0;
+      const minuteOffset = ((minute - startMinute) / slotMinutes) * slotHeight;
+      const contextOffset = (60 / slotMinutes) * slotHeight;
+      return clamp(bodyTop + minuteOffset - contextOffset, 0, scroller.scrollHeight - scroller.clientHeight);
+    }
     function scrollCalendarToRelevantDate() {
       const scroller = document.querySelector(".calendar-scroll");
       if (!scroller) return;
       const columns = Array.from(scroller.querySelectorAll(".day-column[data-date]"));
-      const target = relevantDayColumn(columns, localTodayIso());
+      const todayIso = localTodayIso();
+      const target = relevantDayColumn(columns, todayIso);
       if (!target) return;
       requestAnimationFrame(() => {
         const timeAxisWidth = document.querySelector(".time-axis")?.offsetWidth || 0;
         scroller.scrollTo({
           left: Math.max(target.offsetLeft - timeAxisWidth, 0),
+          top: target.dataset.date === todayIso ? scrollTopForCurrentTime(scroller) : 0,
           behavior: "auto",
         });
       });
