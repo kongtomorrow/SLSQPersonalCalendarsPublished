@@ -1,13 +1,13 @@
 # Calendar Generation Succeeded
 
 - Previous baseline: found
-- Before events: 1193
+- Before events: 1194
 - After events: 1194
-- Delta: +1
-- Added events: 1
+- Delta: +0
+- Added events: 0
 - Removed events: 0
 - Changed events: 0
-- People affected by listed changes: 3
+- People affected by listed changes: 0
 
 ## Fixed Inconsistencies
 
@@ -25,7 +25,7 @@ None.
   "FACULTY_DAILY": 1,
   "MASTERCLASS": 22,
   "PELZER": 20,
-  "REGISTRATION": 25,
+  "REGISTRATION": 26,
   "SIGHT_READING": 8,
   "TRAVEL": 15
 }
@@ -46,13 +46,6 @@ None.
   "TRAVEL": 15
 }
 ```
-
-### Added Examples
-- `+` 2026-06-20 12:30:00-13:00:00 | Registration Virtuosa Trio | Campbell Recital Hall Lobby | Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang | REGISTRATION
-
-## Affected People
-
-Chia Ying Lee, Chiao Hui Chang, Yi Ying Wei
 
 ## Calendar Links
 

@@ -2812,12 +2812,20 @@ uber to the airport.</div>
   <script>
     const dialogAnimationDuration = 180;
     const dialogAnimationCurve = "cubic-bezier(.45, 0, .2, 1)";
+    let calendarAutoScrollRun = 0;
+    let userAdjustedCalendarScroll = false;
 
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    window.addEventListener("pageshow", () => scheduleCalendarAutoScroll());
     initializeCalendarPage();
 
     function initializeCalendarPage() {
       const filter = document.querySelector("#event-filter");
       const events = Array.from(document.querySelectorAll(".event-card[data-event-search]"));
+      const scroller = document.querySelector(".calendar-scroll");
+      watchUserCalendarScrollIntent(scroller);
       filter?.addEventListener("input", () => {
         const query = filter.value.trim().toLocaleLowerCase();
         for (const event of events) {
@@ -2840,11 +2848,36 @@ uber to the airport.</div>
           closeEventDialog(dialog);
         });
       }
-      scrollCalendarToRelevantDate();
+      scheduleCalendarAutoScroll();
     }
 
     function clamp(value, min, max) {
       return Math.min(Math.max(value, min), max);
+    }
+    function watchUserCalendarScrollIntent(scroller) {
+      const markUserAdjusted = () => {
+        userAdjustedCalendarScroll = true;
+      };
+      for (const eventName of ["touchstart", "wheel", "pointerdown"]) {
+        scroller?.addEventListener(eventName, markUserAdjusted, { passive: true });
+      }
+      document.addEventListener("keydown", (event) => {
+        if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) {
+          markUserAdjusted();
+        }
+      });
+    }
+    function scheduleCalendarAutoScroll() {
+      const run = ++calendarAutoScrollRun;
+      const scrollIfStillInitial = () => {
+        if (run === calendarAutoScrollRun && !userAdjustedCalendarScroll) {
+          scrollCalendarToRelevantDate();
+        }
+      };
+      requestAnimationFrame(scrollIfStillInitial);
+      for (const delay of [80, 250, 700]) {
+        window.setTimeout(scrollIfStillInitial, delay);
+      }
     }
     function localTodayIso() {
       const today = new Date();
