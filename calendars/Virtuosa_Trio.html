@@ -176,7 +176,7 @@
       min-width: 0;
       overflow: auto;
       scroll-snap-type: x mandatory;
-      scroll-padding-left: var(--time-axis-width);
+      scroll-padding-left: calc(var(--time-axis-width) - 1px);
       scrollbar-gutter: stable;
     }
     .calendar-canvas {
@@ -2572,7 +2572,7 @@ uber to the airport.</div>
       requestAnimationFrame(() => {
         const timeAxisWidth = document.querySelector(".time-axis")?.offsetWidth || 0;
         scroller.scrollTo({
-          left: Math.max(target.offsetLeft - timeAxisWidth, 0),
+          left: Math.max(target.offsetLeft - timeAxisWidth + 1, 0),
           behavior: "auto",
         });
       });
