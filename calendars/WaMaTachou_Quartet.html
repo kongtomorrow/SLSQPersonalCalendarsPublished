@@ -175,7 +175,6 @@
       min-height: 0;
       min-width: 0;
       overflow: auto;
-      scroll-padding-left: var(--time-axis-width);
       scroll-snap-type: x mandatory;
       scrollbar-gutter: stable;
     }
@@ -261,6 +260,7 @@
       grid-template-rows: repeat(64, var(--slot-height));
       min-width: 0;
       scroll-snap-align: start;
+      scroll-margin-left: var(--time-axis-width);
       scroll-snap-stop: always;
       border-left: 1px solid var(--line);
       overflow: hidden;
