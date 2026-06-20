@@ -29,6 +29,7 @@
       --event-depth-bottom: 0.12rem;
       --event-edge-top: 0.12rem;
       --event-edge-bottom: 0.08rem;
+      --vertical-scroll-gutter: 0;
     }
     * { box-sizing: border-box; }
     html {
@@ -180,6 +181,7 @@
       background: var(--surface);
       position: relative;
       z-index: 4;
+      padding-right: var(--vertical-scroll-gutter);
     }
     .calendar-body-scroll {
       min-height: 0;
@@ -187,6 +189,8 @@
       overflow-y: auto;
       overflow-x: hidden;
       position: relative;
+      padding-right: var(--vertical-scroll-gutter);
+      scrollbar-gutter: stable;
     }
     .day-header-scroll {
       min-width: 0;
@@ -204,7 +208,6 @@
       margin-left: -1px;
       overflow-x: auto;
       overflow-y: hidden;
-      scroll-snap-type: x mandatory;
       min-width: 0;
       clip-path: inset(0);
     }
@@ -268,8 +271,6 @@
       min-width: 0;
       border-left: 1px solid var(--line);
       overflow: hidden;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
       background: #ffffff;
     }
     .time-grid-line {
@@ -559,6 +560,7 @@
     @container (max-width: 44rem) {
       .calendar-shell {
         --time-axis-width: 3.5rem;
+        --vertical-scroll-gutter: 0.45rem;
       }
       .calendar-grid,
       .calendar-header-grid {
@@ -582,7 +584,7 @@
         <div class="subscribe-links">
           <span class="subscribe-link-row">
             <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=MWQzMzRlZGZjNzc4YTc1MGUxYzFjMzRiZTFkNjgzNjhjNTY0ZTUzZmY5Y2NhNzIxYjc0MTQyYjMxNjEwYjEwM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Cal</a>
-            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Anthony_Manzo.ics">Apple Cal</a>
+            <a class="subscribe-link" href="../calendars/Anthony_Manzo.ics">Apple Cal</a>
           </span>
         </div>
       </div>
@@ -1117,6 +1119,7 @@ mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee 
 meck kwarteck (haeun nam, marie christine lopez, cindy mong, ken ferry)
 virtuosa trio (chia ying lee, yi ying wei, chiao hui chang)
 quartet samm (shawn barnett, ari le, marandi hostetter, melissa chu)
+up to 4
 coaching: dimitri murrath, anthony manzo, pedja muzijevic https://drive.google.com/drive/folders/1-mqepny9fol7dk6wwbg3-mpvng8wiuqw 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
             <span class="event-title">🎼 Coaching Masterclass 2C</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Rehearsal Hall</span>
@@ -2132,6 +2135,7 @@ Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee<
 Meck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)
 Virtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)
 Quartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)
+Up to 4
 Coaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic</div>
         <div class="detail-row"><a href="https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW">https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuqW</a></div>
       </div>

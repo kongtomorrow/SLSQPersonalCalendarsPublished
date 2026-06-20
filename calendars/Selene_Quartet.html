@@ -29,6 +29,7 @@
       --event-depth-bottom: 0.12rem;
       --event-edge-top: 0.12rem;
       --event-edge-bottom: 0.08rem;
+      --vertical-scroll-gutter: 0;
     }
     * { box-sizing: border-box; }
     html {
@@ -180,6 +181,7 @@
       background: var(--surface);
       position: relative;
       z-index: 4;
+      padding-right: var(--vertical-scroll-gutter);
     }
     .calendar-body-scroll {
       min-height: 0;
@@ -187,6 +189,8 @@
       overflow-y: auto;
       overflow-x: hidden;
       position: relative;
+      padding-right: var(--vertical-scroll-gutter);
+      scrollbar-gutter: stable;
     }
     .day-header-scroll {
       min-width: 0;
@@ -204,7 +208,6 @@
       margin-left: -1px;
       overflow-x: auto;
       overflow-y: hidden;
-      scroll-snap-type: x mandatory;
       min-width: 0;
       clip-path: inset(0);
     }
@@ -268,8 +271,6 @@
       min-width: 0;
       border-left: 1px solid var(--line);
       overflow: hidden;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
       background: #ffffff;
     }
     .time-grid-line {
@@ -559,6 +560,7 @@
     @container (max-width: 44rem) {
       .calendar-shell {
         --time-axis-width: 3.5rem;
+        --vertical-scroll-gutter: 0.45rem;
       }
       .calendar-grid,
       .calendar-header-grid {
@@ -582,7 +584,7 @@
         <div class="subscribe-links">
           <span class="subscribe-link-row">
             <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=ZGQwNTgzNTRjMWQ5M2UwMThmMDkwNzg4ZWRjYTg1MGJiMGQyNDlkODA3Zjk3NDg1ZTdkNTk0MjAxMzFkNTIwM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Cal</a>
-            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Selene_Quartet.ics">Apple Cal</a>
+            <a class="subscribe-link" href="../calendars/Selene_Quartet.ics">Apple Cal</a>
           </span>
         </div>
       </div>
@@ -1133,7 +1135,6 @@ mozart 5tet: alexi kenney, owen dalby, ayane kozasa, lesley robertson, nina lee 
           <button class="event-card is-roomy" type="button" data-event-index="42" data-dialog="event-dialog-42" data-event-search="🎻 playing masterclass 2b dinkelspiel stage playing:
 selene quartet (jihyun baik, oliver leitner, lourdes pinney, colin guan)
 the dolphins (luke henderson, isaac park, james preucil, ian maloney)
-wamatachou quartet (jim chou, tyson mao, cindy wang, olivia tam)
 string quintet (nate strothkamp, raunak kumar, jeremy klein, starla breshears, gabriel irazabal)
 coaching: ayane kozasa, hannah collins 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
             <span class="event-title">🎻 Playing Masterclass 2B</span>
@@ -2190,7 +2191,6 @@ Mozart 5tet: Alexi Kenney, Owen Dalby, Ayane Kozasa, Lesley Robertson, Nina Lee<
         <div class="detail-row prewrap">Playing:
 Selene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)
 The Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)
-WaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)
 String Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)
 Coaching: Ayane Kozasa, Hannah Collins</div>
       </div>

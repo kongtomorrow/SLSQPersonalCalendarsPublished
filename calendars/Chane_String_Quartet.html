@@ -29,6 +29,7 @@
       --event-depth-bottom: 0.12rem;
       --event-edge-top: 0.12rem;
       --event-edge-bottom: 0.08rem;
+      --vertical-scroll-gutter: 0;
     }
     * { box-sizing: border-box; }
     html {
@@ -180,6 +181,7 @@
       background: var(--surface);
       position: relative;
       z-index: 4;
+      padding-right: var(--vertical-scroll-gutter);
     }
     .calendar-body-scroll {
       min-height: 0;
@@ -187,6 +189,8 @@
       overflow-y: auto;
       overflow-x: hidden;
       position: relative;
+      padding-right: var(--vertical-scroll-gutter);
+      scrollbar-gutter: stable;
     }
     .day-header-scroll {
       min-width: 0;
@@ -204,7 +208,6 @@
       margin-left: -1px;
       overflow-x: auto;
       overflow-y: hidden;
-      scroll-snap-type: x mandatory;
       min-width: 0;
       clip-path: inset(0);
     }
@@ -268,8 +271,6 @@
       min-width: 0;
       border-left: 1px solid var(--line);
       overflow: hidden;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
       background: #ffffff;
     }
     .time-grid-line {
@@ -559,6 +560,7 @@
     @container (max-width: 44rem) {
       .calendar-shell {
         --time-axis-width: 3.5rem;
+        --vertical-scroll-gutter: 0.45rem;
       }
       .calendar-grid,
       .calendar-header-grid {
@@ -582,7 +584,7 @@
         <div class="subscribe-links">
           <span class="subscribe-link-row">
             <a class="subscribe-link" href="https://calendar.google.com/calendar/u/0?cid=OGQ5OWNlYjdhNDJkN2UyYjBjOGQzNjBiZjJhY2ZmZmJmNTNiYzA4MTNlMzE0YzQ5OGNhYWZjODM2MTFkMzE5MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Cal</a>
-            <a class="subscribe-link" href="webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Chane_String_Quartet.ics">Apple Cal</a>
+            <a class="subscribe-link" href="../calendars/Chane_String_Quartet.ics">Apple Cal</a>
           </span>
         </div>
       </div>
@@ -1264,6 +1266,7 @@ playing:
 zehnder blender (ko hayashi, ron ho, cary chin, jim zehnder)
 8tet with dolores 4 (gregorio lopes, ko hayashi, ron ho, mark siegel, cary chin, james welch, jim zehnder, persis drell)
 the abelian group (norman truong, laura shifley, laurence lewis, minsu longiaru)
+wamatachou quartet? (jim chou, tyson mao, cindy wang, olivia tam)
 coaching: john novacek, daniel phillips, hannah collins 4 pm-5:30 pm" style="--event-start: 33; --event-span: 6; --event-depth: 0;">
             <span class="event-title">Masterclass 3A, 3B, 3C</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall</span>
@@ -2411,6 +2414,7 @@ Playing:
 Zehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)
 8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)
 The Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)
+WaMaTachou Quartet? (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)
 Coaching: John Novacek, Daniel Phillips, Hannah Collins</div>
       </div>
     </div>
