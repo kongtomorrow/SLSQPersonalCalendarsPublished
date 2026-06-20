@@ -1234,6 +1234,32 @@
     ]
   },
   {
+    "kind": "REGISTRATION",
+    "diagnostic_source": {
+      "source_name": "Registration",
+      "sheet_name": null,
+      "row_number": 41,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Registration Virtuosa Trio",
+    "date": "2026-06-20",
+    "start": "12:30:00",
+    "end": "13:00:00",
+    "location": "Campbell Recital Hall Lobby",
+    "description": "",
+    "event_id": "registration-virtuosa-trio",
+    "overlap_allowed": true,
+    "playing": false,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Chia Ying Lee",
+      "Yi Ying Wei",
+      "Chiao Hui Chang"
+    ]
+  },
+  {
     "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
@@ -21423,7 +21449,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing:\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Playing:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
     "event_id": "masterclass-2a-coaching-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -21447,7 +21473,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing:\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Playing:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
     "event_id": "masterclass-2a-coaching",
     "overlap_allowed": false,
     "playing": false,
@@ -21523,7 +21549,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Location",
-    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying:\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee\n\nMasterclass 2B\nLocation: Dinkelspiel Stage\nPlaying:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins\n\nMasterclass 2C\nLocation: Braun Rehearsal Hall\nPlaying:\nMeck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)\nVirtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)\nQuartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
+    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee\n\nMasterclass 2B\nLocation: Dinkelspiel Stage\nPlaying:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins\n\nMasterclass 2C\nLocation: Braun Rehearsal Hall\nPlaying:\nMeck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)\nVirtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)\nQuartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
     "event_id": "masterclass-2a-2b-2c-broad",
     "overlap_allowed": true,
     "playing": false,
@@ -21615,7 +21641,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing:\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
+    "description": "Playing:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee",
     "event_id": "masterclass-2a-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -21623,12 +21649,12 @@
     "food": false,
     "participants": [
       "Aaron Wilk",
+      "Lloyd Minor",
+      "Neir Eshel",
       "Misha Rafiee",
       "Gregorio Lopes",
       "James Welch",
       "Persis Drell",
-      "Lloyd Minor",
-      "Neir Eshel",
       "Ria Honda",
       "Christopher Lin-Brande",
       "Nina Monfredo",
