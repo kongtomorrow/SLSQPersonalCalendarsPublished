@@ -173,7 +173,7 @@
       box-shadow: 0 1px 2px rgba(31, 35, 40, 0.08);
     }
     .calendar-header-row,
-    .calendar-body-scroll {
+    .calendar-body-row {
       display: grid;
       grid-template-columns: var(--time-axis-width) minmax(0, 1fr);
     }
@@ -184,14 +184,12 @@
       z-index: 4;
       padding-right: var(--vertical-scroll-gutter);
     }
-    .calendar-body-scroll {
+    .calendar-body-row {
       min-height: 0;
       grid-template-rows: max-content;
-      overflow-y: auto;
-      overflow-x: hidden;
+      overflow: hidden;
       position: relative;
       padding-right: var(--vertical-scroll-gutter);
-      scrollbar-gutter: stable;
     }
     .day-header-scroll {
       min-width: 0;
@@ -203,14 +201,13 @@
       grid-row: 1;
       position: relative;
       z-index: 1;
-      align-self: start;
-      height: max-content;
+      align-self: stretch;
       min-height: 0;
       margin-left: -1px;
-      overflow-x: auto;
-      overflow-y: hidden;
+      overflow: auto;
       min-width: 0;
       clip-path: inset(0);
+      scrollbar-gutter: stable;
     }
     .calendar-grid,
     .calendar-header-grid {
@@ -220,6 +217,10 @@
     }
     .calendar-grid {
       height: max-content;
+    }
+    .calendar-header-grid,
+    .time-axis {
+      will-change: transform;
     }
     .day-header {
       background: var(--surface);
@@ -242,15 +243,21 @@
       line-height: 1.2;
     }
     .date-label { color: inherit; }
-    .time-axis {
+    .time-axis-viewport {
       grid-column: 1;
       grid-row: 1;
       position: relative;
       z-index: 2;
       min-height: 0;
+      overflow: hidden;
+      border-right: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .time-axis {
+      position: relative;
+      min-height: 0;
       display: grid;
       grid-template-rows: repeat(64, var(--slot-height));
-      border-right: 1px solid var(--line);
       background: var(--surface);
     }
     .hour-label {
@@ -620,7 +627,8 @@
           </div>
         </div>
       </div>
-      <div class="calendar-body-scroll">
+      <div class="calendar-body-row">
+        <div class="time-axis-viewport">
         <div class="time-axis">
           <div class="hour-label" style="grid-row: 1">8 AM</div>
           <div class="hour-label" style="grid-row: 5">9 AM</div>
@@ -639,6 +647,7 @@
           <div class="hour-label" style="grid-row: 57">10 PM</div>
           <div class="hour-label" style="grid-row: 61">11 PM</div>
           <div class="hour-label" style="grid-row: 65">12 AM</div>
+        </div>
         </div>
         <div class="day-scroll">
           <div class="calendar-grid">
@@ -2639,7 +2648,7 @@ uber to the airport.</div>
           closeEventDialog(dialog);
         });
       }
-      syncCalendarHorizontalScroll();
+      syncCalendarScrollTransforms();
       scrollCalendarToRelevantDate();
     }
 
@@ -2669,15 +2678,24 @@ uber to the airport.</div>
         });
       });
     }
-    function syncCalendarHorizontalScroll() {
-      const bodyScroller = document.querySelector(".day-scroll");
-      const headerScroller = document.querySelector(".day-header-scroll");
-      if (!bodyScroller || !headerScroller) return;
-      const syncHeader = () => {
-        headerScroller.scrollLeft = bodyScroller.scrollLeft;
+    function syncCalendarScrollTransforms() {
+      const scroller = document.querySelector(".day-scroll");
+      const headerGrid = document.querySelector(".calendar-header-grid");
+      const timeAxis = document.querySelector(".time-axis");
+      if (!scroller || !headerGrid || !timeAxis) return;
+      let pending = false;
+      const applyTransforms = () => {
+        headerGrid.style.transform = `translate3d(${-scroller.scrollLeft}px, 0, 0)`;
+        timeAxis.style.transform = `translate3d(0, ${-scroller.scrollTop}px, 0)`;
+        pending = false;
       };
-      bodyScroller.addEventListener("scroll", syncHeader, { passive: true });
-      syncHeader();
+      const requestSync = () => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(applyTransforms);
+      };
+      scroller.addEventListener("scroll", requestSync, { passive: true });
+      applyTransforms();
     }
     function openEventDialog(dialog, button) {
       for (const openDialog of document.querySelectorAll("dialog[open]")) {
