@@ -29,6 +29,7 @@
       --event-depth-bottom: 0.12rem;
       --event-edge-top: 0.12rem;
       --event-edge-bottom: 0.08rem;
+      --event-tight-min-height: 2.25rem;
       --vertical-scroll-gutter: 0;
     }
     * { box-sizing: border-box; }
@@ -360,6 +361,9 @@
       pointer-events: none;
       background: var(--layer-fill, var(--surface));
     }
+    .event-backing.is-tight {
+      min-height: var(--event-tight-min-height);
+    }
     .event-backing.is-segment-start {
       margin-top: calc(var(--event-edge-top) + (var(--layer-depth) * var(--event-depth-y)));
       border-top-left-radius: 2px;
@@ -369,7 +373,6 @@
       margin-bottom: calc(var(--event-edge-bottom) + (var(--layer-depth) * var(--event-depth-bottom)));
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
-    }
     }
     .event-backing[hidden] { display: none; }
     .event-title {
@@ -414,8 +417,7 @@
     }
     .event-card.is-tight {
       justify-content: center;
-      margin-top: var(--event-edge-top);
-      margin-bottom: var(--event-edge-bottom);
+      min-height: var(--event-tight-min-height);
       padding-top: 0.12rem;
       padding-bottom: 0.12rem;
     }
@@ -674,7 +676,7 @@
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="0" style="--layer-start: 37; --layer-span: 12; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="0" style="--layer-start: 37; --layer-span: 12; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="0" data-dialog="event-dialog-0" data-event-search="on campus housing check in front desk at munger (details coming)
 munger check in 5 pm-8 pm" style="--event-start: 37; --event-span: 12; --event-depth: 0;">
             <span class="event-title">On Campus Housing Check In</span>
@@ -716,12 +718,12 @@ munger check in 5 pm-8 pm" style="--event-start: 37; --event-span: 12; --event-d
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="1" style="--layer-start: 5; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="2" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="3" style="--layer-start: 37; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="4" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="5" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="6" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="1" style="--layer-start: 5; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="2" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="3" style="--layer-start: 37; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="4" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="5" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="6" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="1" data-dialog="event-dialog-1" data-event-search="seminar registration campbell recital hall lobby schedule here
 participants will have access to 9 am-11:30 am" style="--event-start: 5; --event-span: 10; --event-depth: 0;">
             <span class="event-title">Seminar Registration</span>
@@ -788,13 +790,13 @@ participants will have access to 9 am-11:30 am" style="--event-start: 5; --event
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="7" style="--layer-start: 5; --layer-span: 3; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="8" style="--layer-start: 13; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="9" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="10" style="--layer-start: 27; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="11" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="12" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="13" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="7" style="--layer-start: 5; --layer-span: 3; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="8" style="--layer-start: 13; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="9" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="10" style="--layer-start: 27; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="11" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="12" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="13" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="7" data-dialog="event-dialog-7" data-event-search="🍇 continental breakfast campbell courtyard 9 am-9:45 am" style="--event-start: 5; --event-span: 3; --event-depth: 0;">
             <span class="event-title">🍇 Continental Breakfast</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Courtyard</span>
@@ -866,17 +868,17 @@ with host stephen prutsman 2:30 pm-4 pm" style="--event-start: 27; --event-span:
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="14" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="15" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="16" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="17" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="18" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="19" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start" data-event-index="20" style="--layer-start: 35; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
-          <div class="event-backing is-segment-end" data-event-index="20" style="--layer-start: 41; --layer-span: 2; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="21" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="22" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="23" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="14" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="15" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="16" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="17" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="18" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="19" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start" data-event-index="20" style="--layer-start: 35; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
+          <div class="event-backing is-roomy is-segment-end" data-event-index="20" style="--layer-start: 41; --layer-span: 2; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="21" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="22" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="23" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="14" data-dialog="event-dialog-14" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -980,14 +982,14 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="24" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="25" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="26" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="27" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="28" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="29" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="30" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="31" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="24" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="25" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="26" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="27" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="28" style="--layer-start: 41; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="29" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="30" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="31" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -1070,15 +1072,15 @@ drop in as you wish 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="32" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="33" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="34" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="35" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="36" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="37" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="38" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="39" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="40" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="32" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="33" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="34" style="--layer-start: 11; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="35" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="36" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="37" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="38" style="--layer-start: 35; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="39" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="40" style="--layer-start: 53; --layer-span: 6; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
           <button class="event-card is-tight" type="button" data-event-index="32" data-dialog="event-dialog-32" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -1190,13 +1192,13 @@ and more! 9 pm-10:30 pm" style="--event-start: 53; --event-span: 6; --event-dept
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="41" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="42" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="43" style="--layer-start: 15; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="44" style="--layer-start: 18; --layer-span: 3; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="45" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="46" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="47" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="41" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="42" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="43" style="--layer-start: 15; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="44" style="--layer-start: 18; --layer-span: 3; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="45" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="46" style="--layer-start: 33; --layer-span: 6; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="47" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="41" data-dialog="event-dialog-41" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -1294,13 +1296,13 @@ coaching: john novacek, daniel phillips, hannah collins 4 pm-5:30 pm" style="--e
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="48" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="49" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="50" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="51" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="52" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="53" style="--layer-start: 39; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="54" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="48" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="49" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="50" style="--layer-start: 17; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="51" style="--layer-start: 21; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="52" style="--layer-start: 30; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="53" style="--layer-start: 39; --layer-span: 10; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="54" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="48" data-dialog="event-dialog-48" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -1375,14 +1377,14 @@ details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --ev
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="55" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="56" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="57" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start" data-event-index="58" style="--layer-start: 25; --layer-span: 1; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
-          <div class="event-backing is-segment-end" data-event-index="58" style="--layer-start: 26; --layer-span: 3; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="59" style="--layer-start: 37; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="60" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="61" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="55" style="--layer-start: 3; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="56" style="--layer-start: 6; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="57" style="--layer-start: 22; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start" data-event-index="58" style="--layer-start: 25; --layer-span: 1; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-overlap-backing);"></div>
+          <div class="event-backing is-medium is-segment-end" data-event-index="58" style="--layer-start: 26; --layer-span: 3; --layer-depth: 1; --layer-z: 19; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="59" style="--layer-start: 37; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-medium is-segment-start is-segment-end" data-event-index="60" style="--layer-start: 45; --layer-span: 4; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="61" style="--layer-start: 49; --layer-span: 16; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-tight" type="button" data-event-index="55" data-dialog="event-dialog-55" data-event-search="🗣️ the seminar crooners braun courtyard https://drive.google.com/drive/folders/1dexywolalbgq-imm0dqiuove3bmlt8fx 8:30 am-9 am" style="--event-start: 3; --event-span: 2; --event-depth: 0;">
             <span class="event-title">🗣️ The Seminar Crooners</span>
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Braun Courtyard</span>
@@ -1453,10 +1455,10 @@ details via email 5:30 pm-8 pm" style="--event-start: 39; --event-span: 10; --ev
           <div class="time-grid-line is-hour" style="--time-row: 61"></div>
           <div class="time-grid-line" style="--time-row: 63"></div>
           <div class="time-grid-line is-hour" style="--time-row: 65"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="62" style="--layer-start: 1; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="63" style="--layer-start: 11; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="64" style="--layer-start: 13; --layer-span: 19; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
-          <div class="event-backing is-segment-start is-segment-end" data-event-index="65" style="--layer-start: 32; --layer-span: 15; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="62" style="--layer-start: 1; --layer-span: 8; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-tight is-segment-start is-segment-end" data-event-index="63" style="--layer-start: 11; --layer-span: 2; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="64" style="--layer-start: 13; --layer-span: 19; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
+          <div class="event-backing is-roomy is-segment-start is-segment-end" data-event-index="65" style="--layer-start: 32; --layer-span: 15; --layer-depth: 0; --layer-z: 9; --layer-fill: var(--event-fill);"></div>
           <button class="event-card is-roomy" type="button" data-event-index="62" data-dialog="event-dialog-62" data-event-search="munger check out 8 am-10 am" style="--event-start: 1; --event-span: 8; --event-depth: 0;">
             <span class="event-title">Munger Check Out</span>
             
