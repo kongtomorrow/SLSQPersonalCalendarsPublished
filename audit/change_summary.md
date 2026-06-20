@@ -1,10 +1,13 @@
 # Calendar Generation Succeeded
 
-- Previous baseline: found, but not comparable by event_id
-- Before events: 1
+- Previous baseline: found
+- Before events: 1193
 - After events: 1193
-- Delta: +1192
-- Event add/remove comparison skipped: no matching `event_id` values were found in the previous baseline.
+- Delta: +0
+- Added events: 0
+- Removed events: 0
+- Changed events: 0
+- People affected by listed changes: 0
 
 ## Fixed Inconsistencies
 
@@ -16,7 +19,15 @@ None.
 
 ```json
 {
-  "MASTER": 1
+  "COACHING": 1042,
+  "FACULTY": 35,
+  "FACULTY_CONCERTS": 25,
+  "FACULTY_DAILY": 1,
+  "MASTERCLASS": 22,
+  "PELZER": 20,
+  "REGISTRATION": 25,
+  "SIGHT_READING": 8,
+  "TRAVEL": 15
 }
 ```
 
