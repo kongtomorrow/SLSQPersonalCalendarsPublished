@@ -1,26 +1,22 @@
 # Calendar Generation Succeeded
 
-- Previous baseline: found
-- Before events: 878
-- After events: 878
-- Delta: +0
-- Added exact events: 0
-- Removed exact events: 0
-- Changed same slots: 0
-- People affected by listed changes: 0
+- Previous baseline: found, but not comparable by event_id
+- Before events: 1
+- After events: 1193
+- Delta: +1192
+- Event add/remove comparison skipped: no matching `event_id` values were found in the previous baseline.
 
-## Events By Source
+## Fixed Inconsistencies
+
+None.
+
+## Events By Kind
 
 ### Before
 
 ```json
 {
-  "Adam Pelzer Appointments": 20,
-  "Coaching by Ensemble": 530,
-  "Faculty Schedule": 19,
-  "Faculty Schedule Daily Tabs": 19,
-  "Master Schedule": 284,
-  "Masterclass Assignments": 6
+  "MASTER": 1
 }
 ```
 
@@ -28,11 +24,73 @@
 
 ```json
 {
-  "Adam Pelzer Appointments": 20,
-  "Coaching by Ensemble": 530,
-  "Faculty Schedule": 19,
-  "Faculty Schedule Daily Tabs": 19,
-  "Master Schedule": 284,
-  "Masterclass Assignments": 6
+  "COACHING": 1042,
+  "FACULTY": 35,
+  "FACULTY_CONCERTS": 25,
+  "FACULTY_DAILY": 1,
+  "MASTERCLASS": 22,
+  "PELZER": 20,
+  "REGISTRATION": 25,
+  "SIGHT_READING": 8,
+  "TRAVEL": 15
 }
 ```
+
+## Calendar Links
+
+### Alexi Kenney
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Alexi_Kenney.ics
+
+### Anthony Manzo
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Anthony_Manzo.ics
+
+### Ayane Kozasa
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Ayane_Kozasa.ics
+
+### Daniel Phillips
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Daniel_Phillips.ics
+
+### Dimitri Murrath
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Dimitri_Murrath.ics
+
+### Hannah Collins
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Hannah_Collins.ics
+
+### Howard Nelson
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Howard_Nelson.ics
+
+### Jennah Delp Somers
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Jennah_Delp_Somers.ics
+
+### John Novacek
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/John_Novacek.ics
+
+### Lesley Robertson
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Lesley_Robertson.ics
+
+### Nina Lee
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Nina_Lee.ics
+
+### Owen Dalby
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Owen_Dalby.ics
+
+### Pamela Frank
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Pamela_Frank.ics
+
+### Paul Wiancko
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Paul_Wiancko.ics
+
+### Pedja Muzijevic
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Pedja_Muzijevic.ics
+
+### Stephen Prutsman
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Stephen_Prutsman.ics
+
+### Steven Tenenbom
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Steven_Tenenbom.ics
+
+### Todd Palmer
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/Todd_Palmer.ics
+
+### William Coleman
+webcal://kongtomorrow.github.io/SLSQPersonalCalendarsPublished/calendars/William_Coleman.ics
