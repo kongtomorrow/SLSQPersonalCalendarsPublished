@@ -2473,9 +2473,6 @@ uber to the airport.</div>
     let calendarAutoScrollRun = 0;
     let userAdjustedCalendarScroll = false;
 
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
     window.addEventListener("pageshow", () => scheduleCalendarAutoScroll());
     initializeCalendarPage();
 
@@ -2551,6 +2548,12 @@ uber to the airport.</div>
         || columns.find((column) => column.dataset.date > todayIso)
         || columns[columns.length - 1];
     }
+    function calendarContentTop(scroller, element) {
+      if (!element) return 0;
+      const scrollerRect = scroller.getBoundingClientRect();
+      const elementRect = element.getBoundingClientRect();
+      return elementRect.top - scrollerRect.top + scroller.scrollTop;
+    }
     function scrollTopForCurrentTime(scroller) {
       const shell = scroller.closest(".calendar-shell");
       const timeAxis = scroller.querySelector(".time-axis");
@@ -2564,7 +2567,7 @@ uber to the airport.</div>
       const startMinute = startHour * 60;
       const endMinute = endHour * 60;
       const minute = clamp(localTimeMinutes(), startMinute, endMinute);
-      const bodyTop = calendarGrid?.offsetTop || 0;
+      const bodyTop = calendarContentTop(scroller, calendarGrid);
       const minuteOffset = ((minute - startMinute) / slotMinutes) * slotHeight;
       const contextOffset = (60 / slotMinutes) * slotHeight;
       return clamp(bodyTop + minuteOffset - contextOffset, 0, scroller.scrollHeight - scroller.clientHeight);
