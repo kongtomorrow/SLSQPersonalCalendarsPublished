@@ -27,6 +27,8 @@
       --event-depth-x: 0.55rem;
       --event-depth-y: 0.36rem;
       --event-depth-bottom: 0.12rem;
+      --event-edge-top: 0.12rem;
+      --event-edge-bottom: 0.08rem;
     }
     * { box-sizing: border-box; }
     html {
@@ -298,8 +300,8 @@
       max-width: 100%;
       min-width: 0;
       margin-left: calc(var(--event-depth) * var(--event-depth-x));
-      margin-top: calc(0.08rem + (var(--event-depth) * var(--event-depth-y)));
-      margin-bottom: calc(0.08rem + (var(--event-depth) * var(--event-depth-bottom)));
+      margin-top: calc(var(--event-edge-top) + (var(--event-depth) * var(--event-depth-y)));
+      margin-bottom: calc(var(--event-edge-bottom) + (var(--event-depth) * var(--event-depth-bottom)));
       min-height: 0;
       overflow: hidden;
       border: 0;
@@ -358,12 +360,12 @@
       background: var(--layer-fill, var(--surface));
     }
     .event-backing.is-segment-start {
-      margin-top: calc(var(--layer-depth) * var(--event-depth-y));
+      margin-top: calc(var(--event-edge-top) + (var(--layer-depth) * var(--event-depth-y)));
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
     }
     .event-backing.is-segment-end {
-      margin-bottom: calc(0.08rem + (var(--layer-depth) * var(--event-depth-bottom)));
+      margin-bottom: calc(var(--event-edge-bottom) + (var(--layer-depth) * var(--event-depth-bottom)));
       border-bottom-left-radius: 2px;
       border-bottom-right-radius: 2px;
     }
