@@ -2604,11 +2604,18 @@ uber to the airport.</div>
       let gesture = null;
       let settleTimer = 0;
       let adjusting = false;
-      let enforcingAxis = false;
 
       const dayColumns = () => Array.from(scroller.querySelectorAll(".day-column[data-date]"));
       const timeAxisWidth = () => scroller.querySelector(".time-axis")?.offsetWidth || 0;
       const dayLeft = (column) => Math.max(column.offsetLeft - timeAxisWidth(), 0);
+      const subtleDayChangeHaptic = () => {
+        if (!navigator.vibrate) return;
+        try {
+          navigator.vibrate(8);
+        } catch {
+          // Ignore browsers that expose but reject vibration.
+        }
+      };
       const nearestDayIndex = (left) => {
         const columns = dayColumns();
         if (!columns.length) return 0;
@@ -2623,20 +2630,24 @@ uber to the airport.</div>
         });
         return bestIndex;
       };
-      const beginGesture = () => {
-        if (!mobileQuery.matches) return;
+      const beginGesture = (event) => {
+        if (!mobileQuery.matches || event.touches.length !== 1) return;
+        const touch = event.touches[0];
         window.clearTimeout(settleTimer);
         gesture = {
           left: scroller.scrollLeft,
           top: scroller.scrollTop,
+          touchX: touch.clientX,
+          touchY: touch.clientY,
           index: nearestDayIndex(scroller.scrollLeft),
           axis: null,
         };
       };
-      const lockGestureAxis = () => {
-        if (enforcingAxis || adjusting || !gesture || !mobileQuery.matches) return;
-        const horizontal = scroller.scrollLeft - gesture.left;
-        const vertical = scroller.scrollTop - gesture.top;
+      const handleTouchMove = (event) => {
+        if (adjusting || !gesture || !mobileQuery.matches || event.touches.length !== 1) return;
+        const touch = event.touches[0];
+        const horizontal = gesture.touchX - touch.clientX;
+        const vertical = gesture.touchY - touch.clientY;
         const absHorizontal = Math.abs(horizontal);
         const absVertical = Math.abs(vertical);
         if (!gesture.axis && Math.max(absHorizontal, absVertical) >= 10) {
@@ -2646,17 +2657,19 @@ uber to the airport.</div>
             gesture.axis = "vertical";
           }
         }
-        if (gesture.axis === "vertical" && absHorizontal > 0.5) {
-          enforcingAxis = true;
-          scroller.scrollTo({ left: gesture.left, top: scroller.scrollTop, behavior: "auto" });
-          requestAnimationFrame(() => {
-            enforcingAxis = false;
+        if (!gesture.axis) return;
+        if (event.cancelable) event.preventDefault();
+        if (gesture.axis === "vertical") {
+          scroller.scrollTo({
+            left: gesture.left,
+            top: clamp(gesture.top + vertical, 0, scroller.scrollHeight - scroller.clientHeight),
+            behavior: "auto",
           });
-        } else if (gesture.axis === "horizontal" && absVertical > 0.5) {
-          enforcingAxis = true;
-          scroller.scrollTo({ left: scroller.scrollLeft, top: gesture.top, behavior: "auto" });
-          requestAnimationFrame(() => {
-            enforcingAxis = false;
+        } else {
+          scroller.scrollTo({
+            left: clamp(gesture.left + horizontal, 0, scroller.scrollWidth - scroller.clientWidth),
+            top: gesture.top,
+            behavior: "auto",
           });
         }
       };
@@ -2675,7 +2688,9 @@ uber to the airport.</div>
           ? clamp(projectedIndex, gesture.index - 1, gesture.index + 1)
           : gesture.index;
         const targetLeft = dayLeft(columns[targetIndex]);
+        const didChangeDay = targetIndex !== gesture.index;
         gesture = null;
+        if (didChangeDay) subtleDayChangeHaptic();
         if (Math.abs(scroller.scrollLeft - targetLeft) < 1) return;
         adjusting = true;
         scroller.scrollTo({ left: targetLeft, top: scroller.scrollTop, behavior: "smooth" });
@@ -2688,18 +2703,12 @@ uber to the airport.</div>
         window.clearTimeout(settleTimer);
         settleTimer = window.setTimeout(settleGesture, 120);
       };
-      const handleScroll = () => {
-        lockGestureAxis();
-        scheduleSettle();
-      };
 
-      for (const eventName of ["touchstart", "pointerdown"]) {
-        scroller.addEventListener(eventName, beginGesture, { passive: true });
-      }
-      for (const eventName of ["touchend", "touchcancel", "pointerup", "pointercancel"]) {
+      scroller.addEventListener("touchstart", beginGesture, { passive: true });
+      scroller.addEventListener("touchmove", handleTouchMove, { passive: false });
+      for (const eventName of ["touchend", "touchcancel"]) {
         scroller.addEventListener(eventName, scheduleSettle, { passive: true });
       }
-      scroller.addEventListener("scroll", handleScroll, { passive: true });
       scroller.addEventListener("scrollend", settleGesture, { passive: true });
     }
     function scheduleCalendarAutoScroll() {
