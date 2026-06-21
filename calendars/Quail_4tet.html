@@ -547,17 +547,23 @@
     }
     @container (max-width: 44rem) {
       .calendar-shell {
-        --time-axis-width: 3.5rem;
+        --time-axis-width: 3rem;
       }
       .calendar-grid,
       .calendar-header-grid {
         display: grid;
-        grid-template-columns: repeat(var(--day-count), minmax(12.25rem, 68vw));
+        grid-template-columns: repeat(var(--day-count), max(16rem, calc(100cqw - var(--time-axis-width) - 2.25rem)));
         min-width: max-content;
       }
     }
     @media (max-width: 44rem) {
-      main { padding: 0.75rem 0.75rem 0; }
+      main { padding: 0.75rem 0 0; }
+      .toolbar { padding: 0 0.75rem; }
+      .calendar-shell {
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
       .event-fields { grid-template-columns: 1fr; }
       .event-fields dt { margin-top: 0.2rem; }
     }
