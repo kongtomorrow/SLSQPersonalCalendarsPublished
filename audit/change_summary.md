@@ -6,8 +6,8 @@
 - Delta: +0
 - Added events: 0
 - Removed events: 0
-- Changed events: 0
-- People affected by listed changes: 0
+- Changed events: 2
+- People affected by listed changes: 3
 
 ## Fixed Inconsistencies
 
@@ -46,6 +46,22 @@ None.
   "TRAVEL": 15
 }
 ```
+
+### Changed Event Examples
+- Changed fields: participants
+- Before:
+  - `2026-06-23 14:45:00-15:00:00 | Adam Pelzer appointment | Campbell Recital Hall | Jocelyn Lamm Startz | PELZER`
+- After:
+  - `2026-06-23 14:45:00-15:00:00 | Adam Pelzer appointment | Campbell Recital Hall | Chung-Pei Ma | PELZER`
+- Changed fields: participants
+- Before:
+  - `2026-06-24 14:15:00-14:30:00 | Adam Pelzer appointment | Campbell Recital Hall | Alex Li | PELZER`
+- After:
+  - `2026-06-24 14:15:00-14:30:00 | Adam Pelzer appointment | Campbell Recital Hall | Jocelyn Lamm Startz | PELZER`
+
+## Affected People
+
+Alex Li, Chung-Pei Ma, Jocelyn Lamm Startz
 
 ## Calendar Links
 
