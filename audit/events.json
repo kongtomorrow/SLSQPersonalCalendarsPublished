@@ -23304,7 +23304,7 @@
       "sheet_name": null,
       "row_number": 11,
       "column_number": null,
-      "note": null
+      "note": "data inconsistency validation: documented overlap for Steven Tenenbom"
     },
     "title": "Quail 4tet",
     "date": "2026-06-25",
@@ -23896,7 +23896,7 @@
       "sheet_name": null,
       "row_number": 4,
       "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early; data inconsistency validation: documented overlap for Steven Tenenbom; data inconsistency verification: faculty daily tab omits generated event for Steven Tenenbom"
     },
     "title": "DR: The Dolphins",
     "date": "2026-06-25",
