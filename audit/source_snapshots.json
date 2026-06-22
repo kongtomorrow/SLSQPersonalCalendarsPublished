@@ -6,7 +6,7 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1ggakIunFjf3Tao7WUVbvChfgaEAuJLuNeZg33RLCJQg/export?format=csv&gid=0",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/adam_pelzer_appointments.csv",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:28.684543Z",
+    "read_at": "2026-06-22T15:52:41.200445Z",
     "byte_size": 1994,
     "sha256": "390500b2bceb5f0f8331520d7b16268e5db613c9c091cd30fe9b728328b264b7",
     "cache_refreshed": true
@@ -18,7 +18,7 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1YeOFA_vwsjhNJlGoNZRUjlIxzCkfMmA8mbeTKVOqTas/export?format=csv&gid=0",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/participant_emails.csv",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:20.672738Z",
+    "read_at": "2026-06-22T15:52:33.867087Z",
     "byte_size": 197,
     "sha256": "96a1ed92a7ba44098d0d569f0c93c0228c6fbf4085d5903f42be1ce301291c27",
     "cache_refreshed": true
@@ -30,9 +30,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1ZaXzbND_18PxlFrc6Mg1ceGcM-ECkjm8hrBL-wYk0js/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/coaching_live.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:27.143505Z",
+    "read_at": "2026-06-22T15:52:40.023712Z",
     "byte_size": 122154,
-    "sha256": "fe9af4e5db92cafb527e5cd264140c802d0b8dd559ec461b032edfc8a4ad9dd7",
+    "sha256": "ed6ae9fd0a9a783fc6a636d4f5480f5f96b22cabc337997c87b8d3879199ef5e",
     "cache_refreshed": true
   },
   {
@@ -42,9 +42,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1aAjd1ejH1aF9bFtnUaaazKvtLAMfVk7SWs-sr1XOkG0/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/dress_rehearsal_schedule_2026.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:25.378438Z",
+    "read_at": "2026-06-22T15:52:38.476866Z",
     "byte_size": 76096,
-    "sha256": "2cc7c37ca9b5787d987230300568c5a1729616d4c36432bb089fa00d40275bf2",
+    "sha256": "b5fc827dd87a81e8cd727fc09cc102e6a8d8a1cae8b4292e396b25231fb275b1",
     "cache_refreshed": true
   },
   {
@@ -54,7 +54,7 @@
     "read_url": "https://docs.google.com/document/d/1-pde09F4bacKQ0r-qcWOkRnVRNbcTDNA7B95F2s3zWE/export?format=txt",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/faculty_concerts.txt",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:21.379821Z",
+    "read_at": "2026-06-22T15:52:34.902416Z",
     "byte_size": 2332,
     "sha256": "b30cd42273af598b806a2fd08a1fa7cd6f42e972857118ab255c0c22b37f9ef8",
     "cache_refreshed": true
@@ -66,7 +66,7 @@
     "read_url": "https://music.stanford.edu/events/faculty-ensembles/st-lawrence-string-quartet/chamber-music-seminar-faculty",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/faculty.html",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:20.830036Z",
+    "read_at": "2026-06-22T15:52:34.287881Z",
     "byte_size": 106579,
     "sha256": "fc951fc3bc33ac8624090b6303fc1166d36a066a21c9fef4ecf0390ebccda9f7",
     "cache_refreshed": true
@@ -78,9 +78,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1T-FZZtVfceQnvWS1haT8nd2dI_Y_UNMVB9f-czVJLG4/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/faculty_schedule.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:23.066530Z",
+    "read_at": "2026-06-22T15:52:36.428511Z",
     "byte_size": 690769,
-    "sha256": "d1e5bfaa756a0a9d43b8c3b7a1e9ba6a0579686ddf9522757c55d624f48116e7",
+    "sha256": "d9917aa1eef717c9bc78a009269c7ff3fbef18073dc9540cac2b1142a62f77f7",
     "cache_refreshed": true
   },
   {
@@ -90,9 +90,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1T-FZZtVfceQnvWS1haT8nd2dI_Y_UNMVB9f-czVJLG4/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/faculty_schedule.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:29.432788Z",
+    "read_at": "2026-06-22T15:52:41.893445Z",
     "byte_size": 690769,
-    "sha256": "d5acbb9788124e8e84ee9d7e61ca2061bc3f46793ca65db792682314246ca8b9",
+    "sha256": "55762e4973ecfd691f58b059eae8068aa579812ad372a5e107aac8b1913fa100",
     "cache_refreshed": true
   },
   {
@@ -102,9 +102,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1jWYW62nFHXU9CjoYCwb7NhQ1UX9QAy6gOr5anmu2YZA/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/masterclass_assignments.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:26.188853Z",
+    "read_at": "2026-06-22T15:52:39.065487Z",
     "byte_size": 54224,
-    "sha256": "4617900eeff7470453429495b35582f363cfb35b08a51ff4ae20922ba008c689",
+    "sha256": "af0f35b245c9921118250f56a0858499ba99821581d2585bf71b5cce153b0cde",
     "cache_refreshed": true
   },
   {
@@ -114,9 +114,9 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1fXcS6ulNKcqx6GhrsrbHbcPUp8wwlB9YrpqXGa-kCcw/export?format=xlsx",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/general_master.xlsx",
     "export_format": "xlsx",
-    "read_at": "2026-06-22T15:35:21.811929Z",
+    "read_at": "2026-06-22T15:52:35.348970Z",
     "byte_size": 73762,
-    "sha256": "0e773290b98825a9d6f32115750e58edf39dacef2f9f87ee89a39648065593aa",
+    "sha256": "3c1587b1a52a7ed3b65526383ebe633cc1e3d9b64bd6f5ef7fc4119c6b1ab903",
     "cache_refreshed": true
   },
   {
@@ -126,7 +126,7 @@
     "read_url": "https://docs.google.com/spreadsheets/d/16asyZNlL_uyFiyZLd_SLLF-UkAbZuJc5SKusZuibyiI/export?format=csv&gid=1303133372",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/participants_live.csv",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:20.136154Z",
+    "read_at": "2026-06-22T15:52:33.082435Z",
     "byte_size": 4926,
     "sha256": "9aab2dc9762fa9bf6f8e49387d81038718d3cead3adb72af73dd019b9b02cb71",
     "cache_refreshed": true
@@ -138,7 +138,7 @@
     "read_url": "https://docs.google.com/spreadsheets/d/1z1E5xtp9r6AoY9tQFVpTBYgmNYhPS5-I/export?format=csv&gid=194977126",
     "cache_path": "/home/runner/work/SLSQPersonalCalendars/SLSQPersonalCalendars/outputs/outputs/registration.csv",
     "export_format": "text",
-    "read_at": "2026-06-22T15:35:26.653830Z",
+    "read_at": "2026-06-22T15:52:39.554440Z",
     "byte_size": 2322,
     "sha256": "01cde7e50edad75c418c0e3fb067a2c363cc19b65cfb4c5789885209bba09091",
     "cache_refreshed": true
