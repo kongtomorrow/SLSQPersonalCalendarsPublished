@@ -2,12 +2,12 @@
 
 - Previous baseline: found
 - Before events: 1246
-- After events: 1246
-- Delta: +0
-- Added events: 0
+- After events: 1264
+- Delta: +18
+- Added events: 18
 - Removed events: 0
 - Changed events: 0
-- People affected by listed changes: 0
+- People affected by listed changes: 44
 
 ## Fixed Inconsistencies
 
@@ -36,7 +36,7 @@ None.
 
 ```json
 {
-  "COACHING": 1042,
+  "COACHING": 1060,
   "FACULTY": 35,
   "FACULTY_CONCERTS": 25,
   "FACULTY_DAILY": 1,
@@ -48,6 +48,30 @@ None.
   "TRAVEL": 15
 }
 ```
+
+### Added Examples
+- `+` 2026-06-27 14:30:00-15:30:00 | Will Coaching: Chane String Quartet | 213 | Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Chane String Quartet | 213 | William Coleman | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Paul Coaching: Murray Quartet | 222A | Dustin Breshears, Anthony Chukhlov, Leslie Ashworth, Melissa Lam | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Murray Quartet | 222A | Paul Wiancko | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Novacek Coaching: Pinky Quartet | 105 | Leyan Lo, Alex Li, Eric Cheng, Sheila Chan | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Pinky Quartet | 105 | John Novacek | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Hannah Coaching: Quartet SAMM | 225 | Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Quartet SAMM | 225 | Hannah Collins | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Alexi Coaching: The Amiche Quartet | 215 | Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | The Amiche Quartet | 215 | Alexi Kenney | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Ayane Coaching: The Dolphins | 227 | Luke Henderson, Isaac Park, James Preucil, Ian Maloney | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | The Dolphins | 227 | Ayane Kozasa | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Owen Coaching: The Quarktet | 202 | Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | The Quarktet | 202 | Owen Dalby | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Dimitri Coaching: WaMaTachou Quartet | 221 | Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | WaMaTachou Quartet | 221 | Dimitri Murrath | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Nina Coaching: Wishel Piano Trio | 203 | Aaron Wilk, Lloyd Minor, Neir Eshel | COACHING
+- `+` 2026-06-27 14:30:00-15:30:00 | Wishel Piano Trio | 203 | Nina Lee | COACHING
+
+## Affected People
+
+Aaron Wilk, Abigail Rogers, Alex Li, Alexi Kenney, Anthony Chukhlov, Ari Freed, Ari Le, Ayane Kozasa, Christopher Lin-Brande, Chung-Pei Ma, Cindy Wang, Cristina Ruotolo, Derek Katz, Dimitri Murrath, Dustin Breshears, Emil Ma, Eric Cheng, Hannah Collins, Hilary Meltzer, Ian Maloney, Isaac Park, James Preucil, Jim Chou, Jocelyn Lamm Startz, John Novacek, Leslie Ashworth, Leyan Lo, Lloyd Minor, Luke Henderson, Marandi Hostetter, Meg Lamm, Melissa Chu, Melissa Lam, Neir Eshel, Nina Lee, Nina Monfredo, Olivia Tam, Owen Dalby, Paul Wiancko, Ria Honda, Shawn Barnett, Sheila Chan, Tyson Mao, William Coleman
 
 ## Calendar Links
 

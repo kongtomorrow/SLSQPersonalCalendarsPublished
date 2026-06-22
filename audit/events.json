@@ -36610,6 +36610,242 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 19,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 5"
+    },
+    "title": "Alexi Coaching: The Amiche Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "215",
+    "description": "",
+    "event_id": "coaching-the-amiche-quartet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Cristina Ruotolo",
+      "Meg Lamm",
+      "Jocelyn Lamm Startz",
+      "Hilary Meltzer"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 8"
+    },
+    "title": "Ayane Coaching: The Dolphins",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 21,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 7"
+    },
+    "title": "Chane String Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "213",
+    "description": "",
+    "event_id": "coaching-chane-string-quartet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "William Coleman"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 20,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 9"
+    },
+    "title": "Dimitri Coaching: WaMaTachou Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "221",
+    "description": "",
+    "event_id": "coaching-wamatachou-quartet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Jim Chou",
+      "Tyson Mao",
+      "Cindy Wang",
+      "Olivia Tam"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 17,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 12"
+    },
+    "title": "Hannah Coaching: Quartet SAMM",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "225",
+    "description": "",
+    "event_id": "coaching-quartet-samm-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Shawn Barnett",
+      "Ari Le",
+      "Marandi Hostetter",
+      "Melissa Chu"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 9,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 14"
+    },
+    "title": "Murray Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "222A",
+    "description": "",
+    "event_id": "coaching-murray-quartet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Paul Wiancko"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 28,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 13"
+    },
+    "title": "Nina Coaching: Wishel Piano Trio",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "203",
+    "description": "",
+    "event_id": "coaching-wishel-piano-trio-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Aaron Wilk",
+      "Lloyd Minor",
+      "Neir Eshel"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 13,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 18"
+    },
+    "title": "Novacek Coaching: Pinky Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "105",
+    "description": "",
+    "event_id": "coaching-pinky-quartet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Leyan Lo",
+      "Alex Li",
+      "Eric Cheng",
+      "Sheila Chan"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 26,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 3"
+    },
+    "title": "Owen Coaching: The Quarktet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "202",
+    "description": "",
+    "event_id": "coaching-the-quarktet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Emil Ma",
+      "Chung-Pei Ma",
+      "Derek Katz",
+      "Ari Freed"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 30,
       "column_number": null,
       "note": null
@@ -36634,6 +36870,228 @@
       "James Welch",
       "Jim Zehnder",
       "Persis Drell"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 9,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 14"
+    },
+    "title": "Paul Coaching: Murray Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "222A",
+    "description": "",
+    "event_id": "coaching-murray-quartet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Dustin Breshears",
+      "Anthony Chukhlov",
+      "Leslie Ashworth",
+      "Melissa Lam"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 13,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 18"
+    },
+    "title": "Pinky Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "105",
+    "description": "",
+    "event_id": "coaching-pinky-quartet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "John Novacek"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 17,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 12"
+    },
+    "title": "Quartet SAMM",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "225",
+    "description": "",
+    "event_id": "coaching-quartet-samm-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Hannah Collins"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 19,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 5"
+    },
+    "title": "The Amiche Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "215",
+    "description": "",
+    "event_id": "coaching-the-amiche-quartet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Alexi Kenney"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 8"
+    },
+    "title": "The Dolphins",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "227",
+    "description": "",
+    "event_id": "coaching-the-dolphins-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Ayane Kozasa"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 26,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 3"
+    },
+    "title": "The Quarktet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "202",
+    "description": "",
+    "event_id": "coaching-the-quarktet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Owen Dalby"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 20,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 9"
+    },
+    "title": "WaMaTachou Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "221",
+    "description": "",
+    "event_id": "coaching-wamatachou-quartet-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Dimitri Murrath"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 21,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 7"
+    },
+    "title": "Will Coaching: Chane String Quartet",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "213",
+    "description": "",
+    "event_id": "coaching-chane-string-quartet-2026-06-27-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Ria Honda",
+      "Christopher Lin-Brande",
+      "Nina Monfredo",
+      "Abigail Rogers"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 28,
+      "column_number": null,
+      "note": "candidate Saturday Session IV coaching confirmed by Faculty Schedule Daily Tabs sheet Saturday 627 row 28 column 13"
+    },
+    "title": "Wishel Piano Trio",
+    "date": "2026-06-27",
+    "start": "14:30:00",
+    "end": "15:30:00",
+    "location": "203",
+    "description": "",
+    "event_id": "coaching-wishel-piano-trio-2026-06-27-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Nina Lee"
     ]
   },
   {
