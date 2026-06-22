@@ -177,6 +177,7 @@
       overflow: auto;
       scroll-snap-type: x mandatory;
       scrollbar-gutter: stable;
+      touch-action: pan-y;
     }
     .calendar-canvas {
       display: grid;
@@ -2813,6 +2814,7 @@ uber to the airport.</div>
       let gesture = null;
       let settleTimer = 0;
       let adjusting = false;
+      const gestureThreshold = 20;
 
       const dayColumns = () => Array.from(scroller.querySelectorAll(".day-column[data-date]"));
       const timeAxisWidth = () => scroller.querySelector(".time-axis")?.offsetWidth || 0;
@@ -2839,14 +2841,37 @@ uber to the airport.</div>
         });
         return bestIndex;
       };
-      const beginGesture = () => {
-        if (!mobileQuery.matches) return;
+      const beginGesture = (event) => {
+        if (!mobileQuery.matches || event.pointerType !== "touch" || !event.isPrimary) return;
         window.clearTimeout(settleTimer);
         gesture = {
           left: scroller.scrollLeft,
           top: scroller.scrollTop,
+          startX: event.clientX,
+          startY: event.clientY,
           index: nearestDayIndex(scroller.scrollLeft),
+          pointerId: event.pointerId,
+          axis: null,
         };
+      };
+      const dragGesture = (event) => {
+        if (adjusting || !gesture || event.pointerId !== gesture.pointerId || !mobileQuery.matches) return;
+        const horizontal = gesture.startX - event.clientX;
+        const vertical = gesture.startY - event.clientY;
+        const absHorizontal = Math.abs(horizontal);
+        const absVertical = Math.abs(vertical);
+        if (!gesture.axis && Math.max(absHorizontal, absVertical) >= gestureThreshold) {
+          gesture.axis = absHorizontal > absVertical * 1.2 ? "horizontal" : "vertical";
+          if (gesture.axis === "horizontal") {
+            scroller.setPointerCapture?.(event.pointerId);
+          }
+        }
+        if (gesture.axis !== "horizontal") return;
+        scroller.scrollTo({
+          left: clamp(gesture.left + horizontal, 0, scroller.scrollWidth - scroller.clientWidth),
+          top: gesture.top,
+          behavior: "auto",
+        });
       };
       const settleGesture = () => {
         if (adjusting || !gesture || !mobileQuery.matches) return;
@@ -2855,7 +2880,8 @@ uber to the airport.</div>
         const columnWidth = columns[0].getBoundingClientRect().width || 1;
         const horizontal = scroller.scrollLeft - gesture.left;
         const vertical = scroller.scrollTop - gesture.top;
-        const committedHorizontal = Math.abs(horizontal) >= Math.min(columnWidth * 0.4, 160)
+        const committedHorizontal = gesture.axis === "horizontal"
+          && Math.abs(horizontal) >= Math.min(columnWidth * 0.4, 160)
           && Math.abs(horizontal) > Math.abs(vertical) * 0.75;
         const projectedIndex = nearestDayIndex(scroller.scrollLeft);
         const targetIndex = committedHorizontal
@@ -2878,11 +2904,11 @@ uber to the airport.</div>
         settleTimer = window.setTimeout(settleGesture, 120);
       };
 
-      scroller.addEventListener("touchstart", beginGesture, { passive: true });
-      for (const eventName of ["touchend", "touchcancel"]) {
+      scroller.addEventListener("pointerdown", beginGesture, { passive: true });
+      scroller.addEventListener("pointermove", dragGesture, { passive: true });
+      for (const eventName of ["pointerup", "pointercancel", "lostpointercapture"]) {
         scroller.addEventListener(eventName, scheduleSettle, { passive: true });
       }
-      scroller.addEventListener("scroll", scheduleSettle, { passive: true });
       scroller.addEventListener("scrollend", settleGesture, { passive: true });
     }
     function scheduleCalendarAutoScroll() {
