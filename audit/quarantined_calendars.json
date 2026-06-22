@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "calendar_key": "Anthony Manzo",
+    "filename": "Anthony_Manzo.ics",
+    "preserved_local_ics": true,
+    "quarantines": [
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": "Saturday 627",
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: unmatched_faculty_block | Anthony Manzo | 2026-06-27 | 11:30AM DH CRH 09:15:00-10:15:00",
+          "source: Faculty Schedule Daily Tabs sheet Saturday 627 row 8 column 15"
+        ]
+      },
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": null,
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: missing_faculty_block | Anthony Manzo | 2026-06-27 | SQuEAQ 09:15:00-10:15:00",
+          "source: Coaching by Ensemble row 24"
+        ]
+      }
+    ]
+  },
+  {
+    "calendar_key": "Daniel Phillips",
+    "filename": "Daniel_Phillips.ics",
+    "preserved_local_ics": true,
+    "quarantines": [
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": "Tuesday 623",
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: unmatched_faculty_block | Daniel Phillips | 2026-06-23 | The String Quintet 13:15:00-14:15:00",
+          "source: Faculty Schedule Daily Tabs sheet Tuesday 623 row 22 column 6"
+        ]
+      },
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": null,
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: missing_faculty_block | Daniel Phillips | 2026-06-23 | String Quintet 13:15:00-14:15:00",
+          "source: Coaching by Ensemble row 10"
+        ]
+      },
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": null,
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: missing_faculty_block | Daniel Phillips | 2026-06-25 | SQuEAQ 14:30:00-15:30:00",
+          "source: Coaching by Ensemble row 24"
+        ]
+      }
+    ]
+  },
+  {
+    "calendar_key": "Dimitri Murrath",
+    "filename": "Dimitri_Murrath.ics",
+    "preserved_local_ics": true,
+    "quarantines": [
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": null,
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: missing_faculty_block | Dimitri Murrath | 2026-06-24 | WaMaTachou Quartet 15:15:00-16:15:00",
+          "source: Coaching by Ensemble row 20"
+        ]
+      },
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": "Saturday 627",
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: unmatched_faculty_block | Dimitri Murrath | 2026-06-27 | Zehnder BRH 09:15:00-10:15:00",
+          "source: Faculty Schedule Daily Tabs sheet Saturday 627 row 8 column 9"
+        ]
+      },
+      {
+        "source_name": "Faculty Schedule Daily Tabs",
+        "sheet_name": null,
+        "reason": "faculty daily verification failed",
+        "details": [
+          "FACULTY_VERIFICATION: missing_faculty_block | Dimitri Murrath | 2026-06-27 | Zehnder Blender 09:15:00-10:15:00",
+          "source: Coaching by Ensemble row 29"
+        ]
+      }
+    ]
+  }
+]

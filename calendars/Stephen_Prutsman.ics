@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:ffe2e5b958164b9c620dcc027c97573f0463488b@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:On Campus Housing Check In
 DTSTART;TZID=America/Los_Angeles:20260619T170000
 DTEND;TZID=America/Los_Angeles:20260619T200000
@@ -18,7 +18,7 @@ DESCRIPTION:(Details coming)\nMunger Check In
 END:VEVENT
 BEGIN:VEVENT
 UID:222f67119649dbfebd9e5c2b1d5e241ee65c9ce7@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Seminar Registration
 DTSTART;TZID=America/Los_Angeles:20260620T090000
 DTEND;TZID=America/Los_Angeles:20260620T113000
@@ -27,7 +27,7 @@ DESCRIPTION:Schedule Here\nParticipants will have access to
 END:VEVENT
 BEGIN:VEVENT
 UID:db7141632fc90d4fa9e0a8fae174adba4f72f0de@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Welcome Meeting
 DTSTART;TZID=America/Los_Angeles:20260620T130000
 DTEND;TZID=America/Los_Angeles:20260620T140000
@@ -35,7 +35,7 @@ LOCATION:Campbell Recital Hall
 END:VEVENT
 BEGIN:VEVENT
 UID:49a7b516365e9c457bb72f74c41b7ea0b1dfa927@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 chamber orch reading
 DTSTART;TZID=America/Los_Angeles:20260620T170000
 DTEND;TZID=America/Los_Angeles:20260620T180000
@@ -43,7 +43,7 @@ LOCATION:Dinkelspiel Stage
 END:VEVENT
 BEGIN:VEVENT
 UID:4c07fbc8e23e17614f212cde64421879ce2223cc@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Dinner -be our guests!
 DTSTART;TZID=America/Los_Angeles:20260620T180000
 DTEND;TZID=America/Los_Angeles:20260620T190000
@@ -51,7 +51,7 @@ LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
 UID:c01ea5ebb7b1e6317e9c2a14235a51c434b91c47@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260620T200000
 DTEND;TZID=America/Los_Angeles:20260621T000000
@@ -59,7 +59,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:9e2cb7d2a48c804f89c086d0724e5b444a525d8e@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Continental Breakfast
 DTSTART;TZID=America/Los_Angeles:20260621T090000
 DTEND;TZID=America/Los_Angeles:20260621T094500
@@ -67,7 +67,7 @@ LOCATION:Campbell Courtyard
 END:VEVENT
 BEGIN:VEVENT
 UID:d7eb646720904b9ebb24c8ed65518265cae7d0d7@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Presentation
 DTSTART;TZID=America/Los_Angeles:20260621T110000
 DTEND;TZID=America/Los_Angeles:20260621T120000
@@ -76,7 +76,7 @@ DESCRIPTION:Chris Chafe
 END:VEVENT
 BEGIN:VEVENT
 UID:2893d48903d64ee63abbb2c3acb711bd6cb279c6@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Light Lunch Provided
 DTSTART;TZID=America/Los_Angeles:20260621T120000
 DTEND;TZID=America/Los_Angeles:20260621T130000
@@ -84,7 +84,7 @@ LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
 UID:b4c97ab458eaa2dd281e3622fb9f963a5d689379@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Spotlight on Physical Wellness
 DTSTART;TZID=America/Los_Angeles:20260621T143000
 DTEND;TZID=America/Los_Angeles:20260621T160000
@@ -93,7 +93,7 @@ DESCRIPTION:Pamela Frank & Howard Nelson\nwith Host Stephen Prutsman
 END:VEVENT
 BEGIN:VEVENT
 UID:553727ef8329b536f349f31ade03a54a56e9b12f@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Dinner /evening rehearsals at Persis'
 DTSTART;TZID=America/Los_Angeles:20260621T180000
 DTEND;TZID=America/Los_Angeles:20260621T190000
@@ -101,7 +101,7 @@ LOCATION:776 Dolores St\, Stanford\, CA
 END:VEVENT
 BEGIN:VEVENT
 UID:142f2e5a15134d290968bde187b5df7acfb19889@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260621T200000
 DTEND;TZID=America/Los_Angeles:20260622T000000
@@ -109,7 +109,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:5251e70f5a76255a70a64cdc71ff4bb4fedfa8e9@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260622T083000
 DTEND;TZID=America/Los_Angeles:20260622T090000
@@ -119,7 +119,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:0ab1cb59965f5268e83a62dc5ec49fb5747e61ef@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260622T091500
 DTEND;TZID=America/Los_Angeles:20260622T101500
@@ -129,7 +129,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:362541740741bac8a056db74e449580793ccdb28@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Virtuosa Trio (AM)
 DTSTART;TZID=America/Los_Angeles:20260622T103000
 DTEND;TZID=America/Los_Angeles:20260622T113000
@@ -139,7 +139,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:abf36f4a763ff177e16cd94b4318d24a721c9546@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Faculty Concert #1
 DTSTART;TZID=America/Los_Angeles:20260622T120000
 DTEND;TZID=America/Los_Angeles:20260622T130000
@@ -150,7 +150,7 @@ DESCRIPTION:Road Movies: Alexi Kenney\, John Novacek\nDvorak 6tet: Owen Dal
 END:VEVENT
 BEGIN:VEVENT
 UID:b1271ac67665575f51f7c18c6b17918abd2f2d88@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Lunch for ALL Faculty
 DTSTART;TZID=America/Los_Angeles:20260622T130000
 DTEND;TZID=America/Los_Angeles:20260622T140000
@@ -158,7 +158,7 @@ LOCATION:Bing Concert Hall
 END:VEVENT
 BEGIN:VEVENT
 UID:0ea4c244c91da4bb2c2f4518ebc3129880cab08f@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 The Dolphins
 DTSTART;TZID=America/Los_Angeles:20260622T151500
 DTEND;TZID=America/Los_Angeles:20260622T161500
@@ -168,25 +168,25 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:904bbf3109008182e5b12740edd2919fd5e1f48f@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Masterclass 1A 1B
 DTSTART;TZID=America/Los_Angeles:20260622T163000
 DTEND;TZID=America/Los_Angeles:20260622T180000
 LOCATION:Campbell Recital Hall or Dinkelspiel Stage
-DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying:\nMurr
+DESCRIPTION:Masterclass 1A\nLocation: Campbell Recital Hall\nPlaying:\nThe 
+ Dolphins (Luke Henderson\, Isaac Park\, James Preucil\, Ian Maloney)\nMurr
  ay Quartet (Dustin Breshears\, Anthony Chukhlov\, Leslie Ashworth\, Meliss
- a Lam)\nPinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\, Sheila Chan)\nKat
- arina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia Morin\, Ma
- ya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMasterclass 1B\
- nLocation: Dinkelspiel Stage\nPlaying:\nEthea Trio (Shintaro Taneda\, Ayou
- n Alexandra Kim\, Jon Lee)\nQuail 4tet (Katie Behroozi\, Benjamin Chen\, B
- en Parks\, Cyrus Behroozi)\nSEJI quartet (Isabella Fulford\, JK Hunt\, Emm
- a Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wiancko\, Wil
- liam Coleman
+ a Lam)\nKatarina String Quartet (Jeanel Liango\, Jérôme Chiasson\, Celia
+  Morin\, Maya Enstad)\nCoaching: Daniel Phillips\, Steven Tenenbom\n\nMast
+ erclass 1B\nLocation: Dinkelspiel Stage\nPlaying:\nEthea Trio (Shintaro Ta
+ neda\, Ayoun Alexandra Kim\, Jon Lee)\nQuail 4tet (Katie Behroozi\, Benjam
+ in Chen\, Ben Parks\, Cyrus Behroozi)\nSEJI quartet (Isabella Fulford\, JK
+  Hunt\, Emma Spellman\, Stefan Leape)\nCoaching: Pedja Muzijevic\, Paul Wi
+ ancko\, William Coleman
 END:VEVENT
 BEGIN:VEVENT
 UID:5999a033786c0a5520632e40a8019c2bd955dab4@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260622T200000
 DTEND;TZID=America/Los_Angeles:20260623T000000
@@ -194,7 +194,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:8b1cc9bc3562e8566bdb177b0e72a64598c9f055@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:The Musicians of the String Quartet:
 DTSTART;TZID=America/Los_Angeles:20260622T210000
 DTEND;TZID=America/Los_Angeles:20260622T223000
@@ -204,7 +204,7 @@ DESCRIPTION:A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ART
 END:VEVENT
 BEGIN:VEVENT
 UID:6eec51b3ab17b9702336a738c2afd60665d10159@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260623T083000
 DTEND;TZID=America/Los_Angeles:20260623T090000
@@ -214,7 +214,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:ffd50cf047ca7821053539d8dd5be79c53d6137c@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260623T103000
 DTEND;TZID=America/Los_Angeles:20260623T113000
@@ -224,7 +224,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:24aba4a68b6d91c1a6dd5245a9d8d1ad3065ec64@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 The Dolphins
 DTSTART;TZID=America/Los_Angeles:20260623T143000
 DTEND;TZID=America/Los_Angeles:20260623T153000
@@ -234,7 +234,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:cf199e19b231a92367f0835c5bbbfd04695f2e7e@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Special Presentation
 DTSTART;TZID=America/Los_Angeles:20260623T160000
 DTEND;TZID=America/Los_Angeles:20260623T173000
@@ -244,7 +244,7 @@ DESCRIPTION:Robert Brewer Young\nJ& A Beare\, Director\nScientific Research
 END:VEVENT
 BEGIN:VEVENT
 UID:73fa222be1d036f7a8cf3fa24b50a23800a6233a@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Faculty & Guests
 DTSTART;TZID=America/Los_Angeles:20260623T180000
 DTEND;TZID=America/Los_Angeles:20260623T190000
@@ -253,7 +253,7 @@ DESCRIPTION:meeting/dinner\n(discuss/determine Sat/Bing program)
 END:VEVENT
 BEGIN:VEVENT
 UID:3c043dd05152bedbf4cbb0d1a4f4a60c8bc49859@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260623T200000
 DTEND;TZID=America/Los_Angeles:20260624T000000
@@ -261,7 +261,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:08e2923749155f174677cad3c77dc04bdf9e216a@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:The Musicians of the String Quartet:
 DTSTART;TZID=America/Los_Angeles:20260623T210000
 DTEND;TZID=America/Los_Angeles:20260623T223000
@@ -271,7 +271,7 @@ DESCRIPTION:A Documentary\nGeorges Zeisel and Catherine ZIns\n(An INA / ART
 END:VEVENT
 BEGIN:VEVENT
 UID:55fdc4cc7ccd9f3ba02482aab3deb9c829ee700c@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260624T083000
 DTEND;TZID=America/Los_Angeles:20260624T090000
@@ -281,7 +281,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:fa2fc53d0fb628689216392382fb7972a4ec9cb4@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260624T091500
 DTEND;TZID=America/Los_Angeles:20260624T101500
@@ -291,7 +291,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:811ea850c82bfb1193bd1d33d8c1612944467be5@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Virtuosa Trio
 DTSTART;TZID=America/Los_Angeles:20260624T103000
 DTEND;TZID=America/Los_Angeles:20260624T113000
@@ -301,7 +301,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:94f6027962577f1ee2e40e26232d82ca21feefb1@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Faculty Concert #2
 DTSTART;TZID=America/Los_Angeles:20260624T120000
 DTEND;TZID=America/Los_Angeles:20260624T130000
@@ -313,7 +313,7 @@ DESCRIPTION:Brandenburg 6: Dimitri Murrath\, William Coleman\, Steven Tenen
 END:VEVENT
 BEGIN:VEVENT
 UID:073271067d26f25e5ddc84670ae95577cc0f7585@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Lunch for ALL Faculty
 DTSTART;TZID=America/Los_Angeles:20260624T130000
 DTEND;TZID=America/Los_Angeles:20260624T140000
@@ -321,7 +321,7 @@ LOCATION:Bing Concert Hall
 END:VEVENT
 BEGIN:VEVENT
 UID:547040f75a4b97008b8e81ca4dad8dd309833a22@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 The Dolphins
 DTSTART;TZID=America/Los_Angeles:20260624T151500
 DTEND;TZID=America/Los_Angeles:20260624T161500
@@ -331,7 +331,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:cab6ec2efcb85b3e1b04baa67f47ca27fa736680@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Coaching Masterclass 2A
 DTSTART;TZID=America/Los_Angeles:20260624T163000
 DTEND;TZID=America/Los_Angeles:20260624T180000
@@ -347,7 +347,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:fca6f34339857194ec3dfe86b1d565f62844e052@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260624T200000
 DTEND;TZID=America/Los_Angeles:20260625T000000
@@ -355,7 +355,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:762053712e6733e4f5bcd18904220caf05480c1c@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Cello-ssus Reading!
 DTSTART;TZID=America/Los_Angeles:20260624T210000
 DTEND;TZID=America/Los_Angeles:20260624T223000
@@ -364,7 +364,7 @@ DESCRIPTION:TBC\nAC/DC‘s “thunderstruck” for 12 cellos.\nand more!
 END:VEVENT
 BEGIN:VEVENT
 UID:4cb4b910ae55b63e018c32e046dab1e9efb3890e@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260625T083000
 DTEND;TZID=America/Los_Angeles:20260625T090000
@@ -374,7 +374,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:55b0e13f77ea067837f25580667baba5f01ae0a2@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260625T103000
 DTEND;TZID=America/Los_Angeles:20260625T113000
@@ -384,7 +384,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:3e92ab0719a4425247dd0a33cf988724be721921@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Lunch in Courtyard!
 DTSTART;TZID=America/Los_Angeles:20260625T113000
 DTEND;TZID=America/Los_Angeles:20260625T120000
@@ -392,7 +392,7 @@ LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
 UID:252a3314b94f547e98abe29dbda095c9dc1cdd77@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:MIghty like a Moose
 DTSTART;TZID=America/Los_Angeles:20260625T121500
 DTEND;TZID=America/Los_Angeles:20260625T130000
@@ -401,7 +401,7 @@ DESCRIPTION:Film Fun with Prutsman/Dolphins
 END:VEVENT
 BEGIN:VEVENT
 UID:3cbdcaa7ffdff69b77b16e120f76ab2d7fc109e5@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Masterclass 3A\, 3B\, 3C
 DTSTART;TZID=America/Los_Angeles:20260625T160000
 DTEND;TZID=America/Los_Angeles:20260625T173000
@@ -411,23 +411,23 @@ DESCRIPTION:Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying:\nSQuE
  ian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans\, Alex Hwang\, Thomas
   Xiong\, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu\, Jennie Yang\, M
  onica Anuforo\, Derek Wu)\nPinky Quartet (Leyan Lo\, Alex Li\, Eric Cheng\
- , Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby\, Anthony Manzo\, Paul
-  Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet
-  94? (Christine Choi\, Bruce Yu\, Jessica Seeliger\, Warren Wu)\nSelene Qu
- artet (Jihyun Baik\, Oliver Leitner\, Lourdes Pinney\, Colin Guan)\nThe Qu
- arktet (Emil Ma\, Chung-Pei Ma\, Derek Katz\, Ari Freed)\nTomodachi Quinte
- t (Samantha Ching\, Lois Harder\, Seth Novatt\, I-han Chou\, Anne Scott)\n
- Todd Palmer\nCoaching: Todd Palmer\, Alexi Kenney\, William Coleman\n\nMas
- terclass 3C\nLocation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko
-  Hayashi\, Ron Ho\, Cary Chin\, Jim Zehnder)\n8tet with Dolores 4 (Gregori
- o Lopes\, Ko Hayashi\, Ron Ho\, Mark Siegel\, Cary Chin\, James Welch\, Ji
- m Zehnder\, Persis Drell)\nThe Abelian Group (Norman Truong\, Laura Shifle
- y\, Laurence Lewis\, Minsu Longiaru)\nCoaching: John Novacek\, Daniel Phil
- lips\, Hannah Collins
+ , Sheila Chan)\nCoaching: Owen Dalby\, Anthony Manzo\, Paul Wiancko\n\nMas
+ terclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet 94? (Christine
+  Choi\, Bruce Yu\, Jessica Seeliger\, Warren Wu)\nSelene Quartet (Jihyun B
+ aik\, Oliver Leitner\, Lourdes Pinney\, Colin Guan)\nThe Quarktet (Emil Ma
+ \, Chung-Pei Ma\, Derek Katz\, Ari Freed)\nTomodachi Quintet (Samantha Chi
+ ng\, Lois Harder\, Seth Novatt\, I-han Chou\, Anne Scott)\nTodd Palmer\nCo
+ aching: Todd Palmer\, Alexi Kenney\, William Coleman\n\nMasterclass 3C\nLo
+ cation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko Hayashi\, Ron 
+ Ho\, Cary Chin\, Jim Zehnder)\n8tet with Dolores 4 (Gregorio Lopes\, Ko Ha
+ yashi\, Ron Ho\, Mark Siegel\, Cary Chin\, James Welch\, Jim Zehnder\, Per
+ sis Drell)\nThe Abelian Group (Norman Truong\, Laura Shifley\, Laurence Le
+ wis\, Minsu Longiaru)\nCoaching: John Novacek\, Daniel Phillips\, Hannah C
+ ollins
 END:VEVENT
 BEGIN:VEVENT
 UID:cb9845e7047e3364f9aa2ba9633c4391ebc7410c@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260625T200000
 DTEND;TZID=America/Los_Angeles:20260626T000000
@@ -435,7 +435,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:ac149a0069d0ffec37d95aa337d5a992e6e7c8b6@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260626T083000
 DTEND;TZID=America/Los_Angeles:20260626T090000
@@ -445,7 +445,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:93246d0f1c7d5d730da8b99f43082c11fc2bbe55@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260626T091500
 DTEND;TZID=America/Los_Angeles:20260626T101500
@@ -455,7 +455,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:34fdef8fa969da53ccee471d17af9781977e9075@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Virtuosa Trio
 DTSTART;TZID=America/Los_Angeles:20260626T103000
 DTEND;TZID=America/Los_Angeles:20260626T113000
@@ -465,7 +465,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:4e8ef4af20dfcf6754dd19f3354ab68823681f1b@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Faculty Concert #3
 DTSTART;TZID=America/Los_Angeles:20260626T120000
 DTEND;TZID=America/Los_Angeles:20260626T130000
@@ -477,7 +477,7 @@ DESCRIPTION:Tchaikovsky: Todd Palmer\, Owen Dalby\, John Novacek\nRule of T
 END:VEVENT
 BEGIN:VEVENT
 UID:82f4c7b2c9a0ab689cdf585ade8b17144867ee66@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Lunch for ALL Faculty
 DTSTART;TZID=America/Los_Angeles:20260626T130000
 DTEND;TZID=America/Los_Angeles:20260626T140000
@@ -485,7 +485,7 @@ LOCATION:Bing Concert Hall
 END:VEVENT
 BEGIN:VEVENT
 UID:93a3dfb7c341a5a9df2d5eac7d34ca9eb6d89065@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻🍇 Epic Sight Reading Party!
 DTSTART;TZID=America/Los_Angeles:20260626T173000
 DTEND;TZID=America/Los_Angeles:20260626T200000
@@ -494,7 +494,7 @@ DESCRIPTION:5:30 Opening\n6:30pm Dinner\nDetails via email
 END:VEVENT
 BEGIN:VEVENT
 UID:d747e62ff43bc2d75fbc818925b89781d5c2785c@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260626T200000
 DTEND;TZID=America/Los_Angeles:20260627T000000
@@ -502,7 +502,7 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:4aa561fc9a02e60023ec4f9cf52deb731e3c00c2@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🗣️ The Seminar Crooners
 DTSTART;TZID=America/Los_Angeles:20260627T083000
 DTEND;TZID=America/Los_Angeles:20260627T090000
@@ -512,7 +512,7 @@ URL:https://drive.google.com/drive/folders/1dExywoLAlbGQ-IMm0dqiUOVE3BMlt8F
 END:VEVENT
 BEGIN:VEVENT
 UID:0169de325ca44360ef723a1e81534b88cabd3bb8@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎼 Quatuor Pas de Jeans
 DTSTART;TZID=America/Los_Angeles:20260627T103000
 DTEND;TZID=America/Los_Angeles:20260627T113000
@@ -522,7 +522,7 @@ URL:https://drive.google.com/drive/folders/1-MQEPny9FOL7dK6wWbg3-MPVng8wiuq
 END:VEVENT
 BEGIN:VEVENT
 UID:610d3b3595cca07a10a3fcf374f634192f3bc4a9@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:AZURE Family Concert
 DTSTART;TZID=America/Los_Angeles:20260627T140000
 DTEND;TZID=America/Los_Angeles:20260627T150000
@@ -531,7 +531,7 @@ DESCRIPTION:CRH
 END:VEVENT
 BEGIN:VEVENT
 UID:ca89712504ebeb68e05f518e60c0fa56155969d3@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:International Showcase
 DTSTART;TZID=America/Los_Angeles:20260627T170000
 DTEND;TZID=America/Los_Angeles:20260627T190000
@@ -540,7 +540,7 @@ DESCRIPTION:details TBD
 END:VEVENT
 BEGIN:VEVENT
 UID:8d87fca3db127278d2dcf2e296c7d0d594128a7d@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 Post Showcase Pizza Party
 DTSTART;TZID=America/Los_Angeles:20260627T190000
 DTEND;TZID=America/Los_Angeles:20260627T200000
@@ -548,7 +548,7 @@ LOCATION:Braun Courtyard
 END:VEVENT
 BEGIN:VEVENT
 UID:7107a5526264d0fa05fb5ac6717a912606a0ea37@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🎻 Optional Sight Reading!
 DTSTART;TZID=America/Los_Angeles:20260627T200000
 DTEND;TZID=America/Los_Angeles:20260628T000000
@@ -556,14 +556,14 @@ LOCATION:Braun Music Building Everywhere
 END:VEVENT
 BEGIN:VEVENT
 UID:5c885ebc4838d8349fc6fa5b074fbfaad62587c0@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Munger Check Out
 DTSTART;TZID=America/Los_Angeles:20260628T080000
 DTEND;TZID=America/Los_Angeles:20260628T100000
 END:VEVENT
 BEGIN:VEVENT
 UID:ed67d97a8964994d8060fd2f1519bbfd8c29a7cc@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:Shutter falls! on Group Photo
 DTSTART;TZID=America/Los_Angeles:20260628T103000
 DTEND;TZID=America/Los_Angeles:20260628T110000
@@ -571,7 +571,7 @@ LOCATION:in front of Braun
 END:VEVENT
 BEGIN:VEVENT
 UID:68f1a2a4fbdf14efe4a7883ccd79b60211d3c906@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:✨The Big Finale!✨
 DTSTART;TZID=America/Los_Angeles:20260628T110000
 DTEND;TZID=America/Los_Angeles:20260628T154500
@@ -580,7 +580,7 @@ DESCRIPTION:all participants perform\nw/ refreshments!
 END:VEVENT
 BEGIN:VEVENT
 UID:8d6903a14a1a0ebb9542ab69d459214ff91a44d4@slsq-rendered-calendars
-DTSTAMP:20260621T160433Z
+DTSTAMP:20260622T014848Z
 SUMMARY:🍇 WRAP PARTY
 DTSTART;TZID=America/Los_Angeles:20260628T154500
 DTEND;TZID=America/Los_Angeles:20260628T193000

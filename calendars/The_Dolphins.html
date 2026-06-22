@@ -880,24 +880,14 @@ dvorak 6tet: owen dalby, daniel phillips, steven tenenbom, william coleman, paul
             <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>227</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>3:15 PM-4:15 PM</span>
           </button>
-          <button class="event-card is-roomy" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="masterclass 1a 1b campbell recital hall or dinkelspiel stage masterclass 1a
-location: campbell recital hall
-playing:
+          <button class="event-card is-roomy" type="button" data-event-index="24" data-dialog="event-dialog-24" data-event-search="🎻 playing masterclass 1a campbell recital hall playing:
+the dolphins (luke henderson, isaac park, james preucil, ian maloney)
 murray quartet (dustin breshears, anthony chukhlov, leslie ashworth, melissa lam)
-pinky quartet (leyan lo, alex li, eric cheng, sheila chan)
 katarina string quartet (jeanel liango, jérôme chiasson, celia morin, maya enstad)
-coaching: daniel phillips, steven tenenbom
-
-masterclass 1b
-location: dinkelspiel stage
-playing:
-ethea trio (shintaro taneda, ayoun alexandra kim, jon lee)
-quail 4tet (katie behroozi, benjamin chen, ben parks, cyrus behroozi)
-seji quartet (isabella fulford, jk hunt, emma spellman, stefan leape)
-coaching: pedja muzijevic, paul wiancko, william coleman 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
+coaching: daniel phillips, steven tenenbom 4:30 pm-6 pm" style="--event-start: 35; --event-span: 6; --event-depth: 0;">
                         <span class="event-fill-segment is-segment-start is-segment-end" aria-hidden="true" style="--segment-top: 0%; --segment-height: 100%; --segment-fill: var(--event-fill);"></span>
-            <span class="event-title">Masterclass 1A 1B</span>
-            <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall or Dinkelspiel Stage</span>
+            <span class="event-title">🎻 Playing Masterclass 1A</span>
+            <span class="event-location"><span class="event-meta-icon" aria-hidden="true">&#8982;</span>Campbell Recital Hall</span>
             <span class="event-time"><span class="event-meta-icon" aria-hidden="true">&#9719;</span>4:30 PM-6 PM</span>
           </button>
           <button class="event-card is-medium" type="button" data-event-index="25" data-dialog="event-dialog-25" data-event-search="🎻 rehearsal period 227 7 pm-8 pm" style="--event-start: 45; --event-span: 4; --event-depth: 0;">
@@ -1204,7 +1194,6 @@ squeaq  (pm) (miles chan, anna soper, eric cooper, griffin glenn, jasper jian)
 no name piano quartet (am) (elisabeth heremans, alex hwang, thomas xiong, daiyao zhang)
 quatuor pas de jeans (beverly fu, jennie yang, monica anuforo, derek wu)
 pinky quartet (leyan lo, alex li, eric cheng, sheila chan)
-anthony manzo
 coaching: owen dalby, anthony manzo, paul wiancko
 
 masterclass 3b
@@ -1891,30 +1880,20 @@ Dvorak 6tet: Owen Dalby, Daniel Phillips, Steven Tenenbom, William Coleman, Paul
   <dialog id="event-dialog-24">
     <div class="dialog-card">
       <div class="dialog-head">
-        <h2>Masterclass 1A 1B</h2>
+        <h2>🎻 Playing Masterclass 1A</h2>
         <button class="close-button" type="button" aria-label="Close">x</button>
       </div>
-      <div class="dialog-location">Campbell Recital Hall or Dinkelspiel Stage</div>
+      <div class="dialog-location">Campbell Recital Hall</div>
     </div>
     <div class="dialog-body">
       <div class="detail-stack">
         <div class="detail-row">Jun 22, 2026  4:30 PM-6 PM</div>
         <div class="detail-row">The Dolphins</div>
-        <div class="detail-row prewrap">Masterclass 1A
-Location: Campbell Recital Hall
-Playing:
+        <div class="detail-row prewrap">Playing:
+The Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)
 Murray Quartet (Dustin Breshears, Anthony Chukhlov, Leslie Ashworth, Melissa Lam)
-Pinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)
 Katarina String Quartet (Jeanel Liango, Jérôme Chiasson, Celia Morin, Maya Enstad)
-Coaching: Daniel Phillips, Steven Tenenbom
-
-Masterclass 1B
-Location: Dinkelspiel Stage
-Playing:
-Ethea Trio (Shintaro Taneda, Ayoun Alexandra Kim, Jon Lee)
-Quail 4tet (Katie Behroozi, Benjamin Chen, Ben Parks, Cyrus Behroozi)
-SEJI quartet (Isabella Fulford, JK Hunt, Emma Spellman, Stefan Leape)
-Coaching: Pedja Muzijevic, Paul Wiancko, William Coleman</div>
+Coaching: Daniel Phillips, Steven Tenenbom</div>
       </div>
     </div>
   </dialog>
@@ -2400,7 +2379,6 @@ SQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)
 No Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)
 Quatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)
 Pinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)
-Anthony Manzo
 Coaching: Owen Dalby, Anthony Manzo, Paul Wiancko
 
 Masterclass 3B
@@ -2861,48 +2839,14 @@ uber to the airport.</div>
         });
         return bestIndex;
       };
-      const beginGesture = (event) => {
-        if (!mobileQuery.matches || event.touches.length !== 1) return;
-        const touch = event.touches[0];
+      const beginGesture = () => {
+        if (!mobileQuery.matches) return;
         window.clearTimeout(settleTimer);
         gesture = {
           left: scroller.scrollLeft,
           top: scroller.scrollTop,
-          touchX: touch.clientX,
-          touchY: touch.clientY,
           index: nearestDayIndex(scroller.scrollLeft),
-          axis: null,
         };
-      };
-      const handleTouchMove = (event) => {
-        if (adjusting || !gesture || !mobileQuery.matches || event.touches.length !== 1) return;
-        const touch = event.touches[0];
-        const horizontal = gesture.touchX - touch.clientX;
-        const vertical = gesture.touchY - touch.clientY;
-        const absHorizontal = Math.abs(horizontal);
-        const absVertical = Math.abs(vertical);
-        if (!gesture.axis && Math.max(absHorizontal, absVertical) >= 10) {
-          if (absHorizontal > absVertical * 1.15) {
-            gesture.axis = "horizontal";
-          } else if (absVertical > absHorizontal * 1.15) {
-            gesture.axis = "vertical";
-          }
-        }
-        if (!gesture.axis) return;
-        if (event.cancelable) event.preventDefault();
-        if (gesture.axis === "vertical") {
-          scroller.scrollTo({
-            left: gesture.left,
-            top: clamp(gesture.top + vertical, 0, scroller.scrollHeight - scroller.clientHeight),
-            behavior: "auto",
-          });
-        } else {
-          scroller.scrollTo({
-            left: clamp(gesture.left + horizontal, 0, scroller.scrollWidth - scroller.clientWidth),
-            top: gesture.top,
-            behavior: "auto",
-          });
-        }
       };
       const settleGesture = () => {
         if (adjusting || !gesture || !mobileQuery.matches) return;
@@ -2911,8 +2855,7 @@ uber to the airport.</div>
         const columnWidth = columns[0].getBoundingClientRect().width || 1;
         const horizontal = scroller.scrollLeft - gesture.left;
         const vertical = scroller.scrollTop - gesture.top;
-        const committedHorizontal = gesture.axis !== "vertical"
-          && Math.abs(horizontal) >= Math.min(columnWidth * 0.4, 160)
+        const committedHorizontal = Math.abs(horizontal) >= Math.min(columnWidth * 0.4, 160)
           && Math.abs(horizontal) > Math.abs(vertical) * 0.75;
         const projectedIndex = nearestDayIndex(scroller.scrollLeft);
         const targetIndex = committedHorizontal
@@ -2936,10 +2879,10 @@ uber to the airport.</div>
       };
 
       scroller.addEventListener("touchstart", beginGesture, { passive: true });
-      scroller.addEventListener("touchmove", handleTouchMove, { passive: false });
       for (const eventName of ["touchend", "touchcancel"]) {
         scroller.addEventListener(eventName, scheduleSettle, { passive: true });
       }
+      scroller.addEventListener("scroll", scheduleSettle, { passive: true });
       scroller.addEventListener("scrollend", settleGesture, { passive: true });
     }
     function scheduleCalendarAutoScroll() {
