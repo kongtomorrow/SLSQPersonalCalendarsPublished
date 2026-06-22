@@ -21498,7 +21498,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins",
+    "description": "Playing:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nTodd Palmer (rep tbd)\nCoaching: Ayane Kozasa, Hannah Collins",
     "event_id": "masterclass-2b-coaching",
     "overlap_allowed": false,
     "playing": false,
@@ -21549,7 +21549,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Location",
-    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee\n\nMasterclass 2B\nLocation: Dinkelspiel Stage\nPlaying:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins\n\nMasterclass 2C\nLocation: Braun Rehearsal Hall\nPlaying:\nMeck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)\nVirtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)\nQuartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
+    "description": "Masterclass 2A\nLocation: Campbell Recital Hall\nPlaying:\nWishel Trio (Aaron Wilk, Lloyd Minor, Neir Eshel)\nDolores Quintet (AM) (Aaron Wilk, Misha Rafiee, Gregorio Lopes, James Welch, Persis Drell)\nChane String Quartet (Ria Honda, Christopher Lin-Brande, Nina Monfredo, Abigail Rogers)\nThe Amiche Quartet (Cristina Ruotolo, Meg Lamm, Jocelyn Lamm Startz, Hilary Meltzer)\nAlexi Kenney\nCoaching: Alexi Kenney, Stephen Prutsman, Nina Lee\n\nMasterclass 2B\nLocation: Dinkelspiel Stage\nPlaying:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nTodd Palmer (rep tbd)\nCoaching: Ayane Kozasa, Hannah Collins\n\nMasterclass 2C\nLocation: Braun Rehearsal Hall\nPlaying:\nMeck Kwarteck (Haeun Nam, Marie Christine Lopez, Cindy Mong, Ken Ferry)\nVirtuosa Trio (Chia Ying Lee, Yi Ying Wei, Chiao Hui Chang)\nQuartet SAMM (Shawn Barnett, Ari Le, Marandi Hostetter, Melissa Chu)\nCoaching: Dimitri Murrath, Anthony Manzo, Pedja Muzijevic",
     "event_id": "masterclass-2a-2b-2c-broad",
     "overlap_allowed": true,
     "playing": false,
@@ -21679,7 +21679,7 @@
     "start": "16:30:00",
     "end": "18:00:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nCoaching: Ayane Kozasa, Hannah Collins",
+    "description": "Playing:\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Dolphins (Luke Henderson, Isaac Park, James Preucil, Ian Maloney)\nWaMaTachou Quartet (Jim Chou, Tyson Mao, Cindy Wang, Olivia Tam)\nString Quintet (Nate Strothkamp, Raunak Kumar, Jeremy Klein, Starla Breshears, Gabriel Irazabal)\nTodd Palmer (rep tbd)\nCoaching: Ayane Kozasa, Hannah Collins",
     "event_id": "masterclass-2b-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -21702,7 +21702,8 @@
       "Raunak Kumar",
       "Jeremy Klein",
       "Starla Breshears",
-      "Gabriel Irazabal"
+      "Gabriel Irazabal",
+      "Todd Palmer (rep tbd)"
     ]
   },
   {
@@ -22877,6 +22878,56 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 3,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Ethea Trio",
+    "date": "2026-06-25",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-ethea-trio-coach-john-novacek",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "John Novacek"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 3,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: John Novacek",
+    "event_id": "participant-dress-rehearsal-ethea-trio-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Shintaro Taneda",
+      "Ayoun Alexandra Kim",
+      "Jon Lee"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -23839,6 +23890,108 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: The Dolphins",
+    "date": "2026-06-25",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-the-dolphins-coach-steven-tenenbom",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Steven Tenenbom"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Steven Tenenbom",
+    "event_id": "participant-dress-rehearsal-the-dolphins-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Luke Henderson",
+      "Isaac Park",
+      "James Preucil",
+      "Ian Maloney"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Selene Quartet",
+    "date": "2026-06-25",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-selene-quartet-coach-owen-dalby",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Owen Dalby"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 5,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Owen Dalby",
+    "event_id": "participant-dress-rehearsal-selene-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Jihyun Baik",
+      "Oliver Leitner",
+      "Lourdes Pinney",
+      "Colin Guan"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -23917,6 +24070,30 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 6,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: No Name Piano Quartet (AM)",
+    "date": "2026-06-25",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-no-name-piano-quartet-am-coach-daniel-phillips",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Daniel Phillips"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -23992,6 +24169,33 @@
     "food": false,
     "participants": [
       "John Novacek"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 6,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Daniel Phillips",
+    "event_id": "participant-dress-rehearsal-no-name-piano-quartet-am-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Elisabeth Heremans",
+      "Alex Hwang",
+      "Thomas Xiong",
+      "Daiyao Zhang"
     ]
   },
   {
@@ -24725,6 +24929,58 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 7,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Dolores Quintet",
+    "date": "2026-06-25",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-dolores-quintet-coach-john-novacek",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "John Novacek"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 7,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: John Novacek",
+    "event_id": "participant-dress-rehearsal-dolores-quintet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Aaron Wilk",
+      "Misha Rafiee",
+      "Gregorio Lopes",
+      "James Welch",
+      "Persis Drell"
+    ]
+  },
+  {
     "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
@@ -25065,6 +25321,30 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 9,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Quartet 94",
+    "date": "2026-06-25",
+    "start": "13:15:00",
+    "end": "13:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-quartet-94-coach-will-coleman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Will Coleman"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -25117,6 +25397,33 @@
       "Oliver Leitner",
       "Lourdes Pinney",
       "Colin Guan"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 9,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "13:15:00",
+    "end": "13:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Will Coleman",
+    "event_id": "participant-dress-rehearsal-quartet-94-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Christine Choi",
+      "Bruce Yu",
+      "Jessica Seeliger",
+      "Warren Wu"
     ]
   },
   {
@@ -25895,6 +26202,107 @@
       "Bruce Yu",
       "Jessica Seeliger",
       "Warren Wu"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 10,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Meck Kwarteck",
+    "date": "2026-06-25",
+    "start": "13:45:00",
+    "end": "14:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-meck-kwarteck-coach-ayane-kozasa",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Ayane Kozasa"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 10,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "13:45:00",
+    "end": "14:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Ayane Kozasa",
+    "event_id": "participant-dress-rehearsal-meck-kwarteck-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Haeun Nam",
+      "Marie Christine Lopez",
+      "Cindy Mong",
+      "Ken Ferry"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Wishel  Trio",
+    "date": "2026-06-25",
+    "start": "14:15:00",
+    "end": "14:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-wishel-trio-coach-nina-lee",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Nina Lee"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 11,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "14:15:00",
+    "end": "14:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Nina Lee",
+    "event_id": "participant-dress-rehearsal-wishel-trio-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Aaron Wilk",
+      "Lloyd Minor",
+      "Neir Eshel"
     ]
   },
   {
@@ -26785,6 +27193,132 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 12,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Pinky Quartet",
+    "date": "2026-06-25",
+    "start": "14:45:00",
+    "end": "15:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-pinky-quartet-coach-john-novacek",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "John Novacek"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 12,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "14:45:00",
+    "end": "15:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: John Novacek",
+    "event_id": "participant-dress-rehearsal-pinky-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Leyan Lo",
+      "Alex Li",
+      "Eric Cheng",
+      "Sheila Chan"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 13,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: The Quarktet",
+    "date": "2026-06-25",
+    "start": "15:15:00",
+    "end": "15:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-the-quarktet-coach-owen-dalby",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Owen Dalby"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 13,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-25",
+    "start": "15:15:00",
+    "end": "15:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Owen Dalby",
+    "event_id": "participant-dress-rehearsal-the-quarktet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Emil Ma",
+      "Chung-Pei Ma",
+      "Derek Katz",
+      "Ari Freed"
+    ]
+  },
+  {
+    "kind": "MASTERCLASS",
+    "diagnostic_source": {
+      "source_name": "Masterclass Assignments",
+      "sheet_name": null,
+      "row_number": 4,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Coaching & Playing Masterclass 3A",
+    "date": "2026-06-25",
+    "start": "16:00:00",
+    "end": "17:30:00",
+    "location": "Campbell Recital Hall",
+    "description": "Playing:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
+    "event_id": "masterclass-3a-coaching-playing",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Anthony Manzo"
+    ]
+  },
+  {
     "kind": "MASTERCLASS",
     "diagnostic_source": {
       "source_name": "Masterclass Assignments",
@@ -26798,7 +27332,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-coaching-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -26822,7 +27356,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
+    "description": "Playing:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
     "event_id": "masterclass-3a-coaching",
     "overlap_allowed": false,
     "playing": false,
@@ -26830,7 +27364,6 @@
     "food": false,
     "participants": [
       "Owen Dalby",
-      "Anthony Manzo",
       "Paul Wiancko"
     ]
   },
@@ -26848,7 +27381,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-coaching",
     "overlap_allowed": false,
     "playing": false,
@@ -26899,7 +27432,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall",
-    "description": "Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nCoaching: Todd Palmer, Alexi Kenney, William Coleman\n\nMasterclass 3C\nLocation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)\n8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)\nThe Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
+    "description": "Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman\n\nMasterclass 3C\nLocation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)\n8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)\nThe Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
     "event_id": "masterclass-3a-3b-3c-broad",
     "overlap_allowed": true,
     "playing": false,
@@ -26987,7 +27520,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Campbell Recital Hall",
-    "description": "Playing:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
+    "description": "Playing:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko",
     "event_id": "masterclass-3a-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -27027,7 +27560,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -27050,7 +27583,8 @@
       "Lois Harder",
       "Seth Novatt",
       "I-han Chou",
-      "Anne Scott"
+      "Anne Scott",
+      "Todd Palmer (rep tbd)"
     ]
   },
   {
@@ -28060,6 +28594,57 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 16,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Katarina String Quartet",
+    "date": "2026-06-26",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-katarina-string-quartet-coach-ayane-kozasa",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Ayane Kozasa"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 16,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Ayane Kozasa",
+    "event_id": "participant-dress-rehearsal-katarina-string-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Jeanel Liango",
+      "Jérôme Chiasson",
+      "Celia Morin",
+      "Maya Enstad"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -29066,6 +29651,108 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 17,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Murray Quartet",
+    "date": "2026-06-26",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-murray-quartet-coach-dimitri-murrath",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Dimitri Murrath"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 17,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Dimitri Murrath",
+    "event_id": "participant-dress-rehearsal-murray-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Dustin Breshears",
+      "Anthony Chukhlov",
+      "Leslie Ashworth",
+      "Melissa Lam"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 18,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Quatuor Pas de Jeans",
+    "date": "2026-06-26",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "coaching 9-15-10-15",
+    "event_id": "participant-dress-rehearsal-quatuor-pas-de-jeans-coach-stephen-prutsman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Stephen Prutsman"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 18,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Stephen Prutsman\ncoaching 9-15-10-15",
+    "event_id": "participant-dress-rehearsal-quatuor-pas-de-jeans-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Beverly Fu",
+      "Jennie Yang",
+      "Monica Anuforo",
+      "Derek Wu"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -29090,6 +29777,56 @@
       "Bruce Yu",
       "Jessica Seeliger",
       "Warren Wu"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 19,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Virtuosa Trio",
+    "date": "2026-06-26",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-virtuosa-trio-coach-stephen-prutsman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Stephen Prutsman"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 19,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Stephen Prutsman",
+    "event_id": "participant-dress-rehearsal-virtuosa-trio-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Chia Ying Lee",
+      "Yi Ying Wei",
+      "Chiao Hui Chang"
     ]
   },
   {
@@ -30025,6 +30762,57 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 23,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Chane String Quartet",
+    "date": "2026-06-26",
+    "start": "13:45:00",
+    "end": "14:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-chane-string-quartet-coach-william-coleman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "William Coleman"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 23,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "13:45:00",
+    "end": "14:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: William Coleman",
+    "event_id": "participant-dress-rehearsal-chane-string-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Ria Honda",
+      "Christopher Lin-Brande",
+      "Nina Monfredo",
+      "Abigail Rogers"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -30936,6 +31724,108 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 24,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: The Abelian Group",
+    "date": "2026-06-26",
+    "start": "14:15:00",
+    "end": "14:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "coaching 2-3",
+    "event_id": "participant-dress-rehearsal-the-abelian-group-coach-pedja-muzijevic",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Pedja Muzijevic"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 24,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "14:15:00",
+    "end": "14:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Pedja Muzijevic\ncoaching 2-3",
+    "event_id": "participant-dress-rehearsal-the-abelian-group-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Norman Truong",
+      "Laura Shifley",
+      "Laurence Lewis",
+      "Minsu Longiaru"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 25,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Seji Quartet",
+    "date": "2026-06-26",
+    "start": "14:45:00",
+    "end": "15:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-seji-quartet-coach-daniel-phillips",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Daniel Phillips"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 25,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "14:45:00",
+    "end": "15:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Daniel Phillips",
+    "event_id": "participant-dress-rehearsal-seji-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Isabella Fulford",
+      "JK Hunt",
+      "Emma Spellman",
+      "Stefan Leape"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -31039,6 +31929,30 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 26,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Quail 4tet",
+    "date": "2026-06-26",
+    "start": "15:15:00",
+    "end": "15:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-quail-4tet-coach-steven-tenenbom",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Steven Tenenbom"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -31090,6 +32004,33 @@
       "Tyson Mao",
       "Cindy Wang",
       "Olivia Tam"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 26,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "15:15:00",
+    "end": "15:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Steven Tenenbom",
+    "event_id": "participant-dress-rehearsal-quail-4tet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Katie Behroozi",
+      "Benjamin Chen",
+      "Ben Parks",
+      "Cyrus Behroozi"
     ]
   },
   {
@@ -31871,6 +32812,112 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 27,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: WaMaTachou quartet",
+    "date": "2026-06-26",
+    "start": "15:45:00",
+    "end": "16:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-wamatachou-quartet-coach-dimitri-murrath",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Dimitri Murrath"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 27,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "15:45:00",
+    "end": "16:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Dimitri Murrath",
+    "event_id": "participant-dress-rehearsal-wamatachou-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Jim Chou",
+      "Tyson Mao",
+      "Cindy Wang",
+      "Olivia Tam"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 28,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: 8tet with Dolores 4",
+    "date": "2026-06-26",
+    "start": "16:15:00",
+    "end": "16:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-8tet-with-dolores-4-coach-william-coleman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "William Coleman"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 28,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "16:15:00",
+    "end": "16:35:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: William Coleman",
+    "event_id": "participant-dress-rehearsal-8tet-with-dolores-4-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Gregorio Lopes",
+      "Ko Hayashi",
+      "Ron Ho",
+      "Mark Siegel",
+      "Cary Chin",
+      "James Welch",
+      "Jim Zehnder",
+      "Persis Drell"
+    ]
+  },
+  {
     "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
@@ -32297,6 +33344,58 @@
       "Cary Chin",
       "Jim Zehnder",
       "Mark Siegel"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 31,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: String Quintet",
+    "date": "2026-06-27",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-string-quintet-coach-paul-wiancko",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Paul Wiancko"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 31,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "09:00:00",
+    "end": "09:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Paul Wiancko",
+    "event_id": "participant-dress-rehearsal-string-quintet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Nate Strothkamp",
+      "Raunak Kumar",
+      "Jeremy Klein",
+      "Starla Breshears",
+      "Gabriel Irazabal"
     ]
   },
   {
@@ -33262,6 +34361,109 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 32,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Tomodachi Quintet",
+    "date": "2026-06-27",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-tomodachi-quintet-coach-hannah-collins",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Hannah Collins"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 32,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "09:30:00",
+    "end": "09:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Hannah Collins",
+    "event_id": "participant-dress-rehearsal-tomodachi-quintet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Samantha Ching",
+      "Lois Harder",
+      "Seth Novatt",
+      "I-han Chou",
+      "Anne Scott"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 33,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Zehnder Blender",
+    "date": "2026-06-27",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-zehnder-blender-coach-dimitri-murrath",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Dimitri Murrath"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 33,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "10:00:00",
+    "end": "10:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Dimitri Murrath",
+    "event_id": "participant-dress-rehearsal-zehnder-blender-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Ko Hayashi",
+      "Ron Ho",
+      "Cary Chin",
+      "Jim Zehnder"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -33340,6 +34542,30 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 34,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: The Amiche Quartet",
+    "date": "2026-06-27",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-the-amiche-quartet-coach-paul-wiancko",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Paul Wiancko"
+    ]
+  },
+  {
     "kind": "COACHING",
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
@@ -33415,6 +34641,33 @@
     "food": false,
     "participants": [
       "John Novacek"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 34,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "10:30:00",
+    "end": "10:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Paul Wiancko",
+    "event_id": "participant-dress-rehearsal-the-amiche-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Cristina Ruotolo",
+      "Meg Lamm",
+      "Jocelyn Lamm Startz",
+      "Hilary Meltzer"
     ]
   },
   {
@@ -34145,6 +35398,109 @@
     "food": false,
     "participants": [
       "Alexi Kenney"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 35,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Quartet Samm",
+    "date": "2026-06-27",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-quartet-samm-coach-steven-tenenbom",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Steven Tenenbom"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 35,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Steven Tenenbom",
+    "event_id": "participant-dress-rehearsal-quartet-samm-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Shawn Barnett",
+      "Ari Le",
+      "Marandi Hostetter",
+      "Melissa Chu"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 36,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: SQuEAQ",
+    "date": "2026-06-27",
+    "start": "11:30:00",
+    "end": "11:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-squeaq-coach-anthony-manzo",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Anthony Manzo"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 36,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "11:30:00",
+    "end": "11:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Anthony Manzo",
+    "event_id": "participant-dress-rehearsal-squeaq-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Miles Chan",
+      "Anna Soper",
+      "Eric Cooper",
+      "Griffin Glenn",
+      "Jasper Jian"
     ]
   },
   {
