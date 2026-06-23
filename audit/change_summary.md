@@ -2,12 +2,12 @@
 
 - Previous baseline: found
 - Before events: 1264
-- After events: 1264
-- Delta: +0
-- Added events: 0
+- After events: 1268
+- Delta: +4
+- Added events: 4
 - Removed events: 0
 - Changed events: 0
-- People affected by listed changes: 0
+- People affected by listed changes: 4
 
 ## Fixed Inconsistencies
 
@@ -42,12 +42,22 @@ None.
   "FACULTY_DAILY": 1,
   "MASTERCLASS": 22,
   "PARTICIPANT_DRESS_REHEARSAL": 52,
-  "PELZER": 20,
+  "PELZER": 24,
   "REGISTRATION": 26,
   "SIGHT_READING": 8,
   "TRAVEL": 15
 }
 ```
+
+### Added Examples
+- `+` 2026-06-23 15:00:00-15:15:00 | Adam Pelzer appointment | Campbell Recital Hall | Meg Lamm | PELZER
+- `+` 2026-06-23 15:15:00-15:30:00 | Adam Pelzer appointment | Campbell Recital Hall | Gregorio Lopes | PELZER
+- `+` 2026-06-23 15:30:00-15:45:00 | Adam Pelzer appointment | Campbell Recital Hall | Alex Kim | PELZER
+- `+` 2026-06-24 16:00:00-16:15:00 | Adam Pelzer appointment | Campbell Recital Hall | Shintaro Taneda | PELZER
+
+## Affected People
+
+Alex Kim, Gregorio Lopes, Meg Lamm, Shintaro Taneda
 
 ## Calendar Links
 
