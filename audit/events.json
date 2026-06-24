@@ -973,7 +973,7 @@
       "sheet_name": "Saturday 620",
       "row_number": 14,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 82"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 88"
     },
     "title": "Rule of Three Faculty Rehearsal #1",
     "date": "2026-06-20",
@@ -5195,7 +5195,7 @@
       "sheet_name": "Sunday 621",
       "row_number": 34,
       "column_number": 6,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 89"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 95"
     },
     "title": "Mendelssohn 6tet Faculty Rehearsal #1",
     "date": "2026-06-21",
@@ -6606,7 +6606,7 @@
       "sheet_name": "Sunday 621",
       "row_number": 46,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 70"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 76"
     },
     "title": "Tchaikovsky Faculty Rehearsal #1 (ish)",
     "date": "2026-06-21",
@@ -14043,7 +14043,7 @@
     "teaching": false,
     "food": false,
     "participants": [
-      "Anna Soper"
+      "Chung-Pei Ma"
     ]
   },
   {
@@ -15122,30 +15122,6 @@
     "teaching": false,
     "food": false,
     "participants": [
-      "Leslie Ashworth"
-    ]
-  },
-  {
-    "kind": "PELZER",
-    "diagnostic_source": {
-      "source_name": "Adam Pelzer Appointments",
-      "sheet_name": null,
-      "row_number": 15,
-      "column_number": null,
-      "note": null
-    },
-    "title": "Adam Pelzer appointment",
-    "date": "2026-06-23",
-    "start": "14:15:00",
-    "end": "14:30:00",
-    "location": "Campbell Recital Hall",
-    "description": "With Adam Pelzer",
-    "event_id": "pelzer-2026-06-23-1415",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": false,
-    "food": false,
-    "participants": [
       "Anthony Chukhlov"
     ]
   },
@@ -16106,7 +16082,7 @@
     "teaching": false,
     "food": false,
     "participants": [
-      "Chung-Pei Ma"
+      "Ria Honda"
     ]
   },
   {
@@ -16130,7 +16106,7 @@
     "teaching": false,
     "food": false,
     "participants": [
-      "Meg Lamm"
+      "Elisabeth Heremans"
     ]
   },
   {
@@ -17232,108 +17208,7 @@
       "Stephen Prutsman",
       "Steven Tenenbom",
       "Todd Palmer",
-      "William Coleman",
-      "Luke Henderson",
-      "Isaac Park",
-      "James Preucil",
-      "Ian Maloney",
-      "Jeanel Liango",
-      "Jérôme Chiasson",
-      "Celia Morin",
-      "Maya Enstad",
-      "Shintaro Taneda",
-      "Ayoun Alexandra Kim",
-      "Jon Lee",
-      "Jihyun Baik",
-      "Oliver Leitner",
-      "Lourdes Pinney",
-      "Colin Guan",
-      "Dustin Breshears",
-      "Anthony Chukhlov",
-      "Leslie Ashworth",
-      "Melissa Lam",
-      "Nate Strothkamp",
-      "Raunak Kumar",
-      "Jeremy Klein",
-      "Starla Breshears",
-      "Gabriel Irazabal",
-      "Katie Behroozi",
-      "Benjamin Chen",
-      "Ben Parks",
-      "Cyrus Behroozi",
-      "Christine Choi",
-      "Bruce Yu",
-      "Jessica Seeliger",
-      "Warren Wu",
-      "Leyan Lo",
-      "Alex Li",
-      "Eric Cheng",
-      "Sheila Chan",
-      "Samantha Ching",
-      "Lois Harder",
-      "Seth Novatt",
-      "I-han Chou",
-      "Anne Scott",
-      "Norman Truong",
-      "Laura Shifley",
-      "Laurence Lewis",
-      "Minsu Longiaru",
-      "Beverly Fu",
-      "Jennie Yang",
-      "Monica Anuforo",
-      "Derek Wu",
-      "Shawn Barnett",
-      "Ari Le",
-      "Marandi Hostetter",
-      "Melissa Chu",
-      "Isabella Fulford",
-      "JK Hunt",
-      "Emma Spellman",
-      "Stefan Leape",
-      "Cristina Ruotolo",
-      "Meg Lamm",
-      "Jocelyn Lamm Startz",
-      "Hilary Meltzer",
-      "Jim Chou",
-      "Tyson Mao",
-      "Cindy Wang",
-      "Olivia Tam",
-      "Ria Honda",
-      "Christopher Lin-Brande",
-      "Nina Monfredo",
-      "Abigail Rogers",
-      "Haeun Nam",
-      "Marie Christine Lopez",
-      "Cindy Mong",
-      "Ken Ferry",
-      "Elisabeth Heremans",
-      "Alex Hwang",
-      "Thomas Xiong",
-      "Daiyao Zhang",
-      "Miles Chan",
-      "Anna Soper",
-      "Eric Cooper",
-      "Griffin Glenn",
-      "Jasper Jian",
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang",
-      "Emil Ma",
-      "Chung-Pei Ma",
-      "Derek Katz",
-      "Ari Freed",
-      "Aaron Wilk",
-      "Misha Rafiee",
-      "Gregorio Lopes",
-      "James Welch",
-      "Persis Drell",
-      "Lloyd Minor",
-      "Neir Eshel",
-      "Ko Hayashi",
-      "Ron Ho",
-      "Cary Chin",
-      "Jim Zehnder",
-      "Mark Siegel"
+      "William Coleman"
     ]
   },
   {
@@ -19809,34 +19684,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 10,
-      "column_number": null,
-      "note": null
-    },
-    "title": "Paul Coaching: String Quintet",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "Dinkelspiel Stage",
-    "description": "",
-    "event_id": "coaching-string-quintet-2026-06-24-session-three",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Nate Strothkamp",
-      "Raunak Kumar",
-      "Jeremy Klein",
-      "Starla Breshears",
-      "Gabriel Irazabal"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 15,
       "column_number": null,
       "note": null
@@ -20106,6 +19953,34 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 10,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Rehearsal: String Quintet",
+    "date": "2026-06-24",
+    "start": "14:00:00",
+    "end": "15:00:00",
+    "location": "Dinkelspiel Stage",
+    "description": "",
+    "event_id": "coaching-rehearsal-string-quintet-2026-06-24-session-three",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Nate Strothkamp",
+      "Raunak Kumar",
+      "Jeremy Klein",
+      "Starla Breshears",
+      "Gabriel Irazabal"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 19,
       "column_number": null,
       "note": null
@@ -20204,30 +20079,6 @@
     "food": false,
     "participants": [
       "Daniel Phillips"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
-      "row_number": 10,
-      "column_number": null,
-      "note": null
-    },
-    "title": "String Quintet",
-    "date": "2026-06-24",
-    "start": "14:00:00",
-    "end": "15:00:00",
-    "location": "Dinkelspiel Stage",
-    "description": "",
-    "event_id": "coaching-string-quintet-2026-06-24-session-three-coach",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": true,
-    "food": false,
-    "participants": [
-      "Paul Wiancko"
     ]
   },
   {
@@ -20818,6 +20669,34 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
+      "row_number": 10,
+      "column_number": null,
+      "note": null
+    },
+    "title": "Paul Coaching: String Quintet",
+    "date": "2026-06-24",
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "location": "Dinkelspiel Stage",
+    "description": "",
+    "event_id": "coaching-string-quintet-2026-06-24-session-four",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Nate Strothkamp",
+      "Raunak Kumar",
+      "Jeremy Klein",
+      "Starla Breshears",
+      "Gabriel Irazabal"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
       "row_number": 5,
       "column_number": null,
       "note": null
@@ -21102,34 +20981,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 10,
-      "column_number": null,
-      "note": null
-    },
-    "title": "Rehearsal: String Quintet",
-    "date": "2026-06-24",
-    "start": "15:15:00",
-    "end": "16:15:00",
-    "location": "Dinkelspiel Stage",
-    "description": "",
-    "event_id": "coaching-rehearsal-string-quintet-2026-06-24-session-four",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Nate Strothkamp",
-      "Raunak Kumar",
-      "Jeremy Klein",
-      "Starla Breshears",
-      "Gabriel Irazabal"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 15,
       "column_number": null,
       "note": null
@@ -21225,6 +21076,30 @@
     "food": false,
     "participants": [
       "Owen Dalby"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 10,
+      "column_number": null,
+      "note": "data inconsistency verification: faculty daily tab omits generated event for Paul Wiancko"
+    },
+    "title": "String Quintet",
+    "date": "2026-06-24",
+    "start": "15:15:00",
+    "end": "16:15:00",
+    "location": "Dinkelspiel Stage",
+    "description": "",
+    "event_id": "coaching-string-quintet-2026-06-24-session-four-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Paul Wiancko"
     ]
   },
   {
@@ -21843,7 +21718,7 @@
       "sheet_name": "Wednesday 624",
       "row_number": 36,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 70"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 76"
     },
     "title": "Tchaikovsky Faculty Rehearsal #2 (AYW)",
     "date": "2026-06-24",
@@ -22525,7 +22400,7 @@
       "sheet_name": "Wednesday 624",
       "row_number": 46,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 82"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 88"
     },
     "title": "Rule of Three Faculty Rehearsal #2 (AYW)",
     "date": "2026-06-24",
@@ -27340,57 +27215,6 @@
     ]
   },
   {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 13,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "DR: The Quarktet",
-    "date": "2026-06-25",
-    "start": "15:15:00",
-    "end": "15:35:00",
-    "location": "Campbell Recital Hall",
-    "description": "",
-    "event_id": "participant-dress-rehearsal-the-quarktet-coach-owen-dalby",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": true,
-    "food": false,
-    "participants": [
-      "Owen Dalby"
-    ]
-  },
-  {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 13,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "Dress Rehearsal",
-    "date": "2026-06-25",
-    "start": "15:15:00",
-    "end": "15:35:00",
-    "location": "Campbell Recital Hall",
-    "description": "Coach: Owen Dalby",
-    "event_id": "participant-dress-rehearsal-the-quarktet-group",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Emil Ma",
-      "Chung-Pei Ma",
-      "Derek Katz",
-      "Ari Freed"
-    ]
-  },
-  {
     "kind": "MASTERCLASS",
     "diagnostic_source": {
       "source_name": "Masterclass Assignments",
@@ -27725,7 +27549,7 @@
       "sheet_name": "Thursday 625",
       "row_number": 46,
       "column_number": 6,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 89"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 95"
     },
     "title": "Mendelssohn 6tet Faculty Rehearsal #2 (As You Wish)",
     "date": "2026-06-25",
@@ -29932,7 +29756,7 @@
       "sheet_name": "Friday 626",
       "row_number": 13,
       "column_number": 3,
-      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 79; data inconsistency validation: documented missing location"
+      "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 85; data inconsistency validation: documented missing location"
     },
     "title": "Faculty Concert #3 Dress Rehearsal",
     "date": "2026-06-26",
@@ -34901,32 +34725,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 25,
-      "column_number": null,
-      "note": null
-    },
-    "title": "Owen Coaching: Virtuosa Trio",
-    "date": "2026-06-27",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "228",
-    "description": "",
-    "event_id": "coaching-virtuosa-trio-2026-06-27-session-two",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Chia Ying Lee",
-      "Yi Ying Wei",
-      "Chiao Hui Chang"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 19,
       "column_number": null,
       "note": null
@@ -35453,30 +35251,6 @@
     "diagnostic_source": {
       "source_name": "Coaching by Ensemble",
       "sheet_name": null,
-      "row_number": 25,
-      "column_number": null,
-      "note": null
-    },
-    "title": "Virtuosa Trio",
-    "date": "2026-06-27",
-    "start": "10:30:00",
-    "end": "11:30:00",
-    "location": "228",
-    "description": "",
-    "event_id": "coaching-virtuosa-trio-2026-06-27-session-two-coach",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": true,
-    "food": false,
-    "participants": [
-      "Owen Dalby"
-    ]
-  },
-  {
-    "kind": "COACHING",
-    "diagnostic_source": {
-      "source_name": "Coaching by Ensemble",
-      "sheet_name": null,
       "row_number": 20,
       "column_number": null,
       "note": null
@@ -35597,6 +35371,57 @@
       "Eric Cooper",
       "Griffin Glenn",
       "Jasper Jian"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 38,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: The Quarktet",
+    "date": "2026-06-27",
+    "start": "12:30:00",
+    "end": "12:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-the-quarktet-coach-owen-dalby",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Owen Dalby"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 38,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-27",
+    "start": "12:30:00",
+    "end": "12:50:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Owen Dalby",
+    "event_id": "participant-dress-rehearsal-the-quarktet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Emil Ma",
+      "Chung-Pei Ma",
+      "Derek Katz",
+      "Ari Freed"
     ]
   },
   {
@@ -37188,6 +37013,56 @@
     "food": false,
     "participants": [
       "Nina Lee"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 25,
+      "column_number": null,
+      "note": "data inconsistency fixup: Owen Dalby Saturday Virtuosa Session II is late afternoon"
+    },
+    "title": "Owen Coaching: Virtuosa Trio",
+    "date": "2026-06-27",
+    "start": "15:30:00",
+    "end": "16:30:00",
+    "location": "228",
+    "description": "",
+    "event_id": "coaching-virtuosa-trio-2026-06-27-session-two",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Chia Ying Lee",
+      "Yi Ying Wei",
+      "Chiao Hui Chang"
+    ]
+  },
+  {
+    "kind": "COACHING",
+    "diagnostic_source": {
+      "source_name": "Coaching by Ensemble",
+      "sheet_name": null,
+      "row_number": 25,
+      "column_number": null,
+      "note": "data inconsistency fixup: Owen Dalby Saturday Virtuosa Session II is late afternoon"
+    },
+    "title": "Virtuosa Trio",
+    "date": "2026-06-27",
+    "start": "15:30:00",
+    "end": "16:30:00",
+    "location": "228",
+    "description": "",
+    "event_id": "coaching-virtuosa-trio-2026-06-27-session-two-coach",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Owen Dalby"
     ]
   },
   {
