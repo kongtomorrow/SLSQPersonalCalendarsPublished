@@ -23251,7 +23251,7 @@
       "sheet_name": null,
       "row_number": 11,
       "column_number": null,
-      "note": "data inconsistency validation: documented overlap for Steven Tenenbom"
+      "note": null
     },
     "title": "Quail 4tet",
     "date": "2026-06-25",
@@ -23843,7 +23843,7 @@
       "sheet_name": null,
       "row_number": 4,
       "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early; data inconsistency validation: documented overlap for Steven Tenenbom; data inconsistency verification: faculty daily tab omits generated event for Steven Tenenbom"
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
     "title": "DR: The Dolphins",
     "date": "2026-06-25",
@@ -23851,13 +23851,13 @@
     "end": "09:50:00",
     "location": "Campbell Recital Hall",
     "description": "",
-    "event_id": "participant-dress-rehearsal-the-dolphins-coach-steven-tenenbom",
+    "event_id": "participant-dress-rehearsal-the-dolphins-coach-lesley-robertson",
     "overlap_allowed": false,
     "playing": false,
     "teaching": true,
     "food": false,
     "participants": [
-      "Steven Tenenbom"
+      "Lesley Robertson"
     ]
   },
   {
@@ -23874,7 +23874,7 @@
     "start": "09:30:00",
     "end": "09:50:00",
     "location": "Campbell Recital Hall",
-    "description": "Coach: Steven Tenenbom",
+    "description": "Coach: Lesley Robertson",
     "event_id": "participant-dress-rehearsal-the-dolphins-group",
     "overlap_allowed": false,
     "playing": true,
@@ -24873,58 +24873,6 @@
     "food": false,
     "participants": [
       "Alexi Kenney"
-    ]
-  },
-  {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 7,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "DR: Dolores Quintet",
-    "date": "2026-06-25",
-    "start": "11:00:00",
-    "end": "11:20:00",
-    "location": "Campbell Recital Hall",
-    "description": "",
-    "event_id": "participant-dress-rehearsal-dolores-quintet-coach-john-novacek",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": true,
-    "food": false,
-    "participants": [
-      "John Novacek"
-    ]
-  },
-  {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 7,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "Dress Rehearsal",
-    "date": "2026-06-25",
-    "start": "11:00:00",
-    "end": "11:20:00",
-    "location": "Campbell Recital Hall",
-    "description": "Coach: John Novacek",
-    "event_id": "participant-dress-rehearsal-dolores-quintet-group",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Aaron Wilk",
-      "Misha Rafiee",
-      "Gregorio Lopes",
-      "James Welch",
-      "Persis Drell"
     ]
   },
   {
@@ -27228,7 +27176,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94 (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-coaching-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -27277,7 +27225,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94 (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-coaching",
     "overlap_allowed": false,
     "playing": false,
@@ -27328,7 +27276,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Campbell Recital Hall or Dinkelspiel Stage or Braun Rehearsal Hall",
-    "description": "Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman\n\nMasterclass 3C\nLocation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)\n8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)\nThe Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
+    "description": "Masterclass 3A\nLocation: Campbell Recital Hall\nPlaying:\nSQuEAQ  (PM) (Miles Chan, Anna Soper, Eric Cooper, Griffin Glenn, Jasper Jian)\nNo Name Piano Quartet (AM) (Elisabeth Heremans, Alex Hwang, Thomas Xiong, Daiyao Zhang)\nQuatuor Pas de Jeans (Beverly Fu, Jennie Yang, Monica Anuforo, Derek Wu)\nPinky Quartet (Leyan Lo, Alex Li, Eric Cheng, Sheila Chan)\nAnthony Manzo\nCoaching: Owen Dalby, Anthony Manzo, Paul Wiancko\n\nMasterclass 3B\nLocation: Dinkelspiel Stage\nPlaying:\nQuartet 94 (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman\n\nMasterclass 3C\nLocation: Braun Rehearsal Hall\nPlaying:\nZehnder blender (Ko Hayashi, Ron Ho, Cary Chin, Jim Zehnder)\n8tet with Dolores 4 (Gregorio Lopes, Ko Hayashi, Ron Ho, Mark Siegel, Cary Chin, James Welch, Jim Zehnder, Persis Drell)\nThe Abelian Group (Norman Truong, Laura Shifley, Laurence Lewis, Minsu Longiaru)\nCoaching: John Novacek, Daniel Phillips, Hannah Collins",
     "event_id": "masterclass-3a-3b-3c-broad",
     "overlap_allowed": true,
     "playing": false,
@@ -27456,7 +27404,7 @@
     "start": "16:00:00",
     "end": "17:30:00",
     "location": "Dinkelspiel Stage",
-    "description": "Playing:\nQuartet 94? (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
+    "description": "Playing:\nQuartet 94 (Christine Choi, Bruce Yu, Jessica Seeliger, Warren Wu)\nSelene Quartet (Jihyun Baik, Oliver Leitner, Lourdes Pinney, Colin Guan)\nThe Quarktet (Emil Ma, Chung-Pei Ma, Derek Katz, Ari Freed)\nTomodachi Quintet (Samantha Ching, Lois Harder, Seth Novatt, I-han Chou, Anne Scott)\nTodd Palmer\nTodd Palmer (rep tbd)\nCoaching: Todd Palmer, Alexi Kenney, William Coleman",
     "event_id": "masterclass-3b-playing",
     "overlap_allowed": false,
     "playing": true,
@@ -27523,17 +27471,17 @@
     "diagnostic_source": {
       "source_name": "Faculty Schedule Daily Tabs",
       "sheet_name": "Thursday 625",
-      "row_number": 46,
+      "row_number": 41,
       "column_number": 6,
       "note": "materialized from faculty concert rehearsal slot\nadditional materialization data from Faculty Concert Definitions row 95"
     },
     "title": "Mendelssohn 6tet Faculty Rehearsal #2 (As You Wish)",
     "date": "2026-06-25",
-    "start": "19:00:00",
-    "end": "20:00:00",
+    "start": "17:30:00",
+    "end": "19:15:00",
     "location": "Campbell Recital Hall",
     "description": "",
-    "event_id": "faculty-daily-mendelssohn-6tet-faculty-rehearsal-2-anthony-manzo-2026-06-25-1900",
+    "event_id": "faculty-daily-mendelssohn-6tet-faculty-rehearsal-2-anthony-manzo-2026-06-25-1730",
     "overlap_allowed": false,
     "playing": true,
     "teaching": false,
@@ -28504,13 +28452,13 @@
     "end": "09:20:00",
     "location": "Campbell Recital Hall",
     "description": "",
-    "event_id": "participant-dress-rehearsal-katarina-string-quartet-coach-ayane-kozasa",
+    "event_id": "participant-dress-rehearsal-katarina-string-quartet-coach-ayane-not-present",
     "overlap_allowed": false,
     "playing": false,
     "teaching": true,
     "food": false,
     "participants": [
-      "Ayane Kozasa"
+      "Ayane (not present)"
     ]
   },
   {
@@ -28527,7 +28475,7 @@
     "start": "09:00:00",
     "end": "09:20:00",
     "location": "Campbell Recital Hall",
-    "description": "Coach: Ayane Kozasa",
+    "description": "Coach: Ayane (not present)",
     "event_id": "participant-dress-rehearsal-katarina-string-quartet-group",
     "overlap_allowed": false,
     "playing": true,
@@ -30450,6 +30398,58 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 20,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Dolores Quintet",
+    "date": "2026-06-26",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-dolores-quintet-coach-alexi-kenney",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "Alexi Kenney"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 20,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "11:00:00",
+    "end": "11:20:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: Alexi Kenney",
+    "event_id": "participant-dress-rehearsal-dolores-quintet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Aaron Wilk",
+      "Misha Rafiee",
+      "Gregorio Lopes",
+      "James Welch",
+      "Persis Drell"
+    ]
+  },
+  {
     "kind": "FACULTY_CONCERTS",
     "diagnostic_source": {
       "source_name": "Faculty Concert Definitions",
@@ -30655,57 +30655,6 @@
       "Steven Tenenbom",
       "Todd Palmer",
       "William Coleman"
-    ]
-  },
-  {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 23,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "DR: Chane String Quartet",
-    "date": "2026-06-26",
-    "start": "13:45:00",
-    "end": "14:05:00",
-    "location": "Campbell Recital Hall",
-    "description": "",
-    "event_id": "participant-dress-rehearsal-chane-string-quartet-coach-william-coleman",
-    "overlap_allowed": false,
-    "playing": false,
-    "teaching": true,
-    "food": false,
-    "participants": [
-      "William Coleman"
-    ]
-  },
-  {
-    "kind": "PARTICIPANT_DRESS_REHEARSAL",
-    "diagnostic_source": {
-      "source_name": "Dress Rehearsal Schedule",
-      "sheet_name": null,
-      "row_number": 23,
-      "column_number": null,
-      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
-    },
-    "title": "Dress Rehearsal",
-    "date": "2026-06-26",
-    "start": "13:45:00",
-    "end": "14:05:00",
-    "location": "Campbell Recital Hall",
-    "description": "Coach: William Coleman",
-    "event_id": "participant-dress-rehearsal-chane-string-quartet-group",
-    "overlap_allowed": false,
-    "playing": true,
-    "teaching": false,
-    "food": false,
-    "participants": [
-      "Ria Honda",
-      "Christopher Lin-Brande",
-      "Nina Monfredo",
-      "Abigail Rogers"
     ]
   },
   {
@@ -32814,6 +32763,57 @@
     ]
   },
   {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 29,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "DR: Chane String Quartet",
+    "date": "2026-06-26",
+    "start": "16:45:00",
+    "end": "17:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "",
+    "event_id": "participant-dress-rehearsal-chane-string-quartet-coach-william-coleman",
+    "overlap_allowed": false,
+    "playing": false,
+    "teaching": true,
+    "food": false,
+    "participants": [
+      "William Coleman"
+    ]
+  },
+  {
+    "kind": "PARTICIPANT_DRESS_REHEARSAL",
+    "diagnostic_source": {
+      "source_name": "Dress Rehearsal Schedule",
+      "sheet_name": null,
+      "row_number": 29,
+      "column_number": null,
+      "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
+    },
+    "title": "Dress Rehearsal",
+    "date": "2026-06-26",
+    "start": "16:45:00",
+    "end": "17:05:00",
+    "location": "Campbell Recital Hall",
+    "description": "Coach: William Coleman",
+    "event_id": "participant-dress-rehearsal-chane-string-quartet-group",
+    "overlap_allowed": false,
+    "playing": true,
+    "teaching": false,
+    "food": false,
+    "participants": [
+      "Ria Honda",
+      "Christopher Lin-Brande",
+      "Nina Monfredo",
+      "Abigail Rogers"
+    ]
+  },
+  {
     "kind": "FACULTY",
     "diagnostic_source": {
       "source_name": "Faculty Schedule",
@@ -33247,7 +33247,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 31,
+      "row_number": 32,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -33271,7 +33271,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 31,
+      "row_number": 32,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34261,7 +34261,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 32,
+      "row_number": 33,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34285,7 +34285,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 32,
+      "row_number": 33,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34313,7 +34313,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 33,
+      "row_number": 34,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34337,7 +34337,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 33,
+      "row_number": 34,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34442,7 +34442,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 34,
+      "row_number": 35,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -34544,7 +34544,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 34,
+      "row_number": 35,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35251,7 +35251,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 35,
+      "row_number": 36,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35275,7 +35275,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 35,
+      "row_number": 36,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35302,7 +35302,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 36,
+      "row_number": 37,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35326,7 +35326,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 36,
+      "row_number": 37,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35354,7 +35354,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 38,
+      "row_number": 39,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
@@ -35378,7 +35378,7 @@
     "diagnostic_source": {
       "source_name": "Dress Rehearsal Schedule",
       "sheet_name": null,
-      "row_number": 38,
+      "row_number": 39,
       "column_number": null,
       "note": "data inconsistency fixup: Dress rehearsal source date headers are one week early"
     },
