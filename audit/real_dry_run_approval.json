@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-06-26T02:33:51.678572Z",
+  "event_audit_sha256": "27a9e86cb029a376252872e1419a670646637c756ea80a44cb89a2e124f3d092",
+  "excessive_threshold": 100,
+  "google_plan_counts": {
+    "blocked": 0,
+    "creates": 8,
+    "deletes": 9,
+    "updates": 36
+  },
+  "mode": "plan",
+  "run_attempt": "1",
+  "run_id": "28213422988",
+  "source_sha": "bf1384386925f939655907e8e65a726a0b9fd9d5",
+  "target": "real",
+  "workflow": "Update Real Calendar"
+}
